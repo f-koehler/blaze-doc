@@ -95,11 +95,11 @@ $(function() {
 <code>#include &lt;<a class="el" href="../../df/d5f/MultTrait_8h_source.html">blaze/math/traits/MultTrait.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../dd/dbb/RowExprTrait_8h_source.html">blaze/math/traits/RowExprTrait.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d1/d37/SubmatrixExprTrait_8h_source.html">blaze/math/traits/SubmatrixExprTrait.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d6/df5/TDMatDeclSymExprTrait_8h_source.html">blaze/math/traits/TDMatDeclSymExprTrait.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../dd/d77/TDMatDVecMultExprTrait_8h_source.html">blaze/math/traits/TDMatDVecMultExprTrait.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d8/d70/TDMatSVecMultExprTrait_8h_source.html">blaze/math/traits/TDMatSVecMultExprTrait.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d0/dbd/TDVecTDMatMultExprTrait_8h_source.html">blaze/math/traits/TDVecTDMatMultExprTrait.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../dc/d36/TSVecTDMatMultExprTrait_8h_source.html">blaze/math/traits/TSVecTDMatMultExprTrait.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../dd/d66/AreSIMDCombinable_8h_source.html">blaze/math/typetraits/AreSIMDCombinable.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../db/dc6/typetraits_2Columns_8h_source.html">blaze/math/typetraits/Columns.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d8/d78/HasConstDataAccess_8h_source.html">blaze/math/typetraits/HasConstDataAccess.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../dc/d2f/HasMutableDataAccess_8h_source.html">blaze/math/typetraits/HasMutableDataAccess.h</a>&gt;</code><br />
@@ -118,6 +118,7 @@ $(function() {
 <code>#include &lt;<a class="el" href="../../d5/da4/IsResizable_8h_source.html">blaze/math/typetraits/IsResizable.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../df/d44/IsRowMajorMatrix_8h_source.html">blaze/math/typetraits/IsRowMajorMatrix.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../de/dba/IsRowVector_8h_source.html">blaze/math/typetraits/IsRowVector.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d8/d5d/IsSIMDCombinable_8h_source.html">blaze/math/typetraits/IsSIMDCombinable.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../da/d16/IsSparseVector_8h_source.html">blaze/math/typetraits/IsSparseVector.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d7/dad/IsStrictlyLower_8h_source.html">blaze/math/typetraits/IsStrictlyLower.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../db/dc8/IsStrictlyTriangular_8h_source.html">blaze/math/typetraits/IsStrictlyTriangular.h</a>&gt;</code><br />
@@ -162,7 +163,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d6f/classblaze_1_1TDMatTDMatMultExpr.html">blaze::TDMatTDMatMultExpr&lt; MT1, MT2 &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d6f/classblaze_1_1TDMatTDMatMultExpr.html">blaze::TDMatTDMatMultExpr&lt; MT1, MT2, SF &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d5/d2e/structblaze_1_1Expression.html" title="Base class for all expression templates.The Expression class is the base class for all expression tem...">Expression</a> object for transpose dense matrix-transpose dense matrix multiplications.The <a class="el" href="../../dd/d6f/classblaze_1_1TDMatTDMatMultExpr.html" title="Expression object for transpose dense matrix-transpose dense matrix multiplications.The TDMatTDMatMultExpr class represents the compile time expression for multiplications between two column-major dense matrices. ">TDMatTDMatMultExpr</a> class represents the compile time expression for multiplications between two column-major dense matrices.  <a href="../../dd/d6f/classblaze_1_1TDMatTDMatMultExpr.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -174,10 +175,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gabaebf997f6e7e5fa0809d404ee89c2d7"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
-<tr class="memitem:gabaebf997f6e7e5fa0809d404ee89c2d7"><td class="memTemplItemLeft" align="right" valign="top">const TDMatTDMatMultExpr&lt; T1, T2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#gabaebf997f6e7e5fa0809d404ee89c2d7">blaze::operator*</a> (const DenseMatrix&lt; T1, true &gt; &amp;lhs, const DenseMatrix&lt; T2, true &gt; &amp;rhs)</td></tr>
-<tr class="memdesc:gabaebf997f6e7e5fa0809d404ee89c2d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of two column-major dense matrices ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#gabaebf997f6e7e5fa0809d404ee89c2d7">More...</a><br /></td></tr>
-<tr class="separator:gabaebf997f6e7e5fa0809d404ee89c2d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga291e882f0ecf24cf4d5500f8b6786788"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
+<tr class="memitem:ga291e882f0ecf24cf4d5500f8b6786788"><td class="memTemplItemLeft" align="right" valign="top">const TDMatTDMatMultExpr&lt; T1, T2, false &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga291e882f0ecf24cf4d5500f8b6786788">blaze::operator*</a> (const DenseMatrix&lt; T1, true &gt; &amp;lhs, const DenseMatrix&lt; T2, true &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:ga291e882f0ecf24cf4d5500f8b6786788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of two column-major dense matrices ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga291e882f0ecf24cf4d5500f8b6786788">More...</a><br /></td></tr>
+<tr class="separator:ga291e882f0ecf24cf4d5500f8b6786788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0e6969ca323c688cb22b96b6678d614f"><td class="memTemplParams" colspan="2">template&lt;typename MT1 , typename MT2 &gt; </td></tr>
+<tr class="memitem:ga0e6969ca323c688cb22b96b6678d614f"><td class="memTemplItemLeft" align="right" valign="top">const TDMatTDMatMultExpr&lt; MT1, MT2, true &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga0e6969ca323c688cb22b96b6678d614f">blaze::declsym</a> (const TDMatTDMatMultExpr&lt; MT1, MT2, false &gt; &amp;dm)</td></tr>
+<tr class="memdesc:ga0e6969ca323c688cb22b96b6678d614f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declares the given non-symmetric dense matrix multiplication expression as symmetric.  <a href="../../db/df0/group__dense__matrix.html#ga0e6969ca323c688cb22b96b6678d614f">More...</a><br /></td></tr>
+<tr class="separator:ga0e6969ca323c688cb22b96b6678d614f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Header file for the transpose dense matrix/transpose dense matrix multiplication expression. </p>
@@ -192,7 +197,7 @@ Functions</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 8 2016 16:45:01 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 31 2016 17:16:59 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

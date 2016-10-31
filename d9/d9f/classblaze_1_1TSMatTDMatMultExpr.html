@@ -79,14 +79,14 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a1b8e1b92873e9a2f4a2aec2f535a9758"><td class="memItemLeft" align="right" valign="top"><a id="a1b8e1b92873e9a2f4a2aec2f535a9758"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>simdEnabled</b> = false
- }<tr class="memdesc:a1b8e1b92873e9a2f4a2aec2f535a9758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template evaluation strategy. <br /></td></tr>
+<tr class="memitem:a96c3dc1558d30845468b7aef670864da"><td class="memItemLeft" align="right" valign="top"><a id="a96c3dc1558d30845468b7aef670864da"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>simdEnabled</b> = false
+ }<tr class="memdesc:a96c3dc1558d30845468b7aef670864da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template evaluation strategy. <br /></td></tr>
 </td></tr>
-<tr class="separator:a1b8e1b92873e9a2f4a2aec2f535a9758"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7708b53910447108a604511dc536e7b5"><td class="memItemLeft" align="right" valign="top"><a id="a7708b53910447108a604511dc536e7b5"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>smpAssignable</b>
- }<tr class="memdesc:a7708b53910447108a604511dc536e7b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template assignment strategy. <br /></td></tr>
+<tr class="separator:a96c3dc1558d30845468b7aef670864da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29bd2717dd765639b1d7a0db2b8528f7"><td class="memItemLeft" align="right" valign="top"><a id="a29bd2717dd765639b1d7a0db2b8528f7"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>smpAssignable</b>
+ }<tr class="memdesc:a29bd2717dd765639b1d7a0db2b8528f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template assignment strategy. <br /></td></tr>
 </td></tr>
-<tr class="separator:a7708b53910447108a604511dc536e7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a29bd2717dd765639b1d7a0db2b8528f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a635e748fcabe43bc4ccf823c0ddbb31c"><td class="memItemLeft" align="right" valign="top"><a id="a635e748fcabe43bc4ccf823c0ddbb31c"></a>
 typedef <a class="el" href="../../d9/d9f/classblaze_1_1TSMatTDMatMultExpr.html">TSMatTDMatMultExpr</a>&lt; MT1, MT2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d9f/classblaze_1_1TSMatTDMatMultExpr.html#a635e748fcabe43bc4ccf823c0ddbb31c">This</a></td></tr>
 <tr class="memdesc:a635e748fcabe43bc4ccf823c0ddbb31c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of this <a class="el" href="../../d9/d9f/classblaze_1_1TSMatTDMatMultExpr.html" title="Expression object for transpose sparse matrix-transpose dense matrix multiplications.The TSMatTDMatMultExpr class represents the compile time expression for multiplications between a column-major sparse matrix and a column-major dense matrix. ">TSMatTDMatMultExpr</a> instance. <br /></td></tr>
@@ -182,14 +182,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:adfd671d301ae9d59519cee0c2a0866f1"><td class="memItemLeft" align="right" valign="top"><a id="adfd671d301ae9d59519cee0c2a0866f1"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>evaluateLeft</b> = IsComputation&lt;MT1&gt;::value || RequiresEvaluation&lt;MT1&gt;::value
- }<tr class="memdesc:adfd671d301ae9d59519cee0c2a0866f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the composite type of the left-hand side sparse matrix expression. <br /></td></tr>
+<tr class="memitem:a6e27d022013db524c3cc57effbf07ea2"><td class="memItemLeft" align="right" valign="top"><a id="a6e27d022013db524c3cc57effbf07ea2"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>evaluateLeft</b> = IsComputation&lt;MT1&gt;::value || RequiresEvaluation&lt;MT1&gt;::value
+ }<tr class="memdesc:a6e27d022013db524c3cc57effbf07ea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the composite type of the left-hand side sparse matrix expression. <br /></td></tr>
 </td></tr>
-<tr class="separator:adfd671d301ae9d59519cee0c2a0866f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c0083bbe12a782393dc9702bda4ab72"><td class="memItemLeft" align="right" valign="top"><a id="a0c0083bbe12a782393dc9702bda4ab72"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>evaluateRight</b> = IsComputation&lt;MT2&gt;::value || RequiresEvaluation&lt;MT2&gt;::value
- }<tr class="memdesc:a0c0083bbe12a782393dc9702bda4ab72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the composite type of the right-hand side dense matrix expression. <br /></td></tr>
+<tr class="separator:a6e27d022013db524c3cc57effbf07ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1d2665f578360b66cb9a520fb062cc8"><td class="memItemLeft" align="right" valign="top"><a id="ac1d2665f578360b66cb9a520fb062cc8"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>evaluateRight</b> = IsComputation&lt;MT2&gt;::value || RequiresEvaluation&lt;MT2&gt;::value
+ }<tr class="memdesc:ac1d2665f578360b66cb9a520fb062cc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the composite type of the right-hand side dense matrix expression. <br /></td></tr>
 </td></tr>
-<tr class="separator:a0c0083bbe12a782393dc9702bda4ab72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ac1d2665f578360b66cb9a520fb062cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73c41c96da6f362632e2c4701536382e"><td class="memItemLeft" align="right" valign="top"><a id="a73c41c96da6f362632e2c4701536382e"></a>
 typedef <a class="el" href="../../d2/de9/namespaceblaze.html#a5a86db58851c76c3500769d8afdc759e">ResultType_</a>&lt; MT1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d9f/classblaze_1_1TSMatTDMatMultExpr.html#a73c41c96da6f362632e2c4701536382e">RT1</a></td></tr>
 <tr class="memdesc:a73c41c96da6f362632e2c4701536382e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result type of the left-hand side sparse matrix expression. <br /></td></tr>
@@ -708,7 +708,7 @@ template&lt;typename MT1 , typename MT2 &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 8 2016 16:45:07 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 31 2016 17:17:07 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

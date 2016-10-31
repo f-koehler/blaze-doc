@@ -82,11 +82,11 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga397afa461dda83ee307b0f2cd8bbc6da"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga397afa461dda83ee307b0f2cd8bbc6da">BLAZE_CONSTRAINT_MUST_HAVE_SAME_SIZE</a>(T1,  T2)&#160;&#160;&#160;static_assert( ::<a class="el" href="../../de/d5a/group__type__traits.html#gaac1e2dd0b8cdbc4c176e03342ed715ed">blaze::HaveSameSize_</a>&lt;T1,T2&gt;, &quot;Non-matching sizes detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga397afa461dda83ee307b0f2cd8bbc6da">BLAZE_CONSTRAINT_MUST_HAVE_SAME_SIZE</a>(T1,  T2)&#160;&#160;&#160;static_assert( ::<a class="el" href="../../d7/d76/classblaze_1_1HaveSameSize.html">blaze::HaveSameSize</a>&lt;T1,T2&gt;::value, &quot;Non-matching sizes detected&quot; )</td></tr>
 <tr class="memdesc:ga397afa461dda83ee307b0f2cd8bbc6da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the size of two data types.In case the types <em>T1</em> and <em>T2</em> don't have the same size, a compilation error is created. <br /></td></tr>
 <tr class="separator:ga397afa461dda83ee307b0f2cd8bbc6da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9f45ebccb35f86bdcc802fb802e394e8"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga9f45ebccb35f86bdcc802fb802e394e8">BLAZE_CONSTRAINT_MUST_NOT_HAVE_SAME_SIZE</a>(T1,  T2)&#160;&#160;&#160;static_assert( !::<a class="el" href="../../de/d5a/group__type__traits.html#gaac1e2dd0b8cdbc4c176e03342ed715ed">blaze::HaveSameSize_</a>&lt;T1,T2&gt;, &quot;Matching sizes detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga9f45ebccb35f86bdcc802fb802e394e8">BLAZE_CONSTRAINT_MUST_NOT_HAVE_SAME_SIZE</a>(T1,  T2)&#160;&#160;&#160;static_assert( !::<a class="el" href="../../d7/d76/classblaze_1_1HaveSameSize.html">blaze::HaveSameSize</a>&lt;T1,T2&gt;::value, &quot;Matching sizes detected&quot; )</td></tr>
 <tr class="memdesc:ga9f45ebccb35f86bdcc802fb802e394e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the size of two data types.In case the types <em>T1</em> and <em>T2</em> have the same size, a compilation error is created. <br /></td></tr>
 <tr class="separator:ga9f45ebccb35f86bdcc802fb802e394e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -103,7 +103,7 @@ Macros</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 8 2016 16:45:02 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 31 2016 17:17:00 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

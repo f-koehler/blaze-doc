@@ -56,8 +56,7 @@ $(function() {
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
 <div class="title">Value traits<div class="ingroups"><a class="el" href="../../d4/d3a/group__util.html">Utility module</a></div></div>  </div>
 </div><!--header-->
@@ -77,104 +76,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6c/structblaze_1_1IsPowerOf.html">blaze::IsPowerOf&lt; B, N &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile time check for a power relationship of integral values to a given base.This value trait tests whether the given integral value <em>N</em> is a power of the base <em>B</em> according to the equation <img class="formulaInl" alt="$ B^x = N $" src="../../form_190.png"/>, where x is any positive integer in the range <img class="formulaInl" alt="$ [0..\infty) $" src="../../form_189.png"/>. In case the value is a power of <em>B</em>, the <em>value</em> member enumeration is set to <em>true</em>, the nested type definition <em>Type</em> is <em>TrueType</em>, and the class derives from <em>TrueType</em>. Otherwise <em>value</em> is set to <em>false</em>, <em>Type</em> is <em>FalseType</em>, and the class derives from <em>FalseType</em>.  <a href="../../d5/d6c/structblaze_1_1IsPowerOf.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:gabda5094a705c0e21993f2eb95bf463ef"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
-<tr class="memitem:gabda5094a705c0e21993f2eb95bf463ef"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d16/group__value__traits.html#gabda5094a705c0e21993f2eb95bf463ef">blaze::IsEven_</a> = <a class="el" href="../../de/d20/structblaze_1_1IsEven.html">IsEven</a>&lt;N&gt;::value</td></tr>
-<tr class="memdesc:gabda5094a705c0e21993f2eb95bf463ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auxiliary alias declaration for the <a class="el" href="../../de/d20/structblaze_1_1IsEven.html" title="Compile time check whether a compile time constant expression is even.This value trait tests whether ...">IsEven</a> value trait.The IsEven_ alias declaration provides a convenient shortcut to access the nested <em>value</em> of the <a class="el" href="../../de/d20/structblaze_1_1IsEven.html" title="Compile time check whether a compile time constant expression is even.This value trait tests whether ...">IsEven</a> class template. For instance, given the compile time constant value <em>N</em> the following two statements are identical:  <a href="../../d3/d16/group__value__traits.html#gabda5094a705c0e21993f2eb95bf463ef">More...</a><br /></td></tr>
-<tr class="separator:gabda5094a705c0e21993f2eb95bf463ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaef8de850b4ff13f828bddda0dbeaf4ae"><td class="memTemplParams" colspan="2">template&lt;size_t M, size_t N&gt; </td></tr>
-<tr class="memitem:gaef8de850b4ff13f828bddda0dbeaf4ae"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d16/group__value__traits.html#gaef8de850b4ff13f828bddda0dbeaf4ae">blaze::IsMultipleOf_</a> = <a class="el" href="../../d7/de2/structblaze_1_1IsMultipleOf.html">IsMultipleOf</a>&lt;M,N&gt;::value</td></tr>
-<tr class="memdesc:gaef8de850b4ff13f828bddda0dbeaf4ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auxiliary alias declaration for the <a class="el" href="../../d7/de2/structblaze_1_1IsMultipleOf.html" title="Compile time check for a multiplicative relationship of two integral values.This value trait tests wh...">IsMultipleOf</a> value trait.The IsMultipleOf_ alias declaration provides a convenient shortcut to access the nested <em>value</em> of the <a class="el" href="../../d7/de2/structblaze_1_1IsMultipleOf.html" title="Compile time check for a multiplicative relationship of two integral values.This value trait tests wh...">IsMultipleOf</a> class template. For instance, given the compile time constant values <em>M</em> and <em>N</em> the following two statements are identical:  <a href="../../d3/d16/group__value__traits.html#gaef8de850b4ff13f828bddda0dbeaf4ae">More...</a><br /></td></tr>
-<tr class="separator:gaef8de850b4ff13f828bddda0dbeaf4ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad3684fb9a418b656cba5552acd851af6"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
-<tr class="memitem:gad3684fb9a418b656cba5552acd851af6"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d16/group__value__traits.html#gad3684fb9a418b656cba5552acd851af6">blaze::IsOdd_</a> = <a class="el" href="../../d0/d04/structblaze_1_1IsOdd.html">IsOdd</a>&lt;N&gt;::value</td></tr>
-<tr class="memdesc:gad3684fb9a418b656cba5552acd851af6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auxiliary alias declaration for the <a class="el" href="../../d0/d04/structblaze_1_1IsOdd.html" title="Compile time check whether a compile time constant expression is odd.This value trait tests whether t...">IsOdd</a> value trait.The IsOdd_ alias declaration provides a convenient shortcut to access the nested <em>value</em> of the <a class="el" href="../../d0/d04/structblaze_1_1IsOdd.html" title="Compile time check whether a compile time constant expression is odd.This value trait tests whether t...">IsOdd</a> class template. For instance, given the compile time constant value <em>N</em> the following two statements are identical:  <a href="../../d3/d16/group__value__traits.html#gad3684fb9a418b656cba5552acd851af6">More...</a><br /></td></tr>
-<tr class="separator:gad3684fb9a418b656cba5552acd851af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9aa704aa4046643f9cea24dfb6bb5620"><td class="memTemplParams" colspan="2">template&lt;size_t B, size_t N&gt; </td></tr>
-<tr class="memitem:ga9aa704aa4046643f9cea24dfb6bb5620"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d16/group__value__traits.html#ga9aa704aa4046643f9cea24dfb6bb5620">blaze::IsPowerOf_</a> = <a class="el" href="../../d5/d6c/structblaze_1_1IsPowerOf.html">IsPowerOf</a>&lt;B,N&gt;::value</td></tr>
-<tr class="memdesc:ga9aa704aa4046643f9cea24dfb6bb5620"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auxiliary alias declaration for the <a class="el" href="../../d5/d6c/structblaze_1_1IsPowerOf.html" title="Compile time check for a power relationship of integral values to a given base.This value trait tests...">IsPowerOf</a> value trait.The IsPowerOf_ alias declaration provides a convenient shortcut to access the nested <em>value</em> of the <a class="el" href="../../d5/d6c/structblaze_1_1IsPowerOf.html" title="Compile time check for a power relationship of integral values to a given base.This value trait tests...">IsPowerOf</a> class template. For instance, given the compile time constant values <em>B</em> and <em>N</em> the following two statements are identical:  <a href="../../d3/d16/group__value__traits.html#ga9aa704aa4046643f9cea24dfb6bb5620">More...</a><br /></td></tr>
-<tr class="separator:ga9aa704aa4046643f9cea24dfb6bb5620"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="gabda5094a705c0e21993f2eb95bf463ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabda5094a705c0e21993f2eb95bf463ef">&sect;&nbsp;</a></span>IsEven_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr bool blaze::IsEven_ = <a class="el" href="../../de/d20/structblaze_1_1IsEven.html">IsEven</a>&lt;N&gt;::value</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Auxiliary alias declaration for the <a class="el" href="../../de/d20/structblaze_1_1IsEven.html" title="Compile time check whether a compile time constant expression is even.This value trait tests whether ...">IsEven</a> value trait.The IsEven_ alias declaration provides a convenient shortcut to access the nested <em>value</em> of the <a class="el" href="../../de/d20/structblaze_1_1IsEven.html" title="Compile time check whether a compile time constant expression is even.This value trait tests whether ...">IsEven</a> class template. For instance, given the compile time constant value <em>N</em> the following two statements are identical: </p>
-<div class="fragment"><div class="line">constexpr <span class="keywordtype">bool</span> value1 = IsEven&lt;N&gt;::value;</div><div class="line">constexpr <span class="keywordtype">bool</span> value2 = IsEven_&lt;N&gt;;</div></div><!-- fragment --> 
-</div>
-</div>
-<a id="gaef8de850b4ff13f828bddda0dbeaf4ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaef8de850b4ff13f828bddda0dbeaf4ae">&sect;&nbsp;</a></span>IsMultipleOf_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t M, size_t N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr bool blaze::IsMultipleOf_ = <a class="el" href="../../d7/de2/structblaze_1_1IsMultipleOf.html">IsMultipleOf</a>&lt;M,N&gt;::value</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Auxiliary alias declaration for the <a class="el" href="../../d7/de2/structblaze_1_1IsMultipleOf.html" title="Compile time check for a multiplicative relationship of two integral values.This value trait tests wh...">IsMultipleOf</a> value trait.The IsMultipleOf_ alias declaration provides a convenient shortcut to access the nested <em>value</em> of the <a class="el" href="../../d7/de2/structblaze_1_1IsMultipleOf.html" title="Compile time check for a multiplicative relationship of two integral values.This value trait tests wh...">IsMultipleOf</a> class template. For instance, given the compile time constant values <em>M</em> and <em>N</em> the following two statements are identical: </p>
-<div class="fragment"><div class="line">constexpr <span class="keywordtype">bool</span> value1 = IsMultipleOf&lt;M,N&gt;::value;</div><div class="line">constexpr <span class="keywordtype">bool</span> value2 = IsMultipleOf_&lt;M,N&gt;;</div></div><!-- fragment --> 
-</div>
-</div>
-<a id="gad3684fb9a418b656cba5552acd851af6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad3684fb9a418b656cba5552acd851af6">&sect;&nbsp;</a></span>IsOdd_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr bool blaze::IsOdd_ = <a class="el" href="../../d0/d04/structblaze_1_1IsOdd.html">IsOdd</a>&lt;N&gt;::value</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Auxiliary alias declaration for the <a class="el" href="../../d0/d04/structblaze_1_1IsOdd.html" title="Compile time check whether a compile time constant expression is odd.This value trait tests whether t...">IsOdd</a> value trait.The IsOdd_ alias declaration provides a convenient shortcut to access the nested <em>value</em> of the <a class="el" href="../../d0/d04/structblaze_1_1IsOdd.html" title="Compile time check whether a compile time constant expression is odd.This value trait tests whether t...">IsOdd</a> class template. For instance, given the compile time constant value <em>N</em> the following two statements are identical: </p>
-<div class="fragment"><div class="line">constexpr <span class="keywordtype">bool</span> value1 = IsOdd&lt;N&gt;::value;</div><div class="line">constexpr <span class="keywordtype">bool</span> value2 = IsOdd_&lt;N&gt;;</div></div><!-- fragment --> 
-</div>
-</div>
-<a id="ga9aa704aa4046643f9cea24dfb6bb5620"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9aa704aa4046643f9cea24dfb6bb5620">&sect;&nbsp;</a></span>IsPowerOf_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t B, size_t N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr bool blaze::IsPowerOf_ = <a class="el" href="../../d5/d6c/structblaze_1_1IsPowerOf.html">IsPowerOf</a>&lt;B,N&gt;::value</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Auxiliary alias declaration for the <a class="el" href="../../d5/d6c/structblaze_1_1IsPowerOf.html" title="Compile time check for a power relationship of integral values to a given base.This value trait tests...">IsPowerOf</a> value trait.The IsPowerOf_ alias declaration provides a convenient shortcut to access the nested <em>value</em> of the <a class="el" href="../../d5/d6c/structblaze_1_1IsPowerOf.html" title="Compile time check for a power relationship of integral values to a given base.This value trait tests...">IsPowerOf</a> class template. For instance, given the compile time constant values <em>B</em> and <em>N</em> the following two statements are identical: </p>
-<div class="fragment"><div class="line">constexpr <span class="keywordtype">bool</span> value1 = IsPowerOf&lt;B,N&gt;::value;</div><div class="line">constexpr <span class="keywordtype">bool</span> value2 = IsPowerOf_&lt;B,N&gt;;</div></div><!-- fragment --> 
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 8 2016 16:45:04 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 31 2016 17:17:02 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

@@ -68,7 +68,7 @@ $(function() {
 <div class="contents">
 
 <p><a class="el" href="../../de/dd5/structblaze_1_1Computation.html" title="Base class for all compute expression templates.The Computation class serves as a tag for all computa...">Computation</a> accuracy for floating point data types.The <a class="el" href="../../d6/d75/classblaze_1_1Accuracy.html" title="Computation accuracy for floating point data types.The Accuracy class is a wrapper class around the f...">Accuracy</a> class is a wrapper class around the functionality of the <a class="el" href="../../d9/dea/structblaze_1_1Limits.html" title="Numerical limits of built-in data types.The Limits class provides numerical limits for the following ...">blaze::Limits</a> class. It represents the computation accuracy of the Blaze library for any floating point data type. In order to assign an accuracy value, the <a class="el" href="../../d6/d75/classblaze_1_1Accuracy.html" title="Computation accuracy for floating point data types.The Accuracy class is a wrapper class around the f...">Accuracy</a> class can be implicitly converted to the three built-in floating point data types float, double and long double.<br />
-In order to handle accuracy values conveniently, the global <a class="el" href="../../d6/d75/classblaze_1_1Accuracy.html" title="Computation accuracy for floating point data types.The Accuracy class is a wrapper class around the f...">Accuracy</a> instance <a class="el" href="../../de/df1/group__math.html#ga625b0b7ac3b908bc3266c6d834630806" title="Global Accuracy instance.The blaze::accuracy instance can be used wherever a floating point data type...">blaze::accuracy</a> is provided, which can be used wherever a floating point data value is required.  
+In order to handle accuracy values conveniently, the global <a class="el" href="../../d6/d75/classblaze_1_1Accuracy.html" title="Computation accuracy for floating point data types.The Accuracy class is a wrapper class around the f...">Accuracy</a> instance <a class="el" href="../../de/df1/group__math.html#gae5273b2715d3354c16d049d1313f7e72" title="Global Accuracy instance.The blaze::accuracy instance can be used wherever a floating point data type...">blaze::accuracy</a> is provided, which can be used wherever a floating point data value is required.  
  <a href="../../d6/d75/classblaze_1_1Accuracy.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d7/da4/Accuracy_8h_source.html">Accuracy.h</a>&gt;</code></p>
@@ -83,22 +83,22 @@ typedef <a class="el" href="../../da/d32/classblaze_1_1NegativeAccuracy.html">Ne
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructor</div></td></tr>
-<tr class="memitem:ad57fdc0ebc8bca41a592b7154d3765f6"><td class="memItemLeft" align="right" valign="top"><a id="ad57fdc0ebc8bca41a592b7154d3765f6"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d75/classblaze_1_1Accuracy.html#ad57fdc0ebc8bca41a592b7154d3765f6">Accuracy</a> ()</td></tr>
-<tr class="memdesc:ad57fdc0ebc8bca41a592b7154d3765f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default constructor of the <a class="el" href="../../d6/d75/classblaze_1_1Accuracy.html" title="Computation accuracy for floating point data types.The Accuracy class is a wrapper class around the f...">Accuracy</a> class. <br /></td></tr>
-<tr class="separator:ad57fdc0ebc8bca41a592b7154d3765f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab07b7db75de51dbef81a17f5c12215f9"><td class="memItemLeft" align="right" valign="top"><a id="ab07b7db75de51dbef81a17f5c12215f9"></a>
+constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d75/classblaze_1_1Accuracy.html#ab07b7db75de51dbef81a17f5c12215f9">Accuracy</a> ()</td></tr>
+<tr class="memdesc:ab07b7db75de51dbef81a17f5c12215f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default constructor of the <a class="el" href="../../d6/d75/classblaze_1_1Accuracy.html" title="Computation accuracy for floating point data types.The Accuracy class is a wrapper class around the f...">Accuracy</a> class. <br /></td></tr>
+<tr class="separator:ab07b7db75de51dbef81a17f5c12215f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Unary plus/minus operators</div></td></tr>
-<tr class="memitem:acb93a5456d127c312e828258ff9c4be1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d6/d75/classblaze_1_1Accuracy.html">Accuracy</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d75/classblaze_1_1Accuracy.html#acb93a5456d127c312e828258ff9c4be1">operator+</a> () const</td></tr>
-<tr class="memdesc:acb93a5456d127c312e828258ff9c4be1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the positive computation accuracy for all floating point data types.  <a href="#acb93a5456d127c312e828258ff9c4be1">More...</a><br /></td></tr>
-<tr class="separator:acb93a5456d127c312e828258ff9c4be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6055c8418ac23bb99aa0f40dbbbf180"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d6/d75/classblaze_1_1Accuracy.html#a58c4e9cd337397d2832e0d6ff542b3d6">NegativeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d75/classblaze_1_1Accuracy.html#ab6055c8418ac23bb99aa0f40dbbbf180">operator-</a> () const</td></tr>
-<tr class="memdesc:ab6055c8418ac23bb99aa0f40dbbbf180"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the negative computation accuracy for all floating point data types.  <a href="#ab6055c8418ac23bb99aa0f40dbbbf180">More...</a><br /></td></tr>
-<tr class="separator:ab6055c8418ac23bb99aa0f40dbbbf180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb28c758631a54059957ea080dc6ad9f"><td class="memItemLeft" align="right" valign="top">constexpr const <a class="el" href="../../d6/d75/classblaze_1_1Accuracy.html">Accuracy</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d75/classblaze_1_1Accuracy.html#acb28c758631a54059957ea080dc6ad9f">operator+</a> () const</td></tr>
+<tr class="memdesc:acb28c758631a54059957ea080dc6ad9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the positive computation accuracy for all floating point data types.  <a href="#acb28c758631a54059957ea080dc6ad9f">More...</a><br /></td></tr>
+<tr class="separator:acb28c758631a54059957ea080dc6ad9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e277adacdc7531cad1bb62727edc9d0"><td class="memItemLeft" align="right" valign="top">constexpr const <a class="el" href="../../d6/d75/classblaze_1_1Accuracy.html#a58c4e9cd337397d2832e0d6ff542b3d6">NegativeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d75/classblaze_1_1Accuracy.html#a5e277adacdc7531cad1bb62727edc9d0">operator-</a> () const</td></tr>
+<tr class="memdesc:a5e277adacdc7531cad1bb62727edc9d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the negative computation accuracy for all floating point data types.  <a href="#a5e277adacdc7531cad1bb62727edc9d0">More...</a><br /></td></tr>
+<tr class="separator:a5e277adacdc7531cad1bb62727edc9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Conversion operator</div></td></tr>
-<tr class="memitem:af37e44ef10e1d2a588ac0c4112679a83"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:af37e44ef10e1d2a588ac0c4112679a83"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d6/d75/classblaze_1_1Accuracy.html#af37e44ef10e1d2a588ac0c4112679a83">operator const T</a> () const</td></tr>
-<tr class="memdesc:af37e44ef10e1d2a588ac0c4112679a83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conversion operator to the required floating point data type.  <a href="#af37e44ef10e1d2a588ac0c4112679a83">More...</a><br /></td></tr>
-<tr class="separator:af37e44ef10e1d2a588ac0c4112679a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88bcb2ad57aa818818f61c2d389df1ed"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a88bcb2ad57aa818818f61c2d389df1ed"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d6/d75/classblaze_1_1Accuracy.html#a88bcb2ad57aa818818f61c2d389df1ed">operator const T</a> () const</td></tr>
+<tr class="memdesc:a88bcb2ad57aa818818f61c2d389df1ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conversion operator to the required floating point data type.  <a href="#a88bcb2ad57aa818818f61c2d389df1ed">More...</a><br /></td></tr>
+<tr class="separator:a88bcb2ad57aa818818f61c2d389df1ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -115,10 +115,10 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="..
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="../../de/dd5/structblaze_1_1Computation.html" title="Base class for all compute expression templates.The Computation class serves as a tag for all computa...">Computation</a> accuracy for floating point data types.</p>
 <p>The <a class="el" href="../../d6/d75/classblaze_1_1Accuracy.html" title="Computation accuracy for floating point data types.The Accuracy class is a wrapper class around the f...">Accuracy</a> class is a wrapper class around the functionality of the <a class="el" href="../../d9/dea/structblaze_1_1Limits.html" title="Numerical limits of built-in data types.The Limits class provides numerical limits for the following ...">blaze::Limits</a> class. It represents the computation accuracy of the Blaze library for any floating point data type. In order to assign an accuracy value, the <a class="el" href="../../d6/d75/classblaze_1_1Accuracy.html" title="Computation accuracy for floating point data types.The Accuracy class is a wrapper class around the f...">Accuracy</a> class can be implicitly converted to the three built-in floating point data types float, double and long double.<br />
-In order to handle accuracy values conveniently, the global <a class="el" href="../../d6/d75/classblaze_1_1Accuracy.html" title="Computation accuracy for floating point data types.The Accuracy class is a wrapper class around the f...">Accuracy</a> instance <a class="el" href="../../de/df1/group__math.html#ga625b0b7ac3b908bc3266c6d834630806" title="Global Accuracy instance.The blaze::accuracy instance can be used wherever a floating point data type...">blaze::accuracy</a> is provided, which can be used wherever a floating point data value is required. </p>
-<div class="fragment"><div class="line"><span class="keywordtype">float</span> f  =  <a class="code" href="../../de/df1/group__math.html#ga625b0b7ac3b908bc3266c6d834630806">accuracy</a>;  <span class="comment">// Assigns the positive computation accuracy for single precision values</span></div><div class="line"><span class="keywordtype">double</span> d = -<a class="code" href="../../de/df1/group__math.html#ga625b0b7ac3b908bc3266c6d834630806">accuracy</a>;  <span class="comment">// Assigns the negative computation accuracy for double precision values</span></div></div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="af37e44ef10e1d2a588ac0c4112679a83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af37e44ef10e1d2a588ac0c4112679a83">&sect;&nbsp;</a></span>operator const T()</h2>
+In order to handle accuracy values conveniently, the global <a class="el" href="../../d6/d75/classblaze_1_1Accuracy.html" title="Computation accuracy for floating point data types.The Accuracy class is a wrapper class around the f...">Accuracy</a> instance <a class="el" href="../../de/df1/group__math.html#gae5273b2715d3354c16d049d1313f7e72" title="Global Accuracy instance.The blaze::accuracy instance can be used wherever a floating point data type...">blaze::accuracy</a> is provided, which can be used wherever a floating point data value is required. </p>
+<div class="fragment"><div class="line"><span class="keywordtype">float</span> f  =  <a class="code" href="../../de/df1/group__math.html#gae5273b2715d3354c16d049d1313f7e72">accuracy</a>;  <span class="comment">// Assigns the positive computation accuracy for single precision values</span></div><div class="line"><span class="keywordtype">double</span> d = -<a class="code" href="../../de/df1/group__math.html#gae5273b2715d3354c16d049d1313f7e72">accuracy</a>;  <span class="comment">// Assigns the negative computation accuracy for double precision values</span></div></div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a88bcb2ad57aa818818f61c2d389df1ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88bcb2ad57aa818818f61c2d389df1ed">&sect;&nbsp;</a></span>operator const T()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -129,7 +129,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">blaze::Accuracy::operator const T </td>
+          <td class="memname">constexpr blaze::Accuracy::operator const T </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -147,8 +147,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="acb93a5456d127c312e828258ff9c4be1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb93a5456d127c312e828258ff9c4be1">&sect;&nbsp;</a></span>operator+()</h2>
+<a id="acb28c758631a54059957ea080dc6ad9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb28c758631a54059957ea080dc6ad9f">&sect;&nbsp;</a></span>operator+()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -157,7 +157,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../d6/d75/classblaze_1_1Accuracy.html">Accuracy</a> &amp; blaze::Accuracy::operator+ </td>
+          <td class="memname">constexpr const <a class="el" href="../../d6/d75/classblaze_1_1Accuracy.html">Accuracy</a> &amp; blaze::Accuracy::operator+ </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -175,8 +175,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ab6055c8418ac23bb99aa0f40dbbbf180"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6055c8418ac23bb99aa0f40dbbbf180">&sect;&nbsp;</a></span>operator-()</h2>
+<a id="a5e277adacdc7531cad1bb62727edc9d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e277adacdc7531cad1bb62727edc9d0">&sect;&nbsp;</a></span>operator-()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -185,7 +185,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../d6/d75/classblaze_1_1Accuracy.html#a58c4e9cd337397d2832e0d6ff542b3d6">Accuracy::NegativeType</a> blaze::Accuracy::operator- </td>
+          <td class="memname">constexpr const <a class="el" href="../../d6/d75/classblaze_1_1Accuracy.html#a58c4e9cd337397d2832e0d6ff542b3d6">Accuracy::NegativeType</a> blaze::Accuracy::operator- </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -209,7 +209,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 8 2016 16:45:04 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 31 2016 17:17:02 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

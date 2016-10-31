@@ -82,11 +82,11 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga489da7d86e4874a5ab0db89399cdb933"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga489da7d86e4874a5ab0db89399cdb933">BLAZE_CONSTRAINT_MUST_BE_CONST</a>(T)&#160;&#160;&#160;static_assert( ::<a class="el" href="../../de/d5a/group__type__traits.html#ga8c42796736a94421954fe5197a4bb2c9">blaze::IsConst_</a>&lt;T&gt;, &quot;Non-const-qualified type detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga489da7d86e4874a5ab0db89399cdb933">BLAZE_CONSTRAINT_MUST_BE_CONST</a>(T)&#160;&#160;&#160;static_assert( ::<a class="el" href="../../d4/d5f/structblaze_1_1IsConst.html">blaze::IsConst</a>&lt;T&gt;::value, &quot;Non-const-qualified type detected&quot; )</td></tr>
 <tr class="memdesc:ga489da7d86e4874a5ab0db89399cdb933"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the data type.In case the given data type is not a const-qualified type, a compilation error is created. <br /></td></tr>
 <tr class="separator:ga489da7d86e4874a5ab0db89399cdb933"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8c7b514dc0f7f995cd7bcbe58acd1835"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga8c7b514dc0f7f995cd7bcbe58acd1835">BLAZE_CONSTRAINT_MUST_NOT_BE_CONST</a>(T)&#160;&#160;&#160;static_assert( !::<a class="el" href="../../de/d5a/group__type__traits.html#ga8c42796736a94421954fe5197a4bb2c9">blaze::IsConst_</a>&lt;T&gt;, &quot;Const-qualified type detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga8c7b514dc0f7f995cd7bcbe58acd1835">BLAZE_CONSTRAINT_MUST_NOT_BE_CONST</a>(T)&#160;&#160;&#160;static_assert( !::<a class="el" href="../../d4/d5f/structblaze_1_1IsConst.html">blaze::IsConst</a>&lt;T&gt;::value, &quot;Const-qualified type detected&quot; )</td></tr>
 <tr class="memdesc:ga8c7b514dc0f7f995cd7bcbe58acd1835"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the data type.In case the given data type is a const-qualified type, a compilation error is created. <br /></td></tr>
 <tr class="separator:ga8c7b514dc0f7f995cd7bcbe58acd1835"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -103,7 +103,7 @@ Macros</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 8 2016 16:45:02 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 31 2016 17:17:00 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

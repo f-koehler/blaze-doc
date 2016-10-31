@@ -82,11 +82,11 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:gafe0d6a976bf66325ab09f9e8d8a080b9"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#gafe0d6a976bf66325ab09f9e8d8a080b9">BLAZE_CONSTRAINT_MUST_BE_NUMERIC_TYPE</a>(T)&#160;&#160;&#160;static_assert( ::<a class="el" href="../../de/d5a/group__type__traits.html#ga3a6bc2539c4ecefeb8736bc95c7b0036">blaze::IsNumeric_</a>&lt;T&gt;, &quot;Non-numeric type detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#gafe0d6a976bf66325ab09f9e8d8a080b9">BLAZE_CONSTRAINT_MUST_BE_NUMERIC_TYPE</a>(T)&#160;&#160;&#160;static_assert( ::<a class="el" href="../../d8/dea/structblaze_1_1IsNumeric.html">blaze::IsNumeric</a>&lt;T&gt;::value, &quot;Non-numeric type detected&quot; )</td></tr>
 <tr class="memdesc:gafe0d6a976bf66325ab09f9e8d8a080b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the data type.In case the given data type <em>T</em> is not a numeric (integral or floating point) data type, a compilation error is created. <br /></td></tr>
 <tr class="separator:gafe0d6a976bf66325ab09f9e8d8a080b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga20585e923bae93b20de9c64525d7d0c7"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga20585e923bae93b20de9c64525d7d0c7">BLAZE_CONSTRAINT_MUST_NOT_BE_NUMERIC_TYPE</a>(T)&#160;&#160;&#160;static_assert( !::<a class="el" href="../../de/d5a/group__type__traits.html#ga3a6bc2539c4ecefeb8736bc95c7b0036">blaze::IsNumeric_</a>&lt;T&gt;, &quot;Numeric type detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga20585e923bae93b20de9c64525d7d0c7">BLAZE_CONSTRAINT_MUST_NOT_BE_NUMERIC_TYPE</a>(T)&#160;&#160;&#160;static_assert( !::<a class="el" href="../../d8/dea/structblaze_1_1IsNumeric.html">blaze::IsNumeric</a>&lt;T&gt;::value, &quot;Numeric type detected&quot; )</td></tr>
 <tr class="memdesc:ga20585e923bae93b20de9c64525d7d0c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the data type.In case the given data type <em>T</em> is a numeric (integral or floating point) data type, a compilation error is created. <br /></td></tr>
 <tr class="separator:ga20585e923bae93b20de9c64525d7d0c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -103,7 +103,7 @@ Macros</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 8 2016 16:45:02 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 31 2016 17:17:00 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

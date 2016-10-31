@@ -90,6 +90,7 @@ $(function() {
 <code>#include &lt;<a class="el" href="../../d9/d09/shims_2Serial_8h_source.html">blaze/math/shims/Serial.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d6/dec/SIMD_8h_source.html">blaze/math/SIMD.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../da/deb/ColumnExprTrait_8h_source.html">blaze/math/traits/ColumnExprTrait.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d5/d6e/DMatDeclSymExprTrait_8h_source.html">blaze/math/traits/DMatDeclSymExprTrait.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../dd/d4b/DMatDVecMultExprTrait_8h_source.html">blaze/math/traits/DMatDVecMultExprTrait.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d0/dc0/DMatSVecMultExprTrait_8h_source.html">blaze/math/traits/DMatSVecMultExprTrait.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d6/d2a/MultExprTrait_8h_source.html">blaze/math/traits/MultExprTrait.h</a>&gt;</code><br />
@@ -118,7 +119,7 @@ $(function() {
 <code>#include &lt;<a class="el" href="../../db/d8b/IsLower_8h_source.html">blaze/math/typetraits/IsLower.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../df/d44/IsRowMajorMatrix_8h_source.html">blaze/math/typetraits/IsRowMajorMatrix.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../de/dba/IsRowVector_8h_source.html">blaze/math/typetraits/IsRowVector.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../dd/d66/AreSIMDCombinable_8h_source.html">blaze/math/typetraits/AreSIMDCombinable.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d8/d5d/IsSIMDCombinable_8h_source.html">blaze/math/typetraits/IsSIMDCombinable.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../da/d16/IsSparseVector_8h_source.html">blaze/math/typetraits/IsSparseVector.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d7/dad/IsStrictlyLower_8h_source.html">blaze/math/typetraits/IsStrictlyLower.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d3/db4/IsStrictlyUpper_8h_source.html">blaze/math/typetraits/IsStrictlyUpper.h</a>&gt;</code><br />
@@ -161,7 +162,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d8a/classblaze_1_1DMatTDMatMultExpr.html">blaze::DMatTDMatMultExpr&lt; MT1, MT2 &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d8a/classblaze_1_1DMatTDMatMultExpr.html">blaze::DMatTDMatMultExpr&lt; MT1, MT2, SF &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d5/d2e/structblaze_1_1Expression.html" title="Base class for all expression templates.The Expression class is the base class for all expression tem...">Expression</a> object for dense matrix-transpose dense matrix multiplications.The <a class="el" href="../../d3/d8a/classblaze_1_1DMatTDMatMultExpr.html" title="Expression object for dense matrix-transpose dense matrix multiplications.The DMatTDMatMultExpr class...">DMatTDMatMultExpr</a> class represents the compile time expression for multiplications between a row-major dense matrix and a column-major dense matrix.  <a href="../../d3/d8a/classblaze_1_1DMatTDMatMultExpr.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -173,10 +174,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga5707ef23374bab4bee818b45edff483f"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
-<tr class="memitem:ga5707ef23374bab4bee818b45edff483f"><td class="memTemplItemLeft" align="right" valign="top">const DMatTDMatMultExpr&lt; T1, T2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga5707ef23374bab4bee818b45edff483f">blaze::operator*</a> (const DenseMatrix&lt; T1, false &gt; &amp;lhs, const DenseMatrix&lt; T2, true &gt; &amp;rhs)</td></tr>
-<tr class="memdesc:ga5707ef23374bab4bee818b45edff483f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of a row-major dense matrix and a column-major dense matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga5707ef23374bab4bee818b45edff483f">More...</a><br /></td></tr>
-<tr class="separator:ga5707ef23374bab4bee818b45edff483f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac922baf11df28e57dfbda3d8c460c260"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
+<tr class="memitem:gac922baf11df28e57dfbda3d8c460c260"><td class="memTemplItemLeft" align="right" valign="top">const DMatTDMatMultExpr&lt; T1, T2, false &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#gac922baf11df28e57dfbda3d8c460c260">blaze::operator*</a> (const DenseMatrix&lt; T1, false &gt; &amp;lhs, const DenseMatrix&lt; T2, true &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:gac922baf11df28e57dfbda3d8c460c260"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of a row-major dense matrix and a column-major dense matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#gac922baf11df28e57dfbda3d8c460c260">More...</a><br /></td></tr>
+<tr class="separator:gac922baf11df28e57dfbda3d8c460c260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a6e35ebc76e5aada8695044f4e69256"><td class="memTemplParams" colspan="2">template&lt;typename MT1 , typename MT2 &gt; </td></tr>
+<tr class="memitem:ga2a6e35ebc76e5aada8695044f4e69256"><td class="memTemplItemLeft" align="right" valign="top">const DMatTDMatMultExpr&lt; MT1, MT2, true &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga2a6e35ebc76e5aada8695044f4e69256">blaze::declsym</a> (const DMatTDMatMultExpr&lt; MT1, MT2, false &gt; &amp;dm)</td></tr>
+<tr class="memdesc:ga2a6e35ebc76e5aada8695044f4e69256"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declares the given non-symmetric dense matrix multiplication expression as symmetric.  <a href="../../db/df0/group__dense__matrix.html#ga2a6e35ebc76e5aada8695044f4e69256">More...</a><br /></td></tr>
+<tr class="separator:ga2a6e35ebc76e5aada8695044f4e69256"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Header file for the dense matrix/transpose dense matrix multiplication expression. </p>
@@ -191,7 +196,7 @@ Functions</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 8 2016 16:45:01 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 31 2016 17:16:59 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

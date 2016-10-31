@@ -91,6 +91,7 @@ $(function() {
 <code>#include &lt;<a class="el" href="../../dc/d2f/HasMutableDataAccess_8h_source.html">blaze/math/typetraits/HasMutableDataAccess.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d6/d11/IsAligned_8h_source.html">blaze/math/typetraits/IsAligned.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../de/d31/IsComputation_8h_source.html">blaze/math/typetraits/IsComputation.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../da/d02/IsDeclExpr_8h_source.html">blaze/math/typetraits/IsDeclExpr.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../db/d8b/IsLower_8h_source.html">blaze/math/typetraits/IsLower.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../db/da3/IsMatEvalExpr_8h_source.html">blaze/math/typetraits/IsMatEvalExpr.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d3/de6/IsMatForEachExpr_8h_source.html">blaze/math/typetraits/IsMatForEachExpr.h</a>&gt;</code><br />
@@ -144,18 +145,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ga08594c04a9114bb83b19b57df3266532"><td class="memTemplItemLeft" align="right" valign="top">SubmatrixExprTrait_&lt; MT, unaligned &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d48/group__views.html#ga08594c04a9114bb83b19b57df3266532">blaze::submatrix</a> (Matrix&lt; MT, SO &gt; &amp;&amp;matrix, size_t row, size_t column, size_t m, size_t n)</td></tr>
 <tr class="memdesc:ga08594c04a9114bb83b19b57df3266532"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creating a view on a specific submatrix of the given temporary matrix.  <a href="../../d0/d48/group__views.html#ga08594c04a9114bb83b19b57df3266532">More...</a><br /></td></tr>
 <tr class="separator:ga08594c04a9114bb83b19b57df3266532"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf41dc2f581597a34c07026fe5790f95e"><td class="memTemplParams" colspan="2">template&lt;bool AF, typename MT , bool SO&gt; </td></tr>
-<tr class="memitem:gaf41dc2f581597a34c07026fe5790f95e"><td class="memTemplItemLeft" align="right" valign="top">DisableIf_&lt; Or&lt; IsComputation&lt; MT &gt;, IsTransExpr&lt; MT &gt; &gt;, SubmatrixExprTrait_&lt; MT, AF &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d48/group__views.html#gaf41dc2f581597a34c07026fe5790f95e">blaze::submatrix</a> (Matrix&lt; MT, SO &gt; &amp;matrix, size_t row, size_t column, size_t m, size_t n)</td></tr>
-<tr class="memdesc:gaf41dc2f581597a34c07026fe5790f95e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creating a view on a specific submatrix of the given matrix.  <a href="../../d0/d48/group__views.html#gaf41dc2f581597a34c07026fe5790f95e">More...</a><br /></td></tr>
-<tr class="separator:gaf41dc2f581597a34c07026fe5790f95e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga90717c39631c59f5600bb7038817a118"><td class="memTemplParams" colspan="2">template&lt;bool AF, typename MT , bool SO&gt; </td></tr>
-<tr class="memitem:ga90717c39631c59f5600bb7038817a118"><td class="memTemplItemLeft" align="right" valign="top">const DisableIf_&lt; Or&lt; IsComputation&lt; MT &gt;, IsTransExpr&lt; MT &gt; &gt;, SubmatrixExprTrait_&lt; const MT, AF &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d48/group__views.html#ga90717c39631c59f5600bb7038817a118">blaze::submatrix</a> (const Matrix&lt; MT, SO &gt; &amp;matrix, size_t row, size_t column, size_t m, size_t n)</td></tr>
-<tr class="memdesc:ga90717c39631c59f5600bb7038817a118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creating a view on a specific submatrix of the given constant matrix.  <a href="../../d0/d48/group__views.html#ga90717c39631c59f5600bb7038817a118">More...</a><br /></td></tr>
-<tr class="separator:ga90717c39631c59f5600bb7038817a118"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9291ace21ff9fd9fac6270338a9540df"><td class="memTemplParams" colspan="2">template&lt;bool AF, typename MT , bool SO&gt; </td></tr>
-<tr class="memitem:ga9291ace21ff9fd9fac6270338a9540df"><td class="memTemplItemLeft" align="right" valign="top">DisableIf_&lt; Or&lt; IsComputation&lt; MT &gt;, IsTransExpr&lt; MT &gt; &gt;, SubmatrixExprTrait_&lt; MT, AF &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d48/group__views.html#ga9291ace21ff9fd9fac6270338a9540df">blaze::submatrix</a> (Matrix&lt; MT, SO &gt; &amp;&amp;matrix, size_t row, size_t column, size_t m, size_t n)</td></tr>
-<tr class="memdesc:ga9291ace21ff9fd9fac6270338a9540df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creating a view on a specific submatrix of the given temporary matrix.  <a href="../../d0/d48/group__views.html#ga9291ace21ff9fd9fac6270338a9540df">More...</a><br /></td></tr>
-<tr class="separator:ga9291ace21ff9fd9fac6270338a9540df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c78a794c2eec7d453b17e80a90ef69c"><td class="memTemplParams" colspan="2">template&lt;bool AF, typename MT , bool SO&gt; </td></tr>
+<tr class="memitem:ga8c78a794c2eec7d453b17e80a90ef69c"><td class="memTemplItemLeft" align="right" valign="top">DisableIf_&lt; Or&lt; IsComputation&lt; MT &gt;, IsTransExpr&lt; MT &gt;, IsDeclExpr&lt; MT &gt; &gt;, SubmatrixExprTrait_&lt; MT, AF &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d48/group__views.html#ga8c78a794c2eec7d453b17e80a90ef69c">blaze::submatrix</a> (Matrix&lt; MT, SO &gt; &amp;matrix, size_t row, size_t column, size_t m, size_t n)</td></tr>
+<tr class="memdesc:ga8c78a794c2eec7d453b17e80a90ef69c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creating a view on a specific submatrix of the given matrix.  <a href="../../d0/d48/group__views.html#ga8c78a794c2eec7d453b17e80a90ef69c">More...</a><br /></td></tr>
+<tr class="separator:ga8c78a794c2eec7d453b17e80a90ef69c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9fc8de5709e946188fa7f143449f8952"><td class="memTemplParams" colspan="2">template&lt;bool AF, typename MT , bool SO&gt; </td></tr>
+<tr class="memitem:ga9fc8de5709e946188fa7f143449f8952"><td class="memTemplItemLeft" align="right" valign="top">const DisableIf_&lt; Or&lt; IsComputation&lt; MT &gt;, IsTransExpr&lt; MT &gt;, IsDeclExpr&lt; MT &gt; &gt;, SubmatrixExprTrait_&lt; const MT, AF &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d48/group__views.html#ga9fc8de5709e946188fa7f143449f8952">blaze::submatrix</a> (const Matrix&lt; MT, SO &gt; &amp;matrix, size_t row, size_t column, size_t m, size_t n)</td></tr>
+<tr class="memdesc:ga9fc8de5709e946188fa7f143449f8952"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creating a view on a specific submatrix of the given constant matrix.  <a href="../../d0/d48/group__views.html#ga9fc8de5709e946188fa7f143449f8952">More...</a><br /></td></tr>
+<tr class="separator:ga9fc8de5709e946188fa7f143449f8952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa350f596abce7d6563622abad8d76d01"><td class="memTemplParams" colspan="2">template&lt;bool AF, typename MT , bool SO&gt; </td></tr>
+<tr class="memitem:gaa350f596abce7d6563622abad8d76d01"><td class="memTemplItemLeft" align="right" valign="top">DisableIf_&lt; Or&lt; IsComputation&lt; MT &gt;, IsTransExpr&lt; MT &gt;, IsDeclExpr&lt; MT &gt; &gt;, SubmatrixExprTrait_&lt; MT, AF &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d48/group__views.html#gaa350f596abce7d6563622abad8d76d01">blaze::submatrix</a> (Matrix&lt; MT, SO &gt; &amp;&amp;matrix, size_t row, size_t column, size_t m, size_t n)</td></tr>
+<tr class="memdesc:gaa350f596abce7d6563622abad8d76d01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creating a view on a specific submatrix of the given temporary matrix.  <a href="../../d0/d48/group__views.html#gaa350f596abce7d6563622abad8d76d01">More...</a><br /></td></tr>
+<tr class="separator:gaa350f596abce7d6563622abad8d76d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Submatrix operators</div></td></tr>
 <tr class="memitem:ga657a8f00d474e80a660d94b6f02b2725"><td class="memTemplParams" colspan="2">template&lt;typename MT , bool AF, bool SO, bool DF&gt; </td></tr>
 <tr class="memitem:ga657a8f00d474e80a660d94b6f02b2725"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/de6/group__submatrix.html#ga657a8f00d474e80a660d94b6f02b2725">blaze::reset</a> (Submatrix&lt; MT, AF, SO, DF &gt; &amp;sm)</td></tr>
@@ -235,7 +236,7 @@ Functions</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 8 2016 16:45:01 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 31 2016 17:16:58 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

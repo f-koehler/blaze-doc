@@ -82,11 +82,11 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga4d0684e5a94d413eb48e1b9008c36b8f"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga4d0684e5a94d413eb48e1b9008c36b8f">BLAZE_CONSTRAINT_MUST_BE_POD</a>(T)&#160;&#160;&#160;static_assert( ::<a class="el" href="../../de/d5a/group__type__traits.html#ga5712c09ca483bd05a59a0731645fd198">blaze::IsPod_</a>&lt;T&gt;, &quot;Non-POD type detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga4d0684e5a94d413eb48e1b9008c36b8f">BLAZE_CONSTRAINT_MUST_BE_POD</a>(T)&#160;&#160;&#160;static_assert( ::<a class="el" href="../../de/db0/structblaze_1_1IsPod.html">blaze::IsPod</a>&lt;T&gt;::value, &quot;Non-POD type detected&quot; )</td></tr>
 <tr class="memdesc:ga4d0684e5a94d413eb48e1b9008c36b8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the data type.In case the given data type is not a POD type, a compilation error is created. <br /></td></tr>
 <tr class="separator:ga4d0684e5a94d413eb48e1b9008c36b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8342a72469fe0cdac88fedf6d98bd53f"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga8342a72469fe0cdac88fedf6d98bd53f">BLAZE_CONSTRAINT_MUST_NOT_BE_POD</a>(T)&#160;&#160;&#160;static_assert( !::<a class="el" href="../../de/d5a/group__type__traits.html#ga5712c09ca483bd05a59a0731645fd198">blaze::IsPod_</a>&lt;T&gt;, &quot;POD type detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga8342a72469fe0cdac88fedf6d98bd53f">BLAZE_CONSTRAINT_MUST_NOT_BE_POD</a>(T)&#160;&#160;&#160;static_assert( !::<a class="el" href="../../de/db0/structblaze_1_1IsPod.html">blaze::IsPod</a>&lt;T&gt;::value, &quot;POD type detected&quot; )</td></tr>
 <tr class="memdesc:ga8342a72469fe0cdac88fedf6d98bd53f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the data type.In case the given data type is a POD type, a compilation error is created. <br /></td></tr>
 <tr class="separator:ga8342a72469fe0cdac88fedf6d98bd53f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -103,7 +103,7 @@ Macros</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 8 2016 16:45:02 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 31 2016 17:17:00 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

@@ -19,5 +19,6 @@ var searchData=
   ['gettime',['getTime',['../d4/d3a/group__util.html#ga3829412570c98a06a4bc95c550da95d8',1,'blaze']]],
   ['gettimestamp',['getTimestamp',['../d2/d41/structblaze_1_1timing_1_1CpuPolicy.html#ac213a051dd6e0b44fddd958c51699e4a',1,'blaze::timing::CpuPolicy::getTimestamp()'],['../d7/d9d/structblaze_1_1timing_1_1WcPolicy.html#a0453be1c0d0d2f65c128644b9eec43c7',1,'blaze::timing::WcPolicy::getTimestamp()']]],
   ['getwctime',['getWcTime',['../d4/d3a/group__util.html#ga2d046bc597081ad84f727946f245a800',1,'blaze']]],
-  ['good',['good',['../dd/d14/classblaze_1_1Archive.html#a29180a8cae0513e6fad5635344441b3a',1,'blaze::Archive']]]
+  ['good',['good',['../dd/d14/classblaze_1_1Archive.html#a29180a8cae0513e6fad5635344441b3a',1,'blaze::Archive']]],
+  ['greater',['greater',['../de/df1/group__math.html#ga860b2a005ccfc06780298500cf874a79',1,'blaze']]]
 ];

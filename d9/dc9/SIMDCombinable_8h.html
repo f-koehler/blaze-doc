@@ -69,7 +69,7 @@ $(function() {
 
 <p>Constraint on the data type.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;<a class="el" href="../../dd/d66/AreSIMDCombinable_8h_source.html">blaze/math/typetraits/AreSIMDCombinable.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="../../d8/d5d/IsSIMDCombinable_8h_source.html">blaze/math/typetraits/IsSIMDCombinable.h</a>&gt;</code><br />
 </div>
 <p><a href="../../d9/dc9/SIMDCombinable_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -82,11 +82,11 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:gaf11ff2b2e0902f9a4df7d81e1e773c05"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d95/group__math__constraints.html#gaf11ff2b2e0902f9a4df7d81e1e773c05">BLAZE_CONSTRAINT_MUST_BE_SIMD_COMBINABLE_TYPES</a>(T1,  T2)&#160;&#160;&#160;static_assert( ::<a class="el" href="../../d7/de6/structblaze_1_1AreSIMDCombinable.html">blaze::AreSIMDCombinable</a>&lt;T1,T2&gt;::value, &quot;Non-SIMD combinable types detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d95/group__math__constraints.html#gaf11ff2b2e0902f9a4df7d81e1e773c05">BLAZE_CONSTRAINT_MUST_BE_SIMD_COMBINABLE_TYPES</a>(T1,  T2)&#160;&#160;&#160;static_assert( ::<a class="el" href="../../df/d53/structblaze_1_1IsSIMDCombinable.html">blaze::IsSIMDCombinable</a>&lt;T1,T2&gt;::value, &quot;Non-SIMD combinable types detected&quot; )</td></tr>
 <tr class="memdesc:gaf11ff2b2e0902f9a4df7d81e1e773c05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the data type.In case the given data types <em>T1</em> and <em>T2</em> are not SIMD combinable (i.e. do not have a common SIMD interface), a compilation error is created. <br /></td></tr>
 <tr class="separator:gaf11ff2b2e0902f9a4df7d81e1e773c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf60f52ae5cf436d33d022da571f6d22e"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d95/group__math__constraints.html#gaf60f52ae5cf436d33d022da571f6d22e">BLAZE_CONSTRAINT_MUST_NOT_BE_SIMD_COMBINABLE_TYPES</a>(T1,  T2)&#160;&#160;&#160;static_assert( !::<a class="el" href="../../d7/de6/structblaze_1_1AreSIMDCombinable.html">blaze::AreSIMDCombinable</a>&lt;T1,T2&gt;::value, &quot;SIMD combinable types detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d95/group__math__constraints.html#gaf60f52ae5cf436d33d022da571f6d22e">BLAZE_CONSTRAINT_MUST_NOT_BE_SIMD_COMBINABLE_TYPES</a>(T1,  T2)&#160;&#160;&#160;static_assert( !::<a class="el" href="../../df/d53/structblaze_1_1IsSIMDCombinable.html">blaze::IsSIMDCombinable</a>&lt;T1,T2&gt;::value, &quot;SIMD combinable types detected&quot; )</td></tr>
 <tr class="memdesc:gaf60f52ae5cf436d33d022da571f6d22e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the data type.In case the given data types <em>T1</em> and <em>T2</em> are SIMD combinable (i.e. do not have a common SIMD interface), a compilation error is created. <br /></td></tr>
 <tr class="separator:gaf60f52ae5cf436d33d022da571f6d22e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -103,7 +103,7 @@ Macros</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 8 2016 16:45:01 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 31 2016 17:16:58 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

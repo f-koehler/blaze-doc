@@ -85,7 +85,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:af5e78f9abaea2a6d70bab55195f215f5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>simdEnabled</b> = IsVectorizable_&lt;Type&gt;
+<tr class="memitem:af5e78f9abaea2a6d70bab55195f215f5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>simdEnabled</b> = IsVectorizable&lt;Type&gt;::value
  }<tr class="memdesc:af5e78f9abaea2a6d70bab55195f215f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation flag for SIMD optimization.  <a href="../../da/d6b/classblaze_1_1HybridVector.html#af5e78f9abaea2a6d70bab55195f215f5">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:af5e78f9abaea2a6d70bab55195f215f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -502,7 +502,7 @@ Private Types</h2></td></tr>
  }<tr class="memdesc:a192bcb088273a46789ea1690eca0490d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of elements packed within a single SIMD element. <br /></td></tr>
 </td></tr>
 <tr class="separator:a192bcb088273a46789ea1690eca0490d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab60e623bff7c444a6a911520de0e352d"><td class="memItemLeft" align="right" valign="top"><a id="ab60e623bff7c444a6a911520de0e352d"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: size_t { <b>NN</b> = ( usePadding )?( NextMultiple&lt; SizeT&lt;N&gt;, SizeT&lt;SIMDSIZE&gt; &gt;::value ):( N )
+<tr class="memitem:ab60e623bff7c444a6a911520de0e352d"><td class="memItemLeft" align="right" valign="top"><a id="ab60e623bff7c444a6a911520de0e352d"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: size_t { <b>NN</b> = ( usePadding )?( nextMultiple( N, SIMDSIZE ) ):( N )
  }<tr class="memdesc:ab60e623bff7c444a6a911520de0e352d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alignment adjustment. <br /></td></tr>
 </td></tr>
 <tr class="separator:ab60e623bff7c444a6a911520de0e352d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3611,7 +3611,7 @@ template&lt;typename Type, size_t N, bool TF = defaultTransposeFlag&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 8 2016 16:45:06 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 31 2016 17:17:05 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

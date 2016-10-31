@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['waitfortask_5f',['waitForTask_',['../db/d38/classblaze_1_1ThreadPool.html#adf8eda15c6f40531ae60b43ed8e346e5',1,'blaze::ThreadPool']]],
-  ['waitforthread_5f',['waitForThread_',['../db/d38/classblaze_1_1ThreadPool.html#a3421ba3c7930fdc19fb1c5cff7e5d6e5',1,'blaze::ThreadPool']]]
+  ['zero_5f',['zero_',['../da/d7a/classblaze_1_1CompressedMatrix.html#a19dbfbdf7b5501f74574fedaca6de59f',1,'blaze::CompressedMatrix::zero_()'],['../d5/d35/classblaze_1_1CompressedVector.html#a4deeed4a79fa9409c546c1aa901c51cf',1,'blaze::CompressedVector::zero_()'],['../d2/de9/namespaceblaze.html#a03f679c038f75611332258e305f45e24',1,'blaze::zero_()']]]
 ];

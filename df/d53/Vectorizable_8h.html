@@ -82,11 +82,11 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga749a1170fc48df57a1fdece82a9519c5"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga749a1170fc48df57a1fdece82a9519c5">BLAZE_CONSTRAINT_MUST_BE_VECTORIZABLE_TYPE</a>(T)&#160;&#160;&#160;static_assert( <a class="el" href="../../de/d5a/group__type__traits.html#ga0940cc79f2d7d56b66527e556159b133">blaze::IsVectorizable_</a>&lt;T&gt;, &quot;Non-vectorizable type detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga749a1170fc48df57a1fdece82a9519c5">BLAZE_CONSTRAINT_MUST_BE_VECTORIZABLE_TYPE</a>(T)&#160;&#160;&#160;static_assert( <a class="el" href="../../da/d0e/structblaze_1_1IsVectorizable.html">blaze::IsVectorizable</a>&lt;T&gt;::value, &quot;Non-vectorizable type detected&quot; )</td></tr>
 <tr class="memdesc:ga749a1170fc48df57a1fdece82a9519c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the data type.In case the given data type <em>T</em> is not a vectorizable data type, a compilation error is created. <br /></td></tr>
 <tr class="separator:ga749a1170fc48df57a1fdece82a9519c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6358a5a3cf9b53f2098784b151f5eac2"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga6358a5a3cf9b53f2098784b151f5eac2">BLAZE_CONSTRAINT_MUST_NOT_BE_VECTORIZABLE_TYPE</a>(T)&#160;&#160;&#160;static_assert( !<a class="el" href="../../de/d5a/group__type__traits.html#ga0940cc79f2d7d56b66527e556159b133">blaze::IsVectorizable_</a>&lt;T&gt;, &quot;Vectorizable type detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga6358a5a3cf9b53f2098784b151f5eac2">BLAZE_CONSTRAINT_MUST_NOT_BE_VECTORIZABLE_TYPE</a>(T)&#160;&#160;&#160;static_assert( !<a class="el" href="../../da/d0e/structblaze_1_1IsVectorizable.html">blaze::IsVectorizable</a>&lt;T&gt;::value, &quot;Vectorizable type detected&quot; )</td></tr>
 <tr class="memdesc:ga6358a5a3cf9b53f2098784b151f5eac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the data type.In case the given data type <em>T</em> is a vectorizable data type, a compilation error is created. <br /></td></tr>
 <tr class="separator:ga6358a5a3cf9b53f2098784b151f5eac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -103,7 +103,7 @@ Macros</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 8 2016 16:45:02 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 31 2016 17:17:00 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

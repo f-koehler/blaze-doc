@@ -22,7 +22,6 @@ var searchData=
   ['any',['Any',['../d9/dfd/structblaze_1_1Any.html',1,'blaze']]],
   ['append',['Append',['../d3/d8d/structblaze_1_1Append.html',1,'blaze']]],
   ['archive',['Archive',['../dd/d14/classblaze_1_1Archive.html',1,'blaze']]],
-  ['aresimdcombinable',['AreSIMDCombinable',['../d7/de6/structblaze_1_1AreSIMDCombinable.html',1,'blaze']]],
   ['arraydelete',['ArrayDelete',['../d0/d60/structblaze_1_1ArrayDelete.html',1,'blaze']]],
   ['asin',['Asin',['../d3/dde/structblaze_1_1Asin.html',1,'blaze']]],
   ['asinh',['Asinh',['../d0/d08/structblaze_1_1Asinh.html',1,'blaze']]],

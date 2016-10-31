@@ -82,11 +82,11 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga84dbf797957cb48fdb40509ae27baf9e"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga84dbf797957cb48fdb40509ae27baf9e">BLAZE_CONSTRAINT_MUST_BE_REFERENCE_TYPE</a>(T)&#160;&#160;&#160;static_assert( ::<a class="el" href="../../de/d5a/group__type__traits.html#gad19cbc0bec4bce544fdb1f3334959cb6">blaze::IsReference_</a>&lt;T&gt;, &quot;Non-reference type detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga84dbf797957cb48fdb40509ae27baf9e">BLAZE_CONSTRAINT_MUST_BE_REFERENCE_TYPE</a>(T)&#160;&#160;&#160;static_assert( ::<a class="el" href="../../d1/dad/structblaze_1_1IsReference.html">blaze::IsReference</a>&lt;T&gt;::value, &quot;Non-reference type detected&quot; )</td></tr>
 <tr class="memdesc:ga84dbf797957cb48fdb40509ae27baf9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the data type.In case the given data type <em>T</em> is not a reference type, a compilation error is created. <br /></td></tr>
 <tr class="separator:ga84dbf797957cb48fdb40509ae27baf9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad8ace213222aacd749e48b0da32dee0e"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#gad8ace213222aacd749e48b0da32dee0e">BLAZE_CONSTRAINT_MUST_NOT_BE_REFERENCE_TYPE</a>(T)&#160;&#160;&#160;static_assert( !::<a class="el" href="../../de/d5a/group__type__traits.html#gad19cbc0bec4bce544fdb1f3334959cb6">blaze::IsReference_</a>&lt;T&gt;, &quot;Reference type detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#gad8ace213222aacd749e48b0da32dee0e">BLAZE_CONSTRAINT_MUST_NOT_BE_REFERENCE_TYPE</a>(T)&#160;&#160;&#160;static_assert( !::<a class="el" href="../../d1/dad/structblaze_1_1IsReference.html">blaze::IsReference</a>&lt;T&gt;::value, &quot;Reference type detected&quot; )</td></tr>
 <tr class="memdesc:gad8ace213222aacd749e48b0da32dee0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the data type.In case the given data type <em>T</em> is not a reference type, a compilation error is created. <br /></td></tr>
 <tr class="separator:gad8ace213222aacd749e48b0da32dee0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -103,7 +103,7 @@ Macros</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 8 2016 16:45:02 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 31 2016 17:17:00 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

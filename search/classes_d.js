@@ -2,7 +2,6 @@ var searchData=
 [
   ['parallelsection',['ParallelSection',['../d3/d25/classblaze_1_1ParallelSection.html',1,'blaze']]],
   ['plus',['Plus',['../d4/dd1/structblaze_1_1Plus.html',1,'blaze']]],
-  ['plus_3c_20t1_2c_20modulus_3c_20minus_3c_20t2_2c_20modulus_3c_20t1_2c_20t2_20_3e_20_3e_2c_20t2_20_3e_20_3e',['Plus&lt; T1, Modulus&lt; Minus&lt; T2, Modulus&lt; T1, T2 &gt; &gt;, T2 &gt; &gt;',['../d4/dd1/structblaze_1_1Plus.html',1,'blaze']]],
   ['pow',['Pow',['../d3/d41/structblaze_1_1Pow.html',1,'blaze']]],
   ['proxy',['Proxy',['../de/df9/classblaze_1_1Proxy.html',1,'blaze']]],
   ['proxy_3c_20diagonalproxy_3c_20mt_20_3e_2c_20elementtype_5f_3c_20mt_20_3e_20_3e',['Proxy&lt; DiagonalProxy&lt; MT &gt;, ElementType_&lt; MT &gt; &gt;',['../de/df9/classblaze_1_1Proxy.html',1,'blaze']]],

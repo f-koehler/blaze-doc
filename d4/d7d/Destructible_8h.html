@@ -82,19 +82,19 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:gac1a8e6894e322a56324e59cf8ba328bf"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#gac1a8e6894e322a56324e59cf8ba328bf">BLAZE_CONSTRAINT_MUST_BE_DESTRUCTIBLE_TYPE</a>(T)&#160;&#160;&#160;static_assert( ::<a class="el" href="../../de/d5a/group__type__traits.html#gaf443cd908f16ac1b9dce7fa121d3c00e">blaze::IsDestructible_</a>&lt;T&gt;, &quot;Non-destructible type detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#gac1a8e6894e322a56324e59cf8ba328bf">BLAZE_CONSTRAINT_MUST_BE_DESTRUCTIBLE_TYPE</a>(T)&#160;&#160;&#160;static_assert( ::<a class="el" href="../../dc/d64/structblaze_1_1IsDestructible.html">blaze::IsDestructible</a>&lt;T&gt;::value, &quot;Non-destructible type detected&quot; )</td></tr>
 <tr class="memdesc:gac1a8e6894e322a56324e59cf8ba328bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the data type.In case the given data type <em>T</em> cannot be destroyed via its destructor, a compilation error is created. <br /></td></tr>
 <tr class="separator:gac1a8e6894e322a56324e59cf8ba328bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadc63025b9073b86a5951cf5867cde86f"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#gadc63025b9073b86a5951cf5867cde86f">BLAZE_CONSTRAINT_MUST_NOT_BE_DESTRUCTIBLE_TYPE</a>(T)&#160;&#160;&#160;static_assert( !::<a class="el" href="../../de/d5a/group__type__traits.html#gaf443cd908f16ac1b9dce7fa121d3c00e">blaze::IsDestructible_</a>&lt;T&gt;, &quot;Destructible type detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#gadc63025b9073b86a5951cf5867cde86f">BLAZE_CONSTRAINT_MUST_NOT_BE_DESTRUCTIBLE_TYPE</a>(T)&#160;&#160;&#160;static_assert( !::<a class="el" href="../../dc/d64/structblaze_1_1IsDestructible.html">blaze::IsDestructible</a>&lt;T&gt;::value, &quot;Destructible type detected&quot; )</td></tr>
 <tr class="memdesc:gadc63025b9073b86a5951cf5867cde86f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the data type.In case the given data type <em>T</em> can be destroyed via its destructor, a compilation error is created. <br /></td></tr>
 <tr class="separator:gadc63025b9073b86a5951cf5867cde86f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1d05533b88a57658a9cd928202adb64b"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga1d05533b88a57658a9cd928202adb64b">BLAZE_CONSTRAINT_MUST_BE_NOTHROW_DESTRUCTIBLE_TYPE</a>(T)&#160;&#160;&#160;static_assert( ::<a class="el" href="../../de/d5a/group__type__traits.html#ga17130ecd9705b567586e3d8d8f8a6023">blaze::IsNothrowDestructible_</a>&lt;T&gt;, &quot;Non-noexcept destructible type detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga1d05533b88a57658a9cd928202adb64b">BLAZE_CONSTRAINT_MUST_BE_NOTHROW_DESTRUCTIBLE_TYPE</a>(T)&#160;&#160;&#160;static_assert( ::<a class="el" href="../../dc/d8b/structblaze_1_1IsNothrowDestructible.html">blaze::IsNothrowDestructible</a>&lt;T&gt;::value, &quot;Non-noexcept destructible type detected&quot; )</td></tr>
 <tr class="memdesc:ga1d05533b88a57658a9cd928202adb64b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the data type.In case the given data type <em>T</em> cannot be destroyed via a noexcept destructor, a compilation error is created. <br /></td></tr>
 <tr class="separator:ga1d05533b88a57658a9cd928202adb64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad6bb2e1fa92682d3badfff33c1bef3ff"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#gad6bb2e1fa92682d3badfff33c1bef3ff">BLAZE_CONSTRAINT_MUST_NOT_BE_NOTHROW_DESTRUCTIBLE_TYPE</a>(T)&#160;&#160;&#160;static_assert( !::<a class="el" href="../../de/d5a/group__type__traits.html#ga17130ecd9705b567586e3d8d8f8a6023">blaze::IsNothrowDestructible_</a>&lt;T&gt;, &quot;Noexcept destructible type detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#gad6bb2e1fa92682d3badfff33c1bef3ff">BLAZE_CONSTRAINT_MUST_NOT_BE_NOTHROW_DESTRUCTIBLE_TYPE</a>(T)&#160;&#160;&#160;static_assert( !::<a class="el" href="../../dc/d8b/structblaze_1_1IsNothrowDestructible.html">blaze::IsNothrowDestructible</a>&lt;T&gt;::value, &quot;Noexcept destructible type detected&quot; )</td></tr>
 <tr class="memdesc:gad6bb2e1fa92682d3badfff33c1bef3ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the data type.In case the given data type <em>T</em> can be destroyed via a noexcept destructor, a compilation error is created. <br /></td></tr>
 <tr class="separator:gad6bb2e1fa92682d3badfff33c1bef3ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -111,7 +111,7 @@ Macros</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 8 2016 16:45:02 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 31 2016 17:17:00 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

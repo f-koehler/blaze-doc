@@ -64,7 +64,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Compile time value evaluation.The <a class="el" href="../../dc/dee/structblaze_1_1Min.html" title="Compile time value evaluation.The Min class template selects the smaller of the two given template ar...">Min</a> class template selects the smaller of the two given template arguments <em>T1</em> and <em>T2</em>. In order for <a class="el" href="../../dc/dee/structblaze_1_1Min.html" title="Compile time value evaluation.The Min class template selects the smaller of the two given template ar...">Min</a> to be able to determine the smaller type, both arguments are required to have a nested member <em>value</em>. In case <em>T1::value</em> is smaller than <em>T2::value</em>, the nested type definition <em>Type</em> is set to <em>T1</em>, otherwise it is set to <em>T2</em>.  
+<p>Compile time value evaluation.The <a class="el" href="../../dc/dee/structblaze_1_1Min.html" title="Compile time value evaluation.The Min class template selects the smaller of the two given template ar...">Min</a> class template selects the smaller of the two given template arguments <em>T1</em> and <em>T2</em>. In order for <a class="el" href="../../dc/dee/structblaze_1_1Min.html" title="Compile time value evaluation.The Min class template selects the smaller of the two given template ar...">Min</a> to be able to determine the smaller type, both arguments are required to have a nested member <em>value</em>. The result of the minimum operation can be accessed via the nested member <em>value</em>, the resulting type is available via the nested type <em>ValueType</em>.  
  <a href="../../dc/dee/structblaze_1_1Min.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../df/d90/Min_8h_source.html">Min.h</a>&gt;</code></p>
@@ -75,14 +75,14 @@ $(function() {
 struct blaze::Min&lt; T1, T2 &gt;</h3>
 
 <p>Compile time value evaluation.</p>
-<p>The <a class="el" href="../../dc/dee/structblaze_1_1Min.html" title="Compile time value evaluation.The Min class template selects the smaller of the two given template ar...">Min</a> class template selects the smaller of the two given template arguments <em>T1</em> and <em>T2</em>. In order for <a class="el" href="../../dc/dee/structblaze_1_1Min.html" title="Compile time value evaluation.The Min class template selects the smaller of the two given template ar...">Min</a> to be able to determine the smaller type, both arguments are required to have a nested member <em>value</em>. In case <em>T1::value</em> is smaller than <em>T2::value</em>, the nested type definition <em>Type</em> is set to <em>T1</em>, otherwise it is set to <em>T2</em>. </p>
-<div class="fragment"><div class="line"><a class="code" href="../../dc/dee/structblaze_1_1Min.html">blaze::Min&lt; Int&lt;3&gt;</a> , Int&lt;2&gt;  &gt;::Type  <span class="comment">// Results in Int&lt;2&gt;</span></div><div class="line"><a class="code" href="../../dc/dee/structblaze_1_1Min.html">blaze::Min&lt; Long&lt;3&gt;</a>, Int&lt;2&gt;  &gt;::Type  <span class="comment">// Results in Int&lt;2&gt;</span></div><div class="line"><a class="code" href="../../dc/dee/structblaze_1_1Min.html">blaze::Min&lt; Int&lt;3&gt;</a> , Long&lt;2&gt; &gt;::Type  <span class="comment">// Results in Long&lt;2&gt;</span></div></div><!-- fragment --> </div><hr/>The documentation for this struct was generated from the following file:<ul>
+<p>The <a class="el" href="../../dc/dee/structblaze_1_1Min.html" title="Compile time value evaluation.The Min class template selects the smaller of the two given template ar...">Min</a> class template selects the smaller of the two given template arguments <em>T1</em> and <em>T2</em>. In order for <a class="el" href="../../dc/dee/structblaze_1_1Min.html" title="Compile time value evaluation.The Min class template selects the smaller of the two given template ar...">Min</a> to be able to determine the smaller type, both arguments are required to have a nested member <em>value</em>. The result of the minimum operation can be accessed via the nested member <em>value</em>, the resulting type is available via the nested type <em>ValueType</em>. </p>
+<div class="fragment"><div class="line"><a class="code" href="../../dc/dee/structblaze_1_1Min.html">blaze::Min&lt; Int&lt;3&gt;</a> , Int&lt;2&gt;  &gt;::value      <span class="comment">// Results in 2</span></div><div class="line"><a class="code" href="../../dc/dee/structblaze_1_1Min.html">blaze::Min&lt; Long&lt;3&gt;</a>, Int&lt;2&gt;  &gt;::ValueType  <span class="comment">// Results in int</span></div><div class="line"><a class="code" href="../../dc/dee/structblaze_1_1Min.html">blaze::Min&lt; Int&lt;3&gt;</a> , Long&lt;2&gt; &gt;::ValueType  <span class="comment">// Results in long</span></div></div><!-- fragment --> </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>blaze/util/mpl/<a class="el" href="../../df/d90/Min_8h_source.html">Min.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 8 2016 16:45:06 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 31 2016 17:17:05 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

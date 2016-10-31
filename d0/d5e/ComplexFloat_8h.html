@@ -82,11 +82,11 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga302506affacb8f13669eee1543b5917f"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga302506affacb8f13669eee1543b5917f">BLAZE_CONSTRAINT_MUST_BE_COMPLEX_FLOAT_TYPE</a>(T)&#160;&#160;&#160;static_assert( ::<a class="el" href="../../de/d5a/group__type__traits.html#ga06aec44dccdbd5b5707af6e8f884d3b4">blaze::IsComplexFloat_</a>&lt;T&gt;, &quot;Non-single precision complex type detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga302506affacb8f13669eee1543b5917f">BLAZE_CONSTRAINT_MUST_BE_COMPLEX_FLOAT_TYPE</a>(T)&#160;&#160;&#160;static_assert( ::<a class="el" href="../../df/d20/structblaze_1_1IsComplexFloat.html">blaze::IsComplexFloat</a>&lt;T&gt;::value, &quot;Non-single precision complex type detected&quot; )</td></tr>
 <tr class="memdesc:ga302506affacb8f13669eee1543b5917f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the data type.This compile time constraint checks that the given data type <em>T</em> is a single precision complex data type (i.e. <em>complex&lt;float&gt;</em>, ignoring the cv-qualifiers). In case <em>T</em> is not of type <em>complex&lt;float&gt;</em> a compilation error is created. <br /></td></tr>
 <tr class="separator:ga302506affacb8f13669eee1543b5917f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga84a791c13eedbf1c60e0d5e08e96f263"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga84a791c13eedbf1c60e0d5e08e96f263">BLAZE_CONSTRAINT_MUST_NOT_BE_COMPLEX_FLOAT_TYPE</a>(T)&#160;&#160;&#160;static_assert( !::<a class="el" href="../../de/d5a/group__type__traits.html#ga06aec44dccdbd5b5707af6e8f884d3b4">blaze::IsComplexFloat_</a>&lt;T&gt;, &quot;Single precision complex type detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga84a791c13eedbf1c60e0d5e08e96f263">BLAZE_CONSTRAINT_MUST_NOT_BE_COMPLEX_FLOAT_TYPE</a>(T)&#160;&#160;&#160;static_assert( !::<a class="el" href="../../df/d20/structblaze_1_1IsComplexFloat.html">blaze::IsComplexFloat</a>&lt;T&gt;::value, &quot;Single precision complex type detected&quot; )</td></tr>
 <tr class="memdesc:ga84a791c13eedbf1c60e0d5e08e96f263"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the data type.This compile time constraint checks that the given data type <em>T</em> is not a single precision complex data type (i.e. <em>complex&lt;float&gt;</em>, ignoring the cv-qualifiers). In case <em>T</em> is of type <em>complex&lt;float&gt;</em> a compilation error is created. <br /></td></tr>
 <tr class="separator:ga84a791c13eedbf1c60e0d5e08e96f263"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -103,7 +103,7 @@ Macros</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 8 2016 16:45:02 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 31 2016 17:17:00 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

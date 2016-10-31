@@ -60,8 +60,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
 <div class="title">Functions.h File Reference</div>  </div>
 </div><!--header-->
@@ -92,10 +91,6 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaaac56ec63464724a6f9e736cff0164a8"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
-<tr class="memitem:gaaac56ec63464724a6f9e736cff0164a8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d4/d37/group__system.html#ga414fb20bc543f1b920b6599c9b63a23a">BLAZE_ALWAYS_INLINE</a> constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/df1/group__math.html#gaaac56ec63464724a6f9e736cff0164a8">blaze::lessThan</a> (const T1 &amp;a, const T2 &amp;b) noexcept(IsBuiltin_&lt; CommonType_&lt; T1, T2 &gt; &gt;)</td></tr>
-<tr class="memdesc:gaaac56ec63464724a6f9e736cff0164a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic less-than comparison.  <a href="../../de/df1/group__math.html#gaaac56ec63464724a6f9e736cff0164a8">More...</a><br /></td></tr>
-<tr class="separator:gaaac56ec63464724a6f9e736cff0164a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Mathematical utility functions</div></td></tr>
 <tr class="memitem:gaffebe2fae5612534433dbd26a999fefe"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:gaffebe2fae5612534433dbd26a999fefe"><td class="memTemplItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/df1/group__math.html#gaffebe2fae5612534433dbd26a999fefe">blaze::sign</a> (T a) noexcept</td></tr>
@@ -105,30 +100,34 @@ Functions</h2></td></tr>
 <tr class="memitem:ga85346c256b6e74c93733704c6683314e"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/df1/group__math.html#ga85346c256b6e74c93733704c6683314e">blaze::digits</a> (T a) noexcept</td></tr>
 <tr class="memdesc:ga85346c256b6e74c93733704c6683314e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of valid digits of an integral value.  <a href="../../de/df1/group__math.html#ga85346c256b6e74c93733704c6683314e">More...</a><br /></td></tr>
 <tr class="separator:ga85346c256b6e74c93733704c6683314e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9da364e5fa42da4140508a01cf6255de"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
-<tr class="memitem:ga9da364e5fa42da4140508a01cf6255de"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d4/d37/group__system.html#ga414fb20bc543f1b920b6599c9b63a23a">BLAZE_ALWAYS_INLINE</a> constexpr CommonType_&lt; T1, T2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/df1/group__math.html#ga9da364e5fa42da4140508a01cf6255de">blaze::min</a> (const T1 &amp;a, const T2 &amp;b) noexcept(All_&lt; IsNumeric, T1, T2 &gt;)</td></tr>
-<tr class="memdesc:ga9da364e5fa42da4140508a01cf6255de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum function for two data values.  <a href="../../de/df1/group__math.html#ga9da364e5fa42da4140508a01cf6255de">More...</a><br /></td></tr>
-<tr class="separator:ga9da364e5fa42da4140508a01cf6255de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac2322ae7585ae4af10c1a985c41331ed"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 , typename... Ts&gt; </td></tr>
-<tr class="memitem:gac2322ae7585ae4af10c1a985c41331ed"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d4/d37/group__system.html#ga414fb20bc543f1b920b6599c9b63a23a">BLAZE_ALWAYS_INLINE</a> constexpr CommonType_&lt; T1, T2, Ts... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/df1/group__math.html#gac2322ae7585ae4af10c1a985c41331ed">blaze::min</a> (const T1 &amp;a, const T2 &amp;b, const Ts &amp;... args) noexcept(All_&lt; IsNumeric, T1, T2, Ts... &gt;)</td></tr>
-<tr class="memdesc:gac2322ae7585ae4af10c1a985c41331ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum function for at least three data values.  <a href="../../de/df1/group__math.html#gac2322ae7585ae4af10c1a985c41331ed">More...</a><br /></td></tr>
-<tr class="separator:gac2322ae7585ae4af10c1a985c41331ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa54fb5a5267e3d379f8155f36496c581"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
-<tr class="memitem:gaa54fb5a5267e3d379f8155f36496c581"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d4/d37/group__system.html#ga414fb20bc543f1b920b6599c9b63a23a">BLAZE_ALWAYS_INLINE</a> constexpr CommonType_&lt; T1, T2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/df1/group__math.html#gaa54fb5a5267e3d379f8155f36496c581">blaze::max</a> (const T1 &amp;a, const T2 &amp;b) noexcept(All_&lt; IsNumeric, T1, T2 &gt;)</td></tr>
-<tr class="memdesc:gaa54fb5a5267e3d379f8155f36496c581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum function for two data values.  <a href="../../de/df1/group__math.html#gaa54fb5a5267e3d379f8155f36496c581">More...</a><br /></td></tr>
-<tr class="separator:gaa54fb5a5267e3d379f8155f36496c581"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5d564b53616a9411084ba22697585722"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 , typename... Ts&gt; </td></tr>
-<tr class="memitem:ga5d564b53616a9411084ba22697585722"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d4/d37/group__system.html#ga414fb20bc543f1b920b6599c9b63a23a">BLAZE_ALWAYS_INLINE</a> constexpr CommonType_&lt; T1, T2, Ts... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/df1/group__math.html#ga5d564b53616a9411084ba22697585722">blaze::max</a> (const T1 &amp;a, const T2 &amp;b, const Ts &amp;... args) noexcept(All_&lt; IsNumeric, T1, T2, Ts... &gt;)</td></tr>
-<tr class="memdesc:ga5d564b53616a9411084ba22697585722"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum function for at least three data values.  <a href="../../de/df1/group__math.html#ga5d564b53616a9411084ba22697585722">More...</a><br /></td></tr>
-<tr class="separator:ga5d564b53616a9411084ba22697585722"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9e0183f82ae289659f767d17dfc41ed8"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ga9e0183f82ae289659f767d17dfc41ed8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d4/d37/group__system.html#ga414fb20bc543f1b920b6599c9b63a23a">BLAZE_ALWAYS_INLINE</a> constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/df1/group__math.html#ga9e0183f82ae289659f767d17dfc41ed8">blaze::nextMultiple</a> (T value, T factor) noexcept</td></tr>
-<tr class="memdesc:ga9e0183f82ae289659f767d17dfc41ed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rounds up an integral value to the next multiple of a given factor.  <a href="../../de/df1/group__math.html#ga9e0183f82ae289659f767d17dfc41ed8">More...</a><br /></td></tr>
-<tr class="separator:ga9e0183f82ae289659f767d17dfc41ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa7220ccaa9ec7e316f52ec37a01b8709"><td class="memTemplParams" colspan="2">
-template&lt;typename T1 , typename T2 &gt; </td></tr>
-<tr class="memitem:gaa7220ccaa9ec7e316f52ec37a01b8709"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d4/d37/group__system.html#ga414fb20bc543f1b920b6599c9b63a23a">BLAZE_ALWAYS_INLINE</a> constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>blaze::lessThan</b> (T1 a, T2 b) noexcept(IsBuiltin_&lt; CommonType_&lt; T1, T2 &gt; &gt;)</td></tr>
-<tr class="separator:gaa7220ccaa9ec7e316f52ec37a01b8709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga742a520758a3d3e2f106c7f074cbe839"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
+<tr class="memitem:ga742a520758a3d3e2f106c7f074cbe839"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d4/d37/group__system.html#ga414fb20bc543f1b920b6599c9b63a23a">BLAZE_ALWAYS_INLINE</a> constexpr CommonType_&lt; T1, T2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/df1/group__math.html#ga742a520758a3d3e2f106c7f074cbe839">blaze::min</a> (const T1 &amp;a, const T2 &amp;b) noexcept(All&lt; IsNumeric, T1, T2 &gt;::value)</td></tr>
+<tr class="memdesc:ga742a520758a3d3e2f106c7f074cbe839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum function for two data values.  <a href="../../de/df1/group__math.html#ga742a520758a3d3e2f106c7f074cbe839">More...</a><br /></td></tr>
+<tr class="separator:ga742a520758a3d3e2f106c7f074cbe839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd6ea515b37423d7580e3234e5120625"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 , typename... Ts&gt; </td></tr>
+<tr class="memitem:gacd6ea515b37423d7580e3234e5120625"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d4/d37/group__system.html#ga414fb20bc543f1b920b6599c9b63a23a">BLAZE_ALWAYS_INLINE</a> constexpr CommonType_&lt; T1, T2, Ts... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/df1/group__math.html#gacd6ea515b37423d7580e3234e5120625">blaze::min</a> (const T1 &amp;a, const T2 &amp;b, const Ts &amp;... args) noexcept(All&lt; IsNumeric, T1, T2, Ts... &gt;::value)</td></tr>
+<tr class="memdesc:gacd6ea515b37423d7580e3234e5120625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum function for at least three data values.  <a href="../../de/df1/group__math.html#gacd6ea515b37423d7580e3234e5120625">More...</a><br /></td></tr>
+<tr class="separator:gacd6ea515b37423d7580e3234e5120625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga34ce710449801d337f239ae5ebda05cf"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
+<tr class="memitem:ga34ce710449801d337f239ae5ebda05cf"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d4/d37/group__system.html#ga414fb20bc543f1b920b6599c9b63a23a">BLAZE_ALWAYS_INLINE</a> constexpr CommonType_&lt; T1, T2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/df1/group__math.html#ga34ce710449801d337f239ae5ebda05cf">blaze::max</a> (const T1 &amp;a, const T2 &amp;b) noexcept(All&lt; IsNumeric, T1, T2 &gt;::value)</td></tr>
+<tr class="memdesc:ga34ce710449801d337f239ae5ebda05cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum function for two data values.  <a href="../../de/df1/group__math.html#ga34ce710449801d337f239ae5ebda05cf">More...</a><br /></td></tr>
+<tr class="separator:ga34ce710449801d337f239ae5ebda05cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b206ca0d7d334cfd018d24c0f64d8e5"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 , typename... Ts&gt; </td></tr>
+<tr class="memitem:ga2b206ca0d7d334cfd018d24c0f64d8e5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d4/d37/group__system.html#ga414fb20bc543f1b920b6599c9b63a23a">BLAZE_ALWAYS_INLINE</a> constexpr CommonType_&lt; T1, T2, Ts... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/df1/group__math.html#ga2b206ca0d7d334cfd018d24c0f64d8e5">blaze::max</a> (const T1 &amp;a, const T2 &amp;b, const Ts &amp;... args) noexcept(All&lt; IsNumeric, T1, T2, Ts... &gt;::value)</td></tr>
+<tr class="memdesc:ga2b206ca0d7d334cfd018d24c0f64d8e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum function for at least three data values.  <a href="../../de/df1/group__math.html#ga2b206ca0d7d334cfd018d24c0f64d8e5">More...</a><br /></td></tr>
+<tr class="separator:ga2b206ca0d7d334cfd018d24c0f64d8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga744c2cdcc27fba2af1d7f24043353bd9"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
+<tr class="memitem:ga744c2cdcc27fba2af1d7f24043353bd9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d4/d37/group__system.html#ga414fb20bc543f1b920b6599c9b63a23a">BLAZE_ALWAYS_INLINE</a> constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/df1/group__math.html#ga744c2cdcc27fba2af1d7f24043353bd9">blaze::nextMultiple</a> (T1 value, T2 factor) noexcept</td></tr>
+<tr class="memdesc:ga744c2cdcc27fba2af1d7f24043353bd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rounds up an integral value to the next multiple of a given factor.  <a href="../../de/df1/group__math.html#ga744c2cdcc27fba2af1d7f24043353bd9">More...</a><br /></td></tr>
+<tr class="separator:ga744c2cdcc27fba2af1d7f24043353bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d897a05236023eb2572750966bb1847"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
+<tr class="memitem:ga1d897a05236023eb2572750966bb1847"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d4/d37/group__system.html#ga414fb20bc543f1b920b6599c9b63a23a">BLAZE_ALWAYS_INLINE</a> constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/df1/group__math.html#ga1d897a05236023eb2572750966bb1847">blaze::less</a> (const T1 &amp;a, const T2 &amp;b) noexcept(IsBuiltin&lt; CommonType_&lt; T1, T2 &gt; &gt;::value)</td></tr>
+<tr class="memdesc:ga1d897a05236023eb2572750966bb1847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic less-than comparison.  <a href="../../de/df1/group__math.html#ga1d897a05236023eb2572750966bb1847">More...</a><br /></td></tr>
+<tr class="separator:ga1d897a05236023eb2572750966bb1847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga860b2a005ccfc06780298500cf874a79"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
+<tr class="memitem:ga860b2a005ccfc06780298500cf874a79"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d4/d37/group__system.html#ga414fb20bc543f1b920b6599c9b63a23a">BLAZE_ALWAYS_INLINE</a> constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/df1/group__math.html#ga860b2a005ccfc06780298500cf874a79">blaze::greater</a> (const T1 &amp;a, const T2 &amp;b) noexcept(IsBuiltin&lt; CommonType_&lt; T1, T2 &gt; &gt;::value)</td></tr>
+<tr class="memdesc:ga860b2a005ccfc06780298500cf874a79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic greater-than comparison.  <a href="../../de/df1/group__math.html#ga860b2a005ccfc06780298500cf874a79">More...</a><br /></td></tr>
+<tr class="separator:ga860b2a005ccfc06780298500cf874a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Header file for mathematical functions. </p>
@@ -143,7 +142,7 @@ template&lt;typename T1 , typename T2 &gt; </td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 8 2016 16:45:01 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 31 2016 17:16:59 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

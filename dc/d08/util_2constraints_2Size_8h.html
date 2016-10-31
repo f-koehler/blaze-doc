@@ -82,43 +82,43 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga6d415f91f2b72c7859b62886966e3b18"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga6d415f91f2b72c7859b62886966e3b18">BLAZE_CONSTRAINT_MUST_HAVE_SIZE</a>(T,  S)&#160;&#160;&#160;static_assert( ::<a class="el" href="../../de/d5a/group__type__traits.html#ga6860f7b7cb730f79dc823ee7d4cb475a">blaze::HasSize_</a>&lt;T,S&gt;, &quot;Invalid size detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga6d415f91f2b72c7859b62886966e3b18">BLAZE_CONSTRAINT_MUST_HAVE_SIZE</a>(T,  S)&#160;&#160;&#160;static_assert( ::<a class="el" href="../../df/d90/structblaze_1_1HasSize.html">blaze::HasSize</a>&lt;T,S&gt;::value, &quot;Invalid size detected&quot; )</td></tr>
 <tr class="memdesc:ga6d415f91f2b72c7859b62886966e3b18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the size of a data type.In case the type <em>T</em> doesn't have a size of <em>S</em> bytes, a compilation error is created. <br /></td></tr>
 <tr class="separator:ga6d415f91f2b72c7859b62886966e3b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad10a7046a4c869ed59dc4dc990852fcf"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#gad10a7046a4c869ed59dc4dc990852fcf">BLAZE_CONSTRAINT_MUST_NOT_HAVE_SIZE</a>(T,  S)&#160;&#160;&#160;static_assert( !::<a class="el" href="../../de/d5a/group__type__traits.html#ga6860f7b7cb730f79dc823ee7d4cb475a">blaze::HasSize_</a>&lt;T,S&gt;, &quot;Invalid size detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#gad10a7046a4c869ed59dc4dc990852fcf">BLAZE_CONSTRAINT_MUST_NOT_HAVE_SIZE</a>(T,  S)&#160;&#160;&#160;static_assert( !::<a class="el" href="../../df/d90/structblaze_1_1HasSize.html">blaze::HasSize</a>&lt;T,S&gt;::value, &quot;Invalid size detected&quot; )</td></tr>
 <tr class="memdesc:gad10a7046a4c869ed59dc4dc990852fcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the size of a data type.In case the type <em>T</em> has a size of <em>S</em> bytes, a compilation error is created. <br /></td></tr>
 <tr class="separator:gad10a7046a4c869ed59dc4dc990852fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2a30c412b09fd3164ec342ce358ba9d9"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga2a30c412b09fd3164ec342ce358ba9d9">BLAZE_CONSTRAINT_MUST_HAVE_1_BYTE</a>(T)&#160;&#160;&#160;static_assert( ::<a class="el" href="../../de/d5a/group__type__traits.html#ga2b20422550073cad222edced2cc8b1f0">blaze::Has1Byte_</a>&lt;T&gt;, &quot;Invalid size detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga2a30c412b09fd3164ec342ce358ba9d9">BLAZE_CONSTRAINT_MUST_HAVE_1_BYTE</a>(T)&#160;&#160;&#160;static_assert( ::<a class="el" href="../../d7/d94/structblaze_1_1Has1Byte.html">blaze::Has1Byte</a>&lt;T&gt;::value, &quot;Invalid size detected&quot; )</td></tr>
 <tr class="memdesc:ga2a30c412b09fd3164ec342ce358ba9d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the size of a data type.In case the type <em>T</em> doesn't have a size of exactly 1 byte, a compilation error is created. <br /></td></tr>
 <tr class="separator:ga2a30c412b09fd3164ec342ce358ba9d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaca4d2b90dbd4234c7b15d696f7c79ed"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#gaaca4d2b90dbd4234c7b15d696f7c79ed">BLAZE_CONSTRAINT_MUST_NOT_HAVE_1_BYTE</a>(T)&#160;&#160;&#160;static_assert( !::<a class="el" href="../../de/d5a/group__type__traits.html#ga2b20422550073cad222edced2cc8b1f0">blaze::Has1Byte_</a>&lt;T&gt;, &quot;Invalid size detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#gaaca4d2b90dbd4234c7b15d696f7c79ed">BLAZE_CONSTRAINT_MUST_NOT_HAVE_1_BYTE</a>(T)&#160;&#160;&#160;static_assert( !::<a class="el" href="../../d7/d94/structblaze_1_1Has1Byte.html">blaze::Has1Byte</a>&lt;T&gt;::value, &quot;Invalid size detected&quot; )</td></tr>
 <tr class="memdesc:gaaca4d2b90dbd4234c7b15d696f7c79ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the size of a data type.In case the type <em>T</em> has a size of exactly 1 byte, a compilation error is created. <br /></td></tr>
 <tr class="separator:gaaca4d2b90dbd4234c7b15d696f7c79ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8cd4da5b4d9a323bc3feadacfd1d60b5"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga8cd4da5b4d9a323bc3feadacfd1d60b5">BLAZE_CONSTRAINT_MUST_HAVE_2_BYTES</a>(T)&#160;&#160;&#160;static_assert( ::blaze::Has2Byte_&lt;T&gt;, &quot;Invalid size detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga8cd4da5b4d9a323bc3feadacfd1d60b5">BLAZE_CONSTRAINT_MUST_HAVE_2_BYTES</a>(T)&#160;&#160;&#160;static_assert( ::blaze::Has2Byte&lt;T&gt;::value, &quot;Invalid size detected&quot; )</td></tr>
 <tr class="memdesc:ga8cd4da5b4d9a323bc3feadacfd1d60b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the size of a data type.In case the type <em>T</em> doesn't have a size of exactly 2 bytes, a compilation error is created. <br /></td></tr>
 <tr class="separator:ga8cd4da5b4d9a323bc3feadacfd1d60b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2ea8fae483c4abbb92c57145883eda22"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga2ea8fae483c4abbb92c57145883eda22">BLAZE_CONSTRAINT_MUST_NOT_HAVE_2_BYTES</a>(T)&#160;&#160;&#160;static_assert( !::blaze::Has2Byte_&lt;T&gt;, &quot;Invalid size detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga2ea8fae483c4abbb92c57145883eda22">BLAZE_CONSTRAINT_MUST_NOT_HAVE_2_BYTES</a>(T)&#160;&#160;&#160;static_assert( !::blaze::Has2Byte&lt;T&gt;::value, &quot;Invalid size detected&quot; )</td></tr>
 <tr class="memdesc:ga2ea8fae483c4abbb92c57145883eda22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the size of a data type.In case the type <em>T</em> has a size of exactly 2 bytes, a compilation error is created. <br /></td></tr>
 <tr class="separator:ga2ea8fae483c4abbb92c57145883eda22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga182b79775ee2e347dcf38dd054c80d9d"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga182b79775ee2e347dcf38dd054c80d9d">BLAZE_CONSTRAINT_MUST_HAVE_4_BYTES</a>(T)&#160;&#160;&#160;static_assert( ::blaze::Has4Byte_&lt;T&gt;, &quot;Invalid size detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga182b79775ee2e347dcf38dd054c80d9d">BLAZE_CONSTRAINT_MUST_HAVE_4_BYTES</a>(T)&#160;&#160;&#160;static_assert( ::blaze::Has4Byte&lt;T&gt;::value, &quot;Invalid size detected&quot; )</td></tr>
 <tr class="memdesc:ga182b79775ee2e347dcf38dd054c80d9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the size of a data type.In case the type <em>T</em> doesn't have a size of exactly 4 bytes, a compilation error is created. <br /></td></tr>
 <tr class="separator:ga182b79775ee2e347dcf38dd054c80d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga67f5dca419cc22b0b463b5841eaa7fc6"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga67f5dca419cc22b0b463b5841eaa7fc6">BLAZE_CONSTRAINT_MUST_NOT_HAVE_4_BYTES</a>(T)&#160;&#160;&#160;static_assert( !::blaze::Has4Byte_&lt;T&gt;, &quot;Invalid size detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga67f5dca419cc22b0b463b5841eaa7fc6">BLAZE_CONSTRAINT_MUST_NOT_HAVE_4_BYTES</a>(T)&#160;&#160;&#160;static_assert( !::blaze::Has4Byte&lt;T&gt;::value, &quot;Invalid size detected&quot; )</td></tr>
 <tr class="memdesc:ga67f5dca419cc22b0b463b5841eaa7fc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the size of a data type.In case the type <em>T</em> has a size of exactly 4 bytes, a compilation error is created. <br /></td></tr>
 <tr class="separator:ga67f5dca419cc22b0b463b5841eaa7fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7b7499e324507dca99dafadba4a4bcdf"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga7b7499e324507dca99dafadba4a4bcdf">BLAZE_CONSTRAINT_MUST_HAVE_8_BYTES</a>(T)&#160;&#160;&#160;static_assert( ::blaze::Has8Byte_&lt;T&gt;, &quot;Invalid size detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga7b7499e324507dca99dafadba4a4bcdf">BLAZE_CONSTRAINT_MUST_HAVE_8_BYTES</a>(T)&#160;&#160;&#160;static_assert( ::blaze::Has8Byte&lt;T&gt;::value, &quot;Invalid size detected&quot; )</td></tr>
 <tr class="memdesc:ga7b7499e324507dca99dafadba4a4bcdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the size of a data type.In case the type <em>T</em> doesn't have a size of exactly 8 bytes, a compilation error is created. <br /></td></tr>
 <tr class="separator:ga7b7499e324507dca99dafadba4a4bcdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2e968d66f80d1c276f52d3b215cd4a46"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga2e968d66f80d1c276f52d3b215cd4a46">BLAZE_CONSTRAINT_MUST_NOT_HAVE_8_BYTES</a>(T)&#160;&#160;&#160;static_assert( !::blaze::Has8Byte_&lt;T&gt;, &quot;Invalid size detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga2e968d66f80d1c276f52d3b215cd4a46">BLAZE_CONSTRAINT_MUST_NOT_HAVE_8_BYTES</a>(T)&#160;&#160;&#160;static_assert( !::blaze::Has8Byte&lt;T&gt;::value, &quot;Invalid size detected&quot; )</td></tr>
 <tr class="memdesc:ga2e968d66f80d1c276f52d3b215cd4a46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the size of a data type.In case the type <em>T</em> has a size of exactly 8 bytes, a compilation error is created. <br /></td></tr>
 <tr class="separator:ga2e968d66f80d1c276f52d3b215cd4a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -135,7 +135,7 @@ Macros</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 8 2016 16:45:01 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 31 2016 17:16:58 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

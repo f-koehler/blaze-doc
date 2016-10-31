@@ -82,11 +82,11 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga29ff0addf18343bafb1692eb5700cf4b"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga29ff0addf18343bafb1692eb5700cf4b">BLAZE_CONSTRAINT_MUST_BE_EMPTY</a>(T)&#160;&#160;&#160;static_assert( ::<a class="el" href="../../de/d5a/group__type__traits.html#gaa5ea2395a506b0a46fe36e006c452bd1">blaze::IsEmpty_</a>&lt;T&gt;, &quot;Non-empty type detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#ga29ff0addf18343bafb1692eb5700cf4b">BLAZE_CONSTRAINT_MUST_BE_EMPTY</a>(T)&#160;&#160;&#160;static_assert( ::<a class="el" href="../../dc/d47/structblaze_1_1IsEmpty.html">blaze::IsEmpty</a>&lt;T&gt;::value, &quot;Non-empty type detected&quot; )</td></tr>
 <tr class="memdesc:ga29ff0addf18343bafb1692eb5700cf4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the data type.In case the given data type is not an empty type, a compilation error is created. <br /></td></tr>
 <tr class="separator:ga29ff0addf18343bafb1692eb5700cf4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacc4e38993ff927266c53654ae5ea638b"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#gacc4e38993ff927266c53654ae5ea638b">BLAZE_CONSTRAINT_MUST_NOT_BE_EMPTY</a>(T)&#160;&#160;&#160;static_assert( !::<a class="el" href="../../de/d5a/group__type__traits.html#gaa5ea2395a506b0a46fe36e006c452bd1">blaze::IsEmpty_</a>&lt;T&gt;, &quot;Empty type detected&quot; )</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d68/group__constraints.html#gacc4e38993ff927266c53654ae5ea638b">BLAZE_CONSTRAINT_MUST_NOT_BE_EMPTY</a>(T)&#160;&#160;&#160;static_assert( !::<a class="el" href="../../dc/d47/structblaze_1_1IsEmpty.html">blaze::IsEmpty</a>&lt;T&gt;::value, &quot;Empty type detected&quot; )</td></tr>
 <tr class="memdesc:gacc4e38993ff927266c53654ae5ea638b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint on the data type.In case the given data type is an empty type, a compilation error is created. <br /></td></tr>
 <tr class="separator:gacc4e38993ff927266c53654ae5ea638b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -103,7 +103,7 @@ Macros</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 8 2016 16:45:02 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 31 2016 17:17:00 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

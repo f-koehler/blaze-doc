@@ -3,7 +3,6 @@ var searchData=
   ['negativeaccuracy',['NegativeAccuracy',['../da/d32/classblaze_1_1NegativeAccuracy.html',1,'blaze']]],
   ['negativeepsilon',['NegativeEpsilon',['../d9/d70/classblaze_1_1NegativeEpsilon.html',1,'blaze']]],
   ['negativeinfinity',['NegativeInfinity',['../db/da3/classblaze_1_1NegativeInfinity.html',1,'blaze']]],
-  ['nextmultiple',['NextMultiple',['../d3/d01/structblaze_1_1NextMultiple.html',1,'blaze']]],
   ['nodelete',['NoDelete',['../d8/dc7/structblaze_1_1NoDelete.html',1,'blaze']]],
   ['noncopyable',['NonCopyable',['../dd/dbc/classblaze_1_1NonCopyable.html',1,'blaze']]],
   ['noncreatable',['NonCreatable',['../d6/d8e/classblaze_1_1NonCreatable.html',1,'blaze']]],

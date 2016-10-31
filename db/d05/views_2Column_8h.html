@@ -83,6 +83,7 @@ $(function() {
 <code>#include &lt;<a class="el" href="../../d6/d11/IsAligned_8h_source.html">blaze/math/typetraits/IsAligned.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d2/db3/IsColumnMajorMatrix_8h_source.html">blaze/math/typetraits/IsColumnMajorMatrix.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../de/d31/IsComputation_8h_source.html">blaze/math/typetraits/IsComputation.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../da/d02/IsDeclExpr_8h_source.html">blaze/math/typetraits/IsDeclExpr.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../db/da3/IsMatEvalExpr_8h_source.html">blaze/math/typetraits/IsMatEvalExpr.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d3/de6/IsMatForEachExpr_8h_source.html">blaze/math/typetraits/IsMatForEachExpr.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d6/d04/IsMatMatAddExpr_8h_source.html">blaze/math/typetraits/IsMatMatAddExpr.h</a>&gt;</code><br />
@@ -118,18 +119,18 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaa0c4873ec4bb3703832d91cfa6796fc1"><td class="memTemplParams" colspan="2">template&lt;typename MT , bool SO&gt; </td></tr>
-<tr class="memitem:gaa0c4873ec4bb3703832d91cfa6796fc1"><td class="memTemplItemLeft" align="right" valign="top">DisableIf_&lt; Or&lt; IsComputation&lt; MT &gt;, IsTransExpr&lt; MT &gt; &gt;, ColumnExprTrait_&lt; MT &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d48/group__views.html#gaa0c4873ec4bb3703832d91cfa6796fc1">blaze::column</a> (Matrix&lt; MT, SO &gt; &amp;matrix, size_t index)</td></tr>
-<tr class="memdesc:gaa0c4873ec4bb3703832d91cfa6796fc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creating a view on a specific column of the given matrix.  <a href="../../d0/d48/group__views.html#gaa0c4873ec4bb3703832d91cfa6796fc1">More...</a><br /></td></tr>
-<tr class="separator:gaa0c4873ec4bb3703832d91cfa6796fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga19a280338b6eb617a500e9968c513e36"><td class="memTemplParams" colspan="2">template&lt;typename MT , bool SO&gt; </td></tr>
-<tr class="memitem:ga19a280338b6eb617a500e9968c513e36"><td class="memTemplItemLeft" align="right" valign="top">const DisableIf_&lt; Or&lt; IsComputation&lt; MT &gt;, IsTransExpr&lt; MT &gt; &gt;, ColumnExprTrait_&lt; const MT &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d48/group__views.html#ga19a280338b6eb617a500e9968c513e36">blaze::column</a> (const Matrix&lt; MT, SO &gt; &amp;matrix, size_t index)</td></tr>
-<tr class="memdesc:ga19a280338b6eb617a500e9968c513e36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creating a view on a specific column of the given constant matrix.  <a href="../../d0/d48/group__views.html#ga19a280338b6eb617a500e9968c513e36">More...</a><br /></td></tr>
-<tr class="separator:ga19a280338b6eb617a500e9968c513e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6fbef4522b9ba23fed451f540741c50d"><td class="memTemplParams" colspan="2">template&lt;typename MT , bool SO&gt; </td></tr>
-<tr class="memitem:ga6fbef4522b9ba23fed451f540741c50d"><td class="memTemplItemLeft" align="right" valign="top">DisableIf_&lt; Or&lt; IsComputation&lt; MT &gt;, IsTransExpr&lt; MT &gt; &gt;, ColumnExprTrait_&lt; MT &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d48/group__views.html#ga6fbef4522b9ba23fed451f540741c50d">blaze::column</a> (Matrix&lt; MT, SO &gt; &amp;&amp;matrix, size_t index)</td></tr>
-<tr class="memdesc:ga6fbef4522b9ba23fed451f540741c50d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creating a view on a specific column of the given temporary matrix.  <a href="../../d0/d48/group__views.html#ga6fbef4522b9ba23fed451f540741c50d">More...</a><br /></td></tr>
-<tr class="separator:ga6fbef4522b9ba23fed451f540741c50d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90d2efe628ac27ced94db06b3aa3cf9b"><td class="memTemplParams" colspan="2">template&lt;typename MT , bool SO&gt; </td></tr>
+<tr class="memitem:ga90d2efe628ac27ced94db06b3aa3cf9b"><td class="memTemplItemLeft" align="right" valign="top">DisableIf_&lt; Or&lt; IsComputation&lt; MT &gt;, IsTransExpr&lt; MT &gt;, IsDeclExpr&lt; MT &gt; &gt;, ColumnExprTrait_&lt; MT &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d48/group__views.html#ga90d2efe628ac27ced94db06b3aa3cf9b">blaze::column</a> (Matrix&lt; MT, SO &gt; &amp;matrix, size_t index)</td></tr>
+<tr class="memdesc:ga90d2efe628ac27ced94db06b3aa3cf9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creating a view on a specific column of the given matrix.  <a href="../../d0/d48/group__views.html#ga90d2efe628ac27ced94db06b3aa3cf9b">More...</a><br /></td></tr>
+<tr class="separator:ga90d2efe628ac27ced94db06b3aa3cf9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga35cb7f604eb701afbe463aedda396913"><td class="memTemplParams" colspan="2">template&lt;typename MT , bool SO&gt; </td></tr>
+<tr class="memitem:ga35cb7f604eb701afbe463aedda396913"><td class="memTemplItemLeft" align="right" valign="top">const DisableIf_&lt; Or&lt; IsComputation&lt; MT &gt;, IsTransExpr&lt; MT &gt;, IsDeclExpr&lt; MT &gt; &gt;, ColumnExprTrait_&lt; const MT &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d48/group__views.html#ga35cb7f604eb701afbe463aedda396913">blaze::column</a> (const Matrix&lt; MT, SO &gt; &amp;matrix, size_t index)</td></tr>
+<tr class="memdesc:ga35cb7f604eb701afbe463aedda396913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creating a view on a specific column of the given constant matrix.  <a href="../../d0/d48/group__views.html#ga35cb7f604eb701afbe463aedda396913">More...</a><br /></td></tr>
+<tr class="separator:ga35cb7f604eb701afbe463aedda396913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga251f78730b4d1a6a86415c98df6e92a6"><td class="memTemplParams" colspan="2">template&lt;typename MT , bool SO&gt; </td></tr>
+<tr class="memitem:ga251f78730b4d1a6a86415c98df6e92a6"><td class="memTemplItemLeft" align="right" valign="top">DisableIf_&lt; Or&lt; IsComputation&lt; MT &gt;, IsTransExpr&lt; MT &gt;, IsDeclExpr&lt; MT &gt; &gt;, ColumnExprTrait_&lt; MT &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d48/group__views.html#ga251f78730b4d1a6a86415c98df6e92a6">blaze::column</a> (Matrix&lt; MT, SO &gt; &amp;&amp;matrix, size_t index)</td></tr>
+<tr class="memdesc:ga251f78730b4d1a6a86415c98df6e92a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creating a view on a specific column of the given temporary matrix.  <a href="../../d0/d48/group__views.html#ga251f78730b4d1a6a86415c98df6e92a6">More...</a><br /></td></tr>
+<tr class="separator:ga251f78730b4d1a6a86415c98df6e92a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Column operators</div></td></tr>
 <tr class="memitem:ga34153cd04981a0b4b8b2b7b1fbbcb353"><td class="memTemplParams" colspan="2">template&lt;typename MT , bool SO, bool DF, bool SF&gt; </td></tr>
 <tr class="memitem:ga34153cd04981a0b4b8b2b7b1fbbcb353"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/db4/group__column.html#ga34153cd04981a0b4b8b2b7b1fbbcb353">blaze::reset</a> (Column&lt; MT, SO, DF, SF &gt; &amp;column)</td></tr>
@@ -165,7 +166,7 @@ Functions</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 8 2016 16:45:00 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 31 2016 17:16:58 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

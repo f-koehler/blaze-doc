@@ -79,18 +79,18 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ab18d300374eabcb25157e67f84aae764"><td class="memItemLeft" align="right" valign="top"><a id="ab18d300374eabcb25157e67f84aae764"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>simdEnabled</b>
- }<tr class="memdesc:ab18d300374eabcb25157e67f84aae764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template evaluation strategy. <br /></td></tr>
+<tr class="memitem:a3bd257f3705b097b69d73fc441516081"><td class="memItemLeft" align="right" valign="top"><a id="a3bd257f3705b097b69d73fc441516081"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>simdEnabled</b>
+ }<tr class="memdesc:a3bd257f3705b097b69d73fc441516081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template evaluation strategy. <br /></td></tr>
 </td></tr>
-<tr class="separator:ab18d300374eabcb25157e67f84aae764"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0a2cd18cc380107fc5d6105522520df"><td class="memItemLeft" align="right" valign="top"><a id="ad0a2cd18cc380107fc5d6105522520df"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>smpAssignable</b>
- }<tr class="memdesc:ad0a2cd18cc380107fc5d6105522520df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template assignment strategy. <br /></td></tr>
+<tr class="separator:a3bd257f3705b097b69d73fc441516081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affe41a815038c35c6a5f749475db7d06"><td class="memItemLeft" align="right" valign="top"><a id="affe41a815038c35c6a5f749475db7d06"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>smpAssignable</b>
+ }<tr class="memdesc:affe41a815038c35c6a5f749475db7d06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template assignment strategy. <br /></td></tr>
 </td></tr>
-<tr class="separator:ad0a2cd18cc380107fc5d6105522520df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08433b315c537a6e5411766d96778ca8"><td class="memItemLeft" align="right" valign="top"><a id="a08433b315c537a6e5411766d96778ca8"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: size_t { <b>SIMDSIZE</b> = SIMDTrait&lt;ElementType&gt;::size
- }<tr class="memdesc:a08433b315c537a6e5411766d96778ca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of elements packed within a single SIMD element. <br /></td></tr>
+<tr class="separator:affe41a815038c35c6a5f749475db7d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b97d8825b528910c1bcbc7df050dc8"><td class="memItemLeft" align="right" valign="top"><a id="ab9b97d8825b528910c1bcbc7df050dc8"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: size_t { <b>SIMDSIZE</b> = SIMDTrait&lt;ElementType&gt;::size
+ }<tr class="memdesc:ab9b97d8825b528910c1bcbc7df050dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of elements packed within a single SIMD element. <br /></td></tr>
 </td></tr>
-<tr class="separator:a08433b315c537a6e5411766d96778ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ab9b97d8825b528910c1bcbc7df050dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ed731a069a32a5640b8cb7bc187751a"><td class="memItemLeft" align="right" valign="top"><a id="a9ed731a069a32a5640b8cb7bc187751a"></a>
 typedef <a class="el" href="../../d9/d9c/classblaze_1_1TDMatTSMatMultExpr.html">TDMatTSMatMultExpr</a>&lt; MT1, MT2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d9c/classblaze_1_1TDMatTSMatMultExpr.html#a9ed731a069a32a5640b8cb7bc187751a">This</a></td></tr>
 <tr class="memdesc:a9ed731a069a32a5640b8cb7bc187751a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of this <a class="el" href="../../d9/d9c/classblaze_1_1TDMatTSMatMultExpr.html" title="Expression object for transpose dense matrix-transpose sparse matrix multiplications.The TDMatTSMatMultExpr class represents the compile time expression for multiplications between a column-major dense matrix and a column-major sparse matrix. ">TDMatTSMatMultExpr</a> instance. <br /></td></tr>
@@ -190,14 +190,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:aa5f493b3f08838a76c4d99b16e428eec"><td class="memItemLeft" align="right" valign="top"><a id="aa5f493b3f08838a76c4d99b16e428eec"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>evaluateLeft</b> = IsComputation&lt;MT1&gt;::value || RequiresEvaluation&lt;MT1&gt;::value
- }<tr class="memdesc:aa5f493b3f08838a76c4d99b16e428eec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the composite type of the left-hand side dense matrix expression. <br /></td></tr>
+<tr class="memitem:a50b799df40244b258f56ccaae32fbdb3"><td class="memItemLeft" align="right" valign="top"><a id="a50b799df40244b258f56ccaae32fbdb3"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>evaluateLeft</b> = IsComputation&lt;MT1&gt;::value || RequiresEvaluation&lt;MT1&gt;::value
+ }<tr class="memdesc:a50b799df40244b258f56ccaae32fbdb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the composite type of the left-hand side dense matrix expression. <br /></td></tr>
 </td></tr>
-<tr class="separator:aa5f493b3f08838a76c4d99b16e428eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1e1ee0b063beff1e0aae56fa160f391"><td class="memItemLeft" align="right" valign="top"><a id="af1e1ee0b063beff1e0aae56fa160f391"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>evaluateRight</b> = IsComputation&lt;MT2&gt;::value || RequiresEvaluation&lt;MT2&gt;::value
- }<tr class="memdesc:af1e1ee0b063beff1e0aae56fa160f391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the composite type of the right-hand side sparse matrix expression. <br /></td></tr>
+<tr class="separator:a50b799df40244b258f56ccaae32fbdb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01d1beb98559334c40a4e882401b32e0"><td class="memItemLeft" align="right" valign="top"><a id="a01d1beb98559334c40a4e882401b32e0"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>evaluateRight</b> = IsComputation&lt;MT2&gt;::value || RequiresEvaluation&lt;MT2&gt;::value
+ }<tr class="memdesc:a01d1beb98559334c40a4e882401b32e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the composite type of the right-hand side sparse matrix expression. <br /></td></tr>
 </td></tr>
-<tr class="separator:af1e1ee0b063beff1e0aae56fa160f391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a01d1beb98559334c40a4e882401b32e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a2db53bb414550b05cd573dcd964783"><td class="memItemLeft" align="right" valign="top"><a id="a8a2db53bb414550b05cd573dcd964783"></a>
 typedef <a class="el" href="../../d2/de9/namespaceblaze.html#a5a86db58851c76c3500769d8afdc759e">ResultType_</a>&lt; MT1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d9c/classblaze_1_1TDMatTSMatMultExpr.html#a8a2db53bb414550b05cd573dcd964783">RT1</a></td></tr>
 <tr class="memdesc:a8a2db53bb414550b05cd573dcd964783"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result type of the left-hand side dense matrix expression. <br /></td></tr>
@@ -716,7 +716,7 @@ template&lt;typename MT1 , typename MT2 &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 8 2016 16:45:07 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 31 2016 17:17:07 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>
