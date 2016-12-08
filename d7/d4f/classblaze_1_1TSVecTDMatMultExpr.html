@@ -80,14 +80,14 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a033e2642f886c12e16bb2437fde510cb"><td class="memItemLeft" align="right" valign="top"><a id="a033e2642f886c12e16bb2437fde510cb"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>simdEnabled</b> = false
- }<tr class="memdesc:a033e2642f886c12e16bb2437fde510cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template evaluation strategy. <br /></td></tr>
+<tr class="memitem:a4b9682e6aa6eeea3fba2adc7733b866a"><td class="memItemLeft" align="right" valign="top"><a id="a4b9682e6aa6eeea3fba2adc7733b866a"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>simdEnabled</b> = false
+ }<tr class="memdesc:a4b9682e6aa6eeea3fba2adc7733b866a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template evaluation strategy. <br /></td></tr>
 </td></tr>
-<tr class="separator:a033e2642f886c12e16bb2437fde510cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86d0ed7c24121308c1e7e56b0ed2f4be"><td class="memItemLeft" align="right" valign="top"><a id="a86d0ed7c24121308c1e7e56b0ed2f4be"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>smpAssignable</b>
- }<tr class="memdesc:a86d0ed7c24121308c1e7e56b0ed2f4be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template assignment strategy. <br /></td></tr>
+<tr class="separator:a4b9682e6aa6eeea3fba2adc7733b866a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3e7963ffb6afab9395b7248d4a67bac"><td class="memItemLeft" align="right" valign="top"><a id="ac3e7963ffb6afab9395b7248d4a67bac"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>smpAssignable</b>
+ }<tr class="memdesc:ac3e7963ffb6afab9395b7248d4a67bac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template assignment strategy. <br /></td></tr>
 </td></tr>
-<tr class="separator:a86d0ed7c24121308c1e7e56b0ed2f4be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ac3e7963ffb6afab9395b7248d4a67bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4187e50894a9dba2c57c6ef821c50a42"><td class="memItemLeft" align="right" valign="top"><a id="a4187e50894a9dba2c57c6ef821c50a42"></a>
 typedef <a class="el" href="../../d7/d4f/classblaze_1_1TSVecTDMatMultExpr.html">TSVecTDMatMultExpr</a>&lt; VT, MT &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4f/classblaze_1_1TSVecTDMatMultExpr.html#a4187e50894a9dba2c57c6ef821c50a42">This</a></td></tr>
 <tr class="memdesc:a4187e50894a9dba2c57c6ef821c50a42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of this <a class="el" href="../../d7/d4f/classblaze_1_1TSVecTDMatMultExpr.html" title="Expression object for transpose sparse vector-transpose dense matrix multiplications.The TSVecTDMatMultExpr class represents the compile time expression for multiplications between transpose sparse vectors and column-major dense matrices. ">TSVecTDMatMultExpr</a> instance. <br /></td></tr>
@@ -176,18 +176,18 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:ad843212bd77a39a852de2a2edf0376a5"><td class="memItemLeft" align="right" valign="top"><a id="ad843212bd77a39a852de2a2edf0376a5"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>evaluateVector</b> = IsComputation&lt;VT&gt;::value || RequiresEvaluation&lt;VT&gt;::value
- }<tr class="memdesc:ad843212bd77a39a852de2a2edf0376a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the composite type of the left-hand side sparse vector expression. <br /></td></tr>
+<tr class="memitem:af17015b763cf62eb7ed5399d3603f344"><td class="memItemLeft" align="right" valign="top"><a id="af17015b763cf62eb7ed5399d3603f344"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>evaluateVector</b> = IsComputation&lt;VT&gt;::value || RequiresEvaluation&lt;VT&gt;::value
+ }<tr class="memdesc:af17015b763cf62eb7ed5399d3603f344"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the composite type of the left-hand side sparse vector expression. <br /></td></tr>
 </td></tr>
-<tr class="separator:ad843212bd77a39a852de2a2edf0376a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ef3fbeb08852e25e26dae0af290e08b"><td class="memItemLeft" align="right" valign="top"><a id="a2ef3fbeb08852e25e26dae0af290e08b"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>evaluateMatrix</b> = RequiresEvaluation&lt;MT&gt;::value
- }<tr class="memdesc:a2ef3fbeb08852e25e26dae0af290e08b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the composite type of the right-hand side dense matrix expression. <br /></td></tr>
+<tr class="separator:af17015b763cf62eb7ed5399d3603f344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a947c49a60664194388453a24bae31c30"><td class="memItemLeft" align="right" valign="top"><a id="a947c49a60664194388453a24bae31c30"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>evaluateMatrix</b> = RequiresEvaluation&lt;MT&gt;::value
+ }<tr class="memdesc:a947c49a60664194388453a24bae31c30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the composite type of the right-hand side dense matrix expression. <br /></td></tr>
 </td></tr>
-<tr class="separator:a2ef3fbeb08852e25e26dae0af290e08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdff5ff6957c5f42a12039bd62c70061"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>useAssign</b> = ( evaluateVector || evaluateMatrix )
- }<tr class="memdesc:acdff5ff6957c5f42a12039bd62c70061"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the evaluation strategy of the multiplication expression.  <a href="../../d7/d4f/classblaze_1_1TSVecTDMatMultExpr.html#acdff5ff6957c5f42a12039bd62c70061">More...</a><br /></td></tr>
+<tr class="separator:a947c49a60664194388453a24bae31c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae1f5460c6f9d3f08dec6e0a68f45c1f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>useAssign</b> = ( evaluateVector || evaluateMatrix )
+ }<tr class="memdesc:aae1f5460c6f9d3f08dec6e0a68f45c1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the evaluation strategy of the multiplication expression.  <a href="../../d7/d4f/classblaze_1_1TSVecTDMatMultExpr.html#aae1f5460c6f9d3f08dec6e0a68f45c1f">More...</a><br /></td></tr>
 </td></tr>
-<tr class="separator:acdff5ff6957c5f42a12039bd62c70061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aae1f5460c6f9d3f08dec6e0a68f45c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e98174674829193951f8a4c47215833"><td class="memItemLeft" align="right" valign="top"><a id="a2e98174674829193951f8a4c47215833"></a>
 typedef <a class="el" href="../../d2/de9/namespaceblaze.html#a5a86db58851c76c3500769d8afdc759e">ResultType_</a>&lt; VT &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4f/classblaze_1_1TSVecTDMatMultExpr.html#a2e98174674829193951f8a4c47215833">VRT</a></td></tr>
 <tr class="memdesc:a2e98174674829193951f8a4c47215833"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result type of the left-hand side sparse vector expression. <br /></td></tr>
@@ -258,8 +258,8 @@ class blaze::TSVecTDMatMultExpr&lt; VT, MT &gt;</h3>
 <p><a class="el" href="../../d5/d2e/structblaze_1_1Expression.html" title="Base class for all expression templates.The Expression class is the base class for all expression tem...">Expression</a> object for transpose sparse vector-transpose dense matrix multiplications.</p>
 <p>The <a class="el" href="../../d7/d4f/classblaze_1_1TSVecTDMatMultExpr.html" title="Expression object for transpose sparse vector-transpose dense matrix multiplications.The TSVecTDMatMultExpr class represents the compile time expression for multiplications between transpose sparse vectors and column-major dense matrices. ">TSVecTDMatMultExpr</a> class represents the compile time expression for multiplications between transpose sparse vectors and column-major dense matrices. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="acdff5ff6957c5f42a12039bd62c70061"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdff5ff6957c5f42a12039bd62c70061">&sect;&nbsp;</a></span>anonymous enum</h2>
+<a id="aae1f5460c6f9d3f08dec6e0a68f45c1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae1f5460c6f9d3f08dec6e0a68f45c1f">&sect;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -709,7 +709,7 @@ template&lt;typename VT , typename MT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 31 2016 17:17:07 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 8 2016 01:03:52 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

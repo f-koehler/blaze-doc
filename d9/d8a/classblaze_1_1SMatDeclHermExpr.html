@@ -63,6 +63,7 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../d3/d31/classblaze_1_1SMatDeclHermExpr-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -85,10 +86,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a9be6bafd5d1d3dd1451158c9fb7da2fc"><td class="memItemLeft" align="right" valign="top"><a id="a9be6bafd5d1d3dd1451158c9fb7da2fc"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>smpAssignable</b> = MT::smpAssignable
- }<tr class="memdesc:a9be6bafd5d1d3dd1451158c9fb7da2fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template assignment strategy. <br /></td></tr>
+<tr class="memitem:a895923e3c4941659aca85052c2da3f17"><td class="memItemLeft" align="right" valign="top"><a id="a895923e3c4941659aca85052c2da3f17"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>smpAssignable</b> = MT::smpAssignable
+ }<tr class="memdesc:a895923e3c4941659aca85052c2da3f17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template assignment strategy. <br /></td></tr>
 </td></tr>
-<tr class="separator:a9be6bafd5d1d3dd1451158c9fb7da2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a895923e3c4941659aca85052c2da3f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8116dd04787388b32d68fd00d3de93c"><td class="memItemLeft" align="right" valign="top"><a id="ab8116dd04787388b32d68fd00d3de93c"></a>
 typedef <a class="el" href="../../d9/d8a/classblaze_1_1SMatDeclHermExpr.html">SMatDeclHermExpr</a>&lt; MT, SO &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8a/classblaze_1_1SMatDeclHermExpr.html#ab8116dd04787388b32d68fd00d3de93c">This</a></td></tr>
 <tr class="memdesc:ab8116dd04787388b32d68fd00d3de93c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of this <a class="el" href="../../d9/d8a/classblaze_1_1SMatDeclHermExpr.html" title="Expression object for the explicit Hermitian declaration of sparse matrices.The SMatDeclHermExpr clas...">SMatDeclHermExpr</a> instance. <br /></td></tr>
@@ -173,6 +174,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a00af660c25d47d64c2beb7511329a3e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conversion operator for constant matrices.  <a href="#a00af660c25d47d64c2beb7511329a3e5">More...</a><br /></td></tr>
 <tr class="separator:a00af660c25d47d64c2beb7511329a3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a7ea270459dbb90be70c441843161148e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>useAssign</b> = RequiresEvaluation&lt;MT&gt;::value
+ }<tr class="memdesc:a7ea270459dbb90be70c441843161148e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the serial evaluation strategy of the Hermitian declaration expression.  <a href="../../d9/d8a/classblaze_1_1SMatDeclHermExpr.html#a7ea270459dbb90be70c441843161148e">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a7ea270459dbb90be70c441843161148e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a1ecacc90c568ef99cae683e568e026f0"><td class="memItemLeft" align="right" valign="top"><a id="a1ecacc90c568ef99cae683e568e026f0"></a>
@@ -186,7 +194,35 @@ class blaze::SMatDeclHermExpr&lt; MT, SO &gt;</h3>
 
 <p><a class="el" href="../../d5/d2e/structblaze_1_1Expression.html" title="Base class for all expression templates.The Expression class is the base class for all expression tem...">Expression</a> object for the explicit Hermitian declaration of sparse matrices.</p>
 <p>The <a class="el" href="../../d9/d8a/classblaze_1_1SMatDeclHermExpr.html" title="Expression object for the explicit Hermitian declaration of sparse matrices.The SMatDeclHermExpr clas...">SMatDeclHermExpr</a> class represents the compile time expression for the explicit Hermitian declaration of a sparse matrix. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a7ea270459dbb90be70c441843161148e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ea270459dbb90be70c441843161148e">&sect;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MT , bool SO&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum : bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compilation switch for the serial evaluation strategy of the Hermitian declaration expression. </p>
+<p>The <em>useAssign</em> compile time constant expression represents a compilation switch for the serial evaluation strategy of the Hermitian declaration expression. In case the given sparse matrix expression of type <em>MT</em> requires an intermediate evaluation, <em>useAssign</em> will be set to 1 and the Hermitian declaration expression will be evaluated via the <em>assign</em> function family. Otherwise <em>useAssign</em> will be set to 0 and the expression will be evaluated via the subscript operator. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a395956e76fe1bf72442da0a5294b5258"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a395956e76fe1bf72442da0a5294b5258">&sect;&nbsp;</a></span>SMatDeclHermExpr()</h2>
 
@@ -684,7 +720,7 @@ template&lt;typename MT , bool SO&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 31 2016 17:17:05 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 8 2016 01:03:50 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

@@ -112,6 +112,7 @@ $(function() {
 <code>#include &lt;<a class="el" href="../../d8/dd9/If_8h_source.html">blaze/util/mpl/If.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../dd/dee/Not_8h_source.html">blaze/util/mpl/Not.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d7/df8/Types_8h_source.html">blaze/util/Types.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../db/d50/IsBuiltin_8h_source.html">blaze/util/typetraits/IsBuiltin.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d7/d61/IsSame_8h_source.html">blaze/util/typetraits/IsSame.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../da/dbe/RemoveReference_8h_source.html">blaze/util/typetraits/RemoveReference.h</a>&gt;</code><br />
 </div>
@@ -190,10 +191,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga4bcce93825df78b16f67a4e987165066"><td class="memTemplItemLeft" align="right" valign="top">const SMatForEachExpr&lt; MT, InvCbrt, SO &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d45/group__sparse__matrix.html#ga4bcce93825df78b16f67a4e987165066">blaze::invcbrt</a> (const SparseMatrix&lt; MT, SO &gt; &amp;sm)</td></tr>
 <tr class="memdesc:ga4bcce93825df78b16f67a4e987165066"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the inverse cubic root of each non-zero element of the sparse matrix <em>sm</em>.  <a href="../../d0/d45/group__sparse__matrix.html#ga4bcce93825df78b16f67a4e987165066">More...</a><br /></td></tr>
 <tr class="separator:ga4bcce93825df78b16f67a4e987165066"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab8c457c5073385470e690a492a95c47b"><td class="memTemplParams" colspan="2">template&lt;typename MT , bool SO, typename DT &gt; </td></tr>
-<tr class="memitem:gab8c457c5073385470e690a492a95c47b"><td class="memTemplItemLeft" align="right" valign="top">const SMatForEachExpr&lt; MT, Clip&lt; DT &gt;, SO &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d45/group__sparse__matrix.html#gab8c457c5073385470e690a492a95c47b">blaze::clip</a> (const SparseMatrix&lt; MT, SO &gt; &amp;sm, const DT &amp;min, const DT &amp;max)</td></tr>
-<tr class="memdesc:gab8c457c5073385470e690a492a95c47b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restricts each single element of the sparse matrix <em>sm</em> to the range <img class="formulaInl" alt="$[min..max]$" src="../../form_94.png"/>.  <a href="../../d0/d45/group__sparse__matrix.html#gab8c457c5073385470e690a492a95c47b">More...</a><br /></td></tr>
-<tr class="separator:gab8c457c5073385470e690a492a95c47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab37c9b2975d69391340b27767a56addc"><td class="memTemplParams" colspan="2">template&lt;typename MT , bool SO, typename DT &gt; </td></tr>
+<tr class="memitem:gab37c9b2975d69391340b27767a56addc"><td class="memTemplItemLeft" align="right" valign="top">const SMatForEachExpr&lt; MT, Clamp&lt; DT &gt;, SO &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d45/group__sparse__matrix.html#gab37c9b2975d69391340b27767a56addc">blaze::clamp</a> (const SparseMatrix&lt; MT, SO &gt; &amp;sm, const DT &amp;min, const DT &amp;max)</td></tr>
+<tr class="memdesc:gab37c9b2975d69391340b27767a56addc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restricts each single element of the sparse matrix <em>sm</em> to the range <img class="formulaInl" alt="$[min..max]$" src="../../form_94.png"/>.  <a href="../../d0/d45/group__sparse__matrix.html#gab37c9b2975d69391340b27767a56addc">More...</a><br /></td></tr>
+<tr class="separator:gab37c9b2975d69391340b27767a56addc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga39d48ddafc58459876471f1cd1400660"><td class="memTemplParams" colspan="2">template&lt;typename MT , bool SO, typename ET &gt; </td></tr>
 <tr class="memitem:ga39d48ddafc58459876471f1cd1400660"><td class="memTemplItemLeft" align="right" valign="top">const SMatForEachExpr&lt; MT, Pow&lt; ET &gt;, SO &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d45/group__sparse__matrix.html#ga39d48ddafc58459876471f1cd1400660">blaze::pow</a> (const SparseMatrix&lt; MT, SO &gt; &amp;sm, ET exp)</td></tr>
 <tr class="memdesc:ga39d48ddafc58459876471f1cd1400660"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the exponential value for each non-zero element of the sparse matrix <em>sm</em>.  <a href="../../d0/d45/group__sparse__matrix.html#ga39d48ddafc58459876471f1cd1400660">More...</a><br /></td></tr>
@@ -292,7 +293,7 @@ Functions</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 31 2016 17:16:59 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 8 2016 01:03:44 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

@@ -86,18 +86,18 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a7b32ab867a1fdd8ada22c0b62ffdeaac"><td class="memItemLeft" align="right" valign="top"><a id="a7b32ab867a1fdd8ada22c0b62ffdeaac"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>simdEnabled</b>
- }<tr class="memdesc:a7b32ab867a1fdd8ada22c0b62ffdeaac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template evaluation strategy. <br /></td></tr>
+<tr class="memitem:add1c44b7ff8824d5e2b46ac548819bae"><td class="memItemLeft" align="right" valign="top"><a id="add1c44b7ff8824d5e2b46ac548819bae"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>simdEnabled</b>
+ }<tr class="memdesc:add1c44b7ff8824d5e2b46ac548819bae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template evaluation strategy. <br /></td></tr>
 </td></tr>
-<tr class="separator:a7b32ab867a1fdd8ada22c0b62ffdeaac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8660c771425a0b0ec4da2445f01720b"><td class="memItemLeft" align="right" valign="top"><a id="ac8660c771425a0b0ec4da2445f01720b"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>smpAssignable</b> = VT1::smpAssignable &amp;&amp; VT2::smpAssignable
- }<tr class="memdesc:ac8660c771425a0b0ec4da2445f01720b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template assignment strategy. <br /></td></tr>
+<tr class="separator:add1c44b7ff8824d5e2b46ac548819bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a965135072c3556589bf58f37c9ce2940"><td class="memItemLeft" align="right" valign="top"><a id="a965135072c3556589bf58f37c9ce2940"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>smpAssignable</b> = VT1::smpAssignable &amp;&amp; VT2::smpAssignable
+ }<tr class="memdesc:a965135072c3556589bf58f37c9ce2940"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template assignment strategy. <br /></td></tr>
 </td></tr>
-<tr class="separator:ac8660c771425a0b0ec4da2445f01720b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf7a0ba8d01d3a5d40843d19dbf636c6"><td class="memItemLeft" align="right" valign="top"><a id="acf7a0ba8d01d3a5d40843d19dbf636c6"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: size_t { <b>SIMDSIZE</b> = SIMDTrait&lt;ElementType&gt;::size
- }<tr class="memdesc:acf7a0ba8d01d3a5d40843d19dbf636c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of elements packed within a single SIMD element. <br /></td></tr>
+<tr class="separator:a965135072c3556589bf58f37c9ce2940"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a277b641cdf59ef8c62ce7d6297e40c9c"><td class="memItemLeft" align="right" valign="top"><a id="a277b641cdf59ef8c62ce7d6297e40c9c"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: size_t { <b>SIMDSIZE</b> = SIMDTrait&lt;ElementType&gt;::size
+ }<tr class="memdesc:a277b641cdf59ef8c62ce7d6297e40c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of elements packed within a single SIMD element. <br /></td></tr>
 </td></tr>
-<tr class="separator:acf7a0ba8d01d3a5d40843d19dbf636c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a277b641cdf59ef8c62ce7d6297e40c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa69b8b26ddd20a5f6263ce6783ed7a32"><td class="memItemLeft" align="right" valign="top"><a id="aa69b8b26ddd20a5f6263ce6783ed7a32"></a>
 typedef <a class="el" href="../../df/d77/classblaze_1_1DVecDVecDivExpr.html">DVecDVecDivExpr</a>&lt; VT1, VT2, TF &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d77/classblaze_1_1DVecDVecDivExpr.html#aa69b8b26ddd20a5f6263ce6783ed7a32">This</a></td></tr>
 <tr class="memdesc:aa69b8b26ddd20a5f6263ce6783ed7a32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of this <a class="el" href="../../df/d77/classblaze_1_1DVecDVecDivExpr.html" title="Expression object for dense vector-dense vector divisions.The DVecDVecDivExpr class represents the co...">DVecDVecDivExpr</a> instance. <br /></td></tr>
@@ -187,14 +187,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:afc71de3a57a838746ac4c73a8b581fd3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>returnExpr</b> = !IsTemporary&lt;RN1&gt;::value &amp;&amp; !IsTemporary&lt;RN2&gt;::value
- }<tr class="memdesc:afc71de3a57a838746ac4c73a8b581fd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the selection of the subscript operator return type.  <a href="../../df/d77/classblaze_1_1DVecDVecDivExpr.html#afc71de3a57a838746ac4c73a8b581fd3">More...</a><br /></td></tr>
+<tr class="memitem:ae996a9133ae96beb54f0b659e6371f66"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>returnExpr</b> = !IsTemporary&lt;RN1&gt;::value &amp;&amp; !IsTemporary&lt;RN2&gt;::value
+ }<tr class="memdesc:ae996a9133ae96beb54f0b659e6371f66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the selection of the subscript operator return type.  <a href="../../df/d77/classblaze_1_1DVecDVecDivExpr.html#ae996a9133ae96beb54f0b659e6371f66">More...</a><br /></td></tr>
 </td></tr>
-<tr class="separator:afc71de3a57a838746ac4c73a8b581fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cc049221430f02f8c5ef2a8117a1acd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>useAssign</b> = ( RequiresEvaluation&lt;VT1&gt;::value || RequiresEvaluation&lt;VT2&gt;::value || !returnExpr )
- }<tr class="memdesc:a5cc049221430f02f8c5ef2a8117a1acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the serial evaluation strategy of the division expression.  <a href="../../df/d77/classblaze_1_1DVecDVecDivExpr.html#a5cc049221430f02f8c5ef2a8117a1acd">More...</a><br /></td></tr>
+<tr class="separator:ae996a9133ae96beb54f0b659e6371f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6408dec80ccc593ed134580b55deb28c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>useAssign</b> = ( RequiresEvaluation&lt;VT1&gt;::value || RequiresEvaluation&lt;VT2&gt;::value || !returnExpr )
+ }<tr class="memdesc:a6408dec80ccc593ed134580b55deb28c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the serial evaluation strategy of the division expression.  <a href="../../df/d77/classblaze_1_1DVecDVecDivExpr.html#a6408dec80ccc593ed134580b55deb28c">More...</a><br /></td></tr>
 </td></tr>
-<tr class="separator:a5cc049221430f02f8c5ef2a8117a1acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a6408dec80ccc593ed134580b55deb28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b2137ffd8a9885f0e505c3ec43b14c2"><td class="memItemLeft" align="right" valign="top"><a id="a4b2137ffd8a9885f0e505c3ec43b14c2"></a>
 typedef <a class="el" href="../../d2/de9/namespaceblaze.html#a5a86db58851c76c3500769d8afdc759e">ResultType_</a>&lt; VT1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d77/classblaze_1_1DVecDVecDivExpr.html#a4b2137ffd8a9885f0e505c3ec43b14c2">RT1</a></td></tr>
 <tr class="memdesc:a4b2137ffd8a9885f0e505c3ec43b14c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result type of the left-hand side dense vector expression. <br /></td></tr>
@@ -250,8 +250,8 @@ class blaze::DVecDVecDivExpr&lt; VT1, VT2, TF &gt;</h3>
 <p><a class="el" href="../../d5/d2e/structblaze_1_1Expression.html" title="Base class for all expression templates.The Expression class is the base class for all expression tem...">Expression</a> object for dense vector-dense vector divisions.</p>
 <p>The <a class="el" href="../../df/d77/classblaze_1_1DVecDVecDivExpr.html" title="Expression object for dense vector-dense vector divisions.The DVecDVecDivExpr class represents the co...">DVecDVecDivExpr</a> class represents the compile time expression for componentwise divisions between dense vectors. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="afc71de3a57a838746ac4c73a8b581fd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc71de3a57a838746ac4c73a8b581fd3">&sect;&nbsp;</a></span>anonymous enum</h2>
+<a id="ae996a9133ae96beb54f0b659e6371f66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae996a9133ae96beb54f0b659e6371f66">&sect;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -277,8 +277,8 @@ template&lt;typename VT1, typename VT2, bool TF&gt; </div>
 
 </div>
 </div>
-<a id="a5cc049221430f02f8c5ef2a8117a1acd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5cc049221430f02f8c5ef2a8117a1acd">&sect;&nbsp;</a></span>anonymous enum</h2>
+<a id="a6408dec80ccc593ed134580b55deb28c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6408dec80ccc593ed134580b55deb28c">&sect;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -824,7 +824,7 @@ template&lt;typename VT1, typename VT2, bool TF&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 31 2016 17:17:04 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 8 2016 01:03:49 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

@@ -48,14 +48,15 @@ var searchData=
   ['hermitianvalue_2eh',['HermitianValue.h',['../dc/db2/HermitianValue_8h.html',1,'']]],
   ['hesv_2eh',['hesv.h',['../d4/d71/clapack_2hesv_8h.html',1,'']]],
   ['hesv_2eh',['hesv.h',['../df/da6/hesv_8h.html',1,'']]],
-  ['hetrf_2eh',['hetrf.h',['../d2/dbc/clapack_2hetrf_8h.html',1,'']]],
   ['hetrf_2eh',['hetrf.h',['../d5/db4/hetrf_8h.html',1,'']]],
+  ['hetrf_2eh',['hetrf.h',['../d2/dbc/clapack_2hetrf_8h.html',1,'']]],
   ['hetri_2eh',['hetri.h',['../d7/d98/hetri_8h.html',1,'']]],
   ['hetri_2eh',['hetri.h',['../de/da1/clapack_2hetri_8h.html',1,'']]],
-  ['hetrs_2eh',['hetrs.h',['../df/d31/clapack_2hetrs_8h.html',1,'']]],
   ['hetrs_2eh',['hetrs.h',['../dd/d46/hetrs_8h.html',1,'']]],
+  ['hetrs_2eh',['hetrs.h',['../df/d31/clapack_2hetrs_8h.html',1,'']]],
+  ['hightype_2eh',['HighType.h',['../dd/d25/HighType_8h.html',1,'']]],
   ['hybridmatrix_2eh',['HybridMatrix.h',['../d3/d3c/HybridMatrix_8h.html',1,'']]],
   ['hybridmatrix_2eh',['HybridMatrix.h',['../df/d40/dense_2HybridMatrix_8h.html',1,'']]],
-  ['hybridvector_2eh',['HybridVector.h',['../d0/ddb/HybridVector_8h.html',1,'']]],
-  ['hybridvector_2eh',['HybridVector.h',['../d7/dba/dense_2HybridVector_8h.html',1,'']]]
+  ['hybridvector_2eh',['HybridVector.h',['../d7/dba/dense_2HybridVector_8h.html',1,'']]],
+  ['hybridvector_2eh',['HybridVector.h',['../d0/ddb/HybridVector_8h.html',1,'']]]
 ];

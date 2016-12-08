@@ -71,6 +71,7 @@ var menudata={children:[
 {text:'d',url:'namespacemembers_type_d.html#index_d'},
 {text:'e',url:'namespacemembers_type_e.html#index_e'},
 {text:'f',url:'namespacemembers_type_f.html#index_f'},
+{text:'h',url:'namespacemembers_type_h.html#index_h'},
 {text:'i',url:'namespacemembers_type_i.html#index_i'},
 {text:'l',url:'namespacemembers_type_l.html#index_l'},
 {text:'m',url:'namespacemembers_type_m.html#index_m'},
@@ -173,6 +174,11 @@ var menudata={children:[
 {text:'s',url:'functions_type_s.html#index_s'},
 {text:'t',url:'functions_type_t.html#index_t'},
 {text:'v',url:'functions_type_v.html#index_v'}]},
+{text:'Enumerator',url:'functions_eval.html',children:[
+{text:'h',url:'functions_eval.html#index_h'},
+{text:'l',url:'functions_eval.html#index_l'},
+{text:'s',url:'functions_eval.html#index_s'},
+{text:'u',url:'functions_eval.html#index_u'}]},
 {text:'Related Functions',url:'functions_rela.html',children:[
 {text:'a',url:'functions_rela.html#index_a'},
 {text:'d',url:'functions_rela.html#index_d'},

@@ -88,18 +88,18 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a0071eb9b5c9ce21b5a7eceb920da1db1"><td class="memItemLeft" align="right" valign="top"><a id="a0071eb9b5c9ce21b5a7eceb920da1db1"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>simdEnabled</b>
- }<tr class="memdesc:a0071eb9b5c9ce21b5a7eceb920da1db1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template evaluation strategy. <br /></td></tr>
+<tr class="memitem:a513ac3bde50ddd2040ffe662b798c36a"><td class="memItemLeft" align="right" valign="top"><a id="a513ac3bde50ddd2040ffe662b798c36a"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>simdEnabled</b>
+ }<tr class="memdesc:a513ac3bde50ddd2040ffe662b798c36a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template evaluation strategy. <br /></td></tr>
 </td></tr>
-<tr class="separator:a0071eb9b5c9ce21b5a7eceb920da1db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac795fb6298c3247e3cbdaad4d2abeed1"><td class="memItemLeft" align="right" valign="top"><a id="ac795fb6298c3247e3cbdaad4d2abeed1"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>smpAssignable</b> = MT::smpAssignable
- }<tr class="memdesc:ac795fb6298c3247e3cbdaad4d2abeed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template assignment strategy. <br /></td></tr>
+<tr class="separator:a513ac3bde50ddd2040ffe662b798c36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6f5079cc7c540852bbbae2ddc77cec0"><td class="memItemLeft" align="right" valign="top"><a id="ad6f5079cc7c540852bbbae2ddc77cec0"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>smpAssignable</b> = MT::smpAssignable
+ }<tr class="memdesc:ad6f5079cc7c540852bbbae2ddc77cec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template assignment strategy. <br /></td></tr>
 </td></tr>
-<tr class="separator:ac795fb6298c3247e3cbdaad4d2abeed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a323171ba8ec45177086c5c499970bd3a"><td class="memItemLeft" align="right" valign="top"><a id="a323171ba8ec45177086c5c499970bd3a"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: size_t { <b>SIMDSIZE</b> = SIMDTrait&lt;ElementType&gt;::size
- }<tr class="memdesc:a323171ba8ec45177086c5c499970bd3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of elements packed within a single SIMD element. <br /></td></tr>
+<tr class="separator:ad6f5079cc7c540852bbbae2ddc77cec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95ee4a4a07e496d92e92bc43cba68d37"><td class="memItemLeft" align="right" valign="top"><a id="a95ee4a4a07e496d92e92bc43cba68d37"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: size_t { <b>SIMDSIZE</b> = SIMDTrait&lt;ElementType&gt;::size
+ }<tr class="memdesc:a95ee4a4a07e496d92e92bc43cba68d37"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of elements packed within a single SIMD element. <br /></td></tr>
 </td></tr>
-<tr class="separator:a323171ba8ec45177086c5c499970bd3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a95ee4a4a07e496d92e92bc43cba68d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a544af19d216e49986e0343f482e040fa"><td class="memItemLeft" align="right" valign="top"><a id="a544af19d216e49986e0343f482e040fa"></a>
 typedef <a class="el" href="../../dd/d6a/classblaze_1_1DMatForEachExpr.html">DMatForEachExpr</a>&lt; MT, OP, SO &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d6a/classblaze_1_1DMatForEachExpr.html#a544af19d216e49986e0343f482e040fa">This</a></td></tr>
 <tr class="memdesc:a544af19d216e49986e0343f482e040fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of this <a class="el" href="../../dd/d6a/classblaze_1_1DMatForEachExpr.html" title="Expression object for the dense matrix forEach() function.The DMatForEachExpr class represents the co...">DMatForEachExpr</a> instance. <br /></td></tr>
@@ -199,10 +199,10 @@ decltype(std::declval&lt; OP &gt;()(std::declval&lt; <a class="el" href="../../d
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a4c0a0600f94753ea1de4aba94834542c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>useAssign</b> = RequiresEvaluation&lt;MT&gt;::value
- }<tr class="memdesc:a4c0a0600f94753ea1de4aba94834542c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the serial evaluation strategy of the for-each expression.  <a href="../../dd/d6a/classblaze_1_1DMatForEachExpr.html#a4c0a0600f94753ea1de4aba94834542c">More...</a><br /></td></tr>
+<tr class="memitem:a1f2bfea56b89c565e9b75b2ae6c7d4f4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>useAssign</b> = RequiresEvaluation&lt;MT&gt;::value
+ }<tr class="memdesc:a1f2bfea56b89c565e9b75b2ae6c7d4f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the serial evaluation strategy of the for-each expression.  <a href="../../dd/d6a/classblaze_1_1DMatForEachExpr.html#a1f2bfea56b89c565e9b75b2ae6c7d4f4">More...</a><br /></td></tr>
 </td></tr>
-<tr class="separator:a4c0a0600f94753ea1de4aba94834542c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a1f2bfea56b89c565e9b75b2ae6c7d4f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6ccf9d58bd18ce73f5c1a12c4bcd4cc"><td class="memItemLeft" align="right" valign="top"><a id="aa6ccf9d58bd18ce73f5c1a12c4bcd4cc"></a>
 typedef <a class="el" href="../../d2/de9/namespaceblaze.html#a5a86db58851c76c3500769d8afdc759e">ResultType_</a>&lt; MT &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d6a/classblaze_1_1DMatForEachExpr.html#aa6ccf9d58bd18ce73f5c1a12c4bcd4cc">RT</a></td></tr>
 <tr class="memdesc:aa6ccf9d58bd18ce73f5c1a12c4bcd4cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result type of the dense matrix expression. <br /></td></tr>
@@ -249,8 +249,8 @@ class blaze::DMatForEachExpr&lt; MT, OP, SO &gt;</h3>
 <p><a class="el" href="../../d5/d2e/structblaze_1_1Expression.html" title="Base class for all expression templates.The Expression class is the base class for all expression tem...">Expression</a> object for the dense matrix <a class="el" href="../../db/df0/group__dense__matrix.html#gacbb0c018752c3e955e7ffbee96c415eb" title="Evaluates the given custom operation on each single element of the dense matrix dm. ">forEach()</a> function.</p>
 <p>The <a class="el" href="../../dd/d6a/classblaze_1_1DMatForEachExpr.html" title="Expression object for the dense matrix forEach() function.The DMatForEachExpr class represents the co...">DMatForEachExpr</a> class represents the compile time expression for the evaluation of a custom operation on each element of a dense matrix via the <a class="el" href="../../db/df0/group__dense__matrix.html#gacbb0c018752c3e955e7ffbee96c415eb" title="Evaluates the given custom operation on each single element of the dense matrix dm. ">forEach()</a> function. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a4c0a0600f94753ea1de4aba94834542c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c0a0600f94753ea1de4aba94834542c">&sect;&nbsp;</a></span>anonymous enum</h2>
+<a id="a1f2bfea56b89c565e9b75b2ae6c7d4f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f2bfea56b89c565e9b75b2ae6c7d4f4">&sect;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -873,7 +873,7 @@ template&lt;typename MT, typename OP, bool SO&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 31 2016 17:17:03 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 8 2016 01:03:48 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

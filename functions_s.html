@@ -101,6 +101,9 @@ $(function() {
 <li>seed_
 : <a class="el" href="d0/dc4/classblaze_1_1Random.html#a1ac5785dc716dccb8cca8cc2999531ea">blaze::Random&lt; Type &gt;</a>
 </li>
+<li>Serial()
+: <a class="el" href="df/d25/structblaze_1_1Serial.html#a87370ca3b676f2455061e7380732746d">blaze::Serial</a>
+</li>
 <li>serialize()
 : <a class="el" href="d1/da6/classblaze_1_1MatrixSerializer.html#a7fa4a03120d224bdb22d53eae8829c65">blaze::MatrixSerializer</a>
 , <a class="el" href="d7/d88/classblaze_1_1VectorSerializer.html#a571bf9201dfff3eb893099c002a25c91">blaze::VectorSerializer</a>
@@ -191,9 +194,9 @@ $(function() {
 : <a class="el" href="de/d43/classblaze_1_1CustomMatrix.html#a3bb10097f53605fc6d6fb82fad5e435b">blaze::CustomMatrix&lt; Type, AF, PF, SO &gt;</a>
 , <a class="el" href="de/d32/classblaze_1_1CustomVector.html#a495e9b98508575251d4b4754b7b3c6c8">blaze::CustomVector&lt; Type, AF, PF, TF &gt;</a>
 , <a class="el" href="dc/de8/classblaze_1_1DenseIterator.html#ab387916e9ee6d1512499ea755fc9d50a">blaze::DenseIterator&lt; Type, AF &gt;</a>
-, <a class="el" href="d3/d40/classblaze_1_1DMatDMatMultExpr.html#a6cf1d2bd88162ad792d0d895ac367393">blaze::DMatDMatMultExpr&lt; MT1, MT2, SF &gt;</a>
+, <a class="el" href="d3/d40/classblaze_1_1DMatDMatMultExpr.html#aa2061e739a7620dc5d72515de8daf8f4">blaze::DMatDMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt;</a>
 , <a class="el" href="df/dce/classblaze_1_1DMatDVecMultExpr.html#a79ecc8a83dd40aa4036c8b11d3fac3c9">blaze::DMatDVecMultExpr&lt; MT, VT &gt;</a>
-, <a class="el" href="d3/d8a/classblaze_1_1DMatTDMatMultExpr.html#aa9f468455215a43baa39ddea146abdc9">blaze::DMatTDMatMultExpr&lt; MT1, MT2, SF &gt;</a>
+, <a class="el" href="d3/d8a/classblaze_1_1DMatTDMatMultExpr.html#a1a91daed82b61f23532bde863fe71341">blaze::DMatTDMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt;</a>
 , <a class="el" href="d9/d12/classblaze_1_1DMatTransposer.html#ac6ae90bc81bec9ca5ba0e6c7db3f58b2">blaze::DMatTransposer&lt; MT, SO &gt;</a>
 , <a class="el" href="d1/dcd/classblaze_1_1DVecTDVecMultExpr.html#a34011f7ca3261389faca37f057ef9399">blaze::DVecTDVecMultExpr&lt; VT1, VT2 &gt;</a>
 , <a class="el" href="d0/d30/classblaze_1_1DVecTransposer.html#a95116aed8c67bac58a7ff885e11a1250">blaze::DVecTransposer&lt; VT, TF &gt;</a>
@@ -201,23 +204,29 @@ $(function() {
 , <a class="el" href="da/d9e/classblaze_1_1DynamicVector.html#a9a7f081c1bc0268587505e38be031ae6">blaze::DynamicVector&lt; Type, TF &gt;</a>
 , <a class="el" href="d6/d60/classblaze_1_1HybridMatrix.html#a2d84b499e1875c85e39dc9e879506ef0">blaze::HybridMatrix&lt; Type, M, N, SO &gt;</a>
 , <a class="el" href="da/d6b/classblaze_1_1HybridVector.html#a454df0b1f3b31fa77e12d333bead38d1">blaze::HybridVector&lt; Type, N, TF &gt;</a>
-, <a class="el" href="d6/dc5/classblaze_1_1SMatDMatMultExpr.html#a3f58e02b8f66fafd815eeb74d7b24fcd">blaze::SMatDMatMultExpr&lt; MT1, MT2 &gt;</a>
+, <a class="el" href="d6/dc5/classblaze_1_1SMatDMatMultExpr.html#a66221a5bbee357565a47b033b149688b">blaze::SMatDMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt;</a>
 , <a class="el" href="d3/dd3/classblaze_1_1StaticMatrix.html#ae1952c23b23c988ce6964c7affeedcdc">blaze::StaticMatrix&lt; Type, M, N, SO &gt;</a>
 , <a class="el" href="d9/d3c/classblaze_1_1StaticVector.html#a56a5caf52f82fe01e232f61e9731d5e0">blaze::StaticVector&lt; Type, N, TF &gt;</a>
-, <a class="el" href="dc/dc9/classblaze_1_1TDMatDMatMultExpr.html#acd9c30cb9fcb562e46b7bd209c2ce5ba">blaze::TDMatDMatMultExpr&lt; MT1, MT2, SF &gt;</a>
+, <a class="el" href="dc/dc9/classblaze_1_1TDMatDMatMultExpr.html#a2c877bb781498536e2057e94cefa5ec8">blaze::TDMatDMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt;</a>
 , <a class="el" href="dc/dd4/classblaze_1_1TDMatDVecMultExpr.html#a992cc17c6cba5a3950573152017d41ce">blaze::TDMatDVecMultExpr&lt; MT, VT &gt;</a>
 , <a class="el" href="d4/d0b/classblaze_1_1TDMatSVecMultExpr.html#a77178fe0ebc12f081e85471da8e7e6e0">blaze::TDMatSVecMultExpr&lt; MT, VT &gt;</a>
-, <a class="el" href="dd/d6f/classblaze_1_1TDMatTDMatMultExpr.html#a4e86d5425368794f94330073efacda85">blaze::TDMatTDMatMultExpr&lt; MT1, MT2, SF &gt;</a>
-, <a class="el" href="d9/d9c/classblaze_1_1TDMatTSMatMultExpr.html#a7782730cbca8219e483b0484ca1767e5">blaze::TDMatTSMatMultExpr&lt; MT1, MT2 &gt;</a>
+, <a class="el" href="dd/d6f/classblaze_1_1TDMatTDMatMultExpr.html#a5235df1547d454f4ff7d7ebd58e08baa">blaze::TDMatTDMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt;</a>
+, <a class="el" href="d9/d9c/classblaze_1_1TDMatTSMatMultExpr.html#af068ef2e554fb91ddeca6172ba8d1531">blaze::TDMatTSMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt;</a>
 , <a class="el" href="d8/d47/classblaze_1_1TDVecDMatMultExpr.html#a66c3dd33dd9fa70581f1f2a91459b7ab">blaze::TDVecDMatMultExpr&lt; VT, MT &gt;</a>
 , <a class="el" href="db/de4/classblaze_1_1TDVecTDMatMultExpr.html#aaba2455f8d79f329878b22615a9d95f3">blaze::TDVecTDMatMultExpr&lt; VT, MT &gt;</a>
 , <a class="el" href="dd/d61/classblaze_1_1TSVecDMatMultExpr.html#acd471a8f127b80ccc3d5c41fc0fdd113">blaze::TSVecDMatMultExpr&lt; VT, MT &gt;</a>
+</li>
+<li>Sin()
+: <a class="el" href="de/d56/structblaze_1_1Sin.html#a0c4f0696663677c7276727da7a634034">blaze::Sin</a>
 </li>
 <li>Singleton()
 : <a class="el" href="d4/d8d/classblaze_1_1Singleton.html#a192f71f432cec1d64d6a078bc72acdc8">blaze::Singleton&lt; T, D1, D2, D3, D4, D5, D6, D7, D8 &gt;</a>
 </li>
 <li>SingletonType
 : <a class="el" href="d4/d8d/classblaze_1_1Singleton.html#abe062de541cb2edbd10571bf4c5f4ea5">blaze::Singleton&lt; T, D1, D2, D3, D4, D5, D6, D7, D8 &gt;</a>
+</li>
+<li>Sinh()
+: <a class="el" href="d4/d59/structblaze_1_1Sinh.html#a10e8c91adbab817b82b4967f9e7a0254">blaze::Sinh</a>
 </li>
 <li>size()
 : <a class="el" href="d3/d25/classblaze_1_1AlignedArray.html#a4a2a3c8ac40384a0431b5c46ee06fe84">blaze::AlignedArray&lt; Type, N, Alignment &gt;</a>
@@ -301,6 +310,7 @@ $(function() {
 </li>
 <li>sm_
 : <a class="el" href="d5/dd3/classblaze_1_1MatrixAccessProxy.html#a3c3d53d30a8d510fbbeb03e9d5d1c66b">blaze::MatrixAccessProxy&lt; MT &gt;</a>
+, <a class="el" href="d1/d98/classblaze_1_1SMatDeclDiagExpr.html#ad9c51a68fada14a2d833d4c505b34908">blaze::SMatDeclDiagExpr&lt; MT, SO &gt;</a>
 , <a class="el" href="d9/d8a/classblaze_1_1SMatDeclHermExpr.html#a1ecacc90c568ef99cae683e568e026f0">blaze::SMatDeclHermExpr&lt; MT, SO &gt;</a>
 , <a class="el" href="d3/d3c/classblaze_1_1SMatDeclLowExpr.html#abc219eb098cab5288b2f7259b531546b">blaze::SMatDeclLowExpr&lt; MT, SO &gt;</a>
 , <a class="el" href="da/da0/classblaze_1_1SMatDeclSymExpr.html#a8366437da9d948fb434937c9c2f30631">blaze::SMatDeclSymExpr&lt; MT, SO &gt;</a>
@@ -310,6 +320,9 @@ $(function() {
 , <a class="el" href="d8/dc8/classblaze_1_1SMatSerialExpr.html#a4ba210e768882fa7a23ebfc99c18100c">blaze::SMatSerialExpr&lt; MT, SO &gt;</a>
 , <a class="el" href="da/d09/classblaze_1_1SMatTransExpr.html#ab62dbc997106b25b55745c910a5bfc84">blaze::SMatTransExpr&lt; MT, SO &gt;</a>
 , <a class="el" href="de/dbd/classblaze_1_1SMatTransposer.html#ae2f2855f9628efa1466a848407f3423c">blaze::SMatTransposer&lt; MT, SO &gt;</a>
+</li>
+<li>SMatDeclDiagExpr()
+: <a class="el" href="d1/d98/classblaze_1_1SMatDeclDiagExpr.html#a1ee1393f11fe119fd5c16b23fdc243ac">blaze::SMatDeclDiagExpr&lt; MT, SO &gt;</a>
 </li>
 <li>SMatDeclHermExpr()
 : <a class="el" href="d9/d8a/classblaze_1_1SMatDeclHermExpr.html#a395956e76fe1bf72442da0a5294b5258">blaze::SMatDeclHermExpr&lt; MT, SO &gt;</a>
@@ -324,7 +337,7 @@ $(function() {
 : <a class="el" href="d5/df5/classblaze_1_1SMatDeclUppExpr.html#a78bbd9ecd9d35d8b9f8a6da72b0640a5">blaze::SMatDeclUppExpr&lt; MT, SO &gt;</a>
 </li>
 <li>SMatDMatMultExpr()
-: <a class="el" href="d6/dc5/classblaze_1_1SMatDMatMultExpr.html#a18da157bb4ef5f8a51f176ca1c0cc01e">blaze::SMatDMatMultExpr&lt; MT1, MT2 &gt;</a>
+: <a class="el" href="d6/dc5/classblaze_1_1SMatDMatMultExpr.html#a2fdd91256373d05422385c8d5a298788">blaze::SMatDMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt;</a>
 </li>
 <li>SMatDMatSubExpr()
 : <a class="el" href="df/db6/classblaze_1_1SMatDMatSubExpr.html#ad2f2545de97321045264bd50d0818fea">blaze::SMatDMatSubExpr&lt; MT1, MT2, SO &gt;</a>
@@ -360,7 +373,7 @@ $(function() {
 : <a class="el" href="d6/dbf/classblaze_1_1SMatSVecMultExpr.html#abfeae81179f43cee6f57008bac5d7b3c">blaze::SMatSVecMultExpr&lt; MT, VT &gt;</a>
 </li>
 <li>SMatTDMatMultExpr()
-: <a class="el" href="dd/d43/classblaze_1_1SMatTDMatMultExpr.html#a6d64aa05cf3f4829b9be33bd1e28e9cd">blaze::SMatTDMatMultExpr&lt; MT1, MT2 &gt;</a>
+: <a class="el" href="dd/d43/classblaze_1_1SMatTDMatMultExpr.html#af8f6f7ef53b4c0d66ed854a7ddb08908">blaze::SMatTDMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt;</a>
 </li>
 <li>SMatTDMatSubExpr()
 : <a class="el" href="d5/de7/classblaze_1_1SMatTDMatSubExpr.html#a9ddbffb35f922afb253cdaa97cd8ddb2">blaze::SMatTDMatSubExpr&lt; MT1, MT2 &gt;</a>
@@ -417,6 +430,9 @@ $(function() {
 , <a class="el" href="d6/d60/classblaze_1_1HybridMatrix.html#a9adb3a611b05a3dbbd2a4ac1234b1ea9">blaze::HybridMatrix&lt; Type, M, N, SO &gt;</a>
 , <a class="el" href="d3/dd3/classblaze_1_1StaticMatrix.html#a246595e44c0ebcbb6127f7033b52223f">blaze::StaticMatrix&lt; Type, M, N, SO &gt;</a>
 </li>
+<li>Sqrt()
+: <a class="el" href="d0/d06/structblaze_1_1Sqrt.html#ace4206ac6d3a002a849a2ee08149f33c">blaze::Sqrt</a>
+</li>
 <li>start()
 : <a class="el" href="dd/dc7/classblaze_1_1SystemClock.html#abbcfe8362f7e273e60684093ea79a92d">blaze::SystemClock</a>
 , <a class="el" href="dc/d6e/classblaze_1_1timing_1_1Timer.html#adc133999cd632f32b490c9cddc8a0af2">blaze::timing::Timer&lt; TP &gt;</a>
@@ -426,7 +442,7 @@ $(function() {
 , <a class="el" href="dc/d6e/classblaze_1_1timing_1_1Timer.html#a944d7183198ae1bc0699952dc30c14cc">blaze::timing::Timer&lt; TP &gt;</a>
 </li>
 <li>StaticMatrix()
-: <a class="el" href="d3/dd3/classblaze_1_1StaticMatrix.html#a19f10ad2e79170b153c603f130f74154">blaze::StaticMatrix&lt; Type, M, N, SO &gt;</a>
+: <a class="el" href="d3/dd3/classblaze_1_1StaticMatrix.html#a24e19393a208690a3cf33d45e8dacb2a">blaze::StaticMatrix&lt; Type, M, N, SO &gt;</a>
 </li>
 <li>StaticVector()
 : <a class="el" href="d9/d3c/classblaze_1_1StaticVector.html#aa65d9b7a3f55c62bb750e4f9bae36beb">blaze::StaticVector&lt; Type, N, TF &gt;</a>
@@ -500,18 +516,18 @@ $(function() {
 : <a class="el" href="d3/d4b/classblaze_1_1StrictlyUpperProxy.html#aadb940362e195a1b8d4f7108bae63456">blaze::StrictlyUpperProxy&lt; MT &gt;</a>
 </li>
 <li>subAssign()
-: <a class="el" href="da/d7a/classblaze_1_1CompressedMatrix.html#a3c2acb2cff182bfb0cf5c74b0f9324a2">blaze::CompressedMatrix&lt; Type, SO &gt;</a>
-, <a class="el" href="d5/d35/classblaze_1_1CompressedVector.html#ac1b81c363e22f702834db5270d794f00">blaze::CompressedVector&lt; Type, TF &gt;</a>
-, <a class="el" href="de/d43/classblaze_1_1CustomMatrix.html#a27e4426e8dfe3a988ca24df3e074455a">blaze::CustomMatrix&lt; Type, AF, PF, SO &gt;</a>
+: <a class="el" href="da/d7a/classblaze_1_1CompressedMatrix.html#a9d424870f30e4957454dd1a62be15ee1">blaze::CompressedMatrix&lt; Type, SO &gt;</a>
+, <a class="el" href="d5/d35/classblaze_1_1CompressedVector.html#a613a084f7afaa66c29021212972c9992">blaze::CompressedVector&lt; Type, TF &gt;</a>
+, <a class="el" href="de/d43/classblaze_1_1CustomMatrix.html#a3282c0640f33e7087204a32fe14b5d04">blaze::CustomMatrix&lt; Type, AF, PF, SO &gt;</a>
 , <a class="el" href="de/d32/classblaze_1_1CustomVector.html#ac70cdaf41933eed08b8d211a7dd6a1c0">blaze::CustomVector&lt; Type, AF, PF, TF &gt;</a>
-, <a class="el" href="d9/d12/classblaze_1_1DMatTransposer.html#a9432d2198fb3c3c661d8b7c1db97355c">blaze::DMatTransposer&lt; MT, SO &gt;</a>
+, <a class="el" href="d9/d12/classblaze_1_1DMatTransposer.html#a4513184bbac334000c6cee2df23cef62">blaze::DMatTransposer&lt; MT, SO &gt;</a>
 , <a class="el" href="d0/d30/classblaze_1_1DVecTransposer.html#a47f46d17fc984bc508dd3d58de2e0ce7">blaze::DVecTransposer&lt; VT, TF &gt;</a>
-, <a class="el" href="de/d1e/classblaze_1_1DynamicMatrix.html#aed27f4dd6c57a5bf12a055fcd0644683">blaze::DynamicMatrix&lt; Type, SO &gt;</a>
-, <a class="el" href="da/d9e/classblaze_1_1DynamicVector.html#a2ca44b00b50d2c99b34bcda61e3ea768">blaze::DynamicVector&lt; Type, TF &gt;</a>
-, <a class="el" href="d6/d60/classblaze_1_1HybridMatrix.html#a9ae8fabdef5e9ceb0083b65e53774208">blaze::HybridMatrix&lt; Type, M, N, SO &gt;</a>
-, <a class="el" href="da/d6b/classblaze_1_1HybridVector.html#a2c8e00d4a3353dac09141865851ecfd3">blaze::HybridVector&lt; Type, N, TF &gt;</a>
+, <a class="el" href="de/d1e/classblaze_1_1DynamicMatrix.html#a88af9bdb6974b2d3fb1337a780ac61fa">blaze::DynamicMatrix&lt; Type, SO &gt;</a>
+, <a class="el" href="da/d9e/classblaze_1_1DynamicVector.html#ade7a0d35751958b9c75f7da9c642a154">blaze::DynamicVector&lt; Type, TF &gt;</a>
+, <a class="el" href="d6/d60/classblaze_1_1HybridMatrix.html#ae49d6d56b9e822ec73620e87da86b153">blaze::HybridMatrix&lt; Type, M, N, SO &gt;</a>
+, <a class="el" href="da/d6b/classblaze_1_1HybridVector.html#a08e9d74ea3c23bd4193ab4bec7c3b8ad">blaze::HybridVector&lt; Type, N, TF &gt;</a>
 , <a class="el" href="d3/dd3/classblaze_1_1StaticMatrix.html#a52a917eb614e5cb05ca6d5b99312a14d">blaze::StaticMatrix&lt; Type, M, N, SO &gt;</a>
-, <a class="el" href="d9/d3c/classblaze_1_1StaticVector.html#a8162a49f9f6976b4210685976e601047">blaze::StaticVector&lt; Type, N, TF &gt;</a>
+, <a class="el" href="d9/d3c/classblaze_1_1StaticVector.html#ac7fd792e4848cea8563554e429e17ce1">blaze::StaticVector&lt; Type, N, TF &gt;</a>
 , <a class="el" href="de/d90/group__dense__vector.html#gaa9737bc07f38a7e9144dc3fcb1c7114b">blaze::TDVecSMatMultExpr&lt; VT, MT &gt;</a>
 , <a class="el" href="de/d90/group__dense__vector.html#ga138f16c06c6407c305d2c554888c433f">blaze::TDVecTSMatMultExpr&lt; VT, MT &gt;</a>
 , <a class="el" href="de/d90/group__dense__vector.html#gabbe8a27b763bf7716c313756494e54dd">blaze::TSVecDMatMultExpr&lt; VT, MT &gt;</a>
@@ -590,6 +606,20 @@ $(function() {
 , <a class="el" href="d9/d3c/classblaze_1_1StaticVector.html#aedd10c2d4f57846ba054d61932eaa06e">blaze::StaticVector&lt; Type, N, TF &gt;</a>
 , <a class="el" href="db/dee/classblaze_1_1threadpool_1_1TaskQueue.html#a36c81bbc65cb8817f73047cfe58f92dc">blaze::threadpool::TaskQueue</a>
 </li>
+<li>SYM
+: <a class="el" href="d3/d40/classblaze_1_1DMatDMatMultExpr.html#ac612e2f1824fde9669fb45c876e7cee8aaa94967441c7f5c41225dd8b0536aeaf">blaze::DMatDMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt;</a>
+, <a class="el" href="d1/d2b/classblaze_1_1DMatSMatMultExpr.html#afd487829d0ce1a2e5763693500d91e04a0870e96ca0635f034b37368fc3af0eed">blaze::DMatSMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt;</a>
+, <a class="el" href="d3/d8a/classblaze_1_1DMatTDMatMultExpr.html#afe1d2f03b5cef2ea8efd447e692172c9ad4dbb5562c1a44a9c46b18fe49ef1a32">blaze::DMatTDMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt;</a>
+, <a class="el" href="d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a4584b848381f8215e171ca153fec33ada9b767a546db37600b045dda031e8bd8a">blaze::DMatTSMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt;</a>
+, <a class="el" href="d6/dc5/classblaze_1_1SMatDMatMultExpr.html#a25ef698a9c7ac88a8fc2d88e3c58eb7dab2212472b76a6a4bda6df1b347314328">blaze::SMatDMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt;</a>
+, <a class="el" href="dd/d43/classblaze_1_1SMatTDMatMultExpr.html#a9435b905a33c751e01a83a139dea5d94a0aa23a3174ee0ebedad39fe3b8936bbd">blaze::SMatTDMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt;</a>
+, <a class="el" href="dc/dc9/classblaze_1_1TDMatDMatMultExpr.html#a9142d3c7726047cfb03afbfb936f67f0a3b441a3d610096204a240392fccbbe8b">blaze::TDMatDMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt;</a>
+, <a class="el" href="d4/dfb/classblaze_1_1TDMatSMatMultExpr.html#aa40844e6c5c10c6d296ce1c306b019f4ad7a526c9ee244b4da8d71e666ccf6248">blaze::TDMatSMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt;</a>
+, <a class="el" href="dd/d6f/classblaze_1_1TDMatTDMatMultExpr.html#af1ddf7acb85e5ea19a8486250e283a30ac9021b91715ec3397e50f7f85edba9a9">blaze::TDMatTDMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt;</a>
+, <a class="el" href="d9/d9c/classblaze_1_1TDMatTSMatMultExpr.html#a24a55b82487828f42978fd812cdce7feaf77249f94b17063eeac4f200334e6387">blaze::TDMatTSMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt;</a>
+, <a class="el" href="df/ddb/classblaze_1_1TSMatDMatMultExpr.html#a8f303d7acec0bf7499d7cdeaae2f40f0a42e1521a0f115d35450773baf6b650d0">blaze::TSMatDMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt;</a>
+, <a class="el" href="d9/d9f/classblaze_1_1TSMatTDMatMultExpr.html#af36c03e40201c07a09828ae6706452e2a08c5bd775b90fcd46673377adedd4e83">blaze::TSMatTDMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt;</a>
+</li>
 <li>SymmetricElement()
 : <a class="el" href="d2/d76/classblaze_1_1SymmetricElement.html#afc5eb0aa78c5e0fa37da760381274161">blaze::SymmetricElement&lt; MT &gt;</a>
 </li>
@@ -609,7 +639,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 31 2016 17:17:52 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 8 2016 01:04:31 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

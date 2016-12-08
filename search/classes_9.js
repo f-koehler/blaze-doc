@@ -11,5 +11,6 @@ var searchData=
   ['logsection',['LogSection',['../d6/de3/classblaze_1_1logging_1_1LogSection.html',1,'blaze::logging']]],
   ['long',['Long',['../d1/db7/structblaze_1_1Long.html',1,'blaze']]],
   ['lowermatrix',['LowerMatrix',['../da/ddf/classblaze_1_1LowerMatrix.html',1,'blaze']]],
-  ['lowerproxy',['LowerProxy',['../d5/de5/classblaze_1_1LowerProxy.html',1,'blaze']]]
+  ['lowerproxy',['LowerProxy',['../d5/de5/classblaze_1_1LowerProxy.html',1,'blaze']]],
+  ['lowtype',['LowType',['../d5/d00/structblaze_1_1LowType.html',1,'blaze']]]
 ];

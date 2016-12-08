@@ -152,6 +152,13 @@ Matrix global functions</h2></td></tr>
 <tr class="separator:ga532c1fb51e06afaf7e871074922a6b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Matrix functions</h2></td></tr>
+<tr class="memitem:gac49c56871f0559df0b80283bb2ff8377"><td class="memTemplParams" colspan="2">template&lt;typename MT , bool SO&gt; </td></tr>
+<tr class="memitem:gac49c56871f0559df0b80283bb2ff8377"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/d7a/group__matrix.html#gac49c56871f0559df0b80283bb2ff8377">blaze::trace</a> (const <a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html">Matrix</a>&lt; MT, SO &gt; &amp;m)</td></tr>
+<tr class="memdesc:gac49c56871f0559df0b80283bb2ff8377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the trace of the given square matrix.  <a href="../../dd/d7a/group__matrix.html#gac49c56871f0559df0b80283bb2ff8377">More...</a><br /></td></tr>
+<tr class="separator:gac49c56871f0559df0b80283bb2ff8377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Matrix operators</h2></td></tr>
 <tr class="memitem:ga5f051fa9685c313199d2f2e38067b8ff"><td class="memTemplParams" colspan="2">template&lt;typename MT , bool SO&gt; </td></tr>
 <tr class="memitem:ga5f051fa9685c313199d2f2e38067b8ff"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/d7a/group__matrix.html#ga5f051fa9685c313199d2f2e38067b8ff">blaze::operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html">Matrix</a>&lt; MT, SO &gt; &amp;m)</td></tr>
@@ -876,6 +883,54 @@ template&lt;typename MT , bool SO&gt; </div>
 
 </div>
 </div>
+<a id="gac49c56871f0559df0b80283bb2ff8377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac49c56871f0559df0b80283bb2ff8377">&sect;&nbsp;</a></span>trace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MT , bool SO&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto blaze::trace </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html">Matrix</a>&lt; MT, SO &gt; &amp;&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes the trace of the given square matrix. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m</td><td>Reference to a constant matrix object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The trace of the matrix. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Invalid input matrix for trace computation.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This function computes the trace of the given square matrix, i.e. sums the elements on its diagonal:</p>
+<p class="formulaDsp">
+<img class="formulaDsp" alt="\[ trace(A) = a_{11} + a_{22} + ... + a_{nn} = \sum_{i=1}^{n} a_{ii} \]" src="../../form_160.png"/>
+</p>
+<p>In case the given matrix is not a square matrix a <em>std::invalid_argument</em> exception is thrown. </p>
+
+</div>
+</div>
 <a id="gaa6ec40dcae1598b663c10eda754381cb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaa6ec40dcae1598b663c10eda754381cb">&sect;&nbsp;</a></span>transpose()</h2>
 
@@ -922,7 +977,7 @@ template&lt;typename MT , bool SO&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 31 2016 17:17:01 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 8 2016 01:03:46 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

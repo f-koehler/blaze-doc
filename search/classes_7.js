@@ -52,6 +52,7 @@ var searchData=
   ['hermitianmatrix',['HermitianMatrix',['../dd/df4/classblaze_1_1HermitianMatrix.html',1,'blaze']]],
   ['hermitianproxy',['HermitianProxy',['../d8/dbd/classblaze_1_1HermitianProxy.html',1,'blaze']]],
   ['hermitianvalue',['HermitianValue',['../d2/d3c/classblaze_1_1HermitianValue.html',1,'blaze']]],
+  ['hightype',['HighType',['../dc/d1e/structblaze_1_1HighType.html',1,'blaze']]],
   ['hybridmatrix',['HybridMatrix',['../d6/d60/classblaze_1_1HybridMatrix.html',1,'blaze']]],
   ['hybridvector',['HybridVector',['../da/d6b/classblaze_1_1HybridVector.html',1,'blaze']]]
 ];

@@ -79,18 +79,18 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:af74d485a5660f03b5ef43dc9ccb24660"><td class="memItemLeft" align="right" valign="top"><a id="af74d485a5660f03b5ef43dc9ccb24660"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>simdEnabled</b>
- }<tr class="memdesc:af74d485a5660f03b5ef43dc9ccb24660"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template evaluation strategy. <br /></td></tr>
+<tr class="memitem:ac4b78f3c674d22a3ba72ba5cece9f1e0"><td class="memItemLeft" align="right" valign="top"><a id="ac4b78f3c674d22a3ba72ba5cece9f1e0"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>simdEnabled</b>
+ }<tr class="memdesc:ac4b78f3c674d22a3ba72ba5cece9f1e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template evaluation strategy. <br /></td></tr>
 </td></tr>
-<tr class="separator:af74d485a5660f03b5ef43dc9ccb24660"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10df0bdae7d6c6065874f01229d214a0"><td class="memItemLeft" align="right" valign="top"><a id="a10df0bdae7d6c6065874f01229d214a0"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>smpAssignable</b>
- }<tr class="memdesc:a10df0bdae7d6c6065874f01229d214a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template assignment strategy. <br /></td></tr>
+<tr class="separator:ac4b78f3c674d22a3ba72ba5cece9f1e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3551935b5c9f9cf7e17c185c0893c818"><td class="memItemLeft" align="right" valign="top"><a id="a3551935b5c9f9cf7e17c185c0893c818"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>smpAssignable</b>
+ }<tr class="memdesc:a3551935b5c9f9cf7e17c185c0893c818"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template assignment strategy. <br /></td></tr>
 </td></tr>
-<tr class="separator:a10df0bdae7d6c6065874f01229d214a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e3accbe6d904f4f5cbb8336015ba68d"><td class="memItemLeft" align="right" valign="top"><a id="a5e3accbe6d904f4f5cbb8336015ba68d"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: size_t { <b>SIMDSIZE</b> = SIMDTrait&lt;ElementType&gt;::size
- }<tr class="memdesc:a5e3accbe6d904f4f5cbb8336015ba68d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of elements packed within a single SIMD element. <br /></td></tr>
+<tr class="separator:a3551935b5c9f9cf7e17c185c0893c818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae398926e39d7c95ee03d5c0f9366d756"><td class="memItemLeft" align="right" valign="top"><a id="ae398926e39d7c95ee03d5c0f9366d756"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: size_t { <b>SIMDSIZE</b> = SIMDTrait&lt;ElementType&gt;::size
+ }<tr class="memdesc:ae398926e39d7c95ee03d5c0f9366d756"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of elements packed within a single SIMD element. <br /></td></tr>
 </td></tr>
-<tr class="separator:a5e3accbe6d904f4f5cbb8336015ba68d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ae398926e39d7c95ee03d5c0f9366d756"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea43dca12fefaaeb1c0619b29fb837a1"><td class="memItemLeft" align="right" valign="top"><a id="aea43dca12fefaaeb1c0619b29fb837a1"></a>
 typedef <a class="el" href="../../db/de4/classblaze_1_1TDVecTDMatMultExpr.html">TDVecTDMatMultExpr</a>&lt; VT, MT &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de4/classblaze_1_1TDVecTDMatMultExpr.html#aea43dca12fefaaeb1c0619b29fb837a1">This</a></td></tr>
 <tr class="memdesc:aea43dca12fefaaeb1c0619b29fb837a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of this <a class="el" href="../../db/de4/classblaze_1_1TDVecTDMatMultExpr.html" title="Expression object for transpose dense vector-transpose dense matrix multiplications.The TDVecTDMatMultExpr class represents the compile time expression for multiplications between transpose dense vectors and column-major dense matrices. ">TDVecTDMatMultExpr</a> instance. <br /></td></tr>
@@ -183,14 +183,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a1cddef27243a869fa86251502debbef0"><td class="memItemLeft" align="right" valign="top"><a id="a1cddef27243a869fa86251502debbef0"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>evaluateVector</b> = IsComputation&lt;VT&gt;::value || RequiresEvaluation&lt;VT&gt;::value
- }<tr class="memdesc:a1cddef27243a869fa86251502debbef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the composite type of the left-hand side dense vector expression. <br /></td></tr>
+<tr class="memitem:a02b27dfb95b95070f353ea5752d137fb"><td class="memItemLeft" align="right" valign="top"><a id="a02b27dfb95b95070f353ea5752d137fb"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>evaluateVector</b> = IsComputation&lt;VT&gt;::value || RequiresEvaluation&lt;VT&gt;::value
+ }<tr class="memdesc:a02b27dfb95b95070f353ea5752d137fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the composite type of the left-hand side dense vector expression. <br /></td></tr>
 </td></tr>
-<tr class="separator:a1cddef27243a869fa86251502debbef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44c7b5225f6af529afdc49e2b6da0850"><td class="memItemLeft" align="right" valign="top"><a id="a44c7b5225f6af529afdc49e2b6da0850"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>evaluateMatrix</b>
- }<tr class="memdesc:a44c7b5225f6af529afdc49e2b6da0850"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the composite type of the right-hand side dense matrix expression. <br /></td></tr>
+<tr class="separator:a02b27dfb95b95070f353ea5752d137fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9842d750a1693ab5a286e4afb788620e"><td class="memItemLeft" align="right" valign="top"><a id="a9842d750a1693ab5a286e4afb788620e"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>evaluateMatrix</b>
+ }<tr class="memdesc:a9842d750a1693ab5a286e4afb788620e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the composite type of the right-hand side dense matrix expression. <br /></td></tr>
 </td></tr>
-<tr class="separator:a44c7b5225f6af529afdc49e2b6da0850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a9842d750a1693ab5a286e4afb788620e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab58d4a3dae3b61d91d1c81a36adb0cff"><td class="memItemLeft" align="right" valign="top"><a id="ab58d4a3dae3b61d91d1c81a36adb0cff"></a>
 typedef <a class="el" href="../../d2/de9/namespaceblaze.html#a5a86db58851c76c3500769d8afdc759e">ResultType_</a>&lt; VT &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de4/classblaze_1_1TDVecTDMatMultExpr.html#ab58d4a3dae3b61d91d1c81a36adb0cff">VRT</a></td></tr>
 <tr class="memdesc:ab58d4a3dae3b61d91d1c81a36adb0cff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result type of the left-hand side dense vector expression. <br /></td></tr>
@@ -657,7 +657,7 @@ template&lt;typename VT , typename MT &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 31 2016 17:17:07 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 8 2016 01:03:51 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

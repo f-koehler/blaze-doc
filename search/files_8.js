@@ -53,6 +53,7 @@ var searchData=
   ['isconvertible_2eh',['IsConvertible.h',['../d2/d7f/IsConvertible_8h.html',1,'']]],
   ['iscrossexpr_2eh',['IsCrossExpr.h',['../d5/d08/IsCrossExpr_8h.html',1,'']]],
   ['iscustom_2eh',['IsCustom.h',['../d2/d3d/IsCustom_8h.html',1,'']]],
+  ['isdecldiagexpr_2eh',['IsDeclDiagExpr.h',['../d5/d1a/IsDeclDiagExpr_8h.html',1,'']]],
   ['isdeclexpr_2eh',['IsDeclExpr.h',['../da/d02/IsDeclExpr_8h.html',1,'']]],
   ['isdeclhermexpr_2eh',['IsDeclHermExpr.h',['../d9/d27/IsDeclHermExpr_8h.html',1,'']]],
   ['isdecllowexpr_2eh',['IsDeclLowExpr.h',['../d2/d84/IsDeclLowExpr_8h.html',1,'']]],

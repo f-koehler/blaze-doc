@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.12"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>blaze::DMatTSMatMultExpr&lt; MT1, MT2 &gt; Class Template Reference</title>
+<title>blaze::DMatTSMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt; Class Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -66,7 +66,7 @@ $(function() {
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../d6/d5c/classblaze_1_1DMatTSMatMultExpr-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">blaze::DMatTSMatMultExpr&lt; MT1, MT2 &gt; Class Template Reference<div class="ingroups"><a class="el" href="../../de/df1/group__math.html">Math module</a> &raquo; <a class="el" href="../../dd/d7a/group__matrix.html">Matrices</a> &raquo; <a class="el" href="../../db/df0/group__dense__matrix.html">Dense Matrices</a> &raquo; <a class="el" href="../../d7/d7c/group__dense__matrix__expression.html">Expressions</a></div></div>  </div>
+<div class="title">blaze::DMatTSMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt; Class Template Reference<div class="ingroups"><a class="el" href="../../de/df1/group__math.html">Math module</a> &raquo; <a class="el" href="../../dd/d7a/group__matrix.html">Matrices</a> &raquo; <a class="el" href="../../db/df0/group__dense__matrix.html">Dense Matrices</a> &raquo; <a class="el" href="../../d7/d7c/group__dense__matrix__expression.html">Expressions</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -75,62 +75,62 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="../../dd/de3/DMatTSMatMultExpr_8h_source.html">DMatTSMatMultExpr.h</a>&gt;</code></p>
 
-<p>Inherits <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">blaze::DenseMatrix&lt; DMatTSMatMultExpr&lt; MT1, MT2 &gt;, false &gt;</a>, <a class="el" href="../../d5/d0d/structblaze_1_1MatMatMultExpr.html">blaze::MatMatMultExpr</a>, and <a class="el" href="../../de/dd5/structblaze_1_1Computation.html">blaze::Computation</a>.</p>
+<p>Inherits <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">blaze::DenseMatrix&lt; DMatTSMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt;, false &gt;</a>, <a class="el" href="../../d5/d0d/structblaze_1_1MatMatMultExpr.html">blaze::MatMatMultExpr</a>, and <a class="el" href="../../de/dd5/structblaze_1_1Computation.html">blaze::Computation</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:af7a82a6ea5a7f3c8b7193e18b7da7d6e"><td class="memItemLeft" align="right" valign="top"><a id="af7a82a6ea5a7f3c8b7193e18b7da7d6e"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>simdEnabled</b> = false
- }<tr class="memdesc:af7a82a6ea5a7f3c8b7193e18b7da7d6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template evaluation strategy. <br /></td></tr>
+<tr class="memitem:aca2ebfa03fd1175d18c0216ea00b645c"><td class="memItemLeft" align="right" valign="top"><a id="aca2ebfa03fd1175d18c0216ea00b645c"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>simdEnabled</b> = false
+ }<tr class="memdesc:aca2ebfa03fd1175d18c0216ea00b645c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template evaluation strategy. <br /></td></tr>
 </td></tr>
-<tr class="separator:af7a82a6ea5a7f3c8b7193e18b7da7d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c05665f0d655210ac83b9c26e8427aa"><td class="memItemLeft" align="right" valign="top"><a id="a5c05665f0d655210ac83b9c26e8427aa"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>smpAssignable</b>
- }<tr class="memdesc:a5c05665f0d655210ac83b9c26e8427aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template assignment strategy. <br /></td></tr>
+<tr class="separator:aca2ebfa03fd1175d18c0216ea00b645c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc3a09e47b5123905d5e7ae7a59baf5e"><td class="memItemLeft" align="right" valign="top"><a id="afc3a09e47b5123905d5e7ae7a59baf5e"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>smpAssignable</b>
+ }<tr class="memdesc:afc3a09e47b5123905d5e7ae7a59baf5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template assignment strategy. <br /></td></tr>
 </td></tr>
-<tr class="separator:a5c05665f0d655210ac83b9c26e8427aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f9151e1a0b98146896d66fc41820909"><td class="memItemLeft" align="right" valign="top"><a id="a3f9151e1a0b98146896d66fc41820909"></a>
-typedef <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">DMatTSMatMultExpr</a>&lt; MT1, MT2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a3f9151e1a0b98146896d66fc41820909">This</a></td></tr>
-<tr class="memdesc:a3f9151e1a0b98146896d66fc41820909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of this <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html" title="Expression object for dense matrix-transpose sparse matrix multiplications.The DMatTSMatMultExpr clas...">DMatTSMatMultExpr</a> instance. <br /></td></tr>
-<tr class="separator:a3f9151e1a0b98146896d66fc41820909"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac8f9914c7a8d66dc6a57b115017101a"><td class="memItemLeft" align="right" valign="top"><a id="aac8f9914c7a8d66dc6a57b115017101a"></a>
-typedef <a class="el" href="../../d8/d92/group__math__traits.html#ga1236c0bfa656036b8a0224726100c008">MultTrait_</a>&lt; <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a25378fa0ce2ea282b2f15a2d0df7d454">RT1</a>, <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ad1934bdca6be1bd572110f353d4b7f1a">RT2</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#aac8f9914c7a8d66dc6a57b115017101a">ResultType</a></td></tr>
-<tr class="memdesc:aac8f9914c7a8d66dc6a57b115017101a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result type for expression template evaluations. <br /></td></tr>
-<tr class="separator:aac8f9914c7a8d66dc6a57b115017101a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad20d433a961b2633c8af863455486ac4"><td class="memItemLeft" align="right" valign="top"><a id="ad20d433a961b2633c8af863455486ac4"></a>
-typedef <a class="el" href="../../d2/de9/namespaceblaze.html#ad282ad15aa380c05ce262000a81e6d81">OppositeType_</a>&lt; <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#aac8f9914c7a8d66dc6a57b115017101a">ResultType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ad20d433a961b2633c8af863455486ac4">OppositeType</a></td></tr>
-<tr class="memdesc:ad20d433a961b2633c8af863455486ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result type with opposite storage order for expression template evaluations. <br /></td></tr>
-<tr class="separator:ad20d433a961b2633c8af863455486ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae84d973c37756f6f16f04acce727e290"><td class="memItemLeft" align="right" valign="top"><a id="ae84d973c37756f6f16f04acce727e290"></a>
-typedef <a class="el" href="../../d2/de9/namespaceblaze.html#aca0f2ff41fa8f2a1a6ff10fe09817cd8">TransposeType_</a>&lt; <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#aac8f9914c7a8d66dc6a57b115017101a">ResultType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ae84d973c37756f6f16f04acce727e290">TransposeType</a></td></tr>
-<tr class="memdesc:ae84d973c37756f6f16f04acce727e290"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transpose type for expression template evaluations. <br /></td></tr>
-<tr class="separator:ae84d973c37756f6f16f04acce727e290"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa81115d44acfc9385287f39b9a30539"><td class="memItemLeft" align="right" valign="top"><a id="afa81115d44acfc9385287f39b9a30539"></a>
-typedef <a class="el" href="../../d2/de9/namespaceblaze.html#a9d478221c22767e2ab79fe64681a744b">ElementType_</a>&lt; <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#aac8f9914c7a8d66dc6a57b115017101a">ResultType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#afa81115d44acfc9385287f39b9a30539">ElementType</a></td></tr>
-<tr class="memdesc:afa81115d44acfc9385287f39b9a30539"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resulting element type. <br /></td></tr>
-<tr class="separator:afa81115d44acfc9385287f39b9a30539"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79c15f953c88e9ebb78979f9fb9ed630"><td class="memItemLeft" align="right" valign="top"><a id="a79c15f953c88e9ebb78979f9fb9ed630"></a>
-typedef const <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#afa81115d44acfc9385287f39b9a30539">ElementType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a79c15f953c88e9ebb78979f9fb9ed630">ReturnType</a></td></tr>
-<tr class="memdesc:a79c15f953c88e9ebb78979f9fb9ed630"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type for expression template evaluations. <br /></td></tr>
-<tr class="separator:a79c15f953c88e9ebb78979f9fb9ed630"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a231538deba6135b2d00037b75e779562"><td class="memItemLeft" align="right" valign="top"><a id="a231538deba6135b2d00037b75e779562"></a>
-typedef const <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#aac8f9914c7a8d66dc6a57b115017101a">ResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a231538deba6135b2d00037b75e779562">CompositeType</a></td></tr>
-<tr class="memdesc:a231538deba6135b2d00037b75e779562"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data type for composite expression templates. <br /></td></tr>
-<tr class="separator:a231538deba6135b2d00037b75e779562"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbf3c161ad37efa6786b8e3c663d5592"><td class="memItemLeft" align="right" valign="top"><a id="acbf3c161ad37efa6786b8e3c663d5592"></a>
-typedef <a class="el" href="../../d4/d3a/group__util.html#gaba6051ef1bc2e9d5a4722d0449a856a0">If_</a>&lt; <a class="el" href="../../d2/d44/structblaze_1_1IsExpression.html">IsExpression</a>&lt; MT1 &gt;, const MT1, const MT1 &amp;&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#acbf3c161ad37efa6786b8e3c663d5592">LeftOperand</a></td></tr>
-<tr class="memdesc:acbf3c161ad37efa6786b8e3c663d5592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Composite type of the left-hand side dense matrix expression. <br /></td></tr>
-<tr class="separator:acbf3c161ad37efa6786b8e3c663d5592"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad59dd1a4d912e60ead588545175e83fa"><td class="memItemLeft" align="right" valign="top"><a id="ad59dd1a4d912e60ead588545175e83fa"></a>
-typedef <a class="el" href="../../d4/d3a/group__util.html#gaba6051ef1bc2e9d5a4722d0449a856a0">If_</a>&lt; <a class="el" href="../../d2/d44/structblaze_1_1IsExpression.html">IsExpression</a>&lt; MT2 &gt;, const MT2, const MT2 &amp;&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ad59dd1a4d912e60ead588545175e83fa">RightOperand</a></td></tr>
-<tr class="memdesc:ad59dd1a4d912e60ead588545175e83fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Composite type of the right-hand side sparse matrix expression. <br /></td></tr>
-<tr class="separator:ad59dd1a4d912e60ead588545175e83fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51b601385d92c520b8b1e3e78d209bca"><td class="memItemLeft" align="right" valign="top"><a id="a51b601385d92c520b8b1e3e78d209bca"></a>
-typedef <a class="el" href="../../d4/d3a/group__util.html#ga4e8b3f04b070dc9e532f176e2d21087a">IfTrue_</a>&lt; evaluateLeft, const <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a25378fa0ce2ea282b2f15a2d0df7d454">RT1</a>, <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ad5e0d4b7f2a42bd002d19902280274dc">CT1</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a51b601385d92c520b8b1e3e78d209bca">LT</a></td></tr>
-<tr class="memdesc:a51b601385d92c520b8b1e3e78d209bca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for the assignment of the left-hand side dense matrix operand. <br /></td></tr>
-<tr class="separator:a51b601385d92c520b8b1e3e78d209bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeb5d976ff8c101c5ad0cad8967f51e0"><td class="memItemLeft" align="right" valign="top"><a id="aeeb5d976ff8c101c5ad0cad8967f51e0"></a>
-typedef <a class="el" href="../../d4/d3a/group__util.html#ga4e8b3f04b070dc9e532f176e2d21087a">IfTrue_</a>&lt; evaluateRight, const <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ad1934bdca6be1bd572110f353d4b7f1a">RT2</a>, <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a9f2b8919056d50677d1aa7684b781544">CT2</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#aeeb5d976ff8c101c5ad0cad8967f51e0">RT</a></td></tr>
-<tr class="memdesc:aeeb5d976ff8c101c5ad0cad8967f51e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for the assignment of the right-hand side sparse matrix operand. <br /></td></tr>
-<tr class="separator:aeeb5d976ff8c101c5ad0cad8967f51e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:afc3a09e47b5123905d5e7ae7a59baf5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf1c5ec972439a35ebd946d99d07e3b4"><td class="memItemLeft" align="right" valign="top"><a id="abf1c5ec972439a35ebd946d99d07e3b4"></a>
+typedef <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">DMatTSMatMultExpr</a>&lt; MT1, MT2, SF, HF, LF, UF &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#abf1c5ec972439a35ebd946d99d07e3b4">This</a></td></tr>
+<tr class="memdesc:abf1c5ec972439a35ebd946d99d07e3b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of this <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html" title="Expression object for dense matrix-transpose sparse matrix multiplications.The DMatTSMatMultExpr clas...">DMatTSMatMultExpr</a> instance. <br /></td></tr>
+<tr class="separator:abf1c5ec972439a35ebd946d99d07e3b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a967e415ce5c26664e907771d729b1fa0"><td class="memItemLeft" align="right" valign="top"><a id="a967e415ce5c26664e907771d729b1fa0"></a>
+typedef <a class="el" href="../../d8/d92/group__math__traits.html#ga1236c0bfa656036b8a0224726100c008">MultTrait_</a>&lt; <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ab15b0e4031af94645fcdd38c85f0280e">RT1</a>, <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ae143bd45effa48ba85e5d9a1cec400f0">RT2</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a967e415ce5c26664e907771d729b1fa0">ResultType</a></td></tr>
+<tr class="memdesc:a967e415ce5c26664e907771d729b1fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result type for expression template evaluations. <br /></td></tr>
+<tr class="separator:a967e415ce5c26664e907771d729b1fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24612b7758dfdf6b199509a5c3940f43"><td class="memItemLeft" align="right" valign="top"><a id="a24612b7758dfdf6b199509a5c3940f43"></a>
+typedef <a class="el" href="../../d2/de9/namespaceblaze.html#ad282ad15aa380c05ce262000a81e6d81">OppositeType_</a>&lt; <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a967e415ce5c26664e907771d729b1fa0">ResultType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a24612b7758dfdf6b199509a5c3940f43">OppositeType</a></td></tr>
+<tr class="memdesc:a24612b7758dfdf6b199509a5c3940f43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result type with opposite storage order for expression template evaluations. <br /></td></tr>
+<tr class="separator:a24612b7758dfdf6b199509a5c3940f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa817e09b473fe0bd54fd081615a19259"><td class="memItemLeft" align="right" valign="top"><a id="aa817e09b473fe0bd54fd081615a19259"></a>
+typedef <a class="el" href="../../d2/de9/namespaceblaze.html#aca0f2ff41fa8f2a1a6ff10fe09817cd8">TransposeType_</a>&lt; <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a967e415ce5c26664e907771d729b1fa0">ResultType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#aa817e09b473fe0bd54fd081615a19259">TransposeType</a></td></tr>
+<tr class="memdesc:aa817e09b473fe0bd54fd081615a19259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transpose type for expression template evaluations. <br /></td></tr>
+<tr class="separator:aa817e09b473fe0bd54fd081615a19259"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3a3e4483f28d799108d76061e95f119"><td class="memItemLeft" align="right" valign="top"><a id="ab3a3e4483f28d799108d76061e95f119"></a>
+typedef <a class="el" href="../../d2/de9/namespaceblaze.html#a9d478221c22767e2ab79fe64681a744b">ElementType_</a>&lt; <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a967e415ce5c26664e907771d729b1fa0">ResultType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ab3a3e4483f28d799108d76061e95f119">ElementType</a></td></tr>
+<tr class="memdesc:ab3a3e4483f28d799108d76061e95f119"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resulting element type. <br /></td></tr>
+<tr class="separator:ab3a3e4483f28d799108d76061e95f119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad94e1d8f7c728ade10f2945ea299be10"><td class="memItemLeft" align="right" valign="top"><a id="ad94e1d8f7c728ade10f2945ea299be10"></a>
+typedef const <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ab3a3e4483f28d799108d76061e95f119">ElementType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ad94e1d8f7c728ade10f2945ea299be10">ReturnType</a></td></tr>
+<tr class="memdesc:ad94e1d8f7c728ade10f2945ea299be10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type for expression template evaluations. <br /></td></tr>
+<tr class="separator:ad94e1d8f7c728ade10f2945ea299be10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d5098efeabfe03177bc2a5458029c54"><td class="memItemLeft" align="right" valign="top"><a id="a0d5098efeabfe03177bc2a5458029c54"></a>
+typedef const <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a967e415ce5c26664e907771d729b1fa0">ResultType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a0d5098efeabfe03177bc2a5458029c54">CompositeType</a></td></tr>
+<tr class="memdesc:a0d5098efeabfe03177bc2a5458029c54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data type for composite expression templates. <br /></td></tr>
+<tr class="separator:a0d5098efeabfe03177bc2a5458029c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ddcc8f199948a542a7850435cb5e80f"><td class="memItemLeft" align="right" valign="top"><a id="a8ddcc8f199948a542a7850435cb5e80f"></a>
+typedef <a class="el" href="../../d4/d3a/group__util.html#gaba6051ef1bc2e9d5a4722d0449a856a0">If_</a>&lt; <a class="el" href="../../d2/d44/structblaze_1_1IsExpression.html">IsExpression</a>&lt; MT1 &gt;, const MT1, const MT1 &amp;&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a8ddcc8f199948a542a7850435cb5e80f">LeftOperand</a></td></tr>
+<tr class="memdesc:a8ddcc8f199948a542a7850435cb5e80f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Composite type of the left-hand side dense matrix expression. <br /></td></tr>
+<tr class="separator:a8ddcc8f199948a542a7850435cb5e80f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3396429ff2baedbdbe0897ed35c651d8"><td class="memItemLeft" align="right" valign="top"><a id="a3396429ff2baedbdbe0897ed35c651d8"></a>
+typedef <a class="el" href="../../d4/d3a/group__util.html#gaba6051ef1bc2e9d5a4722d0449a856a0">If_</a>&lt; <a class="el" href="../../d2/d44/structblaze_1_1IsExpression.html">IsExpression</a>&lt; MT2 &gt;, const MT2, const MT2 &amp;&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a3396429ff2baedbdbe0897ed35c651d8">RightOperand</a></td></tr>
+<tr class="memdesc:a3396429ff2baedbdbe0897ed35c651d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Composite type of the right-hand side sparse matrix expression. <br /></td></tr>
+<tr class="separator:a3396429ff2baedbdbe0897ed35c651d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c5fd2f5a5ffe4384b160f2f2c908c03"><td class="memItemLeft" align="right" valign="top"><a id="a8c5fd2f5a5ffe4384b160f2f2c908c03"></a>
+typedef <a class="el" href="../../d4/d3a/group__util.html#ga4e8b3f04b070dc9e532f176e2d21087a">IfTrue_</a>&lt; evaluateLeft, const <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ab15b0e4031af94645fcdd38c85f0280e">RT1</a>, <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a69b8a681685b894f23a176059bc25e94">CT1</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a8c5fd2f5a5ffe4384b160f2f2c908c03">LT</a></td></tr>
+<tr class="memdesc:a8c5fd2f5a5ffe4384b160f2f2c908c03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for the assignment of the left-hand side dense matrix operand. <br /></td></tr>
+<tr class="separator:a8c5fd2f5a5ffe4384b160f2f2c908c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6f99a7f6fdd5c7430e4ddaacb6bbfab"><td class="memItemLeft" align="right" valign="top"><a id="ae6f99a7f6fdd5c7430e4ddaacb6bbfab"></a>
+typedef <a class="el" href="../../d4/d3a/group__util.html#ga4e8b3f04b070dc9e532f176e2d21087a">IfTrue_</a>&lt; evaluateRight, const <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ae143bd45effa48ba85e5d9a1cec400f0">RT2</a>, <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ade847a8341e0a842d3c1f7c130895dfe">CT2</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ae6f99a7f6fdd5c7430e4ddaacb6bbfab">RT</a></td></tr>
+<tr class="memdesc:ae6f99a7f6fdd5c7430e4ddaacb6bbfab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for the assignment of the right-hand side sparse matrix operand. <br /></td></tr>
+<tr class="separator:ae6f99a7f6fdd5c7430e4ddaacb6bbfab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8433a860ba90d8f77df196183ee2891d"><td class="memItemLeft" align="right" valign="top"><a id="a8433a860ba90d8f77df196183ee2891d"></a>
 typedef MT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html#a8433a860ba90d8f77df196183ee2891d">MatrixType</a></td></tr>
 <tr class="memdesc:a8433a860ba90d8f77df196183ee2891d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the matrix. <br /></td></tr>
@@ -138,41 +138,41 @@ typedef MT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3b73f0f5d064469d80a804dbebb034b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a3b73f0f5d064469d80a804dbebb034b5">DMatTSMatMultExpr</a> (const MT1 &amp;lhs, const MT2 &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:a3b73f0f5d064469d80a804dbebb034b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html" title="Expression object for dense matrix-transpose sparse matrix multiplications.The DMatTSMatMultExpr clas...">DMatTSMatMultExpr</a> class.  <a href="#a3b73f0f5d064469d80a804dbebb034b5">More...</a><br /></td></tr>
-<tr class="separator:a3b73f0f5d064469d80a804dbebb034b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf77d462f67b235fcccf806d0b3d7595"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a79c15f953c88e9ebb78979f9fb9ed630">ReturnType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#adf77d462f67b235fcccf806d0b3d7595">operator()</a> (<a class="el" href="../../d9/dcd/classblaze_1_1size__t.html">size_t</a> i, <a class="el" href="../../d9/dcd/classblaze_1_1size__t.html">size_t</a> j) const</td></tr>
-<tr class="memdesc:adf77d462f67b235fcccf806d0b3d7595"><td class="mdescLeft">&#160;</td><td class="mdescRight">2D-access to the matrix elements.  <a href="#adf77d462f67b235fcccf806d0b3d7595">More...</a><br /></td></tr>
-<tr class="separator:adf77d462f67b235fcccf806d0b3d7595"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a005c4974775cd09c226e60d8497ddfaa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a79c15f953c88e9ebb78979f9fb9ed630">ReturnType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a005c4974775cd09c226e60d8497ddfaa">at</a> (<a class="el" href="../../d9/dcd/classblaze_1_1size__t.html">size_t</a> i, <a class="el" href="../../d9/dcd/classblaze_1_1size__t.html">size_t</a> j) const</td></tr>
-<tr class="memdesc:a005c4974775cd09c226e60d8497ddfaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checked access to the matrix elements.  <a href="#a005c4974775cd09c226e60d8497ddfaa">More...</a><br /></td></tr>
-<tr class="separator:a005c4974775cd09c226e60d8497ddfaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae422c4e6548df53fcabf8690ae0a75c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/dcd/classblaze_1_1size__t.html">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ae422c4e6548df53fcabf8690ae0a75c6">rows</a> () const noexcept</td></tr>
-<tr class="memdesc:ae422c4e6548df53fcabf8690ae0a75c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current number of rows of the matrix.  <a href="#ae422c4e6548df53fcabf8690ae0a75c6">More...</a><br /></td></tr>
-<tr class="separator:ae422c4e6548df53fcabf8690ae0a75c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bca6977743492b614bae5c86d708943"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/dcd/classblaze_1_1size__t.html">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a9bca6977743492b614bae5c86d708943">columns</a> () const noexcept</td></tr>
-<tr class="memdesc:a9bca6977743492b614bae5c86d708943"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current number of columns of the matrix.  <a href="#a9bca6977743492b614bae5c86d708943">More...</a><br /></td></tr>
-<tr class="separator:a9bca6977743492b614bae5c86d708943"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2fc1502969bc3e3f6fe71d26c747d4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#acbf3c161ad37efa6786b8e3c663d5592">LeftOperand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ae2fc1502969bc3e3f6fe71d26c747d4b">leftOperand</a> () const noexcept</td></tr>
-<tr class="memdesc:ae2fc1502969bc3e3f6fe71d26c747d4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the left-hand side dense matrix operand.  <a href="#ae2fc1502969bc3e3f6fe71d26c747d4b">More...</a><br /></td></tr>
-<tr class="separator:ae2fc1502969bc3e3f6fe71d26c747d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17c86281c7943e5136d002806ae6b5e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ad59dd1a4d912e60ead588545175e83fa">RightOperand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a17c86281c7943e5136d002806ae6b5e1">rightOperand</a> () const noexcept</td></tr>
-<tr class="memdesc:a17c86281c7943e5136d002806ae6b5e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the right-hand side transpose sparse matrix operand.  <a href="#a17c86281c7943e5136d002806ae6b5e1">More...</a><br /></td></tr>
-<tr class="separator:a17c86281c7943e5136d002806ae6b5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3c401fb3235c8a5b6b8c3846dc31b8c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ac3c401fb3235c8a5b6b8c3846dc31b8c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ac3c401fb3235c8a5b6b8c3846dc31b8c">canAlias</a> (const T *alias) const noexcept</td></tr>
-<tr class="memdesc:ac3c401fb3235c8a5b6b8c3846dc31b8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the expression can alias with the given address <em>alias</em>.  <a href="#ac3c401fb3235c8a5b6b8c3846dc31b8c">More...</a><br /></td></tr>
-<tr class="separator:ac3c401fb3235c8a5b6b8c3846dc31b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1ea17cbf6973e9c83122d7d73ecd89f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ac1ea17cbf6973e9c83122d7d73ecd89f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ac1ea17cbf6973e9c83122d7d73ecd89f">isAliased</a> (const T *alias) const noexcept</td></tr>
-<tr class="memdesc:ac1ea17cbf6973e9c83122d7d73ecd89f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the expression is aliased with the given address <em>alias</em>.  <a href="#ac1ea17cbf6973e9c83122d7d73ecd89f">More...</a><br /></td></tr>
-<tr class="separator:ac1ea17cbf6973e9c83122d7d73ecd89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d77526dafb9a970cfd7c536eb37154e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a6d77526dafb9a970cfd7c536eb37154e">isAligned</a> () const noexcept</td></tr>
-<tr class="memdesc:a6d77526dafb9a970cfd7c536eb37154e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the operands of the expression are properly aligned in memory.  <a href="#a6d77526dafb9a970cfd7c536eb37154e">More...</a><br /></td></tr>
-<tr class="separator:a6d77526dafb9a970cfd7c536eb37154e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82781ccee2afbc22513eeacd2da55d0e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a82781ccee2afbc22513eeacd2da55d0e">canSMPAssign</a> () const noexcept</td></tr>
-<tr class="memdesc:a82781ccee2afbc22513eeacd2da55d0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the expression can be used in SMP assignments.  <a href="#a82781ccee2afbc22513eeacd2da55d0e">More...</a><br /></td></tr>
-<tr class="separator:a82781ccee2afbc22513eeacd2da55d0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54180003de6fa3f39718d9041231f0bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a54180003de6fa3f39718d9041231f0bc">DMatTSMatMultExpr</a> (const MT1 &amp;lhs, const MT2 &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:a54180003de6fa3f39718d9041231f0bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html" title="Expression object for dense matrix-transpose sparse matrix multiplications.The DMatTSMatMultExpr clas...">DMatTSMatMultExpr</a> class.  <a href="#a54180003de6fa3f39718d9041231f0bc">More...</a><br /></td></tr>
+<tr class="separator:a54180003de6fa3f39718d9041231f0bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a1a22713b1f8a45245bb5ee12be9deb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ad94e1d8f7c728ade10f2945ea299be10">ReturnType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a4a1a22713b1f8a45245bb5ee12be9deb">operator()</a> (<a class="el" href="../../d9/dcd/classblaze_1_1size__t.html">size_t</a> i, <a class="el" href="../../d9/dcd/classblaze_1_1size__t.html">size_t</a> j) const</td></tr>
+<tr class="memdesc:a4a1a22713b1f8a45245bb5ee12be9deb"><td class="mdescLeft">&#160;</td><td class="mdescRight">2D-access to the matrix elements.  <a href="#a4a1a22713b1f8a45245bb5ee12be9deb">More...</a><br /></td></tr>
+<tr class="separator:a4a1a22713b1f8a45245bb5ee12be9deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62b6b4197510b25c2a20172af47e555b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ad94e1d8f7c728ade10f2945ea299be10">ReturnType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a62b6b4197510b25c2a20172af47e555b">at</a> (<a class="el" href="../../d9/dcd/classblaze_1_1size__t.html">size_t</a> i, <a class="el" href="../../d9/dcd/classblaze_1_1size__t.html">size_t</a> j) const</td></tr>
+<tr class="memdesc:a62b6b4197510b25c2a20172af47e555b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checked access to the matrix elements.  <a href="#a62b6b4197510b25c2a20172af47e555b">More...</a><br /></td></tr>
+<tr class="separator:a62b6b4197510b25c2a20172af47e555b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30c96661700a70d16a19f3a4744ae440"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/dcd/classblaze_1_1size__t.html">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a30c96661700a70d16a19f3a4744ae440">rows</a> () const noexcept</td></tr>
+<tr class="memdesc:a30c96661700a70d16a19f3a4744ae440"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current number of rows of the matrix.  <a href="#a30c96661700a70d16a19f3a4744ae440">More...</a><br /></td></tr>
+<tr class="separator:a30c96661700a70d16a19f3a4744ae440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5761cc89e4b6b21afc92c4f69392e42a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/dcd/classblaze_1_1size__t.html">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a5761cc89e4b6b21afc92c4f69392e42a">columns</a> () const noexcept</td></tr>
+<tr class="memdesc:a5761cc89e4b6b21afc92c4f69392e42a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current number of columns of the matrix.  <a href="#a5761cc89e4b6b21afc92c4f69392e42a">More...</a><br /></td></tr>
+<tr class="separator:a5761cc89e4b6b21afc92c4f69392e42a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a156e173a54f8da11aea2875e8cc455fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a8ddcc8f199948a542a7850435cb5e80f">LeftOperand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a156e173a54f8da11aea2875e8cc455fc">leftOperand</a> () const noexcept</td></tr>
+<tr class="memdesc:a156e173a54f8da11aea2875e8cc455fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the left-hand side dense matrix operand.  <a href="#a156e173a54f8da11aea2875e8cc455fc">More...</a><br /></td></tr>
+<tr class="separator:a156e173a54f8da11aea2875e8cc455fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63acffadb45bee956f1af70a8cfea87f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a3396429ff2baedbdbe0897ed35c651d8">RightOperand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a63acffadb45bee956f1af70a8cfea87f">rightOperand</a> () const noexcept</td></tr>
+<tr class="memdesc:a63acffadb45bee956f1af70a8cfea87f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the right-hand side transpose sparse matrix operand.  <a href="#a63acffadb45bee956f1af70a8cfea87f">More...</a><br /></td></tr>
+<tr class="separator:a63acffadb45bee956f1af70a8cfea87f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3f23260d6aaf33a0ccce557943ed76d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ab3f23260d6aaf33a0ccce557943ed76d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ab3f23260d6aaf33a0ccce557943ed76d">canAlias</a> (const T *alias) const noexcept</td></tr>
+<tr class="memdesc:ab3f23260d6aaf33a0ccce557943ed76d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the expression can alias with the given address <em>alias</em>.  <a href="#ab3f23260d6aaf33a0ccce557943ed76d">More...</a><br /></td></tr>
+<tr class="separator:ab3f23260d6aaf33a0ccce557943ed76d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09fad179a169979ba896845bf1fc869a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a09fad179a169979ba896845bf1fc869a"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a09fad179a169979ba896845bf1fc869a">isAliased</a> (const T *alias) const noexcept</td></tr>
+<tr class="memdesc:a09fad179a169979ba896845bf1fc869a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the expression is aliased with the given address <em>alias</em>.  <a href="#a09fad179a169979ba896845bf1fc869a">More...</a><br /></td></tr>
+<tr class="separator:a09fad179a169979ba896845bf1fc869a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90eee6ecc0fb1728ebdcfac23bb707fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a90eee6ecc0fb1728ebdcfac23bb707fb">isAligned</a> () const noexcept</td></tr>
+<tr class="memdesc:a90eee6ecc0fb1728ebdcfac23bb707fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the operands of the expression are properly aligned in memory.  <a href="#a90eee6ecc0fb1728ebdcfac23bb707fb">More...</a><br /></td></tr>
+<tr class="separator:a90eee6ecc0fb1728ebdcfac23bb707fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67b10d10535df42f4d1a21af5e0b28b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a67b10d10535df42f4d1a21af5e0b28b5">canSMPAssign</a> () const noexcept</td></tr>
+<tr class="memdesc:a67b10d10535df42f4d1a21af5e0b28b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the expression can be used in SMP assignments.  <a href="#a67b10d10535df42f4d1a21af5e0b28b5">More...</a><br /></td></tr>
+<tr class="separator:a67b10d10535df42f4d1a21af5e0b28b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99fddd4e06d7ef0aaa9960c12089c4e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d37/group__system.html#ga414fb20bc543f1b920b6599c9b63a23a">BLAZE_ALWAYS_INLINE</a> <a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html#a8433a860ba90d8f77df196183ee2891d">MatrixType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html#a99fddd4e06d7ef0aaa9960c12089c4e5">operator~</a> () noexcept</td></tr>
 <tr class="memdesc:a99fddd4e06d7ef0aaa9960c12089c4e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conversion operator for non-constant matrices.  <a href="#a99fddd4e06d7ef0aaa9960c12089c4e5">More...</a><br /></td></tr>
 <tr class="separator:a99fddd4e06d7ef0aaa9960c12089c4e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,70 +182,114 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a630c6288a3e27625b32a5e53f99c7628"><td class="memItemLeft" align="right" valign="top"><a id="a630c6288a3e27625b32a5e53f99c7628"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>evaluateLeft</b> = IsComputation&lt;MT1&gt;::value || RequiresEvaluation&lt;MT1&gt;::value
- }<tr class="memdesc:a630c6288a3e27625b32a5e53f99c7628"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the composite type of the left-hand side dense matrix expression. <br /></td></tr>
+<tr class="memitem:ad4ec2b35bb2a02fc72f7a59323969350"><td class="memItemLeft" align="right" valign="top"><a id="ad4ec2b35bb2a02fc72f7a59323969350"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>evaluateLeft</b> = IsComputation&lt;MT1&gt;::value || RequiresEvaluation&lt;MT1&gt;::value
+ }<tr class="memdesc:ad4ec2b35bb2a02fc72f7a59323969350"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the composite type of the left-hand side dense matrix expression. <br /></td></tr>
 </td></tr>
-<tr class="separator:a630c6288a3e27625b32a5e53f99c7628"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a342224e3f4c679075e20caac4aaeb749"><td class="memItemLeft" align="right" valign="top"><a id="a342224e3f4c679075e20caac4aaeb749"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>evaluateRight</b> = IsComputation&lt;MT2&gt;::value || RequiresEvaluation&lt;MT2&gt;::value
- }<tr class="memdesc:a342224e3f4c679075e20caac4aaeb749"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the composite type of the right-hand side sparse matrix expression. <br /></td></tr>
+<tr class="separator:ad4ec2b35bb2a02fc72f7a59323969350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5775d79b08c1a3c7853decee0655e3e7"><td class="memItemLeft" align="right" valign="top"><a id="a5775d79b08c1a3c7853decee0655e3e7"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>evaluateRight</b> = IsComputation&lt;MT2&gt;::value || RequiresEvaluation&lt;MT2&gt;::value
+ }<tr class="memdesc:a5775d79b08c1a3c7853decee0655e3e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the composite type of the right-hand side sparse matrix expression. <br /></td></tr>
 </td></tr>
-<tr class="separator:a342224e3f4c679075e20caac4aaeb749"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25378fa0ce2ea282b2f15a2d0df7d454"><td class="memItemLeft" align="right" valign="top"><a id="a25378fa0ce2ea282b2f15a2d0df7d454"></a>
-typedef <a class="el" href="../../d2/de9/namespaceblaze.html#a5a86db58851c76c3500769d8afdc759e">ResultType_</a>&lt; MT1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a25378fa0ce2ea282b2f15a2d0df7d454">RT1</a></td></tr>
-<tr class="memdesc:a25378fa0ce2ea282b2f15a2d0df7d454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result type of the left-hand side dense matrix expression. <br /></td></tr>
-<tr class="separator:a25378fa0ce2ea282b2f15a2d0df7d454"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1934bdca6be1bd572110f353d4b7f1a"><td class="memItemLeft" align="right" valign="top"><a id="ad1934bdca6be1bd572110f353d4b7f1a"></a>
-typedef <a class="el" href="../../d2/de9/namespaceblaze.html#a5a86db58851c76c3500769d8afdc759e">ResultType_</a>&lt; MT2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ad1934bdca6be1bd572110f353d4b7f1a">RT2</a></td></tr>
-<tr class="memdesc:ad1934bdca6be1bd572110f353d4b7f1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result type of the right-hand side sparse matrix expression. <br /></td></tr>
-<tr class="separator:ad1934bdca6be1bd572110f353d4b7f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63f4bbfe3693133418369d46274c3a1a"><td class="memItemLeft" align="right" valign="top"><a id="a63f4bbfe3693133418369d46274c3a1a"></a>
-typedef <a class="el" href="../../d2/de9/namespaceblaze.html#a9d478221c22767e2ab79fe64681a744b">ElementType_</a>&lt; <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a25378fa0ce2ea282b2f15a2d0df7d454">RT1</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a63f4bbfe3693133418369d46274c3a1a">ET1</a></td></tr>
-<tr class="memdesc:a63f4bbfe3693133418369d46274c3a1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element type of the left-hand side dense matrix expression. <br /></td></tr>
-<tr class="separator:a63f4bbfe3693133418369d46274c3a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3e4833d5bc3bd8bea9445c594ac8421"><td class="memItemLeft" align="right" valign="top"><a id="ae3e4833d5bc3bd8bea9445c594ac8421"></a>
-typedef <a class="el" href="../../d2/de9/namespaceblaze.html#a9d478221c22767e2ab79fe64681a744b">ElementType_</a>&lt; <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ad1934bdca6be1bd572110f353d4b7f1a">RT2</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ae3e4833d5bc3bd8bea9445c594ac8421">ET2</a></td></tr>
-<tr class="memdesc:ae3e4833d5bc3bd8bea9445c594ac8421"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element type of the right-hand side sparse matrix expression. <br /></td></tr>
-<tr class="separator:ae3e4833d5bc3bd8bea9445c594ac8421"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5e0d4b7f2a42bd002d19902280274dc"><td class="memItemLeft" align="right" valign="top"><a id="ad5e0d4b7f2a42bd002d19902280274dc"></a>
-typedef <a class="el" href="../../d2/de9/namespaceblaze.html#acf0851f216dd228db447fbf55718e18c">CompositeType_</a>&lt; MT1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ad5e0d4b7f2a42bd002d19902280274dc">CT1</a></td></tr>
-<tr class="memdesc:ad5e0d4b7f2a42bd002d19902280274dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Composite type of the left-hand side dense matrix expression. <br /></td></tr>
-<tr class="separator:ad5e0d4b7f2a42bd002d19902280274dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f2b8919056d50677d1aa7684b781544"><td class="memItemLeft" align="right" valign="top"><a id="a9f2b8919056d50677d1aa7684b781544"></a>
-typedef <a class="el" href="../../d2/de9/namespaceblaze.html#acf0851f216dd228db447fbf55718e18c">CompositeType_</a>&lt; MT2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a9f2b8919056d50677d1aa7684b781544">CT2</a></td></tr>
-<tr class="memdesc:a9f2b8919056d50677d1aa7684b781544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Composite type of the right-hand side sparse matrix expression. <br /></td></tr>
-<tr class="separator:a9f2b8919056d50677d1aa7684b781544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a5775d79b08c1a3c7853decee0655e3e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4584b848381f8215e171ca153fec33ad"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a4584b848381f8215e171ca153fec33ada9b767a546db37600b045dda031e8bd8a">SYM</a> = ( SF &amp;&amp; !( HF || LF || UF ) ), 
+<a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a4584b848381f8215e171ca153fec33adae1bd38e5df3ea72aa607e78a0a74d339">HERM</a> = ( HF &amp;&amp; !( LF || UF ) ), 
+<a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a4584b848381f8215e171ca153fec33ada577a6517633d789287ed40dd270b688b">LOW</a> = ( LF || ( ( SF || HF ) &amp;&amp; UF ) ), 
+<a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a4584b848381f8215e171ca153fec33ada3a0936eb964d9ba5e1e354a404a4173d">UPP</a> = ( UF || ( ( SF || HF ) &amp;&amp; LF ) )
+ }<tr class="memdesc:a4584b848381f8215e171ca153fec33ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switches for the kernel generation.  <a href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a4584b848381f8215e171ca153fec33ad">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a4584b848381f8215e171ca153fec33ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab15b0e4031af94645fcdd38c85f0280e"><td class="memItemLeft" align="right" valign="top"><a id="ab15b0e4031af94645fcdd38c85f0280e"></a>
+typedef <a class="el" href="../../d2/de9/namespaceblaze.html#a5a86db58851c76c3500769d8afdc759e">ResultType_</a>&lt; MT1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ab15b0e4031af94645fcdd38c85f0280e">RT1</a></td></tr>
+<tr class="memdesc:ab15b0e4031af94645fcdd38c85f0280e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result type of the left-hand side dense matrix expression. <br /></td></tr>
+<tr class="separator:ab15b0e4031af94645fcdd38c85f0280e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae143bd45effa48ba85e5d9a1cec400f0"><td class="memItemLeft" align="right" valign="top"><a id="ae143bd45effa48ba85e5d9a1cec400f0"></a>
+typedef <a class="el" href="../../d2/de9/namespaceblaze.html#a5a86db58851c76c3500769d8afdc759e">ResultType_</a>&lt; MT2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ae143bd45effa48ba85e5d9a1cec400f0">RT2</a></td></tr>
+<tr class="memdesc:ae143bd45effa48ba85e5d9a1cec400f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result type of the right-hand side sparse matrix expression. <br /></td></tr>
+<tr class="separator:ae143bd45effa48ba85e5d9a1cec400f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8dbd2ac5d8b797cd74cc205a8b50359"><td class="memItemLeft" align="right" valign="top"><a id="ad8dbd2ac5d8b797cd74cc205a8b50359"></a>
+typedef <a class="el" href="../../d2/de9/namespaceblaze.html#a9d478221c22767e2ab79fe64681a744b">ElementType_</a>&lt; <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ab15b0e4031af94645fcdd38c85f0280e">RT1</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ad8dbd2ac5d8b797cd74cc205a8b50359">ET1</a></td></tr>
+<tr class="memdesc:ad8dbd2ac5d8b797cd74cc205a8b50359"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element type of the left-hand side dense matrix expression. <br /></td></tr>
+<tr class="separator:ad8dbd2ac5d8b797cd74cc205a8b50359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d43b8feb570864a7c70ec0705302356"><td class="memItemLeft" align="right" valign="top"><a id="a4d43b8feb570864a7c70ec0705302356"></a>
+typedef <a class="el" href="../../d2/de9/namespaceblaze.html#a9d478221c22767e2ab79fe64681a744b">ElementType_</a>&lt; <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ae143bd45effa48ba85e5d9a1cec400f0">RT2</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a4d43b8feb570864a7c70ec0705302356">ET2</a></td></tr>
+<tr class="memdesc:a4d43b8feb570864a7c70ec0705302356"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element type of the right-hand side sparse matrix expression. <br /></td></tr>
+<tr class="separator:a4d43b8feb570864a7c70ec0705302356"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69b8a681685b894f23a176059bc25e94"><td class="memItemLeft" align="right" valign="top"><a id="a69b8a681685b894f23a176059bc25e94"></a>
+typedef <a class="el" href="../../d2/de9/namespaceblaze.html#acf0851f216dd228db447fbf55718e18c">CompositeType_</a>&lt; MT1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a69b8a681685b894f23a176059bc25e94">CT1</a></td></tr>
+<tr class="memdesc:a69b8a681685b894f23a176059bc25e94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Composite type of the left-hand side dense matrix expression. <br /></td></tr>
+<tr class="separator:a69b8a681685b894f23a176059bc25e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade847a8341e0a842d3c1f7c130895dfe"><td class="memItemLeft" align="right" valign="top"><a id="ade847a8341e0a842d3c1f7c130895dfe"></a>
+typedef <a class="el" href="../../d2/de9/namespaceblaze.html#acf0851f216dd228db447fbf55718e18c">CompositeType_</a>&lt; MT2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ade847a8341e0a842d3c1f7c130895dfe">CT2</a></td></tr>
+<tr class="memdesc:ade847a8341e0a842d3c1f7c130895dfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Composite type of the right-hand side sparse matrix expression. <br /></td></tr>
+<tr class="separator:ade847a8341e0a842d3c1f7c130895dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a8698e03f320db49c5104636b1b39bf8b"><td class="memItemLeft" align="right" valign="top"><a id="a8698e03f320db49c5104636b1b39bf8b"></a>
-<a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#acbf3c161ad37efa6786b8e3c663d5592">LeftOperand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a8698e03f320db49c5104636b1b39bf8b">lhs_</a></td></tr>
-<tr class="memdesc:a8698e03f320db49c5104636b1b39bf8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Left-hand side dense matrix of the multiplication expression. <br /></td></tr>
-<tr class="separator:a8698e03f320db49c5104636b1b39bf8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80af3bb9d4908fe621f7821bca0d7ab2"><td class="memItemLeft" align="right" valign="top"><a id="a80af3bb9d4908fe621f7821bca0d7ab2"></a>
-<a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ad59dd1a4d912e60ead588545175e83fa">RightOperand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a80af3bb9d4908fe621f7821bca0d7ab2">rhs_</a></td></tr>
-<tr class="memdesc:a80af3bb9d4908fe621f7821bca0d7ab2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Right-hand side sparse matrix of the multiplication expression. <br /></td></tr>
-<tr class="separator:a80af3bb9d4908fe621f7821bca0d7ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b9cf3a8334d2fac7636f78e34163391"><td class="memItemLeft" align="right" valign="top"><a id="a3b9cf3a8334d2fac7636f78e34163391"></a>
+<a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a8ddcc8f199948a542a7850435cb5e80f">LeftOperand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a3b9cf3a8334d2fac7636f78e34163391">lhs_</a></td></tr>
+<tr class="memdesc:a3b9cf3a8334d2fac7636f78e34163391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Left-hand side dense matrix of the multiplication expression. <br /></td></tr>
+<tr class="separator:a3b9cf3a8334d2fac7636f78e34163391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86f41031d935633de6af05e09f4d296f"><td class="memItemLeft" align="right" valign="top"><a id="a86f41031d935633de6af05e09f4d296f"></a>
+<a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a3396429ff2baedbdbe0897ed35c651d8">RightOperand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a86f41031d935633de6af05e09f4d296f">rhs_</a></td></tr>
+<tr class="memdesc:a86f41031d935633de6af05e09f4d296f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Right-hand side sparse matrix of the multiplication expression. <br /></td></tr>
+<tr class="separator:a86f41031d935633de6af05e09f4d296f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename MT1, typename MT2&gt;<br />
-class blaze::DMatTSMatMultExpr&lt; MT1, MT2 &gt;</h3>
+<div class="textblock"><h3>template&lt;typename MT1, typename MT2, bool SF, bool HF, bool LF, bool UF&gt;<br />
+class blaze::DMatTSMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt;</h3>
 
 <p><a class="el" href="../../d5/d2e/structblaze_1_1Expression.html" title="Base class for all expression templates.The Expression class is the base class for all expression tem...">Expression</a> object for dense matrix-transpose sparse matrix multiplications.</p>
 <p>The <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html" title="Expression object for dense matrix-transpose sparse matrix multiplications.The DMatTSMatMultExpr clas...">DMatTSMatMultExpr</a> class represents the compile time expression for multiplications between a row-major dense matrix and a column-major sparse matrix. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a3b73f0f5d064469d80a804dbebb034b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b73f0f5d064469d80a804dbebb034b5">&sect;&nbsp;</a></span>DMatTSMatMultExpr()</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a4584b848381f8215e171ca153fec33ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4584b848381f8215e171ca153fec33ad">&sect;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MT1, typename MT2&gt; </div>
+template&lt;typename MT1, typename MT2, bool SF, bool HF, bool LF, bool UF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">blaze::DMatTSMatMultExpr</a>&lt; MT1, MT2 &gt;::<a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">DMatTSMatMultExpr</a> </td>
+          <td class="memname">anonymous enum : bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compilation switches for the kernel generation. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4584b848381f8215e171ca153fec33ada9b767a546db37600b045dda031e8bd8a"></a>SYM&#160;</td><td class="fielddoc"><p>Flag for symmetric matrices. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4584b848381f8215e171ca153fec33adae1bd38e5df3ea72aa607e78a0a74d339"></a>HERM&#160;</td><td class="fielddoc"><p>Flag for Hermitian matrices. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4584b848381f8215e171ca153fec33ada577a6517633d789287ed40dd270b688b"></a>LOW&#160;</td><td class="fielddoc"><p>Flag for lower matrices. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4584b848381f8215e171ca153fec33ada3a0936eb964d9ba5e1e354a404a4173d"></a>UPP&#160;</td><td class="fielddoc"><p>Flag for upper matrices. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a54180003de6fa3f39718d9041231f0bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54180003de6fa3f39718d9041231f0bc">&sect;&nbsp;</a></span>DMatTSMatMultExpr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MT1, typename MT2, bool SF, bool HF, bool LF, bool UF&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">blaze::DMatTSMatMultExpr</a>&lt; MT1, MT2, SF, HF, LF, UF &gt;::<a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">DMatTSMatMultExpr</a> </td>
           <td>(</td>
           <td class="paramtype">const MT1 &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -281,19 +325,19 @@ template&lt;typename MT1, typename MT2&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a005c4974775cd09c226e60d8497ddfaa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a005c4974775cd09c226e60d8497ddfaa">&sect;&nbsp;</a></span>at()</h2>
+<a id="a62b6b4197510b25c2a20172af47e555b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62b6b4197510b25c2a20172af47e555b">&sect;&nbsp;</a></span>at()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MT1, typename MT2&gt; </div>
+template&lt;typename MT1, typename MT2, bool SF, bool HF, bool LF, bool UF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a79c15f953c88e9ebb78979f9fb9ed630">ReturnType</a> <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">blaze::DMatTSMatMultExpr</a>&lt; MT1, MT2 &gt;::at </td>
+          <td class="memname"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ad94e1d8f7c728ade10f2945ea299be10">ReturnType</a> <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">blaze::DMatTSMatMultExpr</a>&lt; MT1, MT2, SF, HF, LF, UF &gt;::at </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d9/dcd/classblaze_1_1size__t.html">size_t</a>&#160;</td>
           <td class="paramname"><em>i</em>, </td>
@@ -335,13 +379,13 @@ template&lt;typename MT1, typename MT2&gt; </div>
 
 </div>
 </div>
-<a id="ac3c401fb3235c8a5b6b8c3846dc31b8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3c401fb3235c8a5b6b8c3846dc31b8c">&sect;&nbsp;</a></span>canAlias()</h2>
+<a id="ab3f23260d6aaf33a0ccce557943ed76d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3f23260d6aaf33a0ccce557943ed76d">&sect;&nbsp;</a></span>canAlias()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MT1, typename MT2&gt; </div>
+template&lt;typename MT1, typename MT2, bool SF, bool HF, bool LF, bool UF&gt; </div>
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
 <table class="mlabels">
@@ -349,7 +393,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">blaze::DMatTSMatMultExpr</a>&lt; MT1, MT2 &gt;::canAlias </td>
+          <td class="memname">bool <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">blaze::DMatTSMatMultExpr</a>&lt; MT1, MT2, SF, HF, LF, UF &gt;::canAlias </td>
           <td>(</td>
           <td class="paramtype">const T *&#160;</td>
           <td class="paramname"><em>alias</em></td><td>)</td>
@@ -374,19 +418,19 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a82781ccee2afbc22513eeacd2da55d0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82781ccee2afbc22513eeacd2da55d0e">&sect;&nbsp;</a></span>canSMPAssign()</h2>
+<a id="a67b10d10535df42f4d1a21af5e0b28b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67b10d10535df42f4d1a21af5e0b28b5">&sect;&nbsp;</a></span>canSMPAssign()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MT1, typename MT2&gt; </div>
+template&lt;typename MT1, typename MT2, bool SF, bool HF, bool LF, bool UF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">blaze::DMatTSMatMultExpr</a>&lt; MT1, MT2 &gt;::canSMPAssign </td>
+          <td class="memname">bool <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">blaze::DMatTSMatMultExpr</a>&lt; MT1, MT2, SF, HF, LF, UF &gt;::canSMPAssign </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -404,19 +448,19 @@ template&lt;typename MT1, typename MT2&gt; </div>
 
 </div>
 </div>
-<a id="a9bca6977743492b614bae5c86d708943"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bca6977743492b614bae5c86d708943">&sect;&nbsp;</a></span>columns()</h2>
+<a id="a5761cc89e4b6b21afc92c4f69392e42a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5761cc89e4b6b21afc92c4f69392e42a">&sect;&nbsp;</a></span>columns()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MT1, typename MT2&gt; </div>
+template&lt;typename MT1, typename MT2, bool SF, bool HF, bool LF, bool UF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d9/dcd/classblaze_1_1size__t.html">size_t</a> <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">blaze::DMatTSMatMultExpr</a>&lt; MT1, MT2 &gt;::columns </td>
+          <td class="memname"><a class="el" href="../../d9/dcd/classblaze_1_1size__t.html">size_t</a> <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">blaze::DMatTSMatMultExpr</a>&lt; MT1, MT2, SF, HF, LF, UF &gt;::columns </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -434,13 +478,13 @@ template&lt;typename MT1, typename MT2&gt; </div>
 
 </div>
 </div>
-<a id="ac1ea17cbf6973e9c83122d7d73ecd89f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1ea17cbf6973e9c83122d7d73ecd89f">&sect;&nbsp;</a></span>isAliased()</h2>
+<a id="a09fad179a169979ba896845bf1fc869a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09fad179a169979ba896845bf1fc869a">&sect;&nbsp;</a></span>isAliased()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MT1, typename MT2&gt; </div>
+template&lt;typename MT1, typename MT2, bool SF, bool HF, bool LF, bool UF&gt; </div>
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
 <table class="mlabels">
@@ -448,7 +492,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">blaze::DMatTSMatMultExpr</a>&lt; MT1, MT2 &gt;::isAliased </td>
+          <td class="memname">bool <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">blaze::DMatTSMatMultExpr</a>&lt; MT1, MT2, SF, HF, LF, UF &gt;::isAliased </td>
           <td>(</td>
           <td class="paramtype">const T *&#160;</td>
           <td class="paramname"><em>alias</em></td><td>)</td>
@@ -473,19 +517,19 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a6d77526dafb9a970cfd7c536eb37154e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d77526dafb9a970cfd7c536eb37154e">&sect;&nbsp;</a></span>isAligned()</h2>
+<a id="a90eee6ecc0fb1728ebdcfac23bb707fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90eee6ecc0fb1728ebdcfac23bb707fb">&sect;&nbsp;</a></span>isAligned()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MT1, typename MT2&gt; </div>
+template&lt;typename MT1, typename MT2, bool SF, bool HF, bool LF, bool UF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">blaze::DMatTSMatMultExpr</a>&lt; MT1, MT2 &gt;::isAligned </td>
+          <td class="memname">bool <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">blaze::DMatTSMatMultExpr</a>&lt; MT1, MT2, SF, HF, LF, UF &gt;::isAligned </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -503,19 +547,19 @@ template&lt;typename MT1, typename MT2&gt; </div>
 
 </div>
 </div>
-<a id="ae2fc1502969bc3e3f6fe71d26c747d4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2fc1502969bc3e3f6fe71d26c747d4b">&sect;&nbsp;</a></span>leftOperand()</h2>
+<a id="a156e173a54f8da11aea2875e8cc455fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a156e173a54f8da11aea2875e8cc455fc">&sect;&nbsp;</a></span>leftOperand()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MT1, typename MT2&gt; </div>
+template&lt;typename MT1, typename MT2, bool SF, bool HF, bool LF, bool UF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#acbf3c161ad37efa6786b8e3c663d5592">LeftOperand</a> <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">blaze::DMatTSMatMultExpr</a>&lt; MT1, MT2 &gt;::leftOperand </td>
+          <td class="memname"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a8ddcc8f199948a542a7850435cb5e80f">LeftOperand</a> <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">blaze::DMatTSMatMultExpr</a>&lt; MT1, MT2, SF, HF, LF, UF &gt;::leftOperand </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -533,19 +577,19 @@ template&lt;typename MT1, typename MT2&gt; </div>
 
 </div>
 </div>
-<a id="adf77d462f67b235fcccf806d0b3d7595"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf77d462f67b235fcccf806d0b3d7595">&sect;&nbsp;</a></span>operator()()</h2>
+<a id="a4a1a22713b1f8a45245bb5ee12be9deb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a1a22713b1f8a45245bb5ee12be9deb">&sect;&nbsp;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MT1, typename MT2&gt; </div>
+template&lt;typename MT1, typename MT2, bool SF, bool HF, bool LF, bool UF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a79c15f953c88e9ebb78979f9fb9ed630">ReturnType</a> <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">blaze::DMatTSMatMultExpr</a>&lt; MT1, MT2 &gt;::operator() </td>
+          <td class="memname"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ad94e1d8f7c728ade10f2945ea299be10">ReturnType</a> <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">blaze::DMatTSMatMultExpr</a>&lt; MT1, MT2, SF, HF, LF, UF &gt;::operator() </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d9/dcd/classblaze_1_1size__t.html">size_t</a>&#160;</td>
           <td class="paramname"><em>i</em>, </td>
@@ -641,19 +685,19 @@ template&lt;typename MT, bool SO&gt; </div>
 
 </div>
 </div>
-<a id="a17c86281c7943e5136d002806ae6b5e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17c86281c7943e5136d002806ae6b5e1">&sect;&nbsp;</a></span>rightOperand()</h2>
+<a id="a63acffadb45bee956f1af70a8cfea87f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63acffadb45bee956f1af70a8cfea87f">&sect;&nbsp;</a></span>rightOperand()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MT1, typename MT2&gt; </div>
+template&lt;typename MT1, typename MT2, bool SF, bool HF, bool LF, bool UF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#ad59dd1a4d912e60ead588545175e83fa">RightOperand</a> <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">blaze::DMatTSMatMultExpr</a>&lt; MT1, MT2 &gt;::rightOperand </td>
+          <td class="memname"><a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a3396429ff2baedbdbe0897ed35c651d8">RightOperand</a> <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">blaze::DMatTSMatMultExpr</a>&lt; MT1, MT2, SF, HF, LF, UF &gt;::rightOperand </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -671,19 +715,19 @@ template&lt;typename MT1, typename MT2&gt; </div>
 
 </div>
 </div>
-<a id="ae422c4e6548df53fcabf8690ae0a75c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae422c4e6548df53fcabf8690ae0a75c6">&sect;&nbsp;</a></span>rows()</h2>
+<a id="a30c96661700a70d16a19f3a4744ae440"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30c96661700a70d16a19f3a4744ae440">&sect;&nbsp;</a></span>rows()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MT1, typename MT2&gt; </div>
+template&lt;typename MT1, typename MT2, bool SF, bool HF, bool LF, bool UF&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d9/dcd/classblaze_1_1size__t.html">size_t</a> <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">blaze::DMatTSMatMultExpr</a>&lt; MT1, MT2 &gt;::rows </td>
+          <td class="memname"><a class="el" href="../../d9/dcd/classblaze_1_1size__t.html">size_t</a> <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">blaze::DMatTSMatMultExpr</a>&lt; MT1, MT2, SF, HF, LF, UF &gt;::rows </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -707,7 +751,7 @@ template&lt;typename MT1, typename MT2&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 31 2016 17:17:04 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 8 2016 01:03:49 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

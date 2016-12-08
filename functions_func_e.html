@@ -66,12 +66,13 @@ $(function() {
 </li>
 <li>end()
 : <a class="el" href="d3/d25/classblaze_1_1AlignedArray.html#a2d0c07818e7d9b03bc733c4becb03d1e">blaze::AlignedArray&lt; Type, N, Alignment &gt;</a>
-, <a class="el" href="da/d7a/classblaze_1_1CompressedMatrix.html#aac1969d6eeaf6aa9343abfd42a9e8963">blaze::CompressedMatrix&lt; Type, SO &gt;</a>
+, <a class="el" href="da/d7a/classblaze_1_1CompressedMatrix.html#a4b85ed0abfcfd1b48cca72268faa3b9a">blaze::CompressedMatrix&lt; Type, SO &gt;</a>
 , <a class="el" href="d5/d35/classblaze_1_1CompressedVector.html#a348cae75e9eead14056c63858014cd99">blaze::CompressedVector&lt; Type, TF &gt;</a>
 , <a class="el" href="de/d43/classblaze_1_1CustomMatrix.html#a19dc83e4b9b3867f369d109bfd7fd741">blaze::CustomMatrix&lt; Type, AF, PF, SO &gt;</a>
 , <a class="el" href="de/d32/classblaze_1_1CustomVector.html#a116ad04051f6412d5be473c35b0eeaea">blaze::CustomVector&lt; Type, AF, PF, TF &gt;</a>
 , <a class="el" href="de/d1d/classblaze_1_1DenseMatrixProxy.html#a1731bcc833fddd69dccea9b75e8b06d9">blaze::DenseMatrixProxy&lt; PT, MT &gt;</a>
 , <a class="el" href="d9/d4a/classblaze_1_1DenseVectorProxy.html#ab45a81ba947819a008f8b9f012277286">blaze::DenseVectorProxy&lt; PT, VT &gt;</a>
+, <a class="el" href="dc/dbe/classblaze_1_1DMatDeclDiagExpr.html#a2fca295616882fbf45bac395a51b26b3">blaze::DMatDeclDiagExpr&lt; MT, SO &gt;</a>
 , <a class="el" href="db/df9/classblaze_1_1DMatDeclHermExpr.html#ade956ec33aa560ba6f0e4a6605d132af">blaze::DMatDeclHermExpr&lt; MT, SO &gt;</a>
 , <a class="el" href="d8/d26/classblaze_1_1DMatDeclLowExpr.html#aa5bac26b311309de86e82ec8531f581e">blaze::DMatDeclLowExpr&lt; MT, SO &gt;</a>
 , <a class="el" href="d2/db7/classblaze_1_1DMatDeclSymExpr.html#af3b101baf9a6929bf6032ed1cbd9432c">blaze::DMatDeclSymExpr&lt; MT, SO &gt;</a>
@@ -117,7 +118,7 @@ $(function() {
 , <a class="el" href="d7/dc2/classblaze_1_1SVecScalarMultExpr.html#ac2a9fc183a78d8009d24150bd0282998">blaze::SVecScalarMultExpr&lt; VT, ST, TF &gt;</a>
 , <a class="el" href="db/d3b/classblaze_1_1SVecTDVecMultExpr.html#a334bb6e44614a2c27cd44885bc32ee3e">blaze::SVecTDVecMultExpr&lt; VT1, VT2 &gt;</a>
 , <a class="el" href="d9/dd7/classblaze_1_1SVecTransExpr.html#a1bedb003f30fc4d01f73830abc8beb3d">blaze::SVecTransExpr&lt; VT, TF &gt;</a>
-, <a class="el" href="dd/dd2/classblaze_1_1SVecTransposer.html#af0615d49305a4eac44de2c5aa66f2e8a">blaze::SVecTransposer&lt; VT, TF &gt;</a>
+, <a class="el" href="dd/dd2/classblaze_1_1SVecTransposer.html#a6163eb1ad7606eb6b504dfb42c637ad8">blaze::SVecTransposer&lt; VT, TF &gt;</a>
 , <a class="el" href="dc/d6e/classblaze_1_1timing_1_1Timer.html#a7ebe88d9f0e74090d76013b5c73976b2">blaze::timing::Timer&lt; TP &gt;</a>
 </li>
 <li>eof()
@@ -131,11 +132,20 @@ $(function() {
 , <a class="el" href="db/da3/classblaze_1_1NegativeInfinity.html#a0891346ca5c90fb84cc62095996ace01">blaze::NegativeInfinity&lt; I &gt;</a>
 </li>
 <li>erase()
-: <a class="el" href="da/d7a/classblaze_1_1CompressedMatrix.html#a58948b7a5861e454e1e5b0558e7c4e79">blaze::CompressedMatrix&lt; Type, SO &gt;</a>
-, <a class="el" href="d5/d35/classblaze_1_1CompressedVector.html#a4b0a64273f335c608674891673c1dfa0">blaze::CompressedVector&lt; Type, TF &gt;</a>
-, <a class="el" href="d3/ddf/classblaze_1_1PtrVector.html#aa24111278053d2ec4a0a1d275b8865dc">blaze::PtrVector&lt; T, D, G &gt;</a>
-, <a class="el" href="d0/da0/classblaze_1_1SparseMatrixProxy.html#ab0a1266af2e267cc5015935a8312f1a7">blaze::SparseMatrixProxy&lt; PT, MT &gt;</a>
-, <a class="el" href="dc/df4/classblaze_1_1SparseVectorProxy.html#a76d69c9009c557124e508e54bfa1dadf">blaze::SparseVectorProxy&lt; PT, VT &gt;</a>
+: <a class="el" href="da/d7a/classblaze_1_1CompressedMatrix.html#a03e0562be4a437656d2d6eaf92d1a244">blaze::CompressedMatrix&lt; Type, SO &gt;</a>
+, <a class="el" href="d5/d35/classblaze_1_1CompressedVector.html#ae6a0dbd9440a25174322a421a17c9a45">blaze::CompressedVector&lt; Type, TF &gt;</a>
+, <a class="el" href="d3/ddf/classblaze_1_1PtrVector.html#aebd377147fffa637f4c9427bcc108816">blaze::PtrVector&lt; T, D, G &gt;</a>
+, <a class="el" href="d0/da0/classblaze_1_1SparseMatrixProxy.html#a0eebb951e0e84e2831e4d6907a5bdb4f">blaze::SparseMatrixProxy&lt; PT, MT &gt;</a>
+, <a class="el" href="dc/df4/classblaze_1_1SparseVectorProxy.html#abba94fde0d1f76013072aa95ddb71b52">blaze::SparseVectorProxy&lt; PT, VT &gt;</a>
+</li>
+<li>Erf()
+: <a class="el" href="dd/d2c/structblaze_1_1Erf.html#a4abfc48e7d8ddb0daf67a52810088695">blaze::Erf</a>
+</li>
+<li>Erfc()
+: <a class="el" href="de/d5a/structblaze_1_1Erfc.html#a43f5dec25f6bb30129ee20eb7a0e2a61">blaze::Erfc</a>
+</li>
+<li>Eval()
+: <a class="el" href="d6/dc3/structblaze_1_1Eval.html#a8ad665e82848a4ebc5d1e86a04f9f9aa">blaze::Eval</a>
 </li>
 <li>eval()
 : <a class="el" href="d9/d53/structblaze_1_1SIMDf32FmaddExpr.html#a6ff3fb90d144805ad4b84909db871d30">blaze::SIMDf32FmaddExpr&lt; T1, T2, T3 &gt;</a>
@@ -147,6 +157,15 @@ $(function() {
 </li>
 <li>executeTask()
 : <a class="el" href="db/d38/classblaze_1_1ThreadPool.html#aa419ce260788be0f424c21357ef3a372">blaze::ThreadPool&lt; TT, MT, LT, CT &gt;</a>
+</li>
+<li>Exp()
+: <a class="el" href="d4/d45/structblaze_1_1Exp.html#aad2c60287f196ebf7f8511fa20a4f73e">blaze::Exp</a>
+</li>
+<li>Exp10()
+: <a class="el" href="db/dc8/structblaze_1_1Exp10.html#a43467c705365a7c9e5b67665db0d02f1">blaze::Exp10</a>
+</li>
+<li>Exp2()
+: <a class="el" href="df/dbb/structblaze_1_1Exp2.html#a6a86e9cb688e09388e4b89f1ee62701d">blaze::Exp2</a>
 </li>
 <li>extend()
 : <a class="el" href="de/d1d/classblaze_1_1DenseMatrixProxy.html#a4cb1804d5dfcd48fec7d325da4abe6e1">blaze::DenseMatrixProxy&lt; PT, MT &gt;</a>
@@ -165,7 +184,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 31 2016 17:17:52 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 8 2016 01:04:31 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

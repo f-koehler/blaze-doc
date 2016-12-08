@@ -60,16 +60,17 @@ $(function() {
 <h3><a id="index_d"></a>- d -</h3><ul>
 <li>data()
 : <a class="el" href="d3/d25/classblaze_1_1AlignedArray.html#a902044002d046b37ecceb1f0dd48ef1a">blaze::AlignedArray&lt; Type, N, Alignment &gt;</a>
-, <a class="el" href="de/d43/classblaze_1_1CustomMatrix.html#a899a5adfd74385f4c02d3f13d97749ae">blaze::CustomMatrix&lt; Type, AF, PF, SO &gt;</a>
+, <a class="el" href="de/d43/classblaze_1_1CustomMatrix.html#ae437d90881d10fc62aa0e056442ff94a">blaze::CustomMatrix&lt; Type, AF, PF, SO &gt;</a>
 , <a class="el" href="de/d32/classblaze_1_1CustomVector.html#ae79cf668f1c4fd8e584d5dea9bb2709d">blaze::CustomVector&lt; Type, AF, PF, TF &gt;</a>
-, <a class="el" href="de/d1d/classblaze_1_1DenseMatrixProxy.html#a4e98ce8f20c7793bb17ecad1d9c6bd75">blaze::DenseMatrixProxy&lt; PT, MT &gt;</a>
+, <a class="el" href="de/d1d/classblaze_1_1DenseMatrixProxy.html#a0a4bf46ee9541442d1be9792437e870c">blaze::DenseMatrixProxy&lt; PT, MT &gt;</a>
 , <a class="el" href="d9/d4a/classblaze_1_1DenseVectorProxy.html#a4c0a52e41b7a5dc7fb731d8bdd630557">blaze::DenseVectorProxy&lt; PT, VT &gt;</a>
+, <a class="el" href="dc/dbe/classblaze_1_1DMatDeclDiagExpr.html#a50b7f354e5abb2316bcbd370674f315b">blaze::DMatDeclDiagExpr&lt; MT, SO &gt;</a>
 , <a class="el" href="db/df9/classblaze_1_1DMatDeclHermExpr.html#ae5320c3858ee560df73772d75d859788">blaze::DMatDeclHermExpr&lt; MT, SO &gt;</a>
 , <a class="el" href="d8/d26/classblaze_1_1DMatDeclLowExpr.html#afe7d341fbc71f94626a95e4283aa0cea">blaze::DMatDeclLowExpr&lt; MT, SO &gt;</a>
 , <a class="el" href="d2/db7/classblaze_1_1DMatDeclSymExpr.html#ab2b16e16575237e3574e6d0bef81a131">blaze::DMatDeclSymExpr&lt; MT, SO &gt;</a>
 , <a class="el" href="d5/d58/classblaze_1_1DMatDeclUppExpr.html#a05908af1af331829302feb3c8a774b92">blaze::DMatDeclUppExpr&lt; MT, SO &gt;</a>
 , <a class="el" href="d1/d86/classblaze_1_1DMatTransExpr.html#a6dfcb3dc15645583d0a6641e44802844">blaze::DMatTransExpr&lt; MT, SO &gt;</a>
-, <a class="el" href="d9/d12/classblaze_1_1DMatTransposer.html#a217c317dcce80af0860aa02b42ff0d6c">blaze::DMatTransposer&lt; MT, SO &gt;</a>
+, <a class="el" href="d9/d12/classblaze_1_1DMatTransposer.html#a4c5b1d3c52ed78aa5ab338041cac7b4e">blaze::DMatTransposer&lt; MT, SO &gt;</a>
 , <a class="el" href="db/db6/classblaze_1_1DVecTransExpr.html#ac96cd9d2fd0879d1c164e563637f3e8a">blaze::DVecTransExpr&lt; VT, TF &gt;</a>
 , <a class="el" href="d0/d30/classblaze_1_1DVecTransposer.html#ad52240ed98a6fa933057e78646f7ab3d">blaze::DVecTransposer&lt; VT, TF &gt;</a>
 , <a class="el" href="de/d1e/classblaze_1_1DynamicMatrix.html#a79b1caf12d89962b542f9c8e385b0c66">blaze::DynamicMatrix&lt; Type, SO &gt;</a>
@@ -81,6 +82,21 @@ $(function() {
 </li>
 <li>deallocate()
 : <a class="el" href="d0/d6f/classblaze_1_1AlignedAllocator.html#a03c1178c2d7ac5a3610403457fae8b80">blaze::AlignedAllocator&lt; Type &gt;</a>
+</li>
+<li>DeclDiag()
+: <a class="el" href="d6/d2a/structblaze_1_1DeclDiag.html#a7900e3235fe4793d9312a0bca1834dc1">blaze::DeclDiag</a>
+</li>
+<li>DeclHerm()
+: <a class="el" href="dc/d7d/structblaze_1_1DeclHerm.html#a8b630aff352ff4e812dc547f068ce12b">blaze::DeclHerm</a>
+</li>
+<li>DeclLow()
+: <a class="el" href="dd/d1b/structblaze_1_1DeclLow.html#a96ed3bb8181a9af928bcaf878472788c">blaze::DeclLow</a>
+</li>
+<li>DeclSym()
+: <a class="el" href="d2/dba/structblaze_1_1DeclSym.html#af56b61deee5c8fa1ff8029524dcd0a3d">blaze::DeclSym</a>
+</li>
+<li>DeclUpp()
+: <a class="el" href="d8/d41/structblaze_1_1DeclUpp.html#a23e80beab2c019efda425a7fd84a59fb">blaze::DeclUpp</a>
 </li>
 <li>deleteElement()
 : <a class="el" href="d3/ddf/classblaze_1_1PtrVector.html#a992bd261ba7006831cecb4fc277c215d">blaze::PtrVector&lt; T, D, G &gt;</a>
@@ -102,7 +118,7 @@ $(function() {
 : <a class="el" href="d1/da6/classblaze_1_1MatrixSerializer.html#ab00e8f10a9cc9533e11db8bd6fc4575c">blaze::MatrixSerializer</a>
 </li>
 <li>deserializeDenseVector()
-: <a class="el" href="d7/d88/classblaze_1_1VectorSerializer.html#a5795e4263e3e5236f2a5b1219c9d4e97">blaze::VectorSerializer</a>
+: <a class="el" href="d7/d88/classblaze_1_1VectorSerializer.html#afecfea335df556d1628b8b24040f9511">blaze::VectorSerializer</a>
 </li>
 <li>deserializeHeader()
 : <a class="el" href="d1/da6/classblaze_1_1MatrixSerializer.html#aaaec350ac2c72c3726163572325f297d">blaze::MatrixSerializer</a>
@@ -112,7 +128,7 @@ $(function() {
 : <a class="el" href="d1/da6/classblaze_1_1MatrixSerializer.html#af35529da0e3af4bcb228bd83b89a61fc">blaze::MatrixSerializer</a>
 </li>
 <li>deserializeSparseColumnMatrix()
-: <a class="el" href="d1/da6/classblaze_1_1MatrixSerializer.html#a479681a79b47eb6b04d329269934f0bb">blaze::MatrixSerializer</a>
+: <a class="el" href="d1/da6/classblaze_1_1MatrixSerializer.html#ae040ff08b25693d97c7fc3653ca51463">blaze::MatrixSerializer</a>
 </li>
 <li>deserializeSparseRowMatrix()
 : <a class="el" href="d1/da6/classblaze_1_1MatrixSerializer.html#ac52124814db24d046cc39eff3a6276b3">blaze::MatrixSerializer</a>
@@ -133,9 +149,12 @@ $(function() {
 : <a class="el" href="d5/d35/classblaze_1_1CompressedVector.html#aedb1742203c91ff88c447e7501aeaf9f">blaze::CompressedVector&lt; Type, TF &gt;</a>
 , <a class="el" href="de/d32/classblaze_1_1CustomVector.html#aa1914321313e77eee836ed080feedf2a">blaze::CustomVector&lt; Type, AF, PF, TF &gt;</a>
 , <a class="el" href="d0/d30/classblaze_1_1DVecTransposer.html#a5ff96087db357c8523fa045e4ff55dc5">blaze::DVecTransposer&lt; VT, TF &gt;</a>
-, <a class="el" href="da/d9e/classblaze_1_1DynamicVector.html#a15624ea9e29ff79fedd98ee35b0b3da4">blaze::DynamicVector&lt; Type, TF &gt;</a>
-, <a class="el" href="da/d6b/classblaze_1_1HybridVector.html#a4033527ac4a392696ff10efe51e4ad5a">blaze::HybridVector&lt; Type, N, TF &gt;</a>
+, <a class="el" href="da/d9e/classblaze_1_1DynamicVector.html#a1111287d5a804993edb1e7d5ee3b276c">blaze::DynamicVector&lt; Type, TF &gt;</a>
+, <a class="el" href="da/d6b/classblaze_1_1HybridVector.html#a66494e3a1bd90041bad6317cf4a5ae43">blaze::HybridVector&lt; Type, N, TF &gt;</a>
 , <a class="el" href="d9/d3c/classblaze_1_1StaticVector.html#a2c046fc6c34890cdf0cdd765b56521a4">blaze::StaticVector&lt; Type, N, TF &gt;</a>
+</li>
+<li>DMatDeclDiagExpr()
+: <a class="el" href="dc/dbe/classblaze_1_1DMatDeclDiagExpr.html#a45f945a19122ec7ea491b3c022896f8a">blaze::DMatDeclDiagExpr&lt; MT, SO &gt;</a>
 </li>
 <li>DMatDeclHermExpr()
 : <a class="el" href="db/df9/classblaze_1_1DMatDeclHermExpr.html#a3cd741fbe055c6b2b1fb0767f19b0eb9">blaze::DMatDeclHermExpr&lt; MT, SO &gt;</a>
@@ -153,7 +172,7 @@ $(function() {
 : <a class="el" href="d9/d2d/classblaze_1_1DMatDMatAddExpr.html#af4b2a50955a1b4a30ec687ecf694543c">blaze::DMatDMatAddExpr&lt; MT1, MT2, SO &gt;</a>
 </li>
 <li>DMatDMatMultExpr()
-: <a class="el" href="d3/d40/classblaze_1_1DMatDMatMultExpr.html#a9a4926122928c8af413bf4a64d0b88ad">blaze::DMatDMatMultExpr&lt; MT1, MT2, SF &gt;</a>
+: <a class="el" href="d3/d40/classblaze_1_1DMatDMatMultExpr.html#a1c8be3a4972cc84a59b92b2865eb96a2">blaze::DMatDMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt;</a>
 </li>
 <li>DMatDMatSubExpr()
 : <a class="el" href="d9/ddb/classblaze_1_1DMatDMatSubExpr.html#a9063dbc00acaef62095ba3610586d328">blaze::DMatDMatSubExpr&lt; MT1, MT2, SO &gt;</a>
@@ -183,7 +202,7 @@ $(function() {
 : <a class="el" href="df/d65/classblaze_1_1DMatSMatAddExpr.html#a2c7d5d3989884bbb8eabcec1aea00c0e">blaze::DMatSMatAddExpr&lt; MT1, MT2, SO &gt;</a>
 </li>
 <li>DMatSMatMultExpr()
-: <a class="el" href="d1/d2b/classblaze_1_1DMatSMatMultExpr.html#aa541680ea117e8c53909c733fc26ffa1">blaze::DMatSMatMultExpr&lt; MT1, MT2 &gt;</a>
+: <a class="el" href="d1/d2b/classblaze_1_1DMatSMatMultExpr.html#ad9efa3cae9b637476c2b296bbae0b1b0">blaze::DMatSMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt;</a>
 </li>
 <li>DMatSMatSubExpr()
 : <a class="el" href="d3/deb/classblaze_1_1DMatSMatSubExpr.html#ad13f224fc63a41d5c2841c1b7073b320">blaze::DMatSMatSubExpr&lt; MT1, MT2, SO &gt;</a>
@@ -195,7 +214,7 @@ $(function() {
 : <a class="el" href="df/dbe/classblaze_1_1DMatTDMatAddExpr.html#af35a45b8816fc6ca6848ceae3081af3a">blaze::DMatTDMatAddExpr&lt; MT1, MT2 &gt;</a>
 </li>
 <li>DMatTDMatMultExpr()
-: <a class="el" href="d3/d8a/classblaze_1_1DMatTDMatMultExpr.html#ad0be7ed28ccf48650682dbd3199544f0">blaze::DMatTDMatMultExpr&lt; MT1, MT2, SF &gt;</a>
+: <a class="el" href="d3/d8a/classblaze_1_1DMatTDMatMultExpr.html#ad7069d6e7651141e89bdb7fb31b5d104">blaze::DMatTDMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt;</a>
 </li>
 <li>DMatTDMatSubExpr()
 : <a class="el" href="d8/d16/classblaze_1_1DMatTDMatSubExpr.html#ac548ccfded25eba52b5ea363ef606681">blaze::DMatTDMatSubExpr&lt; MT1, MT2 &gt;</a>
@@ -210,7 +229,7 @@ $(function() {
 : <a class="el" href="df/d61/classblaze_1_1DMatTSMatAddExpr.html#a1ae812e4d052d7208fd93de99bc57055">blaze::DMatTSMatAddExpr&lt; MT1, MT2 &gt;</a>
 </li>
 <li>DMatTSMatMultExpr()
-: <a class="el" href="d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a3b73f0f5d064469d80a804dbebb034b5">blaze::DMatTSMatMultExpr&lt; MT1, MT2 &gt;</a>
+: <a class="el" href="d5/ddc/classblaze_1_1DMatTSMatMultExpr.html#a54180003de6fa3f39718d9041231f0bc">blaze::DMatTSMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt;</a>
 </li>
 <li>DMatTSMatSubExpr()
 : <a class="el" href="d1/d76/classblaze_1_1DMatTSMatSubExpr.html#a35fe6a094e2bb9c18863ff8d71d13d3c">blaze::DMatTSMatSubExpr&lt; MT1, MT2 &gt;</a>
@@ -270,16 +289,16 @@ $(function() {
 : <a class="el" href="d5/da5/classblaze_1_1DVecTSVecMultExpr.html#a431fd6e5f680849c3ca0db95ba71be4f">blaze::DVecTSVecMultExpr&lt; VT1, VT2 &gt;</a>
 </li>
 <li>DynamicMatrix()
-: <a class="el" href="de/d1e/classblaze_1_1DynamicMatrix.html#af0cde44a25f643a97d2c95f0e10b20e1">blaze::DynamicMatrix&lt; Type, SO &gt;</a>
+: <a class="el" href="de/d1e/classblaze_1_1DynamicMatrix.html#a7443eb18fbdd9bca3370d7f76458a610">blaze::DynamicMatrix&lt; Type, SO &gt;</a>
 </li>
 <li>DynamicVector()
-: <a class="el" href="da/d9e/classblaze_1_1DynamicVector.html#a8f4c6c10773de00ca8ec321415128274">blaze::DynamicVector&lt; Type, TF &gt;</a>
+: <a class="el" href="da/d9e/classblaze_1_1DynamicVector.html#ab479b376b9c01bf5138b9c74e774d513">blaze::DynamicVector&lt; Type, TF &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 31 2016 17:17:52 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 8 2016 01:04:31 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

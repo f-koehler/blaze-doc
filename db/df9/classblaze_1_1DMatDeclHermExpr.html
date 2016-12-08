@@ -63,6 +63,7 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../d0/dd4/classblaze_1_1DMatDeclHermExpr-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -85,18 +86,18 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a62b763ee37931d7ffda22d0133942799"><td class="memItemLeft" align="right" valign="top"><a id="a62b763ee37931d7ffda22d0133942799"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>simdEnabled</b> = MT::simdEnabled
- }<tr class="memdesc:a62b763ee37931d7ffda22d0133942799"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template evaluation strategy. <br /></td></tr>
+<tr class="memitem:a5443a54fb3f21e429366571d47f07bdf"><td class="memItemLeft" align="right" valign="top"><a id="a5443a54fb3f21e429366571d47f07bdf"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>simdEnabled</b> = MT::simdEnabled
+ }<tr class="memdesc:a5443a54fb3f21e429366571d47f07bdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template evaluation strategy. <br /></td></tr>
 </td></tr>
-<tr class="separator:a62b763ee37931d7ffda22d0133942799"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb91bbca7143c459ca9a2997ee4a90e8"><td class="memItemLeft" align="right" valign="top"><a id="aeb91bbca7143c459ca9a2997ee4a90e8"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>smpAssignable</b> = MT::smpAssignable
- }<tr class="memdesc:aeb91bbca7143c459ca9a2997ee4a90e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template assignment strategy. <br /></td></tr>
+<tr class="separator:a5443a54fb3f21e429366571d47f07bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af331971c43041039188c586d41f5f068"><td class="memItemLeft" align="right" valign="top"><a id="af331971c43041039188c586d41f5f068"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>smpAssignable</b> = MT::smpAssignable
+ }<tr class="memdesc:af331971c43041039188c586d41f5f068"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template assignment strategy. <br /></td></tr>
 </td></tr>
-<tr class="separator:aeb91bbca7143c459ca9a2997ee4a90e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94bbaafb4342e11b8850ffb895dd7ba6"><td class="memItemLeft" align="right" valign="top"><a id="a94bbaafb4342e11b8850ffb895dd7ba6"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: size_t { <b>SIMDSIZE</b> = SIMDTrait&lt;ElementType&gt;::size
- }<tr class="memdesc:a94bbaafb4342e11b8850ffb895dd7ba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of elements packed within a single SIMD element. <br /></td></tr>
+<tr class="separator:af331971c43041039188c586d41f5f068"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af70553c74ab52130fb601044d72f8c4e"><td class="memItemLeft" align="right" valign="top"><a id="af70553c74ab52130fb601044d72f8c4e"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: size_t { <b>SIMDSIZE</b> = SIMDTrait&lt;ElementType&gt;::size
+ }<tr class="memdesc:af70553c74ab52130fb601044d72f8c4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of elements packed within a single SIMD element. <br /></td></tr>
 </td></tr>
-<tr class="separator:a94bbaafb4342e11b8850ffb895dd7ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:af70553c74ab52130fb601044d72f8c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa59aeef54cb2c1ce5997d332e8aaec3f"><td class="memItemLeft" align="right" valign="top"><a id="aa59aeef54cb2c1ce5997d332e8aaec3f"></a>
 typedef <a class="el" href="../../db/df9/classblaze_1_1DMatDeclHermExpr.html">DMatDeclHermExpr</a>&lt; MT, SO &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df9/classblaze_1_1DMatDeclHermExpr.html#aa59aeef54cb2c1ce5997d332e8aaec3f">This</a></td></tr>
 <tr class="memdesc:aa59aeef54cb2c1ce5997d332e8aaec3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of this <a class="el" href="../../db/df9/classblaze_1_1DMatDeclHermExpr.html" title="Expression object for the explicit Hermitian declaration of dense matrices.The DMatDeclHermExpr class...">DMatDeclHermExpr</a> instance. <br /></td></tr>
@@ -190,6 +191,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a00af660c25d47d64c2beb7511329a3e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conversion operator for constant matrices.  <a href="#a00af660c25d47d64c2beb7511329a3e5">More...</a><br /></td></tr>
 <tr class="separator:a00af660c25d47d64c2beb7511329a3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a184120f59315a6b505edcf4eab27227e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>useAssign</b> = RequiresEvaluation&lt;MT&gt;::value
+ }<tr class="memdesc:a184120f59315a6b505edcf4eab27227e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the serial evaluation strategy of the Hermitian declaration expression.  <a href="../../db/df9/classblaze_1_1DMatDeclHermExpr.html#a184120f59315a6b505edcf4eab27227e">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a184120f59315a6b505edcf4eab27227e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a57bcfcde973cd59eae46c19bde1ce5b9"><td class="memItemLeft" align="right" valign="top"><a id="a57bcfcde973cd59eae46c19bde1ce5b9"></a>
@@ -203,7 +211,35 @@ class blaze::DMatDeclHermExpr&lt; MT, SO &gt;</h3>
 
 <p><a class="el" href="../../d5/d2e/structblaze_1_1Expression.html" title="Base class for all expression templates.The Expression class is the base class for all expression tem...">Expression</a> object for the explicit Hermitian declaration of dense matrices.</p>
 <p>The <a class="el" href="../../db/df9/classblaze_1_1DMatDeclHermExpr.html" title="Expression object for the explicit Hermitian declaration of dense matrices.The DMatDeclHermExpr class...">DMatDeclHermExpr</a> class represents the compile time expression for the explicit Hermitian declaration of a dense matrix. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a184120f59315a6b505edcf4eab27227e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a184120f59315a6b505edcf4eab27227e">&sect;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MT, bool SO&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum : bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compilation switch for the serial evaluation strategy of the Hermitian declaration expression. </p>
+<p>The <em>useAssign</em> compile time constant expression represents a compilation switch for the serial evaluation strategy of the Hermitian declaration expression. In case the given dense matrix expression of type <em>MT</em> requires an intermediate evaluation, <em>useAssign</em> will be set to 1 and the Hermitian declaration expression will be evaluated via the <em>assign</em> function family. Otherwise <em>useAssign</em> will be set to 0 and the expression will be evaluated via the subscript operator. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3cd741fbe055c6b2b1fb0767f19b0eb9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3cd741fbe055c6b2b1fb0767f19b0eb9">&sect;&nbsp;</a></span>DMatDeclHermExpr()</h2>
 
@@ -819,7 +855,7 @@ template&lt;typename MT, bool SO&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 31 2016 17:17:03 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 8 2016 01:03:48 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

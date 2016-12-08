@@ -116,6 +116,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga8ab1683cf0ef1f675329a4d27d45751c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d4/d3a/group__util.html#ga4921d0157490569e91b4f48652561d2b">EnableIf_</a>&lt; <a class="el" href="../../d8/dea/structblaze_1_1IsNumeric.html">IsNumeric</a>&lt; T1 &gt;, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga8ab1683cf0ef1f675329a4d27d45751c">blaze::operator!=</a> (T1 scalar, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, SO &gt; &amp;mat)</td></tr>
 <tr class="memdesc:ga8ab1683cf0ef1f675329a4d27d45751c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inequality operator for the comparison of a scalar value and a dense matrix.  <a href="../../db/df0/group__dense__matrix.html#ga8ab1683cf0ef1f675329a4d27d45751c">More...</a><br /></td></tr>
 <tr class="separator:ga8ab1683cf0ef1f675329a4d27d45751c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga69a9b7ca9d7f7eb53ed37ddd2ee43874"><td class="memTemplParams" colspan="2">template&lt;typename MT , bool SO&gt; </td></tr>
+<tr class="memitem:ga69a9b7ca9d7f7eb53ed37ddd2ee43874"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d4/d3a/group__util.html#gaebf93d6ed8011a7e73476b7d9c34f656">DisableIf_</a>&lt; <a class="el" href="../../de/d38/structblaze_1_1IsDiagonal.html">IsDiagonal</a>&lt; MT &gt;, const <a class="el" href="../../dc/dbe/classblaze_1_1DMatDeclDiagExpr.html">DMatDeclDiagExpr</a>&lt; MT, SO &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga69a9b7ca9d7f7eb53ed37ddd2ee43874">blaze::decldiag</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; MT, SO &gt; &amp;dm)</td></tr>
+<tr class="memdesc:ga69a9b7ca9d7f7eb53ed37ddd2ee43874"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declares the given non-diagonal dense matrix expression <em>dm</em> as diagonal.  <a href="../../db/df0/group__dense__matrix.html#ga69a9b7ca9d7f7eb53ed37ddd2ee43874">More...</a><br /></td></tr>
+<tr class="separator:ga69a9b7ca9d7f7eb53ed37ddd2ee43874"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7d1c7499ea0f5524b537273a98f3c09c"><td class="memTemplParams" colspan="2">template&lt;typename MT , bool SO&gt; </td></tr>
 <tr class="memitem:ga7d1c7499ea0f5524b537273a98f3c09c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d4/d3a/group__util.html#gaebf93d6ed8011a7e73476b7d9c34f656">DisableIf_</a>&lt; <a class="el" href="../../d6/daf/structblaze_1_1IsHermitian.html">IsHermitian</a>&lt; MT &gt;, const <a class="el" href="../../db/df9/classblaze_1_1DMatDeclHermExpr.html">DMatDeclHermExpr</a>&lt; MT, SO &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga7d1c7499ea0f5524b537273a98f3c09c">blaze::declherm</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; MT, SO &gt; &amp;dm)</td></tr>
 <tr class="memdesc:ga7d1c7499ea0f5524b537273a98f3c09c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declares the given non-Hermitian dense matrix expression <em>dm</em> as Hermitian.  <a href="../../db/df0/group__dense__matrix.html#ga7d1c7499ea0f5524b537273a98f3c09c">More...</a><br /></td></tr>
@@ -136,14 +140,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5b169a4b41e240ee939d6027dcf61c52"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d9/d2d/classblaze_1_1DMatDMatAddExpr.html">DMatDMatAddExpr</a>&lt; T1, T2, SO &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga5b169a4b41e240ee939d6027dcf61c52">blaze::operator+</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, SO &gt; &amp;lhs, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, SO &gt; &amp;rhs)</td></tr>
 <tr class="memdesc:ga5b169a4b41e240ee939d6027dcf61c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Addition operator for the addition of two dense matrices with identical storage order ( <img class="formulaInl" alt="$ A=B+C $" src="../../form_85.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga5b169a4b41e240ee939d6027dcf61c52">More...</a><br /></td></tr>
 <tr class="separator:ga5b169a4b41e240ee939d6027dcf61c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadefdb5e9e45bd375a844073de502e71b"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
-<tr class="memitem:gadefdb5e9e45bd375a844073de502e71b"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d3/d40/classblaze_1_1DMatDMatMultExpr.html">DMatDMatMultExpr</a>&lt; T1, T2, false &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#gadefdb5e9e45bd375a844073de502e71b">blaze::operator*</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, false &gt; &amp;lhs, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, false &gt; &amp;rhs)</td></tr>
-<tr class="memdesc:gadefdb5e9e45bd375a844073de502e71b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of two row-major dense matrices ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#gadefdb5e9e45bd375a844073de502e71b">More...</a><br /></td></tr>
-<tr class="separator:gadefdb5e9e45bd375a844073de502e71b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae28b4a0b90dd130510f7b18bbba209da"><td class="memTemplParams" colspan="2">template&lt;typename MT1 , typename MT2 &gt; </td></tr>
-<tr class="memitem:gae28b4a0b90dd130510f7b18bbba209da"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d3/d40/classblaze_1_1DMatDMatMultExpr.html">DMatDMatMultExpr</a>&lt; MT1, MT2, true &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#gae28b4a0b90dd130510f7b18bbba209da">blaze::declsym</a> (const <a class="el" href="../../d3/d40/classblaze_1_1DMatDMatMultExpr.html">DMatDMatMultExpr</a>&lt; MT1, MT2, false &gt; &amp;dm)</td></tr>
-<tr class="memdesc:gae28b4a0b90dd130510f7b18bbba209da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declares the given non-symmetric dense matrix multiplication expression as symmetric.  <a href="../../db/df0/group__dense__matrix.html#gae28b4a0b90dd130510f7b18bbba209da">More...</a><br /></td></tr>
-<tr class="separator:gae28b4a0b90dd130510f7b18bbba209da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c854306cabe36178ef984abdfc835f5"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
+<tr class="memitem:ga8c854306cabe36178ef984abdfc835f5"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d3/d40/classblaze_1_1DMatDMatMultExpr.html">DMatDMatMultExpr</a>&lt; T1, T2, false, false, false, false &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga8c854306cabe36178ef984abdfc835f5">blaze::operator*</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, false &gt; &amp;lhs, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, false &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:ga8c854306cabe36178ef984abdfc835f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of two row-major dense matrices ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga8c854306cabe36178ef984abdfc835f5">More...</a><br /></td></tr>
+<tr class="separator:ga8c854306cabe36178ef984abdfc835f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1d7b2dabfa699f5714783cf446221758"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 , bool SO&gt; </td></tr>
 <tr class="memitem:ga1d7b2dabfa699f5714783cf446221758"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d9/ddb/classblaze_1_1DMatDMatSubExpr.html">DMatDMatSubExpr</a>&lt; T1, T2, SO &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga1d7b2dabfa699f5714783cf446221758">blaze::operator-</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, SO &gt; &amp;lhs, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, SO &gt; &amp;rhs)</td></tr>
 <tr class="memdesc:ga1d7b2dabfa699f5714783cf446221758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtraction operator for the subtraction of two dense matrices with identical storage order ( <img class="formulaInl" alt="$ A=B-C $" src="../../form_87.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga1d7b2dabfa699f5714783cf446221758">More...</a><br /></td></tr>
@@ -208,10 +208,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga683192b628e107e6082a6b6876d62614"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../dd/d6a/classblaze_1_1DMatForEachExpr.html">DMatForEachExpr</a>&lt; MT, <a class="el" href="../../d2/d2f/structblaze_1_1InvCbrt.html">InvCbrt</a>, SO &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga683192b628e107e6082a6b6876d62614">blaze::invcbrt</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; MT, SO &gt; &amp;dm)</td></tr>
 <tr class="memdesc:ga683192b628e107e6082a6b6876d62614"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the inverse cubic root of each single element of the dense matrix <em>dm</em>.  <a href="../../db/df0/group__dense__matrix.html#ga683192b628e107e6082a6b6876d62614">More...</a><br /></td></tr>
 <tr class="separator:ga683192b628e107e6082a6b6876d62614"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadebfde9b2a5daf6d821e81ac96aa0b94"><td class="memTemplParams" colspan="2">template&lt;typename MT , bool SO, typename DT &gt; </td></tr>
-<tr class="memitem:gadebfde9b2a5daf6d821e81ac96aa0b94"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../dd/d6a/classblaze_1_1DMatForEachExpr.html">DMatForEachExpr</a>&lt; MT, <a class="el" href="../../d0/d65/structblaze_1_1Clip.html">Clip</a>&lt; DT &gt;, SO &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#gadebfde9b2a5daf6d821e81ac96aa0b94">blaze::clip</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; MT, SO &gt; &amp;dm, const DT &amp;<a class="el" href="../../db/df0/group__dense__matrix.html#ga1147d0f93d7cc6fad33935048f2b058e">min</a>, const DT &amp;<a class="el" href="../../db/df0/group__dense__matrix.html#ga6ae2749f3a298c7927a4f7f85407e2c4">max</a>)</td></tr>
-<tr class="memdesc:gadebfde9b2a5daf6d821e81ac96aa0b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restricts each single element of the dense matrix <em>dm</em> to the range <img class="formulaInl" alt="$[min..max]$" src="../../form_94.png"/>.  <a href="../../db/df0/group__dense__matrix.html#gadebfde9b2a5daf6d821e81ac96aa0b94">More...</a><br /></td></tr>
-<tr class="separator:gadebfde9b2a5daf6d821e81ac96aa0b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaed4231fbd9f5b6bf46307753b34f039c"><td class="memTemplParams" colspan="2">template&lt;typename MT , bool SO, typename DT &gt; </td></tr>
+<tr class="memitem:gaed4231fbd9f5b6bf46307753b34f039c"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../dd/d6a/classblaze_1_1DMatForEachExpr.html">DMatForEachExpr</a>&lt; MT, <a class="el" href="../../da/d15/structblaze_1_1Clamp.html">Clamp</a>&lt; DT &gt;, SO &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#gaed4231fbd9f5b6bf46307753b34f039c">blaze::clamp</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; MT, SO &gt; &amp;dm, const DT &amp;<a class="el" href="../../db/df0/group__dense__matrix.html#ga1147d0f93d7cc6fad33935048f2b058e">min</a>, const DT &amp;<a class="el" href="../../db/df0/group__dense__matrix.html#ga6ae2749f3a298c7927a4f7f85407e2c4">max</a>)</td></tr>
+<tr class="memdesc:gaed4231fbd9f5b6bf46307753b34f039c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restricts each single element of the dense matrix <em>dm</em> to the range <img class="formulaInl" alt="$[min..max]$" src="../../form_94.png"/>.  <a href="../../db/df0/group__dense__matrix.html#gaed4231fbd9f5b6bf46307753b34f039c">More...</a><br /></td></tr>
+<tr class="separator:gaed4231fbd9f5b6bf46307753b34f039c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga04b65a79150f5e9e3118257b2f77a0ed"><td class="memTemplParams" colspan="2">template&lt;typename MT , bool SO, typename ET &gt; </td></tr>
 <tr class="memitem:ga04b65a79150f5e9e3118257b2f77a0ed"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../dd/d6a/classblaze_1_1DMatForEachExpr.html">DMatForEachExpr</a>&lt; MT, <a class="el" href="../../d3/d41/structblaze_1_1Pow.html">Pow</a>&lt; ET &gt;, SO &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga04b65a79150f5e9e3118257b2f77a0ed">blaze::pow</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; MT, SO &gt; &amp;dm, ET <a class="el" href="../../db/df0/group__dense__matrix.html#gace3face2f497ce3065754db58ce162d4">exp</a>)</td></tr>
 <tr class="memdesc:ga04b65a79150f5e9e3118257b2f77a0ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the exponential value for each single element of the dense matrix <em>dm</em>.  <a href="../../db/df0/group__dense__matrix.html#ga04b65a79150f5e9e3118257b2f77a0ed">More...</a><br /></td></tr>
@@ -328,10 +328,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga39f46fd8e099778f075cef873b15947c"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../df/d65/classblaze_1_1DMatSMatAddExpr.html">DMatSMatAddExpr</a>&lt; T2, T1, SO &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga39f46fd8e099778f075cef873b15947c">blaze::operator+</a> (const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T1, SO &gt; &amp;lhs, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, SO &gt; &amp;rhs)</td></tr>
 <tr class="memdesc:ga39f46fd8e099778f075cef873b15947c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Addition operator for the addition of a sparse matrix and a dense matrix ( <img class="formulaInl" alt="$ A=B+C $" src="../../form_85.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga39f46fd8e099778f075cef873b15947c">More...</a><br /></td></tr>
 <tr class="separator:ga39f46fd8e099778f075cef873b15947c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2a69a009d857b36f4b607edbeede502a"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
-<tr class="memitem:ga2a69a009d857b36f4b607edbeede502a"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d1/d2b/classblaze_1_1DMatSMatMultExpr.html">DMatSMatMultExpr</a>&lt; T1, T2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga2a69a009d857b36f4b607edbeede502a">blaze::operator*</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, false &gt; &amp;lhs, const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T2, false &gt; &amp;rhs)</td></tr>
-<tr class="memdesc:ga2a69a009d857b36f4b607edbeede502a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of a row-major dense matrix and a row-major sparse matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga2a69a009d857b36f4b607edbeede502a">More...</a><br /></td></tr>
-<tr class="separator:ga2a69a009d857b36f4b607edbeede502a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad2e626f5bc82316193a20e246705b88"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
+<tr class="memitem:gaad2e626f5bc82316193a20e246705b88"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d1/d2b/classblaze_1_1DMatSMatMultExpr.html">DMatSMatMultExpr</a>&lt; T1, T2, false, false, false, false &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#gaad2e626f5bc82316193a20e246705b88">blaze::operator*</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, false &gt; &amp;lhs, const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T2, false &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:gaad2e626f5bc82316193a20e246705b88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of a row-major dense matrix and a row-major sparse matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#gaad2e626f5bc82316193a20e246705b88">More...</a><br /></td></tr>
+<tr class="separator:gaad2e626f5bc82316193a20e246705b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga02f1afd8e1de67f79795d150708931b9"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 , bool SO&gt; </td></tr>
 <tr class="memitem:ga02f1afd8e1de67f79795d150708931b9"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d3/deb/classblaze_1_1DMatSMatSubExpr.html">DMatSMatSubExpr</a>&lt; T1, T2, SO &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga02f1afd8e1de67f79795d150708931b9">blaze::operator-</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, SO &gt; &amp;lhs, const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T2, SO &gt; &amp;rhs)</td></tr>
 <tr class="memdesc:ga02f1afd8e1de67f79795d150708931b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtraction operator for the subtraction of a dense matrix and a sparse matrix with identical storage order ( <img class="formulaInl" alt="$ A=B+C $" src="../../form_85.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga02f1afd8e1de67f79795d150708931b9">More...</a><br /></td></tr>
@@ -344,14 +344,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1fe0f6bf94d6ac4714cd7258a456140f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d4/d3a/group__util.html#ga4921d0157490569e91b4f48652561d2b">EnableIf_</a>&lt; <a class="el" href="../../d7/d97/structblaze_1_1And.html">And</a>&lt; <a class="el" href="../../dd/d46/structblaze_1_1Not.html">Not</a>&lt; <a class="el" href="../../d7/db5/structblaze_1_1IsSymmetric.html">IsSymmetric</a>&lt; T1 &gt; &gt;, <a class="el" href="../../dd/d46/structblaze_1_1Not.html">Not</a>&lt; <a class="el" href="../../d7/db5/structblaze_1_1IsSymmetric.html">IsSymmetric</a>&lt; T2 &gt; &gt; &gt;, const <a class="el" href="../../df/dbe/classblaze_1_1DMatTDMatAddExpr.html">DMatTDMatAddExpr</a>&lt; T2, T1 &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga1fe0f6bf94d6ac4714cd7258a456140f">blaze::operator+</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, true &gt; &amp;lhs, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, false &gt; &amp;rhs)</td></tr>
 <tr class="memdesc:ga1fe0f6bf94d6ac4714cd7258a456140f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Addition operator for the addition of a column-major and a row-major dense matrix ( <img class="formulaInl" alt="$ A=B+C $" src="../../form_85.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga1fe0f6bf94d6ac4714cd7258a456140f">More...</a><br /></td></tr>
 <tr class="separator:ga1fe0f6bf94d6ac4714cd7258a456140f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac922baf11df28e57dfbda3d8c460c260"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
-<tr class="memitem:gac922baf11df28e57dfbda3d8c460c260"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d3/d8a/classblaze_1_1DMatTDMatMultExpr.html">DMatTDMatMultExpr</a>&lt; T1, T2, false &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#gac922baf11df28e57dfbda3d8c460c260">blaze::operator*</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, false &gt; &amp;lhs, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, true &gt; &amp;rhs)</td></tr>
-<tr class="memdesc:gac922baf11df28e57dfbda3d8c460c260"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of a row-major dense matrix and a column-major dense matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#gac922baf11df28e57dfbda3d8c460c260">More...</a><br /></td></tr>
-<tr class="separator:gac922baf11df28e57dfbda3d8c460c260"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2a6e35ebc76e5aada8695044f4e69256"><td class="memTemplParams" colspan="2">template&lt;typename MT1 , typename MT2 &gt; </td></tr>
-<tr class="memitem:ga2a6e35ebc76e5aada8695044f4e69256"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d3/d8a/classblaze_1_1DMatTDMatMultExpr.html">DMatTDMatMultExpr</a>&lt; MT1, MT2, true &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga2a6e35ebc76e5aada8695044f4e69256">blaze::declsym</a> (const <a class="el" href="../../d3/d8a/classblaze_1_1DMatTDMatMultExpr.html">DMatTDMatMultExpr</a>&lt; MT1, MT2, false &gt; &amp;dm)</td></tr>
-<tr class="memdesc:ga2a6e35ebc76e5aada8695044f4e69256"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declares the given non-symmetric dense matrix multiplication expression as symmetric.  <a href="../../db/df0/group__dense__matrix.html#ga2a6e35ebc76e5aada8695044f4e69256">More...</a><br /></td></tr>
-<tr class="separator:ga2a6e35ebc76e5aada8695044f4e69256"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f992e6b1ce3d1bccc60ac34a38afbce"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
+<tr class="memitem:ga4f992e6b1ce3d1bccc60ac34a38afbce"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d3/d8a/classblaze_1_1DMatTDMatMultExpr.html">DMatTDMatMultExpr</a>&lt; T1, T2, false, false, false, false &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga4f992e6b1ce3d1bccc60ac34a38afbce">blaze::operator*</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, false &gt; &amp;lhs, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, true &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:ga4f992e6b1ce3d1bccc60ac34a38afbce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of a row-major dense matrix and a column-major dense matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga4f992e6b1ce3d1bccc60ac34a38afbce">More...</a><br /></td></tr>
+<tr class="separator:ga4f992e6b1ce3d1bccc60ac34a38afbce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5b78e6b3967de95f80bb323923a38de4"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
 <tr class="memitem:ga5b78e6b3967de95f80bb323923a38de4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d4/d3a/group__util.html#ga4921d0157490569e91b4f48652561d2b">EnableIf_</a>&lt; <a class="el" href="../../d7/d97/structblaze_1_1And.html">And</a>&lt; <a class="el" href="../../dd/d46/structblaze_1_1Not.html">Not</a>&lt; <a class="el" href="../../d7/db5/structblaze_1_1IsSymmetric.html">IsSymmetric</a>&lt; T1 &gt; &gt;, <a class="el" href="../../dd/d46/structblaze_1_1Not.html">Not</a>&lt; <a class="el" href="../../d7/db5/structblaze_1_1IsSymmetric.html">IsSymmetric</a>&lt; T2 &gt; &gt; &gt;, const <a class="el" href="../../d8/d16/classblaze_1_1DMatTDMatSubExpr.html">DMatTDMatSubExpr</a>&lt; T1, T2 &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga5b78e6b3967de95f80bb323923a38de4">blaze::operator-</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, false &gt; &amp;lhs, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, true &gt; &amp;rhs)</td></tr>
 <tr class="memdesc:ga5b78e6b3967de95f80bb323923a38de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtraction operator for the subtraction of a row-major and a column-major dense matrix ( <img class="formulaInl" alt="$ A=B-C $" src="../../form_87.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga5b78e6b3967de95f80bb323923a38de4">More...</a><br /></td></tr>
@@ -372,10 +368,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga7f1119e6cc68946e48a0620679bd6d06"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../df/d61/classblaze_1_1DMatTSMatAddExpr.html">DMatTSMatAddExpr</a>&lt; T1, T2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga7f1119e6cc68946e48a0620679bd6d06">blaze::operator+</a> (const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T2, true &gt; &amp;lhs, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, false &gt; &amp;rhs)</td></tr>
 <tr class="memdesc:ga7f1119e6cc68946e48a0620679bd6d06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Addition operator for the addition of a column-major sparse matrix and a row-major dense matrix ( <img class="formulaInl" alt="$ A=B+C $" src="../../form_85.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga7f1119e6cc68946e48a0620679bd6d06">More...</a><br /></td></tr>
 <tr class="separator:ga7f1119e6cc68946e48a0620679bd6d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad82218827b4f2e2748e9fec868b66690"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
-<tr class="memitem:gad82218827b4f2e2748e9fec868b66690"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">DMatTSMatMultExpr</a>&lt; T1, T2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#gad82218827b4f2e2748e9fec868b66690">blaze::operator*</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, false &gt; &amp;lhs, const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T2, true &gt; &amp;rhs)</td></tr>
-<tr class="memdesc:gad82218827b4f2e2748e9fec868b66690"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of a row-major dense matrix and a column-major sparse matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#gad82218827b4f2e2748e9fec868b66690">More...</a><br /></td></tr>
-<tr class="separator:gad82218827b4f2e2748e9fec868b66690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e3b505b7ed845f99d346d8d11a57769"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
+<tr class="memitem:ga1e3b505b7ed845f99d346d8d11a57769"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">DMatTSMatMultExpr</a>&lt; T1, T2, false, false, false, false &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga1e3b505b7ed845f99d346d8d11a57769">blaze::operator*</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, false &gt; &amp;lhs, const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T2, true &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:ga1e3b505b7ed845f99d346d8d11a57769"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of a row-major dense matrix and a column-major sparse matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga1e3b505b7ed845f99d346d8d11a57769">More...</a><br /></td></tr>
+<tr class="separator:ga1e3b505b7ed845f99d346d8d11a57769"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad2a348f4c6ca1ff497f56003dd22cb66"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
 <tr class="memitem:gad2a348f4c6ca1ff497f56003dd22cb66"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d1/d76/classblaze_1_1DMatTSMatSubExpr.html">DMatTSMatSubExpr</a>&lt; T1, T2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#gad2a348f4c6ca1ff497f56003dd22cb66">blaze::operator-</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, false &gt; &amp;lhs, const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T2, true &gt; &amp;rhs)</td></tr>
 <tr class="memdesc:gad2a348f4c6ca1ff497f56003dd22cb66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtraction operator for the subtraction of a row-major dense matrix and a column-major sparse matrix ( <img class="formulaInl" alt="$ A=B+C $" src="../../form_85.png"/>).  <a href="../../db/df0/group__dense__matrix.html#gad2a348f4c6ca1ff497f56003dd22cb66">More...</a><br /></td></tr>
@@ -384,30 +380,26 @@ Functions</h2></td></tr>
 <tr class="memitem:ga282c791c739c8c0d1d8e7c82bf0391ad"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d1/dcd/classblaze_1_1DVecTDVecMultExpr.html">DVecTDVecMultExpr</a>&lt; T1, T2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga282c791c739c8c0d1d8e7c82bf0391ad">blaze::operator*</a> (const <a class="el" href="../../d1/db2/structblaze_1_1DenseVector.html">DenseVector</a>&lt; T1, false &gt; &amp;lhs, const <a class="el" href="../../d1/db2/structblaze_1_1DenseVector.html">DenseVector</a>&lt; T2, true &gt; &amp;rhs)</td></tr>
 <tr class="memdesc:ga282c791c739c8c0d1d8e7c82bf0391ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the outer product of two dense vectors ( <img class="formulaInl" alt="$ A=\vec{b}*\vec{c}^T $" src="../../form_113.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga282c791c739c8c0d1d8e7c82bf0391ad">More...</a><br /></td></tr>
 <tr class="separator:ga282c791c739c8c0d1d8e7c82bf0391ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaff2332eeb931fe442419745885fc0bac"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
-<tr class="memitem:gaff2332eeb931fe442419745885fc0bac"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d6/dc5/classblaze_1_1SMatDMatMultExpr.html">SMatDMatMultExpr</a>&lt; T1, T2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#gaff2332eeb931fe442419745885fc0bac">blaze::operator*</a> (const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T1, false &gt; &amp;lhs, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, false &gt; &amp;rhs)</td></tr>
-<tr class="memdesc:gaff2332eeb931fe442419745885fc0bac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of a row-major sparse matrix and a row-major dense matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#gaff2332eeb931fe442419745885fc0bac">More...</a><br /></td></tr>
-<tr class="separator:gaff2332eeb931fe442419745885fc0bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabaf770138077bc9a101f7da6571a58c1"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
+<tr class="memitem:gabaf770138077bc9a101f7da6571a58c1"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d6/dc5/classblaze_1_1SMatDMatMultExpr.html">SMatDMatMultExpr</a>&lt; T1, T2, false, false, false, false &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#gabaf770138077bc9a101f7da6571a58c1">blaze::operator*</a> (const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T1, false &gt; &amp;lhs, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, false &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:gabaf770138077bc9a101f7da6571a58c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of a row-major sparse matrix and a row-major dense matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#gabaf770138077bc9a101f7da6571a58c1">More...</a><br /></td></tr>
+<tr class="separator:gabaf770138077bc9a101f7da6571a58c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7889e29abeda750915b8c5a2fc061242"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 , bool SO&gt; </td></tr>
 <tr class="memitem:ga7889e29abeda750915b8c5a2fc061242"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../df/db6/classblaze_1_1SMatDMatSubExpr.html">SMatDMatSubExpr</a>&lt; T1, T2, SO &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga7889e29abeda750915b8c5a2fc061242">blaze::operator-</a> (const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T1, SO &gt; &amp;lhs, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, SO &gt; &amp;rhs)</td></tr>
 <tr class="memdesc:ga7889e29abeda750915b8c5a2fc061242"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtraction operator for the subtraction of a sparse matrix and a dense matrix with identical storage order ( <img class="formulaInl" alt="$ A=B+C $" src="../../form_85.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga7889e29abeda750915b8c5a2fc061242">More...</a><br /></td></tr>
 <tr class="separator:ga7889e29abeda750915b8c5a2fc061242"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafd88fb6252c24b32b19dcf37f3c79196"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
-<tr class="memitem:gafd88fb6252c24b32b19dcf37f3c79196"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../dd/d43/classblaze_1_1SMatTDMatMultExpr.html">SMatTDMatMultExpr</a>&lt; T1, T2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#gafd88fb6252c24b32b19dcf37f3c79196">blaze::operator*</a> (const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T1, false &gt; &amp;lhs, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, true &gt; &amp;rhs)</td></tr>
-<tr class="memdesc:gafd88fb6252c24b32b19dcf37f3c79196"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of a row-major sparse matrix and a column-major dense matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#gafd88fb6252c24b32b19dcf37f3c79196">More...</a><br /></td></tr>
-<tr class="separator:gafd88fb6252c24b32b19dcf37f3c79196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20777c4f2b4f7e24a5130dc8041b5e93"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
+<tr class="memitem:ga20777c4f2b4f7e24a5130dc8041b5e93"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../dd/d43/classblaze_1_1SMatTDMatMultExpr.html">SMatTDMatMultExpr</a>&lt; T1, T2, false, false, false, false &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga20777c4f2b4f7e24a5130dc8041b5e93">blaze::operator*</a> (const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T1, false &gt; &amp;lhs, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, true &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:ga20777c4f2b4f7e24a5130dc8041b5e93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of a row-major sparse matrix and a column-major dense matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga20777c4f2b4f7e24a5130dc8041b5e93">More...</a><br /></td></tr>
+<tr class="separator:ga20777c4f2b4f7e24a5130dc8041b5e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1720d2f0702c0f77bc4991a287d98d1e"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
 <tr class="memitem:ga1720d2f0702c0f77bc4991a287d98d1e"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d5/de7/classblaze_1_1SMatTDMatSubExpr.html">SMatTDMatSubExpr</a>&lt; T1, T2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga1720d2f0702c0f77bc4991a287d98d1e">blaze::operator-</a> (const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T1, false &gt; &amp;lhs, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, true &gt; &amp;rhs)</td></tr>
 <tr class="memdesc:ga1720d2f0702c0f77bc4991a287d98d1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtraction operator for the subtraction of a row-major sparse matrix and a column-major dense matrix ( <img class="formulaInl" alt="$ A=B+C $" src="../../form_85.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga1720d2f0702c0f77bc4991a287d98d1e">More...</a><br /></td></tr>
 <tr class="separator:ga1720d2f0702c0f77bc4991a287d98d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaae9f1662f12831be78c0daada1ce034"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
-<tr class="memitem:gaaae9f1662f12831be78c0daada1ce034"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../dc/dc9/classblaze_1_1TDMatDMatMultExpr.html">TDMatDMatMultExpr</a>&lt; T1, T2, false &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#gaaae9f1662f12831be78c0daada1ce034">blaze::operator*</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, true &gt; &amp;lhs, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, false &gt; &amp;rhs)</td></tr>
-<tr class="memdesc:gaaae9f1662f12831be78c0daada1ce034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of a column-major dense matrix and a row-major dense matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#gaaae9f1662f12831be78c0daada1ce034">More...</a><br /></td></tr>
-<tr class="separator:gaaae9f1662f12831be78c0daada1ce034"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6f6ba8c42e78924c1ff9a7a11b4bcb4c"><td class="memTemplParams" colspan="2">template&lt;typename MT1 , typename MT2 &gt; </td></tr>
-<tr class="memitem:ga6f6ba8c42e78924c1ff9a7a11b4bcb4c"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../dc/dc9/classblaze_1_1TDMatDMatMultExpr.html">TDMatDMatMultExpr</a>&lt; MT1, MT2, true &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga6f6ba8c42e78924c1ff9a7a11b4bcb4c">blaze::declsym</a> (const <a class="el" href="../../dc/dc9/classblaze_1_1TDMatDMatMultExpr.html">TDMatDMatMultExpr</a>&lt; MT1, MT2, false &gt; &amp;dm)</td></tr>
-<tr class="memdesc:ga6f6ba8c42e78924c1ff9a7a11b4bcb4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declares the given non-symmetric dense matrix multiplication expression as symmetric.  <a href="../../db/df0/group__dense__matrix.html#ga6f6ba8c42e78924c1ff9a7a11b4bcb4c">More...</a><br /></td></tr>
-<tr class="separator:ga6f6ba8c42e78924c1ff9a7a11b4bcb4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f51f828a45bfd3717c4836eca156cf2"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
+<tr class="memitem:ga3f51f828a45bfd3717c4836eca156cf2"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../dc/dc9/classblaze_1_1TDMatDMatMultExpr.html">TDMatDMatMultExpr</a>&lt; T1, T2, false, false, false, false &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga3f51f828a45bfd3717c4836eca156cf2">blaze::operator*</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, true &gt; &amp;lhs, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, false &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:ga3f51f828a45bfd3717c4836eca156cf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of a column-major dense matrix and a row-major dense matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga3f51f828a45bfd3717c4836eca156cf2">More...</a><br /></td></tr>
+<tr class="separator:ga3f51f828a45bfd3717c4836eca156cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4b0a2b26e02f2ca345af2094585db4be"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
 <tr class="memitem:ga4b0a2b26e02f2ca345af2094585db4be"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d9/d0c/classblaze_1_1TDMatSMatAddExpr.html">TDMatSMatAddExpr</a>&lt; T1, T2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga4b0a2b26e02f2ca345af2094585db4be">blaze::operator+</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, true &gt; &amp;lhs, const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T2, false &gt; &amp;rhs)</td></tr>
 <tr class="memdesc:ga4b0a2b26e02f2ca345af2094585db4be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Addition operator for the addition of a column-major dense matrix and a row-major sparse matrix ( <img class="formulaInl" alt="$ A=B+C $" src="../../form_85.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga4b0a2b26e02f2ca345af2094585db4be">More...</a><br /></td></tr>
@@ -416,42 +408,38 @@ Functions</h2></td></tr>
 <tr class="memitem:ga72d0526756a2befd345af87726c5014e"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d9/d0c/classblaze_1_1TDMatSMatAddExpr.html">TDMatSMatAddExpr</a>&lt; T1, T2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga72d0526756a2befd345af87726c5014e">blaze::operator+</a> (const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T2, false &gt; &amp;lhs, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, true &gt; &amp;rhs)</td></tr>
 <tr class="memdesc:ga72d0526756a2befd345af87726c5014e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Addition operator for the addition of a row-major sparse matrix and a column-major dense matrix ( <img class="formulaInl" alt="$ A=B+C $" src="../../form_85.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga72d0526756a2befd345af87726c5014e">More...</a><br /></td></tr>
 <tr class="separator:ga72d0526756a2befd345af87726c5014e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7fc6107dda539d41695e8f9f2ebf005c"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
-<tr class="memitem:ga7fc6107dda539d41695e8f9f2ebf005c"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d4/dfb/classblaze_1_1TDMatSMatMultExpr.html">TDMatSMatMultExpr</a>&lt; T1, T2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga7fc6107dda539d41695e8f9f2ebf005c">blaze::operator*</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, true &gt; &amp;lhs, const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T2, false &gt; &amp;rhs)</td></tr>
-<tr class="memdesc:ga7fc6107dda539d41695e8f9f2ebf005c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of a column-major dense matrix and a row-major sparse matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga7fc6107dda539d41695e8f9f2ebf005c">More...</a><br /></td></tr>
-<tr class="separator:ga7fc6107dda539d41695e8f9f2ebf005c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d5d53a3ea2376b071c78d77e07406f3"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
+<tr class="memitem:ga2d5d53a3ea2376b071c78d77e07406f3"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d4/dfb/classblaze_1_1TDMatSMatMultExpr.html">TDMatSMatMultExpr</a>&lt; T1, T2, false, false, false, false &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga2d5d53a3ea2376b071c78d77e07406f3">blaze::operator*</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, true &gt; &amp;lhs, const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T2, false &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:ga2d5d53a3ea2376b071c78d77e07406f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of a column-major dense matrix and a row-major sparse matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga2d5d53a3ea2376b071c78d77e07406f3">More...</a><br /></td></tr>
+<tr class="separator:ga2d5d53a3ea2376b071c78d77e07406f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa31b65149566c26b3f8d9d75ca24c6e5"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
 <tr class="memitem:gaa31b65149566c26b3f8d9d75ca24c6e5"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../da/d5b/classblaze_1_1TDMatSMatSubExpr.html">TDMatSMatSubExpr</a>&lt; T1, T2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#gaa31b65149566c26b3f8d9d75ca24c6e5">blaze::operator-</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, true &gt; &amp;lhs, const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T2, false &gt; &amp;rhs)</td></tr>
 <tr class="memdesc:gaa31b65149566c26b3f8d9d75ca24c6e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtraction operator for the subtraction of a column-major dense matrix and a row-major sparse matrix ( <img class="formulaInl" alt="$ A=B+C $" src="../../form_85.png"/>).  <a href="../../db/df0/group__dense__matrix.html#gaa31b65149566c26b3f8d9d75ca24c6e5">More...</a><br /></td></tr>
 <tr class="separator:gaa31b65149566c26b3f8d9d75ca24c6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga291e882f0ecf24cf4d5500f8b6786788"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
-<tr class="memitem:ga291e882f0ecf24cf4d5500f8b6786788"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../dd/d6f/classblaze_1_1TDMatTDMatMultExpr.html">TDMatTDMatMultExpr</a>&lt; T1, T2, false &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga291e882f0ecf24cf4d5500f8b6786788">blaze::operator*</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, true &gt; &amp;lhs, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, true &gt; &amp;rhs)</td></tr>
-<tr class="memdesc:ga291e882f0ecf24cf4d5500f8b6786788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of two column-major dense matrices ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga291e882f0ecf24cf4d5500f8b6786788">More...</a><br /></td></tr>
-<tr class="separator:ga291e882f0ecf24cf4d5500f8b6786788"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0e6969ca323c688cb22b96b6678d614f"><td class="memTemplParams" colspan="2">template&lt;typename MT1 , typename MT2 &gt; </td></tr>
-<tr class="memitem:ga0e6969ca323c688cb22b96b6678d614f"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../dd/d6f/classblaze_1_1TDMatTDMatMultExpr.html">TDMatTDMatMultExpr</a>&lt; MT1, MT2, true &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga0e6969ca323c688cb22b96b6678d614f">blaze::declsym</a> (const <a class="el" href="../../dd/d6f/classblaze_1_1TDMatTDMatMultExpr.html">TDMatTDMatMultExpr</a>&lt; MT1, MT2, false &gt; &amp;dm)</td></tr>
-<tr class="memdesc:ga0e6969ca323c688cb22b96b6678d614f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declares the given non-symmetric dense matrix multiplication expression as symmetric.  <a href="../../db/df0/group__dense__matrix.html#ga0e6969ca323c688cb22b96b6678d614f">More...</a><br /></td></tr>
-<tr class="separator:ga0e6969ca323c688cb22b96b6678d614f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga55603ebcaa45b68183c06b156040cabb"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
-<tr class="memitem:ga55603ebcaa45b68183c06b156040cabb"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d9/d9c/classblaze_1_1TDMatTSMatMultExpr.html">TDMatTSMatMultExpr</a>&lt; T1, T2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga55603ebcaa45b68183c06b156040cabb">blaze::operator*</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, true &gt; &amp;lhs, const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T2, true &gt; &amp;rhs)</td></tr>
-<tr class="memdesc:ga55603ebcaa45b68183c06b156040cabb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of a column-major dense matrix and a column-major sparse matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga55603ebcaa45b68183c06b156040cabb">More...</a><br /></td></tr>
-<tr class="separator:ga55603ebcaa45b68183c06b156040cabb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5e16ab37a11a6e772f652c5ce572ad59"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
+<tr class="memitem:ga5e16ab37a11a6e772f652c5ce572ad59"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../dd/d6f/classblaze_1_1TDMatTDMatMultExpr.html">TDMatTDMatMultExpr</a>&lt; T1, T2, false, false, false, false &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga5e16ab37a11a6e772f652c5ce572ad59">blaze::operator*</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, true &gt; &amp;lhs, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, true &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:ga5e16ab37a11a6e772f652c5ce572ad59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of two column-major dense matrices ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga5e16ab37a11a6e772f652c5ce572ad59">More...</a><br /></td></tr>
+<tr class="separator:ga5e16ab37a11a6e772f652c5ce572ad59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9cf4741ea9d35452a1112c108f72471f"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
+<tr class="memitem:ga9cf4741ea9d35452a1112c108f72471f"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d9/d9c/classblaze_1_1TDMatTSMatMultExpr.html">TDMatTSMatMultExpr</a>&lt; T1, T2, false, false, false, false &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga9cf4741ea9d35452a1112c108f72471f">blaze::operator*</a> (const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, true &gt; &amp;lhs, const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T2, true &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:ga9cf4741ea9d35452a1112c108f72471f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of a column-major dense matrix and a column-major sparse matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga9cf4741ea9d35452a1112c108f72471f">More...</a><br /></td></tr>
+<tr class="separator:ga9cf4741ea9d35452a1112c108f72471f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga209020467da5fef99d7cb44d22094e19"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
 <tr class="memitem:ga209020467da5fef99d7cb44d22094e19"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d4/d3a/group__util.html#gaebf93d6ed8011a7e73476b7d9c34f656">DisableIf_</a>&lt; <a class="el" href="../../d2/db5/structblaze_1_1IsMatMatMultExpr.html">IsMatMatMultExpr</a>&lt; T2 &gt;, <a class="el" href="../../db/de4/classblaze_1_1TDVecTDMatMultExpr.html">TDVecTDMatMultExpr</a>&lt; T1, T2 &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga209020467da5fef99d7cb44d22094e19">blaze::operator*</a> (const <a class="el" href="../../d1/db2/structblaze_1_1DenseVector.html">DenseVector</a>&lt; T1, true &gt; &amp;vec, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, true &gt; &amp;mat)</td></tr>
 <tr class="memdesc:ga209020467da5fef99d7cb44d22094e19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of a transpose dense vector and a column-major dense matrix ( <img class="formulaInl" alt="$ \vec{y}^T=\vec{x}^T*A $" src="../../form_116.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga209020467da5fef99d7cb44d22094e19">More...</a><br /></td></tr>
 <tr class="separator:ga209020467da5fef99d7cb44d22094e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac91fac7612d334d056573a01255a42f5"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
-<tr class="memitem:gac91fac7612d334d056573a01255a42f5"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../df/ddb/classblaze_1_1TSMatDMatMultExpr.html">TSMatDMatMultExpr</a>&lt; T1, T2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#gac91fac7612d334d056573a01255a42f5">blaze::operator*</a> (const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T1, true &gt; &amp;lhs, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, false &gt; &amp;rhs)</td></tr>
-<tr class="memdesc:gac91fac7612d334d056573a01255a42f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of a column-major sparse matrix and a row-major dense matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#gac91fac7612d334d056573a01255a42f5">More...</a><br /></td></tr>
-<tr class="separator:gac91fac7612d334d056573a01255a42f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaca1b39c157e1254d81907f506829b52"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
+<tr class="memitem:gaaca1b39c157e1254d81907f506829b52"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../df/ddb/classblaze_1_1TSMatDMatMultExpr.html">TSMatDMatMultExpr</a>&lt; T1, T2, false, false, false, false &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#gaaca1b39c157e1254d81907f506829b52">blaze::operator*</a> (const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T1, true &gt; &amp;lhs, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, false &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:gaaca1b39c157e1254d81907f506829b52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of a column-major sparse matrix and a row-major dense matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#gaaca1b39c157e1254d81907f506829b52">More...</a><br /></td></tr>
+<tr class="separator:gaaca1b39c157e1254d81907f506829b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2a19e16624e4520852a11d2a443d1ba5"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
 <tr class="memitem:ga2a19e16624e4520852a11d2a443d1ba5"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../df/d71/classblaze_1_1TSMatDMatSubExpr.html">TSMatDMatSubExpr</a>&lt; T1, T2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga2a19e16624e4520852a11d2a443d1ba5">blaze::operator-</a> (const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T1, true &gt; &amp;lhs, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, false &gt; &amp;rhs)</td></tr>
 <tr class="memdesc:ga2a19e16624e4520852a11d2a443d1ba5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtraction operator for the subtraction of a column-major sparse matrix and a row-major dense matrix ( <img class="formulaInl" alt="$ A=B+C $" src="../../form_85.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga2a19e16624e4520852a11d2a443d1ba5">More...</a><br /></td></tr>
 <tr class="separator:ga2a19e16624e4520852a11d2a443d1ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga61db726d567fb847824781084a1a04a8"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
-<tr class="memitem:ga61db726d567fb847824781084a1a04a8"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d9/d9f/classblaze_1_1TSMatTDMatMultExpr.html">TSMatTDMatMultExpr</a>&lt; T1, T2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga61db726d567fb847824781084a1a04a8">blaze::operator*</a> (const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T1, true &gt; &amp;lhs, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, true &gt; &amp;rhs)</td></tr>
-<tr class="memdesc:ga61db726d567fb847824781084a1a04a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of a column-major sparse matrix and a column-major dense matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga61db726d567fb847824781084a1a04a8">More...</a><br /></td></tr>
-<tr class="separator:ga61db726d567fb847824781084a1a04a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga233c439afd6ee03cd0859bd44269e2c5"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
+<tr class="memitem:ga233c439afd6ee03cd0859bd44269e2c5"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d9/d9f/classblaze_1_1TSMatTDMatMultExpr.html">TSMatTDMatMultExpr</a>&lt; T1, T2, false, false, false, false &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga233c439afd6ee03cd0859bd44269e2c5">blaze::operator*</a> (const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T1, true &gt; &amp;lhs, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, true &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:ga233c439afd6ee03cd0859bd44269e2c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of a column-major sparse matrix and a column-major dense matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga233c439afd6ee03cd0859bd44269e2c5">More...</a><br /></td></tr>
+<tr class="separator:ga233c439afd6ee03cd0859bd44269e2c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5432998c612b5dc4e417cea2fecaa2fb"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
 <tr class="memitem:ga5432998c612b5dc4e417cea2fecaa2fb"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d4/d3a/group__util.html#gaebf93d6ed8011a7e73476b7d9c34f656">DisableIf_</a>&lt; <a class="el" href="../../d2/db5/structblaze_1_1IsMatMatMultExpr.html">IsMatMatMultExpr</a>&lt; T2 &gt;, <a class="el" href="../../dd/d61/classblaze_1_1TSVecDMatMultExpr.html">TSVecDMatMultExpr</a>&lt; T1, T2 &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga5432998c612b5dc4e417cea2fecaa2fb">blaze::operator*</a> (const <a class="el" href="../../d6/d31/structblaze_1_1SparseVector.html">SparseVector</a>&lt; T1, true &gt; &amp;vec, const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, false &gt; &amp;mat)</td></tr>
 <tr class="memdesc:ga5432998c612b5dc4e417cea2fecaa2fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of a transpose sparse vector and a row-major dense matrix ( <img class="formulaInl" alt="$ \vec{y}^T=\vec{x}^T*A $" src="../../form_116.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga5432998c612b5dc4e417cea2fecaa2fb">More...</a><br /></td></tr>
@@ -1045,8 +1033,8 @@ The following example demonstrates the use of the <em><a class="el" href="../../
 <div class="fragment"><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double&gt;</a> A, B;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">B = <a class="code" href="../../db/df0/group__dense__matrix.html#ga38cb77691633d93f6b0b2fc55146a04b">ceil</a>( A );</div></div><!-- fragment --> 
 </div>
 </div>
-<a id="gadebfde9b2a5daf6d821e81ac96aa0b94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadebfde9b2a5daf6d821e81ac96aa0b94">&sect;&nbsp;</a></span>clip()</h2>
+<a id="gaed4231fbd9f5b6bf46307753b34f039c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaed4231fbd9f5b6bf46307753b34f039c">&sect;&nbsp;</a></span>clamp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1057,7 +1045,7 @@ template&lt;typename MT , bool SO, typename DT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../dd/d6a/classblaze_1_1DMatForEachExpr.html">DMatForEachExpr</a>&lt;MT,<a class="el" href="../../d0/d65/structblaze_1_1Clip.html">Clip</a>&lt;DT&gt;,SO&gt; blaze::clip </td>
+          <td class="memname">const <a class="el" href="../../dd/d6a/classblaze_1_1DMatForEachExpr.html">DMatForEachExpr</a>&lt;MT,<a class="el" href="../../da/d15/structblaze_1_1Clamp.html">Clamp</a>&lt;DT&gt;,SO&gt; blaze::clamp </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; MT, SO &gt; &amp;&#160;</td>
           <td class="paramname"><em>dm</em>, </td>
@@ -1097,9 +1085,9 @@ template&lt;typename MT , bool SO, typename DT &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The matrix with restricted elements.</dd></dl>
-<p>The <em><a class="el" href="../../db/df0/group__dense__matrix.html#gadebfde9b2a5daf6d821e81ac96aa0b94" title="Restricts each single element of the dense matrix dm to the range . ">clip()</a></em> function restricts each element of the input matrix <em>dm</em> to the range <img class="formulaInl" alt="$[min..max]$" src="../../form_94.png"/>. The function returns an expression representing this operation.<br />
-The following example demonstrates the use of the <em><a class="el" href="../../db/df0/group__dense__matrix.html#gadebfde9b2a5daf6d821e81ac96aa0b94" title="Restricts each single element of the dense matrix dm to the range . ">clip()</a></em> function:</p>
-<div class="fragment"><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double&gt;</a> A, B;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">B = <a class="code" href="../../db/df0/group__dense__matrix.html#gadebfde9b2a5daf6d821e81ac96aa0b94">clip</a>( A, -1.0, 1.0 );</div></div><!-- fragment --> 
+<p>The <em><a class="el" href="../../db/df0/group__dense__matrix.html#gaed4231fbd9f5b6bf46307753b34f039c" title="Restricts each single element of the dense matrix dm to the range . ">clamp()</a></em> function restricts each element of the input matrix <em>dm</em> to the range <img class="formulaInl" alt="$[min..max]$" src="../../form_94.png"/>. The function returns an expression representing this operation.<br />
+The following example demonstrates the use of the <em><a class="el" href="../../db/df0/group__dense__matrix.html#gaed4231fbd9f5b6bf46307753b34f039c" title="Restricts each single element of the dense matrix dm to the range . ">clamp()</a></em> function:</p>
+<div class="fragment"><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double&gt;</a> A, B;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">B = <a class="code" href="../../db/df0/group__dense__matrix.html#gaed4231fbd9f5b6bf46307753b34f039c">clamp</a>( A, -1.0, 1.0 );</div></div><!-- fragment --> 
 </div>
 </div>
 <a id="ga23b5c9bdbb7e7ea2c008808d235f7055"></a>
@@ -1259,6 +1247,51 @@ The following example demonstrates the use of the <em>ctrans</em> function:</p>
 <div class="fragment"><div class="line">B = <a class="code" href="../../db/df0/group__dense__matrix.html#ga33cedfb37c70d3758406251f2389ecac">trans</a>( <a class="code" href="../../db/df0/group__dense__matrix.html#ga23b5c9bdbb7e7ea2c008808d235f7055">conj</a>( A ) );  <span class="comment">// Computing the conjugate transpose matrix</span></div><div class="line">B = <a class="code" href="../../db/df0/group__dense__matrix.html#ga23b5c9bdbb7e7ea2c008808d235f7055">conj</a>( <a class="code" href="../../db/df0/group__dense__matrix.html#ga33cedfb37c70d3758406251f2389ecac">trans</a>( A ) );  <span class="comment">// Computing the conjugate transpose matrix</span></div></div><!-- fragment --> 
 </div>
 </div>
+<a id="ga69a9b7ca9d7f7eb53ed37ddd2ee43874"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga69a9b7ca9d7f7eb53ed37ddd2ee43874">&sect;&nbsp;</a></span>decldiag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MT , bool SO&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d3a/group__util.html#gaebf93d6ed8011a7e73476b7d9c34f656">DisableIf_</a>&lt; <a class="el" href="../../de/d38/structblaze_1_1IsDiagonal.html">IsDiagonal</a>&lt;MT&gt;, const <a class="el" href="../../dc/dbe/classblaze_1_1DMatDeclDiagExpr.html">DMatDeclDiagExpr</a>&lt;MT,SO&gt; &gt; blaze::decldiag </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; MT, SO &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Declares the given non-diagonal dense matrix expression <em>dm</em> as diagonal. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dm</td><td>The input matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The redeclared dense matrix. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Invalid diagonal matrix specification.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The <em>decldiag</em> function declares the given non-diagonal dense matrix expression <em>dm</em> as diagonal. The function returns an expression representing the operation. In case the given matrix is not a square matrix, a <em>std::invalid_argument</em> exception is thrown.<br />
+The following example demonstrates the use of the <em>decldiag</em> function:</p>
+<div class="fragment"><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double&gt;</a> A, B;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">B = <a class="code" href="../../db/df0/group__dense__matrix.html#ga69a9b7ca9d7f7eb53ed37ddd2ee43874">decldiag</a>( A );</div></div><!-- fragment --> 
+</div>
+</div>
 <a id="ga7d1c7499ea0f5524b537273a98f3c09c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga7d1c7499ea0f5524b537273a98f3c09c">&sect;&nbsp;</a></span>declherm()</h2>
 
@@ -1292,8 +1325,14 @@ template&lt;typename MT , bool SO&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The redeclared dense matrix.</dd></dl>
-<p>The <em>declherm</em> function declares the given non-Hermitian dense matrix expression <em>dm</em> as Hermitian. The function returns an expression representing the operation.<br />
+<dl class="section return"><dt>Returns</dt><dd>The redeclared dense matrix. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Invalid Hermitian matrix specification.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The <em>declherm</em> function declares the given non-Hermitian dense matrix expression <em>dm</em> as Hermitian. The function returns an expression representing the operation. In case the given matrix is not a square matrix, a <em>std::invalid_argument</em> exception is thrown.<br />
 The following example demonstrates the use of the <em>declherm</em> function:</p>
 <div class="fragment"><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double&gt;</a> A, B;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">B = <a class="code" href="../../db/df0/group__dense__matrix.html#ga7d1c7499ea0f5524b537273a98f3c09c">declherm</a>( A );</div></div><!-- fragment --> 
 </div>
@@ -1331,14 +1370,20 @@ template&lt;typename MT , bool SO&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The redeclared dense matrix.</dd></dl>
-<p>The <em>decllow</em> function declares the given non-lower dense matrix expression <em>dm</em> as lower. The function returns an expression representing the operation.<br />
- The following example demonstrates the use of the <em>decllow</em> function:</p>
+<dl class="section return"><dt>Returns</dt><dd>The redeclared dense matrix. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Invalid lower matrix specification.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The <em>decllow</em> function declares the given non-lower dense matrix expression <em>dm</em> as lower. The function returns an expression representing the operation. In case the given matrix is not a square matrix, a <em>std::invalid_argument</em> exception is thrown.<br />
+The following example demonstrates the use of the <em>decllow</em> function:</p>
 <div class="fragment"><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double&gt;</a> A, B;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">B = <a class="code" href="../../db/df0/group__dense__matrix.html#gab7f9f220af2ef0545f54ff4b5c34b139">decllow</a>( A );</div></div><!-- fragment --> 
 </div>
 </div>
 <a id="ga8e0db5d90417a72a963f8dcbf3e3b6a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8e0db5d90417a72a963f8dcbf3e3b6a2">&sect;&nbsp;</a></span>declsym() <span class="overload">[1/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8e0db5d90417a72a963f8dcbf3e3b6a2">&sect;&nbsp;</a></span>declsym()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1370,166 +1415,16 @@ template&lt;typename MT , bool SO&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The redeclared dense matrix.</dd></dl>
-<p>The <em>declsym</em> function declares the given non-symmetric dense matrix expression <em>dm</em> as symmetric. The function returns an expression representing the operation.<br />
+<dl class="section return"><dt>Returns</dt><dd>The redeclared dense matrix. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Invalid symmetric matrix specification.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The <em>declsym</em> function declares the given non-symmetric dense matrix expression <em>dm</em> as symmetric. The function returns an expression representing the operation. In case the given matrix is not a square matrix, a <em>std::invalid_argument</em> exception is thrown.<br />
 The following example demonstrates the use of the <em>declsym</em> function:</p>
 <div class="fragment"><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double&gt;</a> A, B;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">B = <a class="code" href="../../db/df0/group__dense__matrix.html#ga8e0db5d90417a72a963f8dcbf3e3b6a2">declsym</a>( A );</div></div><!-- fragment --> 
-</div>
-</div>
-<a id="gae28b4a0b90dd130510f7b18bbba209da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae28b4a0b90dd130510f7b18bbba209da">&sect;&nbsp;</a></span>declsym() <span class="overload">[2/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename MT1 , typename MT2 &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="../../d3/d40/classblaze_1_1DMatDMatMultExpr.html">DMatDMatMultExpr</a>&lt;MT1,MT2,true&gt; blaze::declsym </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d3/d40/classblaze_1_1DMatDMatMultExpr.html">DMatDMatMultExpr</a>&lt; MT1, MT2, false &gt; &amp;&#160;</td>
-          <td class="paramname"><em>dm</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Declares the given non-symmetric dense matrix multiplication expression as symmetric. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dm</td><td>The input matrix. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The redeclared dense matrix multiplication expression.</dd></dl>
-<p>The <em>declsym</em> function declares the given non-symmetric dense matrix multiplication expression <em>dm</em> as symmetric. The function returns an expression representing the operation.<br />
-The following example demonstrates the use of the <em>declsym</em> function:</p>
-<div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="../../d2/de9/namespaceblaze.html#a511878ce70095271b6d0dd5b855a9eaa">blaze::rowMajor</a>;</div><div class="line"></div><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double,rowMajor&gt;</a> A, B, C;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">C = <a class="code" href="../../db/df0/group__dense__matrix.html#ga8e0db5d90417a72a963f8dcbf3e3b6a2">declsym</a>( A * B );</div></div><!-- fragment --> 
-</div>
-</div>
-<a id="ga0e6969ca323c688cb22b96b6678d614f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0e6969ca323c688cb22b96b6678d614f">&sect;&nbsp;</a></span>declsym() <span class="overload">[3/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename MT1 , typename MT2 &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="../../dd/d6f/classblaze_1_1TDMatTDMatMultExpr.html">TDMatTDMatMultExpr</a>&lt;MT1,MT2,true&gt; blaze::declsym </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../dd/d6f/classblaze_1_1TDMatTDMatMultExpr.html">TDMatTDMatMultExpr</a>&lt; MT1, MT2, false &gt; &amp;&#160;</td>
-          <td class="paramname"><em>dm</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Declares the given non-symmetric dense matrix multiplication expression as symmetric. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dm</td><td>The input matrix. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The redeclared dense matrix multiplication expression.</dd></dl>
-<p>The <em>declsym</em> function declares the given non-symmetric dense matrix multiplication expression <em>dm</em> as symmetric. The function returns an expression representing the operation.<br />
-The following example demonstrates the use of the <em>declsym</em> function:</p>
-<div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="../../d2/de9/namespaceblaze.html#a5e42e1508f7d4d364fe7c64eef78a583">blaze::columnMajor</a>;</div><div class="line"></div><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double,columnMajor&gt;</a> A, B, C;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">C = <a class="code" href="../../db/df0/group__dense__matrix.html#ga8e0db5d90417a72a963f8dcbf3e3b6a2">declsym</a>( A * B );</div></div><!-- fragment --> 
-</div>
-</div>
-<a id="ga2a6e35ebc76e5aada8695044f4e69256"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2a6e35ebc76e5aada8695044f4e69256">&sect;&nbsp;</a></span>declsym() <span class="overload">[4/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename MT1 , typename MT2 &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="../../d3/d8a/classblaze_1_1DMatTDMatMultExpr.html">DMatTDMatMultExpr</a>&lt;MT1,MT2,true&gt; blaze::declsym </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d3/d8a/classblaze_1_1DMatTDMatMultExpr.html">DMatTDMatMultExpr</a>&lt; MT1, MT2, false &gt; &amp;&#160;</td>
-          <td class="paramname"><em>dm</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Declares the given non-symmetric dense matrix multiplication expression as symmetric. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dm</td><td>The input matrix. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The redeclared dense matrix multiplication expression.</dd></dl>
-<p>The <em>declsym</em> function declares the given non-symmetric dense matrix multiplication expression <em>dm</em> as symmetric. The function returns an expression representing the operation.<br />
-The following example demonstrates the use of the <em>declsym</em> function:</p>
-<div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="../../d2/de9/namespaceblaze.html#a511878ce70095271b6d0dd5b855a9eaa">blaze::rowMajor</a>;</div><div class="line"><span class="keyword">using</span> <a class="code" href="../../d2/de9/namespaceblaze.html#a5e42e1508f7d4d364fe7c64eef78a583">blaze::columnMajor</a>;</div><div class="line"></div><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double,rowMajor&gt;</a> A, C;</div><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double,columnMajor&gt;</a> B;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">C = <a class="code" href="../../db/df0/group__dense__matrix.html#ga8e0db5d90417a72a963f8dcbf3e3b6a2">declsym</a>( A * B );</div></div><!-- fragment --> 
-</div>
-</div>
-<a id="ga6f6ba8c42e78924c1ff9a7a11b4bcb4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6f6ba8c42e78924c1ff9a7a11b4bcb4c">&sect;&nbsp;</a></span>declsym() <span class="overload">[5/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename MT1 , typename MT2 &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="../../dc/dc9/classblaze_1_1TDMatDMatMultExpr.html">TDMatDMatMultExpr</a>&lt;MT1,MT2,true&gt; blaze::declsym </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../dc/dc9/classblaze_1_1TDMatDMatMultExpr.html">TDMatDMatMultExpr</a>&lt; MT1, MT2, false &gt; &amp;&#160;</td>
-          <td class="paramname"><em>dm</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Declares the given non-symmetric dense matrix multiplication expression as symmetric. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dm</td><td>The input matrix. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The redeclared dense matrix multiplication expression.</dd></dl>
-<p>The <em>declsym</em> function declares the given non-symmetric dense matrix multiplication expression <em>dm</em> as symmetric. The function returns an expression representing the operation.<br />
-The following example demonstrates the use of the <em>declsym</em> function:</p>
-<div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="../../d2/de9/namespaceblaze.html#a511878ce70095271b6d0dd5b855a9eaa">blaze::rowMajor</a>;</div><div class="line"><span class="keyword">using</span> <a class="code" href="../../d2/de9/namespaceblaze.html#a5e42e1508f7d4d364fe7c64eef78a583">blaze::columnMajor</a>;</div><div class="line"></div><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double,columnMajor&gt;</a> A, C;</div><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double,rowMajor&gt;</a> B;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">C = <a class="code" href="../../db/df0/group__dense__matrix.html#ga8e0db5d90417a72a963f8dcbf3e3b6a2">declsym</a>( A * B );</div></div><!-- fragment --> 
 </div>
 </div>
 <a id="ga8ebe177b75c6ea9edbd850b65591df1f"></a>
@@ -1565,9 +1460,15 @@ template&lt;typename MT , bool SO&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The redeclared dense matrix.</dd></dl>
-<p>The <em>declupp</em> function declares the given non-upper dense matrix expression <em>dm</em> as upper. The function returns an expression representing the operation.<br />
- The following example demonstrates the use of the <em>declupp</em> function:</p>
+<dl class="section return"><dt>Returns</dt><dd>The redeclared dense matrix. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Invalid upper matrix specification.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The <em>declupp</em> function declares the given non-upper dense matrix expression <em>dm</em> as upper. The function returns an expression representing the operation. In case the given matrix is not a square matrix, a <em>std::invalid_argument</em> exception is thrown.<br />
+The following example demonstrates the use of the <em>declupp</em> function:</p>
 <div class="fragment"><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double&gt;</a> A, B;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">B = <a class="code" href="../../db/df0/group__dense__matrix.html#ga8ebe177b75c6ea9edbd850b65591df1f">declupp</a>( A );</div></div><!-- fragment --> 
 </div>
 </div>
@@ -3367,8 +3268,8 @@ template&lt;typename T1 , typename T2 , bool SO&gt; </div>
 
 </div>
 </div>
-<a id="ga2a69a009d857b36f4b607edbeede502a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2a69a009d857b36f4b607edbeede502a">&sect;&nbsp;</a></span>operator*() <span class="overload">[3/17]</span></h2>
+<a id="gaad2e626f5bc82316193a20e246705b88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaad2e626f5bc82316193a20e246705b88">&sect;&nbsp;</a></span>operator*() <span class="overload">[3/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3379,7 +3280,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../d1/d2b/classblaze_1_1DMatSMatMultExpr.html">DMatSMatMultExpr</a>&lt;T1,T2&gt; blaze::operator* </td>
+          <td class="memname">const <a class="el" href="../../d1/d2b/classblaze_1_1DMatSMatMultExpr.html">DMatSMatMultExpr</a>&lt;T1,T2,false,false,false,false&gt; blaze::operator* </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, false &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -3474,122 +3375,8 @@ template&lt;typename T1 , typename T2 &gt; </div>
 
 </div>
 </div>
-<a id="ga55603ebcaa45b68183c06b156040cabb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga55603ebcaa45b68183c06b156040cabb">&sect;&nbsp;</a></span>operator*() <span class="overload">[5/17]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T1 , typename T2 &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="../../d9/d9c/classblaze_1_1TDMatTSMatMultExpr.html">TDMatTSMatMultExpr</a>&lt;T1,T2&gt; blaze::operator* </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, true &gt; &amp;&#160;</td>
-          <td class="paramname"><em>lhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T2, true &gt; &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Multiplication operator for the multiplication of a column-major dense matrix and a column-major sparse matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">lhs</td><td>The left-hand side dense matrix for the multiplication. </td></tr>
-    <tr><td class="paramname">rhs</td><td>The right-hand side sparse matrix for the multiplication. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The resulting matrix. </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This operator represents the multiplication of a column-major dense matrix and a column-major sparse matrix:</p>
-<div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="../../d2/de9/namespaceblaze.html#a5e42e1508f7d4d364fe7c64eef78a583">blaze::columnMajor</a>;</div><div class="line"></div><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double,columnMajor&gt;</a> A, C;</div><div class="line"><a class="code" href="../../da/d7a/classblaze_1_1CompressedMatrix.html">blaze::CompressedMatrix&lt;double,columnMajor&gt;</a> B;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">C = A * B;</div></div><!-- fragment --><p>The operator returns an expression representing a dense matrix of the higher-order element type of the two involved matrix element types <em>T1::ElementType</em> and <em>T2::ElementType</em>. Both matrix types <em>T1</em> and <em>T2</em> as well as the two element types <em>T1::ElementType</em> and <em>T2::ElementType</em> have to be supported by the <a class="el" href="../../df/daf/structblaze_1_1MultTrait.html" title="Base template for the MultTrait class. ">MultTrait</a> class template.<br />
-In case the current sizes of the two given matrices don't match, a <em>std::invalid_argument</em> is thrown. </p>
-
-</div>
-</div>
-<a id="gaff2332eeb931fe442419745885fc0bac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaff2332eeb931fe442419745885fc0bac">&sect;&nbsp;</a></span>operator*() <span class="overload">[6/17]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T1 , typename T2 &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="../../d6/dc5/classblaze_1_1SMatDMatMultExpr.html">SMatDMatMultExpr</a>&lt;T1,T2&gt; blaze::operator* </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T1, false &gt; &amp;&#160;</td>
-          <td class="paramname"><em>lhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, false &gt; &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Multiplication operator for the multiplication of a row-major sparse matrix and a row-major dense matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">lhs</td><td>The left-hand side sparse matrix for the multiplication. </td></tr>
-    <tr><td class="paramname">rhs</td><td>The right-hand side dense matrix for the multiplication. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The resulting matrix. </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This operator represents the multiplication of a row-major sparse matrix and a row-major dense matrix:</p>
-<div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="../../d2/de9/namespaceblaze.html#a511878ce70095271b6d0dd5b855a9eaa">blaze::rowMajor</a>;</div><div class="line"></div><div class="line"><a class="code" href="../../da/d7a/classblaze_1_1CompressedMatrix.html">blaze::CompressedMatrix&lt;double,rowMajor&gt;</a> A;</div><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double,rowMajor&gt;</a> B, C;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">C = A * B;</div></div><!-- fragment --><p>The operator returns an expression representing a dense matrix of the higher-order element type of the two involved matrix element types <em>T1::ElementType</em> and <em>T2::ElementType</em>. Both matrix types <em>T1</em> and <em>T2</em> as well as the two element types <em>T1::ElementType</em> and <em>T2::ElementType</em> have to be supported by the <a class="el" href="../../df/daf/structblaze_1_1MultTrait.html" title="Base template for the MultTrait class. ">MultTrait</a> class template.<br />
-In case the current sizes of the two given matrices don't match, a <em>std::invalid_argument</em> is thrown. </p>
-
-</div>
-</div>
 <a id="ga5432998c612b5dc4e417cea2fecaa2fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5432998c612b5dc4e417cea2fecaa2fb">&sect;&nbsp;</a></span>operator*() <span class="overload">[7/17]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5432998c612b5dc4e417cea2fecaa2fb">&sect;&nbsp;</a></span>operator*() <span class="overload">[5/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3645,8 +3432,8 @@ In case the current size of the vector <em>vec</em> doesn't match the current nu
 
 </div>
 </div>
-<a id="gad82218827b4f2e2748e9fec868b66690"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad82218827b4f2e2748e9fec868b66690">&sect;&nbsp;</a></span>operator*() <span class="overload">[8/17]</span></h2>
+<a id="ga9cf4741ea9d35452a1112c108f72471f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9cf4741ea9d35452a1112c108f72471f">&sect;&nbsp;</a></span>operator*() <span class="overload">[6/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3657,7 +3444,121 @@ template&lt;typename T1 , typename T2 &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">DMatTSMatMultExpr</a>&lt;T1,T2&gt; blaze::operator* </td>
+          <td class="memname">const <a class="el" href="../../d9/d9c/classblaze_1_1TDMatTSMatMultExpr.html">TDMatTSMatMultExpr</a>&lt;T1,T2,false,false,false,false&gt; blaze::operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, true &gt; &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T2, true &gt; &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Multiplication operator for the multiplication of a column-major dense matrix and a column-major sparse matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lhs</td><td>The left-hand side dense matrix for the multiplication. </td></tr>
+    <tr><td class="paramname">rhs</td><td>The right-hand side sparse matrix for the multiplication. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The resulting matrix. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This operator represents the multiplication of a column-major dense matrix and a column-major sparse matrix:</p>
+<div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="../../d2/de9/namespaceblaze.html#a5e42e1508f7d4d364fe7c64eef78a583">blaze::columnMajor</a>;</div><div class="line"></div><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double,columnMajor&gt;</a> A, C;</div><div class="line"><a class="code" href="../../da/d7a/classblaze_1_1CompressedMatrix.html">blaze::CompressedMatrix&lt;double,columnMajor&gt;</a> B;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">C = A * B;</div></div><!-- fragment --><p>The operator returns an expression representing a dense matrix of the higher-order element type of the two involved matrix element types <em>T1::ElementType</em> and <em>T2::ElementType</em>. Both matrix types <em>T1</em> and <em>T2</em> as well as the two element types <em>T1::ElementType</em> and <em>T2::ElementType</em> have to be supported by the <a class="el" href="../../df/daf/structblaze_1_1MultTrait.html" title="Base template for the MultTrait class. ">MultTrait</a> class template.<br />
+In case the current sizes of the two given matrices don't match, a <em>std::invalid_argument</em> is thrown. </p>
+
+</div>
+</div>
+<a id="gabaf770138077bc9a101f7da6571a58c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabaf770138077bc9a101f7da6571a58c1">&sect;&nbsp;</a></span>operator*() <span class="overload">[7/17]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T1 , typename T2 &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d6/dc5/classblaze_1_1SMatDMatMultExpr.html">SMatDMatMultExpr</a>&lt;T1,T2,false,false,false,false&gt; blaze::operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T1, false &gt; &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, false &gt; &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Multiplication operator for the multiplication of a row-major sparse matrix and a row-major dense matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lhs</td><td>The left-hand side sparse matrix for the multiplication. </td></tr>
+    <tr><td class="paramname">rhs</td><td>The right-hand side dense matrix for the multiplication. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The resulting matrix. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This operator represents the multiplication of a row-major sparse matrix and a row-major dense matrix:</p>
+<div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="../../d2/de9/namespaceblaze.html#a511878ce70095271b6d0dd5b855a9eaa">blaze::rowMajor</a>;</div><div class="line"></div><div class="line"><a class="code" href="../../da/d7a/classblaze_1_1CompressedMatrix.html">blaze::CompressedMatrix&lt;double,rowMajor&gt;</a> A;</div><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double,rowMajor&gt;</a> B, C;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">C = A * B;</div></div><!-- fragment --><p>The operator returns an expression representing a dense matrix of the higher-order element type of the two involved matrix element types <em>T1::ElementType</em> and <em>T2::ElementType</em>. Both matrix types <em>T1</em> and <em>T2</em> as well as the two element types <em>T1::ElementType</em> and <em>T2::ElementType</em> have to be supported by the <a class="el" href="../../df/daf/structblaze_1_1MultTrait.html" title="Base template for the MultTrait class. ">MultTrait</a> class template.<br />
+In case the current sizes of the two given matrices don't match, a <em>std::invalid_argument</em> is thrown. </p>
+
+</div>
+</div>
+<a id="ga1e3b505b7ed845f99d346d8d11a57769"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1e3b505b7ed845f99d346d8d11a57769">&sect;&nbsp;</a></span>operator*() <span class="overload">[8/17]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T1 , typename T2 &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d5/ddc/classblaze_1_1DMatTSMatMultExpr.html">DMatTSMatMultExpr</a>&lt;T1,T2,false,false,false,false&gt; blaze::operator* </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, false &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -3702,8 +3603,8 @@ In case the current sizes of the two given matrices don't match, a <em>std::inva
 
 </div>
 </div>
-<a id="gac91fac7612d334d056573a01255a42f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac91fac7612d334d056573a01255a42f5">&sect;&nbsp;</a></span>operator*() <span class="overload">[9/17]</span></h2>
+<a id="ga20777c4f2b4f7e24a5130dc8041b5e93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga20777c4f2b4f7e24a5130dc8041b5e93">&sect;&nbsp;</a></span>operator*() <span class="overload">[9/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3714,64 +3615,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../df/ddb/classblaze_1_1TSMatDMatMultExpr.html">TSMatDMatMultExpr</a>&lt;T1,T2&gt; blaze::operator* </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T1, true &gt; &amp;&#160;</td>
-          <td class="paramname"><em>lhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, false &gt; &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Multiplication operator for the multiplication of a column-major sparse matrix and a row-major dense matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">lhs</td><td>The left-hand side sparse matrix for the multiplication. </td></tr>
-    <tr><td class="paramname">rhs</td><td>The right-hand side dense matrix for the multiplication. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The resulting matrix. </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This operator represents the multiplication of a column-major sparse matrix and a row-major dense matrix:</p>
-<div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="../../d2/de9/namespaceblaze.html#a511878ce70095271b6d0dd5b855a9eaa">blaze::rowMajor</a>;</div><div class="line"><span class="keyword">using</span> <a class="code" href="../../d2/de9/namespaceblaze.html#a5e42e1508f7d4d364fe7c64eef78a583">blaze::columnMajor</a>;</div><div class="line"></div><div class="line"><a class="code" href="../../da/d7a/classblaze_1_1CompressedMatrix.html">blaze::CompressedMatrix&lt;double,columnMajor&gt;</a> A;</div><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double,rowMajor&gt;</a> B;</div><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double,columnMajor&gt;</a> C;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">C = A * B;</div></div><!-- fragment --><p>The operator returns an expression representing a dense matrix of the higher-order element type of the two involved matrix element types <em>T1::ElementType</em> and <em>T2::ElementType</em>. Both matrix types <em>T1</em> and <em>T2</em> as well as the two element types <em>T1::ElementType</em> and <em>T2::ElementType</em> have to be supported by the <a class="el" href="../../df/daf/structblaze_1_1MultTrait.html" title="Base template for the MultTrait class. ">MultTrait</a> class template.<br />
-In case the current sizes of the two given matrices don't match, a <em>std::invalid_argument</em> is thrown. </p>
-
-</div>
-</div>
-<a id="gafd88fb6252c24b32b19dcf37f3c79196"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafd88fb6252c24b32b19dcf37f3c79196">&sect;&nbsp;</a></span>operator*() <span class="overload">[10/17]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T1 , typename T2 &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="../../dd/d43/classblaze_1_1SMatTDMatMultExpr.html">SMatTDMatMultExpr</a>&lt;T1,T2&gt; blaze::operator* </td>
+          <td class="memname">const <a class="el" href="../../dd/d43/classblaze_1_1SMatTDMatMultExpr.html">SMatTDMatMultExpr</a>&lt;T1,T2,false,false,false,false&gt; blaze::operator* </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T1, false &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -3816,8 +3660,8 @@ In case the current sizes of the two given matrices don't match, a <em>std::inva
 
 </div>
 </div>
-<a id="ga61db726d567fb847824781084a1a04a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga61db726d567fb847824781084a1a04a8">&sect;&nbsp;</a></span>operator*() <span class="overload">[11/17]</span></h2>
+<a id="gaaca1b39c157e1254d81907f506829b52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaca1b39c157e1254d81907f506829b52">&sect;&nbsp;</a></span>operator*() <span class="overload">[10/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3828,7 +3672,64 @@ template&lt;typename T1 , typename T2 &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../d9/d9f/classblaze_1_1TSMatTDMatMultExpr.html">TSMatTDMatMultExpr</a>&lt;T1,T2&gt; blaze::operator* </td>
+          <td class="memname">const <a class="el" href="../../df/ddb/classblaze_1_1TSMatDMatMultExpr.html">TSMatDMatMultExpr</a>&lt;T1,T2,false,false,false,false&gt; blaze::operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T1, true &gt; &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T2, false &gt; &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Multiplication operator for the multiplication of a column-major sparse matrix and a row-major dense matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lhs</td><td>The left-hand side sparse matrix for the multiplication. </td></tr>
+    <tr><td class="paramname">rhs</td><td>The right-hand side dense matrix for the multiplication. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The resulting matrix. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This operator represents the multiplication of a column-major sparse matrix and a row-major dense matrix:</p>
+<div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="../../d2/de9/namespaceblaze.html#a511878ce70095271b6d0dd5b855a9eaa">blaze::rowMajor</a>;</div><div class="line"><span class="keyword">using</span> <a class="code" href="../../d2/de9/namespaceblaze.html#a5e42e1508f7d4d364fe7c64eef78a583">blaze::columnMajor</a>;</div><div class="line"></div><div class="line"><a class="code" href="../../da/d7a/classblaze_1_1CompressedMatrix.html">blaze::CompressedMatrix&lt;double,columnMajor&gt;</a> A;</div><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double,rowMajor&gt;</a> B;</div><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double,columnMajor&gt;</a> C;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">C = A * B;</div></div><!-- fragment --><p>The operator returns an expression representing a dense matrix of the higher-order element type of the two involved matrix element types <em>T1::ElementType</em> and <em>T2::ElementType</em>. Both matrix types <em>T1</em> and <em>T2</em> as well as the two element types <em>T1::ElementType</em> and <em>T2::ElementType</em> have to be supported by the <a class="el" href="../../df/daf/structblaze_1_1MultTrait.html" title="Base template for the MultTrait class. ">MultTrait</a> class template.<br />
+In case the current sizes of the two given matrices don't match, a <em>std::invalid_argument</em> is thrown. </p>
+
+</div>
+</div>
+<a id="ga233c439afd6ee03cd0859bd44269e2c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga233c439afd6ee03cd0859bd44269e2c5">&sect;&nbsp;</a></span>operator*() <span class="overload">[11/17]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T1 , typename T2 &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d9/d9f/classblaze_1_1TSMatTDMatMultExpr.html">TSMatTDMatMultExpr</a>&lt;T1,T2,false,false,false,false&gt; blaze::operator* </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; T1, true &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -3873,8 +3774,8 @@ In case the current sizes of the two given matrices don't match, a <em>std::inva
 
 </div>
 </div>
-<a id="ga7fc6107dda539d41695e8f9f2ebf005c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7fc6107dda539d41695e8f9f2ebf005c">&sect;&nbsp;</a></span>operator*() <span class="overload">[12/17]</span></h2>
+<a id="ga2d5d53a3ea2376b071c78d77e07406f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2d5d53a3ea2376b071c78d77e07406f3">&sect;&nbsp;</a></span>operator*() <span class="overload">[12/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3885,7 +3786,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../d4/dfb/classblaze_1_1TDMatSMatMultExpr.html">TDMatSMatMultExpr</a>&lt;T1,T2&gt; blaze::operator* </td>
+          <td class="memname">const <a class="el" href="../../d4/dfb/classblaze_1_1TDMatSMatMultExpr.html">TDMatSMatMultExpr</a>&lt;T1,T2,false,false,false,false&gt; blaze::operator* </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, true &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -3987,8 +3888,8 @@ In case the current size of the vector <em>vec</em> doesn't match the current nu
 
 </div>
 </div>
-<a id="gadefdb5e9e45bd375a844073de502e71b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadefdb5e9e45bd375a844073de502e71b">&sect;&nbsp;</a></span>operator*() <span class="overload">[14/17]</span></h2>
+<a id="ga8c854306cabe36178ef984abdfc835f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8c854306cabe36178ef984abdfc835f5">&sect;&nbsp;</a></span>operator*() <span class="overload">[14/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3999,7 +3900,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../d3/d40/classblaze_1_1DMatDMatMultExpr.html">DMatDMatMultExpr</a>&lt;T1,T2,false&gt; blaze::operator* </td>
+          <td class="memname">const <a class="el" href="../../d3/d40/classblaze_1_1DMatDMatMultExpr.html">DMatDMatMultExpr</a>&lt;T1,T2,false,false,false,false&gt; blaze::operator* </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, false &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -4031,15 +3932,21 @@ template&lt;typename T1 , typename T2 &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The resulting matrix.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The resulting matrix. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match.</td></tr>
+  </table>
+  </dd>
+</dl>
 <p>This operator represents the multiplication of two row-major dense matrices:</p>
 <div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="../../d2/de9/namespaceblaze.html#a511878ce70095271b6d0dd5b855a9eaa">blaze::rowMajor</a>;</div><div class="line"></div><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double,rowMajor&gt;</a> A, B, C;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">C = A * B;</div></div><!-- fragment --><p>The operator returns an expression representing a dense matrix of the higher-order element type of the two involved matrix element types <em>T1::ElementType</em> and <em>T2::ElementType</em>. Both matrix types <em>T1</em> and <em>T2</em> as well as the two element types <em>T1::ElementType</em> and <em>T2::ElementType</em> have to be supported by the <a class="el" href="../../df/daf/structblaze_1_1MultTrait.html" title="Base template for the MultTrait class. ">MultTrait</a> class template.<br />
 In case the current number of columns of <em>lhs</em> and the current number of rows of <em>rhs</em> don't match, a <em>std::invalid_argument</em> is thrown. </p>
 
 </div>
 </div>
-<a id="ga291e882f0ecf24cf4d5500f8b6786788"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga291e882f0ecf24cf4d5500f8b6786788">&sect;&nbsp;</a></span>operator*() <span class="overload">[15/17]</span></h2>
+<a id="ga5e16ab37a11a6e772f652c5ce572ad59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5e16ab37a11a6e772f652c5ce572ad59">&sect;&nbsp;</a></span>operator*() <span class="overload">[15/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4050,7 +3957,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../dd/d6f/classblaze_1_1TDMatTDMatMultExpr.html">TDMatTDMatMultExpr</a>&lt;T1,T2,false&gt; blaze::operator* </td>
+          <td class="memname">const <a class="el" href="../../dd/d6f/classblaze_1_1TDMatTDMatMultExpr.html">TDMatTDMatMultExpr</a>&lt;T1,T2,false,false,false,false&gt; blaze::operator* </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, true &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -4082,15 +3989,21 @@ template&lt;typename T1 , typename T2 &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The resulting matrix.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The resulting matrix. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match.</td></tr>
+  </table>
+  </dd>
+</dl>
 <p>This operator represents the multiplication of two column-major dense matrices:</p>
 <div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="../../d2/de9/namespaceblaze.html#a5e42e1508f7d4d364fe7c64eef78a583">blaze::columnMajor</a>;</div><div class="line"></div><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double,columnMajor&gt;</a> A, B, C;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">C = A * B;</div></div><!-- fragment --><p>The operator returns an expression representing a dense matrix of the higher-order element type of the two involved matrix element types <em>T1::ElementType</em> and <em>T2::ElementType</em>. Both matrix types <em>T1</em> and <em>T2</em> as well as the two element types <em>T1::ElementType</em> and <em>T2::ElementType</em> have to be supported by the <a class="el" href="../../df/daf/structblaze_1_1MultTrait.html" title="Base template for the MultTrait class. ">MultTrait</a> class template.<br />
 In case the current number of columns of <em>lhs</em> and the current number of rows of <em>rhs</em> don't match, a <em>std::invalid_argument</em> is thrown. </p>
 
 </div>
 </div>
-<a id="gac922baf11df28e57dfbda3d8c460c260"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac922baf11df28e57dfbda3d8c460c260">&sect;&nbsp;</a></span>operator*() <span class="overload">[16/17]</span></h2>
+<a id="ga4f992e6b1ce3d1bccc60ac34a38afbce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4f992e6b1ce3d1bccc60ac34a38afbce">&sect;&nbsp;</a></span>operator*() <span class="overload">[16/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4101,7 +4014,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../d3/d8a/classblaze_1_1DMatTDMatMultExpr.html">DMatTDMatMultExpr</a>&lt;T1,T2,false&gt; blaze::operator* </td>
+          <td class="memname">const <a class="el" href="../../d3/d8a/classblaze_1_1DMatTDMatMultExpr.html">DMatTDMatMultExpr</a>&lt;T1,T2,false,false,false,false&gt; blaze::operator* </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, false &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -4133,15 +4046,21 @@ template&lt;typename T1 , typename T2 &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The resulting matrix.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The resulting matrix. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match.</td></tr>
+  </table>
+  </dd>
+</dl>
 <p>This operator represents the multiplication of a row-major dense matrix and a column-major dense matrix:</p>
 <div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="../../d2/de9/namespaceblaze.html#a511878ce70095271b6d0dd5b855a9eaa">blaze::rowMajor</a>;</div><div class="line"><span class="keyword">using</span> <a class="code" href="../../d2/de9/namespaceblaze.html#a5e42e1508f7d4d364fe7c64eef78a583">blaze::columnMajor</a>;</div><div class="line"></div><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double,rowMajor&gt;</a> A, C;</div><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double,columnMajor&gt;</a> B;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">C = A * B;</div></div><!-- fragment --><p>The operator returns an expression representing a dense matrix of the higher-order element type of the two involved matrix element types <em>T1::ElementType</em> and <em>T2::ElementType</em>. Both matrix types <em>T1</em> and <em>T2</em> as well as the two element types <em>T1::ElementType</em> and <em>T2::ElementType</em> have to be supported by the <a class="el" href="../../df/daf/structblaze_1_1MultTrait.html" title="Base template for the MultTrait class. ">MultTrait</a> class template.<br />
 In case the current number of columns of <em>lhs</em> and the current number of rows of <em>rhs</em> don't match, a <em>std::invalid_argument</em> is thrown. </p>
 
 </div>
 </div>
-<a id="gaaae9f1662f12831be78c0daada1ce034"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaae9f1662f12831be78c0daada1ce034">&sect;&nbsp;</a></span>operator*() <span class="overload">[17/17]</span></h2>
+<a id="ga3f51f828a45bfd3717c4836eca156cf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3f51f828a45bfd3717c4836eca156cf2">&sect;&nbsp;</a></span>operator*() <span class="overload">[17/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4152,7 +4071,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../dc/dc9/classblaze_1_1TDMatDMatMultExpr.html">TDMatDMatMultExpr</a>&lt;T1,T2,false&gt; blaze::operator* </td>
+          <td class="memname">const <a class="el" href="../../dc/dc9/classblaze_1_1TDMatDMatMultExpr.html">TDMatDMatMultExpr</a>&lt;T1,T2,false,false,false,false&gt; blaze::operator* </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d0/d89/structblaze_1_1DenseMatrix.html">DenseMatrix</a>&lt; T1, true &gt; &amp;&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -4184,7 +4103,13 @@ template&lt;typename T1 , typename T2 &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The resulting matrix.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The resulting matrix. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match.</td></tr>
+  </table>
+  </dd>
+</dl>
 <p>This operator represents the multiplication of a column-major dense matrix and a row-major dense matrix:</p>
 <div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="../../d2/de9/namespaceblaze.html#a511878ce70095271b6d0dd5b855a9eaa">blaze::rowMajor</a>;</div><div class="line"><span class="keyword">using</span> <a class="code" href="../../d2/de9/namespaceblaze.html#a5e42e1508f7d4d364fe7c64eef78a583">blaze::columnMajor</a>;</div><div class="line"></div><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double,columnMajor&gt;</a> A, C;</div><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double,rowMajor&gt;</a> B;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">C = A * B;</div></div><!-- fragment --><p>The operator returns an expression representing a dense matrix of the higher-order element type of the two involved matrix element types <em>T1::ElementType</em> and <em>T2::ElementType</em>. Both matrix types <em>T1</em> and <em>T2</em> as well as the two element types <em>T1::ElementType</em> and <em>T2::ElementType</em> have to be supported by the <a class="el" href="../../df/daf/structblaze_1_1MultTrait.html" title="Base template for the MultTrait class. ">MultTrait</a> class template.<br />
 In case the current number of columns of <em>lhs</em> and the current number of rows of <em>rhs</em> don't match, a <em>std::invalid_argument</em> is thrown. </p>
@@ -4548,7 +4473,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>The sum of the two matrices. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match</td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match.</td></tr>
   </table>
   </dd>
 </dl>
@@ -4662,7 +4587,7 @@ template&lt;typename T1 , typename T2 , bool SO&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>The sum of the two matrices. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match</td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match.</td></tr>
   </table>
   </dd>
 </dl>
@@ -5061,7 +4986,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>The difference of the two matrices. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match</td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match.</td></tr>
   </table>
   </dd>
 </dl>
@@ -5214,7 +5139,7 @@ template&lt;typename T1 , typename T2 , bool SO&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>The difference of the two matrices. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match</td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match.</td></tr>
   </table>
   </dd>
 </dl>
@@ -6361,7 +6286,7 @@ The following example demonstrates the use of the <em><a class="el" href="../../
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 31 2016 17:17:01 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 8 2016 01:03:46 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

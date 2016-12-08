@@ -274,12 +274,12 @@ min() / max()</h2>
 abs()</h2>
 <p>The <code><a class="el" href="../../db/df0/group__dense__matrix.html#ga8e4e90c6e2ed37ddea6203417c5596f5" title="Applies the abs() function to each single element of the dense matrix dm. ">abs()</a></code> function can be used to compute the absolute values of each element of a vector. For instance, the following computation</p>
 <div class="fragment"><div class="line"><a class="code" href="../../d9/d3c/classblaze_1_1StaticVector.html">blaze::StaticVector&lt;int,3UL,rowVector&gt;</a> a{ -1, 2, -3 };</div><div class="line"><a class="code" href="../../d9/d3c/classblaze_1_1StaticVector.html">blaze::StaticVector&lt;int,3UL,rowVector&gt;</a> b( <a class="code" href="../../db/df0/group__dense__matrix.html#ga8e4e90c6e2ed37ddea6203417c5596f5">abs</a>( a ) );</div></div><!-- fragment --><p>results in the vector</p>
-<p><img class="formulaInl" alt="$ b = \left(\begin{array}{*{1}{c}} 1 \\ 2 \\ 3 \\ \end{array}\right)$" src="../../form_172.png"/></p>
+<p><img class="formulaInl" alt="$ b = \left(\begin{array}{*{1}{c}} 1 \\ 2 \\ 3 \\ \end{array}\right)$" src="../../form_173.png"/></p>
 <p><br />
  </p>
 <h2><a class="anchor" id="vector_operations_rounding_functions"></a>
 floor() / ceil() / trunc() / round()</h2>
-<p>The <code><a class="el" href="../../db/df0/group__dense__matrix.html#ga7076fab6e413abbb8914e97c63c6ec60" title="Applies the floor() function to each single element of the dense matrix dm. ">floor()</a></code> <code><a class="el" href="../../db/df0/group__dense__matrix.html#ga38cb77691633d93f6b0b2fc55146a04b" title="Applies the ceil() function to each single element of the dense matrix dm. ">ceil()</a></code>, <code><a class="el" href="../../db/df0/group__dense__matrix.html#ga69688d5359655080afd417a1d7fdbf40" title="Applies the trunc() function to each single element of the dense matrix dm. ">trunc()</a></code>, and <code><a class="el" href="../../db/df0/group__dense__matrix.html#gaeda0fbc301f6a9849bd1aedb24e3c4bc" title="Applies the round() function to each single element of the dense matrix dm. ">round()</a></code> functions can be used to round down/up each element of a vector, respectively:</p>
+<p>The <code><a class="el" href="../../db/df0/group__dense__matrix.html#ga7076fab6e413abbb8914e97c63c6ec60" title="Applies the floor() function to each single element of the dense matrix dm. ">floor()</a></code>, <code><a class="el" href="../../db/df0/group__dense__matrix.html#ga38cb77691633d93f6b0b2fc55146a04b" title="Applies the ceil() function to each single element of the dense matrix dm. ">ceil()</a></code>, <code><a class="el" href="../../db/df0/group__dense__matrix.html#ga69688d5359655080afd417a1d7fdbf40" title="Applies the trunc() function to each single element of the dense matrix dm. ">trunc()</a></code>, and <code><a class="el" href="../../db/df0/group__dense__matrix.html#gaeda0fbc301f6a9849bd1aedb24e3c4bc" title="Applies the round() function to each single element of the dense matrix dm. ">round()</a></code> functions can be used to round down/up each element of a vector, respectively:</p>
 <div class="fragment"><div class="line"><a class="code" href="../../d9/d3c/classblaze_1_1StaticVector.html">blaze::StaticVector&lt;double,3UL,rowVector&gt;</a> a, b;</div><div class="line"></div><div class="line">b = <a class="code" href="../../db/df0/group__dense__matrix.html#ga7076fab6e413abbb8914e97c63c6ec60">floor</a>( a );  <span class="comment">// Rounding down each element of the vector</span></div><div class="line">b = <a class="code" href="../../db/df0/group__dense__matrix.html#ga38cb77691633d93f6b0b2fc55146a04b">ceil</a> ( a );  <span class="comment">// Rounding up each element of the vector</span></div><div class="line">b = <a class="code" href="../../db/df0/group__dense__matrix.html#ga69688d5359655080afd417a1d7fdbf40">trunc</a>( a );  <span class="comment">// Truncating each element of the vector</span></div><div class="line">b = <a class="code" href="../../db/df0/group__dense__matrix.html#gaeda0fbc301f6a9849bd1aedb24e3c4bc">round</a>( a );  <span class="comment">// Rounding each element of the vector</span></div></div><!-- fragment --><p><br />
  </p>
 <h2><a class="anchor" id="vector_operators_conj"></a>
@@ -312,8 +312,8 @@ cbrt() / invcbrt()</h2>
  </p>
 <h2><a class="anchor" id="vector_operations_clip"></a>
 clip()</h2>
-<p>The <code><a class="el" href="../../db/df0/group__dense__matrix.html#gadebfde9b2a5daf6d821e81ac96aa0b94" title="Restricts each single element of the dense matrix dm to the range . ">clip()</a></code> function can be used to restrict all elements of a vector to a specific range:</p>
-<div class="fragment"><div class="line"><a class="code" href="../../da/d9e/classblaze_1_1DynamicVector.html">blaze::DynamicVector&lt;double&gt;</a> a, b</div><div class="line"></div><div class="line">b = <a class="code" href="../../db/df0/group__dense__matrix.html#gadebfde9b2a5daf6d821e81ac96aa0b94">clip</a>( a, -1.0, 1.0 );  <span class="comment">// Restrict all elements to the range [-1..1]</span></div></div><!-- fragment --><p>Note that in case of sparse vectors only the non-zero elements are taken into account!</p>
+<p>The <code>clip()</code> function can be used to restrict all elements of a vector to a specific range:</p>
+<div class="fragment"><div class="line"><a class="code" href="../../da/d9e/classblaze_1_1DynamicVector.html">blaze::DynamicVector&lt;double&gt;</a> a, b</div><div class="line"></div><div class="line">b = clip( a, -1.0, 1.0 );  <span class="comment">// Restrict all elements to the range [-1..1]</span></div></div><!-- fragment --><p>Note that in case of sparse vectors only the non-zero elements are taken into account!</p>
 <p><br />
  </p>
 <h2><a class="anchor" id="vector_operations_pow"></a>
@@ -387,7 +387,7 @@ swap()</h2>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 31 2016 17:17:00 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 8 2016 01:03:46 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

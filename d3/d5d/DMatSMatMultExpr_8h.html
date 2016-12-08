@@ -84,10 +84,22 @@ $(function() {
 <code>#include &lt;<a class="el" href="../../dc/dc5/expressions_2Forward_8h_source.html">blaze/math/expressions/Forward.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../db/d5b/expressions_2MatMatMultExpr_8h_source.html">blaze/math/expressions/MatMatMultExpr.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d8/db9/Functions_8h_source.html">blaze/math/Functions.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d4/d74/DeclDiag_8h_source.html">blaze/math/functors/DeclDiag.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d1/d6d/DeclHerm_8h_source.html">blaze/math/functors/DeclHerm.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d0/d21/DeclLow_8h_source.html">blaze/math/functors/DeclLow.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d0/d95/DeclSym_8h_source.html">blaze/math/functors/DeclSym.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d4/dd8/DeclUpp_8h_source.html">blaze/math/functors/DeclUpp.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../dd/d5f/Noop_8h_source.html">blaze/math/functors/Noop.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d1/df2/Conjugate_8h_source.html">blaze/math/shims/Conjugate.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d2/d67/IsDefault_8h_source.html">blaze/math/shims/IsDefault.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../dd/d84/Reset_8h_source.html">blaze/math/shims/Reset.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d9/d09/shims_2Serial_8h_source.html">blaze/math/shims/Serial.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../da/deb/ColumnExprTrait_8h_source.html">blaze/math/traits/ColumnExprTrait.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d4/d43/DMatDeclDiagExprTrait_8h_source.html">blaze/math/traits/DMatDeclDiagExprTrait.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d1/dfb/DMatDeclHermExprTrait_8h_source.html">blaze/math/traits/DMatDeclHermExprTrait.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../de/db7/DMatDeclLowExprTrait_8h_source.html">blaze/math/traits/DMatDeclLowExprTrait.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d5/d6e/DMatDeclSymExprTrait_8h_source.html">blaze/math/traits/DMatDeclSymExprTrait.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d9/d96/DMatDeclUppExprTrait_8h_source.html">blaze/math/traits/DMatDeclUppExprTrait.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../dd/d4b/DMatDVecMultExprTrait_8h_source.html">blaze/math/traits/DMatDVecMultExprTrait.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d0/dc0/DMatSVecMultExprTrait_8h_source.html">blaze/math/traits/DMatSVecMultExprTrait.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d6/d2a/MultExprTrait_8h_source.html">blaze/math/traits/MultExprTrait.h</a>&gt;</code><br />
@@ -132,15 +144,17 @@ $(function() {
 <code>#include &lt;<a class="el" href="../../df/dbe/InvalidType_8h_source.html">blaze/util/InvalidType.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../df/d96/FunctionTrace_8h_source.html">blaze/util/logging/FunctionTrace.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d6/d96/And_8h_source.html">blaze/util/mpl/And.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d2/d7b/Bool_8h_source.html">blaze/util/mpl/Bool.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d8/dd9/If_8h_source.html">blaze/util/mpl/If.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d7/d4b/Or_8h_source.html">blaze/util/mpl/Or.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="../../d7/df8/Types_8h_source.html">blaze/util/Types.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../db/d50/IsBuiltin_8h_source.html">blaze/util/typetraits/IsBuiltin.h</a>&gt;</code><br />
 </div>
 <p><a href="../../d3/d5d/DMatSMatMultExpr_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d2b/classblaze_1_1DMatSMatMultExpr.html">blaze::DMatSMatMultExpr&lt; MT1, MT2 &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d2b/classblaze_1_1DMatSMatMultExpr.html">blaze::DMatSMatMultExpr&lt; MT1, MT2, SF, HF, LF, UF &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d5/d2e/structblaze_1_1Expression.html" title="Base class for all expression templates.The Expression class is the base class for all expression tem...">Expression</a> object for dense matrix-sparse matrix multiplications.The <a class="el" href="../../d1/d2b/classblaze_1_1DMatSMatMultExpr.html" title="Expression object for dense matrix-sparse matrix multiplications.The DMatSMatMultExpr class represent...">DMatSMatMultExpr</a> class represents the compile time expression for multiplications between a row-major dense matrix and a row-major sparse matrix.  <a href="../../d1/d2b/classblaze_1_1DMatSMatMultExpr.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -152,10 +166,10 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga2a69a009d857b36f4b607edbeede502a"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
-<tr class="memitem:ga2a69a009d857b36f4b607edbeede502a"><td class="memTemplItemLeft" align="right" valign="top">const DMatSMatMultExpr&lt; T1, T2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#ga2a69a009d857b36f4b607edbeede502a">blaze::operator*</a> (const DenseMatrix&lt; T1, false &gt; &amp;lhs, const SparseMatrix&lt; T2, false &gt; &amp;rhs)</td></tr>
-<tr class="memdesc:ga2a69a009d857b36f4b607edbeede502a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of a row-major dense matrix and a row-major sparse matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#ga2a69a009d857b36f4b607edbeede502a">More...</a><br /></td></tr>
-<tr class="separator:ga2a69a009d857b36f4b607edbeede502a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad2e626f5bc82316193a20e246705b88"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
+<tr class="memitem:gaad2e626f5bc82316193a20e246705b88"><td class="memTemplItemLeft" align="right" valign="top">const DMatSMatMultExpr&lt; T1, T2, false, false, false, false &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/df0/group__dense__matrix.html#gaad2e626f5bc82316193a20e246705b88">blaze::operator*</a> (const DenseMatrix&lt; T1, false &gt; &amp;lhs, const SparseMatrix&lt; T2, false &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:gaad2e626f5bc82316193a20e246705b88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the multiplication of a row-major dense matrix and a row-major sparse matrix ( <img class="formulaInl" alt="$ A=B*C $" src="../../form_86.png"/>).  <a href="../../db/df0/group__dense__matrix.html#gaad2e626f5bc82316193a20e246705b88">More...</a><br /></td></tr>
+<tr class="separator:gaad2e626f5bc82316193a20e246705b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Header file for the dense matrix/sparse matrix multiplication expression. </p>
@@ -170,7 +184,7 @@ Functions</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 31 2016 17:16:59 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 8 2016 01:03:44 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

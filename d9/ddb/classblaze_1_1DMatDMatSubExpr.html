@@ -86,18 +86,18 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a23bda841e41df1f375c809bfa2853c55"><td class="memItemLeft" align="right" valign="top"><a id="a23bda841e41df1f375c809bfa2853c55"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>simdEnabled</b>
- }<tr class="memdesc:a23bda841e41df1f375c809bfa2853c55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template evaluation strategy. <br /></td></tr>
+<tr class="memitem:a2b1e4e11160a9c26ca2c6fc4ee3127af"><td class="memItemLeft" align="right" valign="top"><a id="a2b1e4e11160a9c26ca2c6fc4ee3127af"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>simdEnabled</b>
+ }<tr class="memdesc:a2b1e4e11160a9c26ca2c6fc4ee3127af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template evaluation strategy. <br /></td></tr>
 </td></tr>
-<tr class="separator:a23bda841e41df1f375c809bfa2853c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b51557d22d5660eb9fcad3bffea0169"><td class="memItemLeft" align="right" valign="top"><a id="a1b51557d22d5660eb9fcad3bffea0169"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>smpAssignable</b> = MT1::smpAssignable &amp;&amp; MT2::smpAssignable
- }<tr class="memdesc:a1b51557d22d5660eb9fcad3bffea0169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template assignment strategy. <br /></td></tr>
+<tr class="separator:a2b1e4e11160a9c26ca2c6fc4ee3127af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad26aa944015c1cb27f85ad8780293d3b"><td class="memItemLeft" align="right" valign="top"><a id="ad26aa944015c1cb27f85ad8780293d3b"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>smpAssignable</b> = MT1::smpAssignable &amp;&amp; MT2::smpAssignable
+ }<tr class="memdesc:ad26aa944015c1cb27f85ad8780293d3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template assignment strategy. <br /></td></tr>
 </td></tr>
-<tr class="separator:a1b51557d22d5660eb9fcad3bffea0169"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d3f596c5ad8bd581cf7cad28063e182"><td class="memItemLeft" align="right" valign="top"><a id="a9d3f596c5ad8bd581cf7cad28063e182"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: size_t { <b>SIMDSIZE</b> = SIMDTrait&lt;ElementType&gt;::size
- }<tr class="memdesc:a9d3f596c5ad8bd581cf7cad28063e182"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of elements packed within a single SIMD element. <br /></td></tr>
+<tr class="separator:ad26aa944015c1cb27f85ad8780293d3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bb3c8189561ca87763c350f6cbf3135"><td class="memItemLeft" align="right" valign="top"><a id="a9bb3c8189561ca87763c350f6cbf3135"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: size_t { <b>SIMDSIZE</b> = SIMDTrait&lt;ElementType&gt;::size
+ }<tr class="memdesc:a9bb3c8189561ca87763c350f6cbf3135"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of elements packed within a single SIMD element. <br /></td></tr>
 </td></tr>
-<tr class="separator:a9d3f596c5ad8bd581cf7cad28063e182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a9bb3c8189561ca87763c350f6cbf3135"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbe56c32352ad82068d8bd532611b678"><td class="memItemLeft" align="right" valign="top"><a id="adbe56c32352ad82068d8bd532611b678"></a>
 typedef <a class="el" href="../../d9/ddb/classblaze_1_1DMatDMatSubExpr.html">DMatDMatSubExpr</a>&lt; MT1, MT2, SO &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/ddb/classblaze_1_1DMatDMatSubExpr.html#adbe56c32352ad82068d8bd532611b678">This</a></td></tr>
 <tr class="memdesc:adbe56c32352ad82068d8bd532611b678"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of this <a class="el" href="../../d9/ddb/classblaze_1_1DMatDMatSubExpr.html" title="Expression object for dense matrix-dense matrix subtractions.The DMatDMatSubExpr class represents the...">DMatDMatSubExpr</a> instance. <br /></td></tr>
@@ -194,14 +194,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:afdefd1a9bcbc0ba6b83d768c5995034f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>returnExpr</b> = !IsTemporary&lt;RN1&gt;::value &amp;&amp; !IsTemporary&lt;RN2&gt;::value
- }<tr class="memdesc:afdefd1a9bcbc0ba6b83d768c5995034f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the selection of the subscript operator return type.  <a href="../../d9/ddb/classblaze_1_1DMatDMatSubExpr.html#afdefd1a9bcbc0ba6b83d768c5995034f">More...</a><br /></td></tr>
+<tr class="memitem:ad2c19567005f90a7a77b37aa332a968b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>returnExpr</b> = !IsTemporary&lt;RN1&gt;::value &amp;&amp; !IsTemporary&lt;RN2&gt;::value
+ }<tr class="memdesc:ad2c19567005f90a7a77b37aa332a968b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the selection of the subscript operator return type.  <a href="../../d9/ddb/classblaze_1_1DMatDMatSubExpr.html#ad2c19567005f90a7a77b37aa332a968b">More...</a><br /></td></tr>
 </td></tr>
-<tr class="separator:afdefd1a9bcbc0ba6b83d768c5995034f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ef4fa36b8eff4f9e94f3a20cd0787de"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>useAssign</b> = RequiresEvaluation&lt;MT1&gt;::value || RequiresEvaluation&lt;MT2&gt;::value || !returnExpr
- }<tr class="memdesc:a7ef4fa36b8eff4f9e94f3a20cd0787de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the serial evaluation strategy of the subtraction expression.  <a href="../../d9/ddb/classblaze_1_1DMatDMatSubExpr.html#a7ef4fa36b8eff4f9e94f3a20cd0787de">More...</a><br /></td></tr>
+<tr class="separator:ad2c19567005f90a7a77b37aa332a968b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35470588be18fea545f693b5ad2ba722"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>useAssign</b> = RequiresEvaluation&lt;MT1&gt;::value || RequiresEvaluation&lt;MT2&gt;::value || !returnExpr
+ }<tr class="memdesc:a35470588be18fea545f693b5ad2ba722"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the serial evaluation strategy of the subtraction expression.  <a href="../../d9/ddb/classblaze_1_1DMatDMatSubExpr.html#a35470588be18fea545f693b5ad2ba722">More...</a><br /></td></tr>
 </td></tr>
-<tr class="separator:a7ef4fa36b8eff4f9e94f3a20cd0787de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a35470588be18fea545f693b5ad2ba722"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e64d398e273335decdef6951921016c"><td class="memItemLeft" align="right" valign="top"><a id="a7e64d398e273335decdef6951921016c"></a>
 typedef <a class="el" href="../../d2/de9/namespaceblaze.html#a5a86db58851c76c3500769d8afdc759e">ResultType_</a>&lt; MT1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/ddb/classblaze_1_1DMatDMatSubExpr.html#a7e64d398e273335decdef6951921016c">RT1</a></td></tr>
 <tr class="memdesc:a7e64d398e273335decdef6951921016c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result type of the left-hand side dense matrix expression. <br /></td></tr>
@@ -257,8 +257,8 @@ class blaze::DMatDMatSubExpr&lt; MT1, MT2, SO &gt;</h3>
 <p><a class="el" href="../../d5/d2e/structblaze_1_1Expression.html" title="Base class for all expression templates.The Expression class is the base class for all expression tem...">Expression</a> object for dense matrix-dense matrix subtractions.</p>
 <p>The <a class="el" href="../../d9/ddb/classblaze_1_1DMatDMatSubExpr.html" title="Expression object for dense matrix-dense matrix subtractions.The DMatDMatSubExpr class represents the...">DMatDMatSubExpr</a> class represents the compile time expression for subtractions between dense matrices with identical storage order. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="afdefd1a9bcbc0ba6b83d768c5995034f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdefd1a9bcbc0ba6b83d768c5995034f">&sect;&nbsp;</a></span>anonymous enum</h2>
+<a id="ad2c19567005f90a7a77b37aa332a968b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2c19567005f90a7a77b37aa332a968b">&sect;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -284,8 +284,8 @@ template&lt;typename MT1, typename MT2, bool SO&gt; </div>
 
 </div>
 </div>
-<a id="a7ef4fa36b8eff4f9e94f3a20cd0787de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ef4fa36b8eff4f9e94f3a20cd0787de">&sect;&nbsp;</a></span>anonymous enum</h2>
+<a id="a35470588be18fea545f693b5ad2ba722"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35470588be18fea545f693b5ad2ba722">&sect;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -908,7 +908,7 @@ template&lt;typename MT1, typename MT2, bool SO&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 31 2016 17:17:03 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 8 2016 01:03:48 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

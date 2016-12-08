@@ -87,6 +87,10 @@ Functions</h2></td></tr>
 <tr class="memitem:gaebd2a470dd21fec4c42c12135e2bcbb4"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d5/da5/classblaze_1_1DVecTSVecMultExpr.html">DVecTSVecMultExpr</a>&lt; T1, T2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d45/group__sparse__matrix.html#gaebd2a470dd21fec4c42c12135e2bcbb4">blaze::operator*</a> (const <a class="el" href="../../d1/db2/structblaze_1_1DenseVector.html">DenseVector</a>&lt; T1, false &gt; &amp;lhs, const <a class="el" href="../../d6/d31/structblaze_1_1SparseVector.html">SparseVector</a>&lt; T2, true &gt; &amp;rhs)</td></tr>
 <tr class="memdesc:gaebd2a470dd21fec4c42c12135e2bcbb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplication operator for the dense vector-sparse vector outer product ( <img class="formulaInl" alt="$ A=\vec{b}*\vec{c}^T $" src="../../form_113.png"/>).  <a href="../../d0/d45/group__sparse__matrix.html#gaebd2a470dd21fec4c42c12135e2bcbb4">More...</a><br /></td></tr>
 <tr class="separator:gaebd2a470dd21fec4c42c12135e2bcbb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d22caf00780add553e8ef31199bbc6d"><td class="memTemplParams" colspan="2">template&lt;typename MT , bool SO&gt; </td></tr>
+<tr class="memitem:ga4d22caf00780add553e8ef31199bbc6d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d4/d3a/group__util.html#gaebf93d6ed8011a7e73476b7d9c34f656">DisableIf_</a>&lt; <a class="el" href="../../de/d38/structblaze_1_1IsDiagonal.html">IsDiagonal</a>&lt; MT &gt;, const <a class="el" href="../../d1/d98/classblaze_1_1SMatDeclDiagExpr.html">SMatDeclDiagExpr</a>&lt; MT, SO &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d45/group__sparse__matrix.html#ga4d22caf00780add553e8ef31199bbc6d">blaze::decldiag</a> (const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; MT, SO &gt; &amp;sm)</td></tr>
+<tr class="memdesc:ga4d22caf00780add553e8ef31199bbc6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declares the given non-diagonal sparse matrix expression <em>sm</em> as diagonal.  <a href="../../d0/d45/group__sparse__matrix.html#ga4d22caf00780add553e8ef31199bbc6d">More...</a><br /></td></tr>
+<tr class="separator:ga4d22caf00780add553e8ef31199bbc6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga648c564eb671f51f21076710551b20f4"><td class="memTemplParams" colspan="2">template&lt;typename MT , bool SO&gt; </td></tr>
 <tr class="memitem:ga648c564eb671f51f21076710551b20f4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d4/d3a/group__util.html#gaebf93d6ed8011a7e73476b7d9c34f656">DisableIf_</a>&lt; <a class="el" href="../../d6/daf/structblaze_1_1IsHermitian.html">IsHermitian</a>&lt; MT &gt;, const <a class="el" href="../../d9/d8a/classblaze_1_1SMatDeclHermExpr.html">SMatDeclHermExpr</a>&lt; MT, SO &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d45/group__sparse__matrix.html#ga648c564eb671f51f21076710551b20f4">blaze::declherm</a> (const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; MT, SO &gt; &amp;sm)</td></tr>
 <tr class="memdesc:ga648c564eb671f51f21076710551b20f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declares the given non-Hermitian sparse matrix expression <em>sm</em> as Hermitian.  <a href="../../d0/d45/group__sparse__matrix.html#ga648c564eb671f51f21076710551b20f4">More...</a><br /></td></tr>
@@ -163,10 +167,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga4bcce93825df78b16f67a4e987165066"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d8/d35/classblaze_1_1SMatForEachExpr.html">SMatForEachExpr</a>&lt; MT, <a class="el" href="../../d2/d2f/structblaze_1_1InvCbrt.html">InvCbrt</a>, SO &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d45/group__sparse__matrix.html#ga4bcce93825df78b16f67a4e987165066">blaze::invcbrt</a> (const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; MT, SO &gt; &amp;sm)</td></tr>
 <tr class="memdesc:ga4bcce93825df78b16f67a4e987165066"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the inverse cubic root of each non-zero element of the sparse matrix <em>sm</em>.  <a href="../../d0/d45/group__sparse__matrix.html#ga4bcce93825df78b16f67a4e987165066">More...</a><br /></td></tr>
 <tr class="separator:ga4bcce93825df78b16f67a4e987165066"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab8c457c5073385470e690a492a95c47b"><td class="memTemplParams" colspan="2">template&lt;typename MT , bool SO, typename DT &gt; </td></tr>
-<tr class="memitem:gab8c457c5073385470e690a492a95c47b"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d8/d35/classblaze_1_1SMatForEachExpr.html">SMatForEachExpr</a>&lt; MT, <a class="el" href="../../d0/d65/structblaze_1_1Clip.html">Clip</a>&lt; DT &gt;, SO &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d45/group__sparse__matrix.html#gab8c457c5073385470e690a492a95c47b">blaze::clip</a> (const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; MT, SO &gt; &amp;sm, const DT &amp;<a class="el" href="../../db/df0/group__dense__matrix.html#ga1147d0f93d7cc6fad33935048f2b058e">min</a>, const DT &amp;<a class="el" href="../../db/df0/group__dense__matrix.html#ga6ae2749f3a298c7927a4f7f85407e2c4">max</a>)</td></tr>
-<tr class="memdesc:gab8c457c5073385470e690a492a95c47b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restricts each single element of the sparse matrix <em>sm</em> to the range <img class="formulaInl" alt="$[min..max]$" src="../../form_94.png"/>.  <a href="../../d0/d45/group__sparse__matrix.html#gab8c457c5073385470e690a492a95c47b">More...</a><br /></td></tr>
-<tr class="separator:gab8c457c5073385470e690a492a95c47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab37c9b2975d69391340b27767a56addc"><td class="memTemplParams" colspan="2">template&lt;typename MT , bool SO, typename DT &gt; </td></tr>
+<tr class="memitem:gab37c9b2975d69391340b27767a56addc"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d8/d35/classblaze_1_1SMatForEachExpr.html">SMatForEachExpr</a>&lt; MT, <a class="el" href="../../da/d15/structblaze_1_1Clamp.html">Clamp</a>&lt; DT &gt;, SO &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d45/group__sparse__matrix.html#gab37c9b2975d69391340b27767a56addc">blaze::clamp</a> (const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; MT, SO &gt; &amp;sm, const DT &amp;<a class="el" href="../../db/df0/group__dense__matrix.html#ga1147d0f93d7cc6fad33935048f2b058e">min</a>, const DT &amp;<a class="el" href="../../db/df0/group__dense__matrix.html#ga6ae2749f3a298c7927a4f7f85407e2c4">max</a>)</td></tr>
+<tr class="memdesc:gab37c9b2975d69391340b27767a56addc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restricts each single element of the sparse matrix <em>sm</em> to the range <img class="formulaInl" alt="$[min..max]$" src="../../form_94.png"/>.  <a href="../../d0/d45/group__sparse__matrix.html#gab37c9b2975d69391340b27767a56addc">More...</a><br /></td></tr>
+<tr class="separator:gab37c9b2975d69391340b27767a56addc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga39d48ddafc58459876471f1cd1400660"><td class="memTemplParams" colspan="2">template&lt;typename MT , bool SO, typename ET &gt; </td></tr>
 <tr class="memitem:ga39d48ddafc58459876471f1cd1400660"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="../../d8/d35/classblaze_1_1SMatForEachExpr.html">SMatForEachExpr</a>&lt; MT, <a class="el" href="../../d3/d41/structblaze_1_1Pow.html">Pow</a>&lt; ET &gt;, SO &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d45/group__sparse__matrix.html#ga39d48ddafc58459876471f1cd1400660">blaze::pow</a> (const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; MT, SO &gt; &amp;sm, ET <a class="el" href="../../db/df0/group__dense__matrix.html#gace3face2f497ce3065754db58ce162d4">exp</a>)</td></tr>
 <tr class="memdesc:ga39d48ddafc58459876471f1cd1400660"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the exponential value for each non-zero element of the sparse matrix <em>sm</em>.  <a href="../../d0/d45/group__sparse__matrix.html#ga39d48ddafc58459876471f1cd1400660">More...</a><br /></td></tr>
@@ -819,46 +823,8 @@ The following example demonstrates the use of the <em><a class="el" href="../../
 <div class="fragment"><div class="line"><a class="code" href="../../de/d1e/classblaze_1_1DynamicMatrix.html">blaze::DynamicMatrix&lt;double&gt;</a> A, B;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">B = <a class="code" href="../../db/df0/group__dense__matrix.html#ga38cb77691633d93f6b0b2fc55146a04b">ceil</a>( A );</div></div><!-- fragment --> 
 </div>
 </div>
-<a id="ga3d9a939b2471f71e81d8eee8c22a5ae4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3d9a939b2471f71e81d8eee8c22a5ae4">&sect;&nbsp;</a></span>clear()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename MT &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void blaze::clear </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d5/dd3/classblaze_1_1MatrixAccessProxy.html">MatrixAccessProxy</a>&lt; MT &gt; &amp;&#160;</td>
-          <td class="paramname"><em>proxy</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Clearing the represented element. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">proxy</td><td>The given access proxy. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
-<p>This function clears the element represented by the access proxy to its default initial state. In case the access proxy represents a vector- or matrix-like data structure that provides a <a class="el" href="../../d0/d90/group__diagonal__matrix.html#ga834f663e7bd7bad48600ec5b036269bb" title="Clearing the represented element. ">clear()</a> function, this function clears the vector/matrix to its default initial state. </p>
-
-</div>
-</div>
-<a id="gab8c457c5073385470e690a492a95c47b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab8c457c5073385470e690a492a95c47b">&sect;&nbsp;</a></span>clip()</h2>
+<a id="gab37c9b2975d69391340b27767a56addc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab37c9b2975d69391340b27767a56addc">&sect;&nbsp;</a></span>clamp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -869,7 +835,7 @@ template&lt;typename MT , bool SO, typename DT &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="../../d8/d35/classblaze_1_1SMatForEachExpr.html">SMatForEachExpr</a>&lt;MT,<a class="el" href="../../d0/d65/structblaze_1_1Clip.html">Clip</a>&lt;DT&gt;,SO&gt; blaze::clip </td>
+          <td class="memname">const <a class="el" href="../../d8/d35/classblaze_1_1SMatForEachExpr.html">SMatForEachExpr</a>&lt;MT,<a class="el" href="../../da/d15/structblaze_1_1Clamp.html">Clamp</a>&lt;DT&gt;,SO&gt; blaze::clamp </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; MT, SO &gt; &amp;&#160;</td>
           <td class="paramname"><em>sm</em>, </td>
@@ -909,9 +875,47 @@ template&lt;typename MT , bool SO, typename DT &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The matrix with restricted elements.</dd></dl>
-<p>The <em><a class="el" href="../../db/df0/group__dense__matrix.html#gadebfde9b2a5daf6d821e81ac96aa0b94" title="Restricts each single element of the dense matrix dm to the range . ">clip()</a></em> function restricts each element of the input matrix <em>sm</em> to the range <img class="formulaInl" alt="$[min..max]$" src="../../form_94.png"/>. The function returns an expression representing this operation.<br />
-The following example demonstrates the use of the <em><a class="el" href="../../db/df0/group__dense__matrix.html#gadebfde9b2a5daf6d821e81ac96aa0b94" title="Restricts each single element of the dense matrix dm to the range . ">clip()</a></em> function:</p>
-<div class="fragment"><div class="line"><a class="code" href="../../da/d7a/classblaze_1_1CompressedMatrix.html">blaze::CompressedMatrix&lt;double&gt;</a> A, B;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">B = <a class="code" href="../../db/df0/group__dense__matrix.html#gadebfde9b2a5daf6d821e81ac96aa0b94">clip</a>( A, -1.0, 1.0 );</div></div><!-- fragment --> 
+<p>The <em><a class="el" href="../../db/df0/group__dense__matrix.html#gaed4231fbd9f5b6bf46307753b34f039c" title="Restricts each single element of the dense matrix dm to the range . ">clamp()</a></em> function restricts each element of the input matrix <em>sm</em> to the range <img class="formulaInl" alt="$[min..max]$" src="../../form_94.png"/>. The function returns an expression representing this operation.<br />
+The following example demonstrates the use of the <em><a class="el" href="../../db/df0/group__dense__matrix.html#gaed4231fbd9f5b6bf46307753b34f039c" title="Restricts each single element of the dense matrix dm to the range . ">clamp()</a></em> function:</p>
+<div class="fragment"><div class="line"><a class="code" href="../../da/d7a/classblaze_1_1CompressedMatrix.html">blaze::CompressedMatrix&lt;double&gt;</a> A, B;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">B = <a class="code" href="../../db/df0/group__dense__matrix.html#gaed4231fbd9f5b6bf46307753b34f039c">clamp</a>( A, -1.0, 1.0 );</div></div><!-- fragment --> 
+</div>
+</div>
+<a id="ga3d9a939b2471f71e81d8eee8c22a5ae4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3d9a939b2471f71e81d8eee8c22a5ae4">&sect;&nbsp;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void blaze::clear </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d5/dd3/classblaze_1_1MatrixAccessProxy.html">MatrixAccessProxy</a>&lt; MT &gt; &amp;&#160;</td>
+          <td class="paramname"><em>proxy</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clearing the represented element. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">proxy</td><td>The given access proxy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void</dd></dl>
+<p>This function clears the element represented by the access proxy to its default initial state. In case the access proxy represents a vector- or matrix-like data structure that provides a <a class="el" href="../../d0/d90/group__diagonal__matrix.html#ga834f663e7bd7bad48600ec5b036269bb" title="Clearing the represented element. ">clear()</a> function, this function clears the vector/matrix to its default initial state. </p>
+
 </div>
 </div>
 <a id="ga34213ece5d2649ff1eed14be29160671"></a>
@@ -1071,6 +1075,51 @@ The following example demonstrates the use of the <em>ctrans</em> function:</p>
 <div class="fragment"><div class="line">B = <a class="code" href="../../db/df0/group__dense__matrix.html#ga33cedfb37c70d3758406251f2389ecac">trans</a>( <a class="code" href="../../db/df0/group__dense__matrix.html#ga23b5c9bdbb7e7ea2c008808d235f7055">conj</a>( A ) );  <span class="comment">// Computing the conjugate transpose matrix</span></div><div class="line">B = <a class="code" href="../../db/df0/group__dense__matrix.html#ga23b5c9bdbb7e7ea2c008808d235f7055">conj</a>( <a class="code" href="../../db/df0/group__dense__matrix.html#ga33cedfb37c70d3758406251f2389ecac">trans</a>( A ) );  <span class="comment">// Computing the conjugate transpose matrix</span></div></div><!-- fragment --> 
 </div>
 </div>
+<a id="ga4d22caf00780add553e8ef31199bbc6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4d22caf00780add553e8ef31199bbc6d">&sect;&nbsp;</a></span>decldiag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MT , bool SO&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d3a/group__util.html#gaebf93d6ed8011a7e73476b7d9c34f656">DisableIf_</a>&lt; <a class="el" href="../../de/d38/structblaze_1_1IsDiagonal.html">IsDiagonal</a>&lt;MT&gt;, const <a class="el" href="../../d1/d98/classblaze_1_1SMatDeclDiagExpr.html">SMatDeclDiagExpr</a>&lt;MT,SO&gt; &gt; blaze::decldiag </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d5d/structblaze_1_1SparseMatrix.html">SparseMatrix</a>&lt; MT, SO &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Declares the given non-diagonal sparse matrix expression <em>sm</em> as diagonal. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sm</td><td>The input matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The redeclared sparse matrix. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Invalid diagonal matrix specification.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The <em>decldiag</em> function declares the given non-diagonal sparse matrix expression <em>sm</em> as diagonal. The function returns an expression representing the operation. In case the given matrix is not a square matrix, a <em>std::invalid_argument</em> exception is thrown.<br />
+The following example demonstrates the use of the <em>decldiag</em> function:</p>
+<div class="fragment"><div class="line"><a class="code" href="../../da/d7a/classblaze_1_1CompressedMatrix.html">blaze::CompressedMatrix&lt;double&gt;</a> A, B;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">B = <a class="code" href="../../db/df0/group__dense__matrix.html#ga69a9b7ca9d7f7eb53ed37ddd2ee43874">decldiag</a>( A );</div></div><!-- fragment --> 
+</div>
+</div>
 <a id="ga648c564eb671f51f21076710551b20f4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga648c564eb671f51f21076710551b20f4">&sect;&nbsp;</a></span>declherm()</h2>
 
@@ -1104,8 +1153,14 @@ template&lt;typename MT , bool SO&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The redeclared sparse matrix.</dd></dl>
-<p>The <em>declherm</em> function declares the given non-Hermitian sparse matrix expression <em>sm</em> as Hermitian. The function returns an expression representing the operation.<br />
+<dl class="section return"><dt>Returns</dt><dd>The redeclared sparse matrix. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Invalid Hermitian matrix specification.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The <em>declherm</em> function declares the given non-Hermitian sparse matrix expression <em>sm</em> as Hermitian. The function returns an expression representing the operation. In case the given matrix is not a square matrix, a <em>std::invalid_argument</em> exception is thrown.<br />
 The following example demonstrates the use of the <em>declherm</em> function:</p>
 <div class="fragment"><div class="line"><a class="code" href="../../da/d7a/classblaze_1_1CompressedMatrix.html">blaze::CompressedMatrix&lt;double&gt;</a> A, B;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">B = <a class="code" href="../../db/df0/group__dense__matrix.html#ga7d1c7499ea0f5524b537273a98f3c09c">declherm</a>( A );</div></div><!-- fragment --> 
 </div>
@@ -1143,9 +1198,15 @@ template&lt;typename MT , bool SO&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The redeclared sparse matrix.</dd></dl>
-<p>The <em>decllow</em> function declares the given non-lower sparse matrix expression <em>sm</em> as lower. The function returns an expression representing the operation.<br />
- The following example demonstrates the use of the <em>decllow</em> function:</p>
+<dl class="section return"><dt>Returns</dt><dd>The redeclared sparse matrix. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Invalid lower matrix specification.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The <em>decllow</em> function declares the given non-lower sparse matrix expression <em>sm</em> as lower. The function returns an expression representing the operation. In case the given matrix is not a square matrix, a <em>std::invalid_argument</em> exception is thrown.<br />
+The following example demonstrates the use of the <em>decllow</em> function:</p>
 <div class="fragment"><div class="line"><a class="code" href="../../da/d7a/classblaze_1_1CompressedMatrix.html">blaze::CompressedMatrix&lt;double&gt;</a> A, B;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">B = <a class="code" href="../../db/df0/group__dense__matrix.html#gab7f9f220af2ef0545f54ff4b5c34b139">decllow</a>( A );</div></div><!-- fragment --> 
 </div>
 </div>
@@ -1182,8 +1243,14 @@ template&lt;typename MT , bool SO&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The redeclared sparse matrix.</dd></dl>
-<p>The <em>declsym</em> function declares the given non-symmetric sparse matrix expression <em>sm</em> as symmetric. The function returns an expression representing the operation.<br />
+<dl class="section return"><dt>Returns</dt><dd>The redeclared sparse matrix. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Invalid symmetric matrix specification.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The <em>declsym</em> function declares the given non-symmetric sparse matrix expression <em>sm</em> as symmetric. The function returns an expression representing the operation. In case the given matrix is not a square matrix, a <em>std::invalid_argument</em> exception is thrown.<br />
 The following example demonstrates the use of the <em>declsym</em> function:</p>
 <div class="fragment"><div class="line"><a class="code" href="../../da/d7a/classblaze_1_1CompressedMatrix.html">blaze::CompressedMatrix&lt;double&gt;</a> A, B;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">B = <a class="code" href="../../db/df0/group__dense__matrix.html#ga8e0db5d90417a72a963f8dcbf3e3b6a2">declsym</a>( A );</div></div><!-- fragment --> 
 </div>
@@ -1221,9 +1288,15 @@ template&lt;typename MT , bool SO&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The redeclared sparse matrix.</dd></dl>
-<p>The <em>declupp</em> function declares the given non-upper sparse matrix expression <em>sm</em> as upper. The function returns an expression representing the operation.<br />
- The following example demonstrates the use of the <em>declupp</em> function:</p>
+<dl class="section return"><dt>Returns</dt><dd>The redeclared sparse matrix. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>Invalid upper matrix specification.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The <em>declupp</em> function declares the given non-upper sparse matrix expression <em>sm</em> as upper. The function returns an expression representing the operation. In case the given matrix is not a square matrix, a <em>std::invalid_argument</em> exception is thrown.<br />
+The following example demonstrates the use of the <em>declupp</em> function:</p>
 <div class="fragment"><div class="line"><a class="code" href="../../da/d7a/classblaze_1_1CompressedMatrix.html">blaze::CompressedMatrix&lt;double&gt;</a> A, B;</div><div class="line"><span class="comment">// ... Resizing and initialization</span></div><div class="line">B = <a class="code" href="../../db/df0/group__dense__matrix.html#ga8ebe177b75c6ea9edbd850b65591df1f">declupp</a>( A );</div></div><!-- fragment --> 
 </div>
 </div>
@@ -2756,7 +2829,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>The product of the two matrices. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match</td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2813,7 +2886,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>The product of the two matrices. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match</td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2870,7 +2943,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>The product of the two matrices. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match</td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3027,7 +3100,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>The product of the two matrices. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match</td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3084,7 +3157,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>The sum of the two matrices. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match</td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3141,7 +3214,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>The sum of the two matrices. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match</td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3198,7 +3271,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>The sum of the two matrices. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match</td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3351,7 +3424,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>The difference of the two matrices. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match</td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3408,7 +3481,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>The sum of the two matrices. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match</td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3465,7 +3538,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>The sum of the two matrices. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match</td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match.</td></tr>
   </table>
   </dd>
 </dl>
@@ -3522,7 +3595,7 @@ template&lt;typename T1 , typename T2 &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>The sum of the two matrices. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match</td></tr>
+    <tr><td class="paramname">std::invalid_argument</td><td><a class="el" href="../../d0/d5c/structblaze_1_1Matrix.html" title="Base class for matrices.The Matrix class is a base class for all dense and sparse matrix classes with...">Matrix</a> sizes do not match.</td></tr>
   </table>
   </dd>
 </dl>
@@ -4401,7 +4474,7 @@ The following example demonstrates the use of the <em><a class="el" href="../../
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 31 2016 17:17:01 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 8 2016 01:03:46 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

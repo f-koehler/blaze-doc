@@ -305,6 +305,14 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:ga3b380783804d78aa5b21e51415cc3564"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
+<tr class="memitem:ga3b380783804d78aa5b21e51415cc3564"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/d5a/group__type__traits.html#ga3b380783804d78aa5b21e51415cc3564">blaze::HighType_</a> = typename <a class="el" href="../../dc/d1e/structblaze_1_1HighType.html">HighType</a>&lt; T1, T2 &gt;::Type</td></tr>
+<tr class="memdesc:ga3b380783804d78aa5b21e51415cc3564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auxiliary alias declaration for the <a class="el" href="../../dc/d1e/structblaze_1_1HighType.html" title="Base template for the HighType type trait. ">HighType</a> type trait.The HighType_ alias declaration provides a convenient shortcut to access the nested <em>Type</em> of the <a class="el" href="../../dc/d1e/structblaze_1_1HighType.html" title="Base template for the HighType type trait. ">HighType</a> class template. For instance, given the types <em>T1</em> and <em>T2</em> the following two type definitions are identical:  <a href="../../de/d5a/group__type__traits.html#ga3b380783804d78aa5b21e51415cc3564">More...</a><br /></td></tr>
+<tr class="separator:ga3b380783804d78aa5b21e51415cc3564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a3fa9d03c150105c91bf86867ae6777"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
+<tr class="memitem:ga5a3fa9d03c150105c91bf86867ae6777"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/d5a/group__type__traits.html#ga5a3fa9d03c150105c91bf86867ae6777">blaze::LowType_</a> = typename <a class="el" href="../../d5/d00/structblaze_1_1LowType.html">LowType</a>&lt; T1, T2 &gt;::Type</td></tr>
+<tr class="memdesc:ga5a3fa9d03c150105c91bf86867ae6777"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auxiliary alias declaration for the <a class="el" href="../../d5/d00/structblaze_1_1LowType.html" title="Base template for the LowType type trait. ">LowType</a> type trait.The LowType_ alias declaration provides a convenient shortcut to access the nested <em>Type</em> of the <a class="el" href="../../d5/d00/structblaze_1_1LowType.html" title="Base template for the LowType type trait. ">LowType</a> class template. For instance, given the types <em>T1</em> and <em>T2</em> the following two type definitions are identical:  <a href="../../de/d5a/group__type__traits.html#ga5a3fa9d03c150105c91bf86867ae6777">More...</a><br /></td></tr>
+<tr class="separator:ga5a3fa9d03c150105c91bf86867ae6777"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1054a603bf1d73c443e374227954a9b5"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ga1054a603bf1d73c443e374227954a9b5"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/d5a/group__type__traits.html#ga1054a603bf1d73c443e374227954a9b5">blaze::RemoveAdaptor_</a> = typename <a class="el" href="../../d2/d34/structblaze_1_1RemoveAdaptor.html">RemoveAdaptor</a>&lt; T &gt;::Type</td></tr>
 <tr class="memdesc:ga1054a603bf1d73c443e374227954a9b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Auxiliary alias declaration for the <a class="el" href="../../d2/d34/structblaze_1_1RemoveAdaptor.html" title="Removal of top level adaptor types.In case the given type is an adaptor type (SymmetricMatrix, LowerMatrix, UpperMatrix, ...), the RemoveAdaptor type trait removes the adaptor and extracts the contained general matrix type. Else the given type is returned as is. Note that cv-qualifiers are preserved. ">RemoveAdaptor</a> type trait.The RemoveAdaptor_ alias declaration provides a convenient shortcut to access the nested <em>Type</em> of the <a class="el" href="../../d2/d34/structblaze_1_1RemoveAdaptor.html" title="Removal of top level adaptor types.In case the given type is an adaptor type (SymmetricMatrix, LowerMatrix, UpperMatrix, ...), the RemoveAdaptor type trait removes the adaptor and extracts the contained general matrix type. Else the given type is returned as is. Note that cv-qualifiers are preserved. ">RemoveAdaptor</a> class template. For instance, given the type <em>T</em> the following two type definitions are identical:  <a href="../../de/d5a/group__type__traits.html#ga1054a603bf1d73c443e374227954a9b5">More...</a><br /></td></tr>
@@ -512,6 +520,42 @@ template&lt;typename T &gt; </div>
 
 <p>Auxiliary alias declaration for the <a class="el" href="../../df/dbe/structblaze_1_1Decay.html" title="Applies the type conversions for by-value function arguments.This type trait applies the type convers...">Decay</a> type trait.The Decay_ alias declaration provides a convenient shortcut to access the nested <em>Type</em> of the <a class="el" href="../../df/dbe/structblaze_1_1Decay.html" title="Applies the type conversions for by-value function arguments.This type trait applies the type convers...">Decay</a> class template. For instance, given the type <em>T</em> the following two type definitions are identical: </p>
 <div class="fragment"><div class="line"><span class="keyword">using</span> Type1 = <span class="keyword">typename</span> Decay&lt;T&gt;::Type;</div><div class="line"><span class="keyword">using</span> Type2 = Decay_&lt;T&gt;;</div></div><!-- fragment --> 
+</div>
+</div>
+<a id="ga3b380783804d78aa5b21e51415cc3564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3b380783804d78aa5b21e51415cc3564">&sect;&nbsp;</a></span>HighType_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T1 , typename T2 &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../de/d5a/group__type__traits.html#ga3b380783804d78aa5b21e51415cc3564">blaze::HighType_</a> = typedef typename <a class="el" href="../../dc/d1e/structblaze_1_1HighType.html">HighType</a>&lt;T1,T2&gt;::Type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Auxiliary alias declaration for the <a class="el" href="../../dc/d1e/structblaze_1_1HighType.html" title="Base template for the HighType type trait. ">HighType</a> type trait.The HighType_ alias declaration provides a convenient shortcut to access the nested <em>Type</em> of the <a class="el" href="../../dc/d1e/structblaze_1_1HighType.html" title="Base template for the HighType type trait. ">HighType</a> class template. For instance, given the types <em>T1</em> and <em>T2</em> the following two type definitions are identical: </p>
+<div class="fragment"><div class="line"><span class="keyword">using</span> Type1 = <span class="keyword">typename</span> HighType&lt;T1,T2&gt;::Type;</div><div class="line"><span class="keyword">using</span> Type2 = HighType_&lt;T1,T2&gt;;</div></div><!-- fragment --> 
+</div>
+</div>
+<a id="ga5a3fa9d03c150105c91bf86867ae6777"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5a3fa9d03c150105c91bf86867ae6777">&sect;&nbsp;</a></span>LowType_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T1 , typename T2 &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../de/d5a/group__type__traits.html#ga5a3fa9d03c150105c91bf86867ae6777">blaze::LowType_</a> = typedef typename <a class="el" href="../../d5/d00/structblaze_1_1LowType.html">LowType</a>&lt;T1,T2&gt;::Type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Auxiliary alias declaration for the <a class="el" href="../../d5/d00/structblaze_1_1LowType.html" title="Base template for the LowType type trait. ">LowType</a> type trait.The LowType_ alias declaration provides a convenient shortcut to access the nested <em>Type</em> of the <a class="el" href="../../d5/d00/structblaze_1_1LowType.html" title="Base template for the LowType type trait. ">LowType</a> class template. For instance, given the types <em>T1</em> and <em>T2</em> the following two type definitions are identical: </p>
+<div class="fragment"><div class="line"><span class="keyword">using</span> Type1 = <span class="keyword">typename</span> LowType&lt;T1,T2&gt;::Type;</div><div class="line"><span class="keyword">using</span> Type2 = LowType_&lt;T1,T2&gt;;</div></div><!-- fragment --> 
 </div>
 </div>
 <a id="ga4a76caf184ea9b940528ac368da1b577"></a>
@@ -751,7 +795,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 31 2016 17:17:02 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 8 2016 01:03:47 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

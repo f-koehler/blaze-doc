@@ -63,6 +63,7 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="../../d5/d0b/classblaze_1_1DMatDeclUppExpr-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -85,18 +86,18 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a2e68768d361925467615b00346bb9583"><td class="memItemLeft" align="right" valign="top"><a id="a2e68768d361925467615b00346bb9583"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>simdEnabled</b> = MT::simdEnabled
- }<tr class="memdesc:a2e68768d361925467615b00346bb9583"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template evaluation strategy. <br /></td></tr>
+<tr class="memitem:ae6dba571ef348ca44a281c2db8b48ca0"><td class="memItemLeft" align="right" valign="top"><a id="ae6dba571ef348ca44a281c2db8b48ca0"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>simdEnabled</b> = MT::simdEnabled
+ }<tr class="memdesc:ae6dba571ef348ca44a281c2db8b48ca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template evaluation strategy. <br /></td></tr>
 </td></tr>
-<tr class="separator:a2e68768d361925467615b00346bb9583"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a7b668d8e4aa700e8689e81c8ac0367"><td class="memItemLeft" align="right" valign="top"><a id="a2a7b668d8e4aa700e8689e81c8ac0367"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>smpAssignable</b> = MT::smpAssignable
- }<tr class="memdesc:a2a7b668d8e4aa700e8689e81c8ac0367"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template assignment strategy. <br /></td></tr>
+<tr class="separator:ae6dba571ef348ca44a281c2db8b48ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ce0636bddbee777a287f1b4518069de"><td class="memItemLeft" align="right" valign="top"><a id="a0ce0636bddbee777a287f1b4518069de"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>smpAssignable</b> = MT::smpAssignable
+ }<tr class="memdesc:a0ce0636bddbee777a287f1b4518069de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the expression template assignment strategy. <br /></td></tr>
 </td></tr>
-<tr class="separator:a2a7b668d8e4aa700e8689e81c8ac0367"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb7c2835eb7449e6de1ff43b8fbe41b2"><td class="memItemLeft" align="right" valign="top"><a id="afb7c2835eb7449e6de1ff43b8fbe41b2"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: size_t { <b>SIMDSIZE</b> = SIMDTrait&lt;ElementType&gt;::size
- }<tr class="memdesc:afb7c2835eb7449e6de1ff43b8fbe41b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of elements packed within a single SIMD element. <br /></td></tr>
+<tr class="separator:a0ce0636bddbee777a287f1b4518069de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98a951aa195f4cd2bbdb2b3d09c2b417"><td class="memItemLeft" align="right" valign="top"><a id="a98a951aa195f4cd2bbdb2b3d09c2b417"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: size_t { <b>SIMDSIZE</b> = SIMDTrait&lt;ElementType&gt;::size
+ }<tr class="memdesc:a98a951aa195f4cd2bbdb2b3d09c2b417"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of elements packed within a single SIMD element. <br /></td></tr>
 </td></tr>
-<tr class="separator:afb7c2835eb7449e6de1ff43b8fbe41b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a98a951aa195f4cd2bbdb2b3d09c2b417"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ece53eb8e7730bc03b91169aa05431a"><td class="memItemLeft" align="right" valign="top"><a id="a8ece53eb8e7730bc03b91169aa05431a"></a>
 typedef <a class="el" href="../../d5/d58/classblaze_1_1DMatDeclUppExpr.html">DMatDeclUppExpr</a>&lt; MT, SO &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d58/classblaze_1_1DMatDeclUppExpr.html#a8ece53eb8e7730bc03b91169aa05431a">This</a></td></tr>
 <tr class="memdesc:a8ece53eb8e7730bc03b91169aa05431a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of this <a class="el" href="../../d5/d58/classblaze_1_1DMatDeclUppExpr.html" title="Expression object for the explicit upper declaration of dense matrices.The DMatDeclUppExpr class repr...">DMatDeclUppExpr</a> instance. <br /></td></tr>
@@ -190,6 +191,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a00af660c25d47d64c2beb7511329a3e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conversion operator for constant matrices.  <a href="#a00af660c25d47d64c2beb7511329a3e5">More...</a><br /></td></tr>
 <tr class="separator:a00af660c25d47d64c2beb7511329a3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a57bb28da906dd1a6ea5f00a385a18ec3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: bool { <b>useAssign</b> = RequiresEvaluation&lt;MT&gt;::value
+ }<tr class="memdesc:a57bb28da906dd1a6ea5f00a385a18ec3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compilation switch for the serial evaluation strategy of the upper declaration expression.  <a href="../../d5/d58/classblaze_1_1DMatDeclUppExpr.html#a57bb28da906dd1a6ea5f00a385a18ec3">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a57bb28da906dd1a6ea5f00a385a18ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:acece568e64f0cb83f97c8bf9cf648545"><td class="memItemLeft" align="right" valign="top"><a id="acece568e64f0cb83f97c8bf9cf648545"></a>
@@ -203,7 +211,35 @@ class blaze::DMatDeclUppExpr&lt; MT, SO &gt;</h3>
 
 <p><a class="el" href="../../d5/d2e/structblaze_1_1Expression.html" title="Base class for all expression templates.The Expression class is the base class for all expression tem...">Expression</a> object for the explicit upper declaration of dense matrices.</p>
 <p>The <a class="el" href="../../d5/d58/classblaze_1_1DMatDeclUppExpr.html" title="Expression object for the explicit upper declaration of dense matrices.The DMatDeclUppExpr class repr...">DMatDeclUppExpr</a> class represents the compile time expression for the explicit upper declaration of a dense matrix. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a57bb28da906dd1a6ea5f00a385a18ec3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57bb28da906dd1a6ea5f00a385a18ec3">&sect;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MT, bool SO&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum : bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compilation switch for the serial evaluation strategy of the upper declaration expression. </p>
+<p>The <em>useAssign</em> compile time constant expression represents a compilation switch for the serial evaluation strategy of the upper declaration expression. In case the given dense matrix expression of type <em>MT</em> requires an intermediate evaluation, <em>useAssign</em> will be set to 1 and the upper declaration expression will be evaluated via the <em>assign</em> function family. Otherwise <em>useAssign</em> will be set to 0 and the expression will be evaluated via the subscript operator. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a19db130de4f3897954ff56f95f51506e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a19db130de4f3897954ff56f95f51506e">&sect;&nbsp;</a></span>DMatDeclUppExpr()</h2>
 
@@ -819,7 +855,7 @@ template&lt;typename MT, bool SO&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 31 2016 17:17:03 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 8 2016 01:03:48 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.12
 </small></address>

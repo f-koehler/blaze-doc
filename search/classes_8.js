@@ -57,6 +57,7 @@ var searchData=
   ['iscopyconstructible',['IsCopyConstructible',['../df/d1e/structblaze_1_1IsCopyConstructible.html',1,'blaze']]],
   ['iscrossexpr',['IsCrossExpr',['../dc/d43/structblaze_1_1IsCrossExpr.html',1,'blaze']]],
   ['iscustom',['IsCustom',['../d1/df1/structblaze_1_1IsCustom.html',1,'blaze']]],
+  ['isdecldiagexpr',['IsDeclDiagExpr',['../d5/d3b/structblaze_1_1IsDeclDiagExpr.html',1,'blaze']]],
   ['isdeclexpr',['IsDeclExpr',['../d0/dce/structblaze_1_1IsDeclExpr.html',1,'blaze']]],
   ['isdeclhermexpr',['IsDeclHermExpr',['../d7/d07/structblaze_1_1IsDeclHermExpr.html',1,'blaze']]],
   ['isdecllowexpr',['IsDeclLowExpr',['../d8/d9e/structblaze_1_1IsDeclLowExpr.html',1,'blaze']]],
